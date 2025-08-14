@@ -80,8 +80,8 @@ class PumpDumpBot {
 
         let cleanedCount = 0;
         for (const token of Object.keys(this.tokens)) {
-            if (this.tokens[token].avgQuoteVolume) {
-                delete this.tokens[token].avgQuoteVolume;
+            if (this.tokens[token].isStarted) {
+                delete this.tokens[token].isStarted;
                 cleanedCount++;
             }
         }
@@ -157,7 +157,6 @@ class PumpDumpBot {
 📊 Volume: ${currentVolume.toFixed(2)} USDT (${volumeRatio.toFixed(2)}x avg)
 💰 Buy: ${buyVolume.toFixed(2)} | Sell: ${sellVolume.toFixed(2)}
 ⏰ Time: ${dayjs().format('HH:mm:ss')}`;
-
             this.sendTelegramAlert(message);
         }
     }
@@ -171,12 +170,9 @@ class PumpDumpBot {
             this.wsConnection = this.client.ws.candles(pairs, '1m', (candle) => {
                 this.detectPumpDump(candle);
             });
-
             this.log("✅ WebSocket connection established");
-
         } catch (error) {
             console.error("❌ WebSocket connection failed:", error);
-            // Retry connection after 5 seconds
             setTimeout(() => this.startWebSocketMonitoring(), 5000);
         }
     }
@@ -185,33 +181,22 @@ class PumpDumpBot {
         this.log("💵 == PUMP/DUMP BOT STARTING == 💵");
 
         try {
-            // Validate environment variables
             if (!process.env.BINANCE_PUBLIC_KEY || !process.env.BINANCE_PRIVATE_KEY) {
                 throw new Error("Missing Binance API credentials");
             }
-
             if (!process.env.TELEGRAM_TOKEN) {
                 throw new Error("Missing Telegram token");
             }
-
-            // Initial average volume calculation
             await this.calculateAverageVolume();
-
-            // Setup scheduled tasks
             this.setupScheduledTasks();
-
-            // Start WebSocket monitoring
             this.startWebSocketMonitoring();
-
             this.log("🚀 Bot is now running!");
-
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
             process.exit(1);
         }
     }
 
-    // Graceful shutdown
     stop() {
         this.log("🛑 Shutting down bot...");
 
@@ -224,7 +209,6 @@ class PumpDumpBot {
     }
 }
 
-// Handle graceful shutdown
 process.on('SIGINT', () => {
     console.log('\n🛑 Received SIGINT, shutting down gracefully...');
     if (global.bot) {
@@ -233,7 +217,6 @@ process.on('SIGINT', () => {
     process.exit(0);
 });
 
-// Start the bot
 const bot = new PumpDumpBot();
 global.bot = bot; // Store reference for graceful shutdown
 bot.start().catch(error => {
