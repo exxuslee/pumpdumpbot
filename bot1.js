@@ -8,7 +8,6 @@ const {writeFile} = require("node:fs/promises");
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
 const AVG_VOLUME_INTERVAL = 21_600_000; // 6 hours
-const CLEANUP_INTERVAL = 3_600_000; // 1 hour
 const API_DELAY = 200; // ms between API calls
 const VOLUME_HISTORY_DAYS = 14;
 
@@ -58,7 +57,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24;
+                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24 / 6;
 
                 processed++;
                 this.log(`📈 ${symbol}: ${this.tokens[token].avgQuoteVolume.toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
@@ -75,25 +74,6 @@ class PumpDumpBot {
         this.log("✅ Average volume calculation completed");
     }
 
-    async cleanupTokenData() {
-        this.log("🧹 Cleaning up token data...");
-
-        let cleanedCount = 0;
-        for (const token of Object.keys(this.tokens)) {
-            if (this.tokens[token].isStarted) {
-                delete this.tokens[token].isStarted;
-                cleanedCount++;
-            }
-        }
-
-        if (cleanedCount > 0) {
-            await this.writeTokensFile();
-            this.log(`✅ Cleaned ${cleanedCount} tokens`);
-        } else {
-            this.log("ℹ️ No cleanup needed");
-        }
-    }
-
     delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -102,17 +82,9 @@ class PumpDumpBot {
         const now = dayjs();
         const secondsToNextMinute = 60 - now.second();
         const msToNextMinute = secondsToNextMinute * 1000;
-
         this.log(`⏱️ Scheduling tasks to start in ${secondsToNextMinute} seconds`);
-
-        // Schedule average volume calculation every 6 hours
         setTimeout(() => {
             setInterval(() => this.calculateAverageVolume(), AVG_VOLUME_INTERVAL);
-        }, msToNextMinute);
-
-        // Schedule cleanup every hour
-        setTimeout(() => {
-            setInterval(() => this.cleanupTokenData(), CLEANUP_INTERVAL);
         }, msToNextMinute);
     }
 
@@ -125,7 +97,38 @@ class PumpDumpBot {
         }
     }
 
-    detectPumpDump(candle) {
+    async getCurrentPrice(symbol) {
+        try {
+            const ticker = await this.client.prices({symbol});
+            return parseFloat(ticker[symbol]);
+        } catch (error) {
+            console.error("❌ Error getting current price:", error.message);
+            return null;
+        }
+    }
+
+    async exitTrade(symbol) {
+        const trade = this.tokens[symbol]
+        try {
+            const exitPrice = await this.getCurrentPrice(symbol);
+            if (!exitPrice) {
+                this.log(`⚠️ Cannot get current price for ${symbol}`);
+                return;
+            }
+            const exitSide = trade.side === 'BUY' ? 'SELL' : 'BUY';
+            const pnlPercent = trade.side === 'BUY'
+                ? (exitPrice - trade.entryPrice) / exitPrice * 100
+                : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
+            const massage = `${exitSide} ${symbol}💰 ${pnlPercent.toFixed(2)}`
+            this.log(massage);
+            await this.sendTelegramAlert(massage);
+        } catch (error) {
+            console.error(`❌ Error exiting trade for ${symbol}:`, error.message);
+            await this.sendTelegramAlert(`❌ Failed to exit trade for ${symbol}: ${error.message}`);
+        }
+    }
+
+    async detectPumpDump(candle) {
         const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
         const token = this.tokens[tokenSymbol];
 
@@ -135,7 +138,6 @@ class PumpDumpBot {
         }
 
         if (!token.avgQuoteVolume) {
-            // Skip if we don't have average volume data yet
             return;
         }
 
@@ -144,7 +146,7 @@ class PumpDumpBot {
         const volumeRatio = currentVolume / avgVolume;
 
         // Only trigger if volume is significantly above average and token monitoring is enabled
-        if (currentVolume > avgVolume && token.isStarted) {
+        if (currentVolume > avgVolume && !token.isStarted) {
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
@@ -158,6 +160,7 @@ class PumpDumpBot {
 💰 Buy: ${buyVolume.toFixed(2)} | Sell: ${sellVolume.toFixed(2)}
 ⏰ Time: ${dayjs().format('HH:mm:ss')}`;
             this.sendTelegramAlert(message);
+            setTimeout(() => this.exitTrade(symbol), this.exitTimeoutMs);
         }
     }
 
