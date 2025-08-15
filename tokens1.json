@@ -2,1281 +2,1281 @@
   "SEI": {
     "cap": 52,
     "price": 0.33126663169238224,
-    "avgQuoteVolume": 304970.77934085316
+    "avgQuoteVolume": 2385297.543978155
   },
   "WLD": {
     "cap": 53,
     "price": 1.0048718305774587,
-    "avgQuoteVolume": 268060.6188600199
+    "avgQuoteVolume": 2061731.7748059526
   },
   "TRUMP": {
     "cap": 54,
     "price": 8.96680837667751,
-    "avgQuoteVolume": 314443.36407808535
+    "avgQuoteVolume": 2811188.641356488
   },
   "FIL": {
     "cap": 55,
     "price": 2.5109731776573665,
-    "avgQuoteVolume": 112415.70569532739
+    "avgQuoteVolume": 874610.6217725001
   },
   "FET": {
     "cap": 58,
     "price": 0.6953125014999604,
-    "avgQuoteVolume": 118939.87127599206
+    "avgQuoteVolume": 927672.6636184524
   },
   "JUP": {
     "cap": 61,
     "price": 0.5103962522714974,
-    "avgQuoteVolume": 74294.06725140875
+    "avgQuoteVolume": 617757.4404579167
   },
   "INJ": {
     "cap": 62,
     "price": 15.2069977288088,
-    "avgQuoteVolume": 114959.05481344246
+    "avgQuoteVolume": 862498.2981880953
   },
   "FORM": {
     "cap": 63,
     "price": 3.805178329149111,
-    "avgQuoteVolume": 23607.27167875992
+    "avgQuoteVolume": 141497.37729011907
   },
   "OP": {
     "cap": 67,
     "price": 0.7643084267783689,
-    "avgQuoteVolume": 225425.8030114385
+    "avgQuoteVolume": 1818741.9472071428
   },
   "TIA": {
     "cap": 68,
     "price": 1.779088626237806,
-    "avgQuoteVolume": 136317.19638081352
+    "avgQuoteVolume": 1118561.270271131
   },
   "QNT": {
     "cap": 69,
     "price": 108.72743636333244,
-    "avgQuoteVolume": 19290.49247191468
+    "avgQuoteVolume": 125084.27806833334
   },
   "STX": {
     "cap": 70,
     "price": 0.7189102101021155,
-    "avgQuoteVolume": 26085.05444399801
+    "avgQuoteVolume": 204569.6159952381
   },
   "ENS": {
     "cap": 80,
     "price": 26.441246608014335,
-    "avgQuoteVolume": 116414.70326041665
+    "avgQuoteVolume": 1002814.8139779763
   },
   "GRT": {
     "cap": 81,
     "price": 0.09276935499608413,
-    "avgQuoteVolume": 36260.96731785715
+    "avgQuoteVolume": 283754.68817142857
   },
   "KAIA": {
     "cap": 82,
     "price": 0.1582597472097745,
-    "avgQuoteVolume": 36834.618530014886
+    "avgQuoteVolume": 255004.1140842857
   },
   "PAXG": {
     "cap": 83,
     "price": 3332.330620963852,
-    "avgQuoteVolume": 68553.70987143998
+    "avgQuoteVolume": 460730.56033060706
   },
   "CAKE": {
     "cap": 84,
     "price": 2.7336253790076004,
-    "avgQuoteVolume": 102486.87484570932
+    "avgQuoteVolume": 721772.8746538096
   },
   "WIF": {
     "cap": 85,
     "price": 0.9246757048788831,
-    "avgQuoteVolume": 302225.10678232636
+    "avgQuoteVolume": 2415999.369177083
   },
   "PENDLE": {
     "cap": 86,
     "price": 5.487871752215562,
-    "avgQuoteVolume": 222414.46599156747
+    "avgQuoteVolume": 1695399.0540357141
   },
   "CFX": {
     "cap": 87,
     "price": 0.17844633765840473,
-    "avgQuoteVolume": 260587.17731145836
+    "avgQuoteVolume": 1190041.236332738
   },
   "S": {
     "cap": 89,
     "price": 0.3047437721267626,
-    "avgQuoteVolume": 154940.15991396332
+    "avgQuoteVolume": 1052911.9586909525
   },
   "THETA": {
     "cap": 91,
     "price": 0.8347090460545741,
-    "avgQuoteVolume": 29153.28723650794
+    "avgQuoteVolume": 215078.77122321425
   },
   "JASMY": {
     "cap": 92,
     "price": 0.01663468206722531,
-    "avgQuoteVolume": 38752.388585531255
+    "avgQuoteVolume": 328801.9694936012
   },
   "A": {
     "cap": 94,
     "price": 0.517583773264534,
-    "avgQuoteVolume": 39387.72483728174
+    "avgQuoteVolume": 320654.17682124994
   },
   "VIRTUAL": {
     "cap": 95,
     "price": 1.2207357057664394,
-    "avgQuoteVolume": 154575.13812531746
+    "avgQuoteVolume": 1140818.4676834524
   },
   "GALA": {
     "cap": 97,
     "price": 0.016806378104644096,
-    "avgQuoteVolume": 88009.2767068849
+    "avgQuoteVolume": 690942.8552739286
   },
   "PYTH": {
     "cap": 99,
     "price": 0.12143138073990643,
-    "avgQuoteVolume": 24064.63105090774
+    "avgQuoteVolume": 194514.1872433929
   },
   "JTO": {
     "cap": 103,
     "price": 1.805449924990463,
-    "avgQuoteVolume": 34927.51492807539
+    "avgQuoteVolume": 276571.7825321429
   },
   "DEXE": {
     "cap": 108,
     "price": 7.117829532269514,
-    "avgQuoteVolume": 11070.260463750003
+    "avgQuoteVolume": 64311.81247154761
   },
   "MANA": {
     "cap": 110,
     "price": 0.2916465096065413,
-    "avgQuoteVolume": 19994.26229608135
+    "avgQuoteVolume": 158030.82223214285
   },
   "RSR": {
     "cap": 115,
     "price": 0.008964138649283419,
-    "avgQuoteVolume": 41511.38692099226
+    "avgQuoteVolume": 347377.0790539113
   },
   "SYRUP": {
     "cap": 117,
     "price": 0.4287286669424759,
-    "avgQuoteVolume": 137037.28520817458
+    "avgQuoteVolume": 714268.6316066667
   },
   "STRK": {
     "cap": 118,
     "price": 0.13336089589655287,
-    "avgQuoteVolume": 43932.219724617054
+    "avgQuoteVolume": 368174.80113740475
   },
   "ETHFI": {
     "cap": 120,
     "price": 1.1926602261616057,
-    "avgQuoteVolume": 202845.8556324405
+    "avgQuoteVolume": 1753659.836202381
   },
   "AR": {
     "cap": 123,
     "price": 7.478739942864443,
-    "avgQuoteVolume": 50172.419929365074
+    "avgQuoteVolume": 387517.1165267857
   },
   "ZK": {
     "cap": 128,
     "price": 0.06400918708417105,
-    "avgQuoteVolume": 49419.78847915626
+    "avgQuoteVolume": 471701.5260341786
   },
   "EIGEN": {
     "cap": 129,
     "price": 1.4625033585470137,
-    "avgQuoteVolume": 106022.57761413195
+    "avgQuoteVolume": 928982.4507556547
   },
   "SUN": {
     "cap": 130,
     "price": 0.02450138873497567,
-    "avgQuoteVolume": 14265.17023277282
+    "avgQuoteVolume": 112818.45823232144
   },
   "APE": {
     "cap": 133,
     "price": 0.6094667584256147,
-    "avgQuoteVolume": 32947.20989120982
+    "avgQuoteVolume": 215385.64965605954
   },
   "SUPER": {
     "cap": 134,
     "price": 0.7263820697863979,
-    "avgQuoteVolume": 18199.777257093254
+    "avgQuoteVolume": 141404.6818934524
   },
   "EGLD": {
     "cap": 137,
     "price": 15.317710652055315,
-    "avgQuoteVolume": 15532.855948958333
+    "avgQuoteVolume": 120390.37796488094
   },
   "CVX": {
     "cap": 138,
     "price": 4.17768955993756,
-    "avgQuoteVolume": 35695.65762248859
+    "avgQuoteVolume": 201930.84965805357
   },
   "AXS": {
     "cap": 141,
     "price": 2.395689995991932,
-    "avgQuoteVolume": 17290.369098973217
+    "avgQuoteVolume": 128475.41743976188
   },
   "CHZ": {
     "cap": 142,
     "price": 0.0405248284311782,
-    "avgQuoteVolume": 17987.729964563496
+    "avgQuoteVolume": 145604.24072720236
   },
   "KAVA": {
     "cap": 143,
     "price": 0.360132895653975,
-    "avgQuoteVolume": 24268.21345863095
+    "avgQuoteVolume": 184212.9412470238
   },
   "W": {
     "cap": 145,
     "price": 0.08167065698571876,
-    "avgQuoteVolume": 41551.58644726687
+    "avgQuoteVolume": 288777.3783505357
   },
   "ZRO": {
     "cap": 149,
     "price": 2.0976436152291984,
-    "avgQuoteVolume": 85805.02787187995
+    "avgQuoteVolume": 877608.4615214285
   },
   "MOVE": {
     "cap": 150,
     "price": 0.13380743726602667,
-    "avgQuoteVolume": 15425.199982371028
+    "avgQuoteVolume": 108572.1127942262
   },
   "1INCH": {
     "cap": 153,
     "price": 0.25224870026699425,
-    "avgQuoteVolume": 20562.107586874994
+    "avgQuoteVolume": 147639.48030809526
   },
   "AXL": {
     "cap": 154,
     "price": 0.34318735362416725,
-    "avgQuoteVolume": 16736.422993700893
+    "avgQuoteVolume": 121014.87344458928
   },
   "JST": {
     "cap": 155,
     "price": 0.03418198060192034,
-    "avgQuoteVolume": 11720.62053513889
+    "avgQuoteVolume": 90829.39685586309
   },
   "TWT": {
     "cap": 158,
     "price": 0.7805023544739282,
-    "avgQuoteVolume": 6777.961840575397
+    "avgQuoteVolume": 53307.44390714285
   },
   "TURBO": {
     "cap": 163,
     "price": 0.004351673366099331,
-    "avgQuoteVolume": 32543.56800165575
+    "avgQuoteVolume": 253458.10366899404
   },
   "DASH": {
     "cap": 170,
     "price": 22.301888127133218,
-    "avgQuoteVolume": 11514.537073214284
+    "avgQuoteVolume": 80120.45816369046
   },
   "IOTX": {
     "cap": 172,
     "price": 0.028813181663283977,
-    "avgQuoteVolume": 22983.248342703373
+    "avgQuoteVolume": 115275.86844017857
   },
   "KAITO": {
     "cap": 174,
     "price": 1.1116354204940675,
-    "avgQuoteVolume": 28266.11756091766
+    "avgQuoteVolume": 203686.09625416665
   },
   "BERA": {
     "cap": 175,
     "price": 2.1581262319410537,
-    "avgQuoteVolume": 55592.62269382788
+    "avgQuoteVolume": 566872.6843461131
   },
   "OM": {
     "cap": 176,
     "price": 0.25286673618186417,
-    "avgQuoteVolume": 127736.11829692958
+    "avgQuoteVolume": 669253.4541161904
   },
   "PROVE": {
     "cap": 182,
     "price": 1.2883910708095256,
-    "avgQuoteVolume": 692521.0272190025
+    "avgQuoteVolume": 3796959.8207752374
   },
   "GLM": {
     "cap": 184,
     "price": 0.24768508009163384,
-    "avgQuoteVolume": 10967.907332247023
+    "avgQuoteVolume": 98909.5882289881
   },
   "CKB": {
     "cap": 185,
     "price": 0.005228164775702208,
-    "avgQuoteVolume": 23271.551096274805
+    "avgQuoteVolume": 135189.46834354164
   },
   "MINA": {
     "cap": 187,
     "price": 0.1898283420882542,
-    "avgQuoteVolume": 16048.92478158234
+    "avgQuoteVolume": 126109.23325434524
   },
   "SUSHI": {
     "cap": 189,
     "price": 0.8434589598533861,
-    "avgQuoteVolume": 41388.42311909723
+    "avgQuoteVolume": 291440.567302381
   },
   "PNUT": {
     "cap": 190,
     "price": 0.23140867321534203,
-    "avgQuoteVolume": 147398.43066689483
+    "avgQuoteVolume": 1197018.5582225
   },
   "SNX": {
     "cap": 193,
     "price": 0.6583140815579382,
-    "avgQuoteVolume": 11059.65583531746
+    "avgQuoteVolume": 81794.30823690476
   },
   "ZIL": {
     "cap": 197,
     "price": 0.011468870615748345,
-    "avgQuoteVolume": 7470.815476749503
+    "avgQuoteVolume": 58061.715854589296
   },
   "GAS": {
     "cap": 225,
     "price": 3.2188035043790344,
-    "avgQuoteVolume": 20411.12235376984
+    "avgQuoteVolume": 68935.74679821428
   },
   "ROSE": {
     "cap": 227,
     "price": 0.02781134801271113,
-    "avgQuoteVolume": 24025.357181878968
+    "avgQuoteVolume": 196300.33581782144
   },
   "ASTR": {
     "cap": 229,
     "price": 0.024748424226055134,
-    "avgQuoteVolume": 8352.040942109126
+    "avgQuoteVolume": 56657.7349919881
   },
   "ACH": {
     "cap": 231,
     "price": 0.021403315789836456,
-    "avgQuoteVolume": 29451.510032683527
+    "avgQuoteVolume": 229281.48009815475
   },
   "ORDI": {
     "cap": 237,
     "price": 9.210738254186085,
-    "avgQuoteVolume": 79599.98362894841
+    "avgQuoteVolume": 638056.4741652381
   },
   "COW": {
     "cap": 238,
     "price": 0.3835734714716551,
-    "avgQuoteVolume": 39297.27385613592
+    "avgQuoteVolume": 421265.83796333335
   },
   "NOT": {
     "cap": 239,
     "price": 0.0019153993454630203,
-    "avgQuoteVolume": 31903.48957973214
+    "avgQuoteVolume": 236554.78904111905
   },
   "YFI": {
     "cap": 240,
     "price": 5616.219434289207,
-    "avgQuoteVolume": 15411.061665004963
+    "avgQuoteVolume": 121430.68890392856
   },
   "ID": {
     "cap": 246,
     "price": 0.16624210854391425,
-    "avgQuoteVolume": 18746.514163988097
+    "avgQuoteVolume": 155620.83017440475
   },
   "SAHARA": {
     "cap": 249,
     "price": 0.08686532047246488,
-    "avgQuoteVolume": 74025.91425969743
+    "avgQuoteVolume": 404035.8181726786
   },
   "BIO": {
     "cap": 251,
     "price": 0.10602061197356825,
-    "avgQuoteVolume": 188718.58628324405
+    "avgQuoteVolume": 1411701.914072738
   },
   "VTHO": {
     "cap": 253,
     "price": 0.0018891256211036492,
-    "avgQuoteVolume": 5429.889878967261
+    "avgQuoteVolume": 39758.64914409524
   },
   "LAYER": {
     "cap": 256,
     "price": 0.6068227130168027,
-    "avgQuoteVolume": 13550.098687090773
+    "avgQuoteVolume": 114484.76517534524
   },
   "NXPC": {
     "cap": 258,
     "price": 0.8677293087458741,
-    "avgQuoteVolume": 15561.03150996528
+    "avgQuoteVolume": 119439.62977083334
   },
   "RPL": {
     "cap": 259,
     "price": 7.716468889442771,
-    "avgQuoteVolume": 22425.022002083333
+    "avgQuoteVolume": 148472.65426011904
   },
   "T": {
     "cap": 261,
     "price": 0.016371960701601115,
-    "avgQuoteVolume": 4706.057323234128
+    "avgQuoteVolume": 34565.036436690476
   },
   "NEIRO": {
     "cap": 262,
     "price": 0.0003907586271025153,
-    "avgQuoteVolume": 149751.45688716025
+    "avgQuoteVolume": 1192273.3702385337
   },
   "HOT": {
     "cap": 263,
     "price": 0.0009329197378085861,
-    "avgQuoteVolume": 7342.36122422371
+    "avgQuoteVolume": 59743.442056339285
   },
   "DGB": {
     "cap": 267,
     "price": 0.009094805263489068,
-    "avgQuoteVolume": 5021.675897070933
+    "avgQuoteVolume": 38708.25350108928
   },
   "ONE": {
     "cap": 268,
     "price": 0.01099842145474559,
-    "avgQuoteVolume": 11391.287640635417
+    "avgQuoteVolume": 80763.08813904763
   },
   "PROM": {
     "cap": 269,
     "price": 8.81069357273474,
-    "avgQuoteVolume": 17523.414151478173
+    "avgQuoteVolume": 129493.17188821429
   },
   "ANKR": {
     "cap": 273,
     "price": 0.01577408425541827,
-    "avgQuoteVolume": 9276.656208603175
+    "avgQuoteVolume": 70666.46140548214
   },
   "KMNO": {
     "cap": 276,
     "price": 0.06103724466036844,
-    "avgQuoteVolume": 17843.464255248015
+    "avgQuoteVolume": 167139.68497815475
   },
   "WOO": {
     "cap": 284,
     "price": 0.07683752388859466,
-    "avgQuoteVolume": 5546.622381488094
+    "avgQuoteVolume": 45508.62565315476
   },
   "ORCA": {
     "cap": 286,
     "price": 2.4095814542877005,
-    "avgQuoteVolume": 32055.591352876978
+    "avgQuoteVolume": 164747.3722524405
   },
   "ALT": {
     "cap": 293,
     "price": 0.03521470511888348,
-    "avgQuoteVolume": 49050.97276995039
+    "avgQuoteVolume": 350626.3242240476
   },
   "OMNI": {
     "cap": 296,
     "price": 3.9821818451404476,
-    "avgQuoteVolume": 85815.1976749008
+    "avgQuoteVolume": 364964.59159285715
   },
   "ZEN": {
     "cap": 296,
     "price": 7.922950079560181,
-    "avgQuoteVolume": 24620.49639122024
+    "avgQuoteVolume": 188141.21233749998
   },
   "ERA": {
     "cap": 298,
     "price": 0.924672607639424,
-    "avgQuoteVolume": 69640.01891350198
+    "avgQuoteVolume": 462134.43194559525
   },
   "POLYX": {
     "cap": 300,
     "price": 0.13779869062104597,
-    "avgQuoteVolume": 7182.234577311508
+    "avgQuoteVolume": 49072.26577142857
   },
   "GMT": {
     "cap": 303,
     "price": 0.04395997459863415,
-    "avgQuoteVolume": 18772.291551517857
+    "avgQuoteVolume": 148109.01277386906
   },
   "KDA": {
     "cap": 304,
     "price": 0.40810606779719794,
-    "avgQuoteVolume": 18372.37032942659
+    "avgQuoteVolume": 125760.09493040475
   },
   "WAVES": {
     "cap": 304,
     "price": 1.1285502212338439,
-    "avgQuoteVolume": 46202.83871091765
+    "avgQuoteVolume": 154894.24875101188
   },
   "SNT": {
     "cap": 307,
     "price": 0.027767309072195764,
-    "avgQuoteVolume": 15269.787199613093
+    "avgQuoteVolume": 121546.0935460119
   },
   "BOME": {
     "cap": 308,
     "price": 0.0019132442334714149,
-    "avgQuoteVolume": 44845.89872485763
+    "avgQuoteVolume": 383726.04464063095
   },
   "SPK": {
     "cap": 315,
     "price": 0.08502218638258202,
-    "avgQuoteVolume": 199886.52260795783
+    "avgQuoteVolume": 923313.9337860892
   },
   "VANA": {
     "cap": 316,
     "price": 4.245608405696108,
-    "avgQuoteVolume": 11099.618081329363
+    "avgQuoteVolume": 80396.61395458333
   },
   "SSV": {
     "cap": 318,
     "price": 9.38505940652032,
-    "avgQuoteVolume": 32463.064291408733
+    "avgQuoteVolume": 278663.11484910717
   },
   "COTI": {
     "cap": 320,
     "price": 0.054616894869041005,
-    "avgQuoteVolume": 14495.072244017858
+    "avgQuoteVolume": 124178.26685535716
   },
   "HOME": {
     "cap": 322,
     "price": 0.04567744723061151,
-    "avgQuoteVolume": 32795.60000361111
+    "avgQuoteVolume": 205636.2333439881
   },
   "ARKM": {
     "cap": 323,
     "price": 0.5525891625439991,
-    "avgQuoteVolume": 72328.74844107144
+    "avgQuoteVolume": 600181.8230125
   },
   "G": {
     "cap": 327,
     "price": 0.01208699105315807,
-    "avgQuoteVolume": 5076.539547470238
+    "avgQuoteVolume": 34917.954135535714
   },
   "SXT": {
     "cap": 332,
     "price": 0.08357805901179588,
-    "avgQuoteVolume": 21134.716181140877
+    "avgQuoteVolume": 118682.91161488094
   },
   "CYBER": {
     "cap": 336,
     "price": 2.5390194274204827,
-    "avgQuoteVolume": 132995.25553510417
+    "avgQuoteVolume": 1544760.4978938093
   },
   "IO": {
     "cap": 338,
     "price": 0.6156483685483434,
-    "avgQuoteVolume": 42419.8267678125
+    "avgQuoteVolume": 318798.543591369
   },
   "ME": {
     "cap": 339,
     "price": 0.7084527452564093,
-    "avgQuoteVolume": 11328.213801651784
+    "avgQuoteVolume": 79835.14629565476
   },
   "STG": {
     "cap": 340,
     "price": 0.1742200934514485,
-    "avgQuoteVolume": 19545.29237795635
+    "avgQuoteVolume": 214247.52611851192
   },
   "AIXBT": {
     "cap": 341,
     "price": 0.11857554372336156,
-    "avgQuoteVolume": 56521.1261881895
+    "avgQuoteVolume": 416398.6847452976
   },
   "BAND": {
     "cap": 345,
     "price": 0.6876306007120928,
-    "avgQuoteVolume": 6534.245400099207
+    "avgQuoteVolume": 53439.51253869048
   },
   "BIGTIME": {
     "cap": 349,
     "price": 0.056545603655137756,
-    "avgQuoteVolume": 8550.65949517361
+    "avgQuoteVolume": 65391.665332738085
   },
   "METIS": {
     "cap": 350,
     "price": 17.00534205830389,
-    "avgQuoteVolume": 23548.992014523803
+    "avgQuoteVolume": 225275.56229607144
   },
   "UMA": {
     "cap": 352,
     "price": 1.2418840417504842,
-    "avgQuoteVolume": 19721.442524503967
+    "avgQuoteVolume": 176635.3605232143
   },
   "ACX": {
     "cap": 356,
     "price": 0.17942175849575703,
-    "avgQuoteVolume": 12466.60097624008
+    "avgQuoteVolume": 106855.86176863097
   },
   "XVG": {
     "cap": 357,
     "price": 0.006568973011208773,
-    "avgQuoteVolume": 11732.191834490577
+    "avgQuoteVolume": 94217.44599590478
   },
   "BICO": {
     "cap": 358,
     "price": 0.11162567102362683,
-    "avgQuoteVolume": 14315.48202042113
+    "avgQuoteVolume": 89986.61319867261
   },
   "RED": {
     "cap": 361,
     "price": 0.3862710385365924,
-    "avgQuoteVolume": 19327.331012619055
+    "avgQuoteVolume": 76863.51429630951
   },
   "HIVE": {
     "cap": 363,
     "price": 0.216384003745648,
-    "avgQuoteVolume": 3858.843300248016
+    "avgQuoteVolume": 27170.163957142853
   },
   "XVS": {
     "cap": 369,
     "price": 6.295446822335447,
-    "avgQuoteVolume": 4371.260473214285
+    "avgQuoteVolume": 31256.12775297619
   },
   "MEME": {
     "cap": 371,
     "price": 0.0019471077635700234,
-    "avgQuoteVolume": 45885.83722806646
+    "avgQuoteVolume": 342359.92814224993
   },
   "PIXEL": {
     "cap": 373,
     "price": 0.03396546458965164,
-    "avgQuoteVolume": 16719.62713270784
+    "avgQuoteVolume": 109930.44456855953
   },
   "AWE": {
     "cap": 375,
     "price": 0.05146983625068467,
-    "avgQuoteVolume": 9353.368243422618
+    "avgQuoteVolume": 43204.90546505953
   },
   "FIDA": {
     "cap": 376,
     "price": 0.10081650468616715,
-    "avgQuoteVolume": 20791.64535195437
+    "avgQuoteVolume": 182006.74182535717
   },
   "BANANA": {
     "cap": 380,
     "price": 24.596676263380875,
-    "avgQuoteVolume": 22970.839906726193
+    "avgQuoteVolume": 178233.5475749405
   },
   "MANTA": {
     "cap": 385,
     "price": 0.22699427029212577,
-    "avgQuoteVolume": 26381.949668601188
+    "avgQuoteVolume": 236561.0617577381
   },
   "YGG": {
     "cap": 386,
     "price": 0.1620603336086559,
-    "avgQuoteVolume": 15570.870846994047
+    "avgQuoteVolume": 110246.31754565476
   },
   "POWR": {
     "cap": 387,
     "price": 0.16880568826406356,
-    "avgQuoteVolume": 2457.5799669146822
+    "avgQuoteVolume": 19976.30658154762
   },
   "ANIME": {
     "cap": 388,
     "price": 0.017160739225046042,
-    "avgQuoteVolume": 19264.800791275793
+    "avgQuoteVolume": 192306.92054868455
   },
   "FUN": {
     "cap": 389,
     "price": 0.008767890495968106,
-    "avgQuoteVolume": 65484.30167173314
+    "avgQuoteVolume": 573730.6577045537
   },
   "SIGN": {
     "cap": 391,
     "price": 0.07015733694808433,
-    "avgQuoteVolume": 31538.968332906745
+    "avgQuoteVolume": 293358.90512541664
   },
   "BAL": {
     "cap": 392,
     "price": 1.4157689875049466,
-    "avgQuoteVolume": 11605.022170069444
+    "avgQuoteVolume": 68848.15771946429
   },
   "CVC": {
     "cap": 393,
     "price": 0.09434643937094336,
-    "avgQuoteVolume": 4555.64207891865
+    "avgQuoteVolume": 38207.73635654762
   },
   "STRAX": {
     "cap": 396,
     "price": 0.046465989903508705,
-    "avgQuoteVolume": 5451.270972559524
+    "avgQuoteVolume": 46221.92544333333
   },
   "WAXP": {
     "cap": 397,
     "price": 0.020618199636068778,
-    "avgQuoteVolume": 3879.6571175942463
+    "avgQuoteVolume": 28591.365877499997
   },
   "DIA": {
     "cap": 399,
     "price": 0.7628349498098256,
-    "avgQuoteVolume": 24661.261783799597
+    "avgQuoteVolume": 210416.0945707143
   },
   "BNT": {
     "cap": 401,
     "price": 0.7848824283820388,
-    "avgQuoteVolume": 3266.443695897818
+    "avgQuoteVolume": 25999.809469464282
   },
   "AEVO": {
     "cap": 403,
     "price": 0.09803937982651095,
-    "avgQuoteVolume": 11716.338410348711
+    "avgQuoteVolume": 91520.47001824404
   },
   "LQTY": {
     "cap": 407,
     "price": 0.9301572504714799,
-    "avgQuoteVolume": 16885.205894444447
+    "avgQuoteVolume": 134005.45496190476
   },
   "CETUS": {
     "cap": 408,
     "price": 0.1052349073557704,
-    "avgQuoteVolume": 22091.49795119048
+    "avgQuoteVolume": 175978.48089238096
   },
   "PHA": {
     "cap": 411,
     "price": 0.10691054731835463,
-    "avgQuoteVolume": 8622.470698611112
+    "avgQuoteVolume": 58495.86133690476
   },
   "DYM": {
     "cap": 412,
     "price": 0.2473962712074321,
-    "avgQuoteVolume": 11986.213025099207
+    "avgQuoteVolume": 99790.74467619047
   },
   "XAI": {
     "cap": 416,
     "price": 0.049762512505001646,
-    "avgQuoteVolume": 25042.18428792659
+    "avgQuoteVolume": 178076.59364898808
   },
   "USUAL": {
     "cap": 417,
     "price": 0.07337736738027091,
-    "avgQuoteVolume": 36384.800160262894
+    "avgQuoteVolume": 303928.900633631
   },
   "FLUX": {
     "cap": 419,
     "price": 0.21749500634010221,
-    "avgQuoteVolume": 5240.454202426091
+    "avgQuoteVolume": 37390.55204609524
   },
   "ACT": {
     "cap": 420,
     "price": 0.06733191384757678,
-    "avgQuoteVolume": 24336.828437569446
+    "avgQuoteVolume": 203715.46271910713
   },
   "ARK": {
     "cap": 421,
     "price": 0.43909431759278966,
-    "avgQuoteVolume": 6820.299555753968
+    "avgQuoteVolume": 58147.94271071429
   },
   "BB": {
     "cap": 422,
     "price": 0.11334122606159916,
-    "avgQuoteVolume": 42060.88798325892
+    "avgQuoteVolume": 195105.8628618452
   },
   "COOKIE": {
     "cap": 425,
     "price": 0.13916139805240216,
-    "avgQuoteVolume": 21059.799564161705
+    "avgQuoteVolume": 166733.71096940478
   },
   "LSK": {
     "cap": 429,
     "price": 0.40615895523458434,
-    "avgQuoteVolume": 4230.330981894842
+    "avgQuoteVolume": 34192.4338
   },
   "CGPT": {
     "cap": 430,
     "price": 0.0953441043010579,
-    "avgQuoteVolume": 9636.337835689486
+    "avgQuoteVolume": 70634.26577821429
   },
   "SPELL": {
     "cap": 431,
     "price": 0.0004888592722256507,
-    "avgQuoteVolume": 29168.79344086131
+    "avgQuoteVolume": 70577.12385773273
   },
   "PUNDIX": {
     "cap": 435,
     "price": 0.30812321634152273,
-    "avgQuoteVolume": 4386.153616220238
+    "avgQuoteVolume": 35664.07993690477
   },
   "CHR": {
     "cap": 439,
     "price": 0.09341675363745214,
-    "avgQuoteVolume": 7946.012128224204
+    "avgQuoteVolume": 57224.910388095224
   },
   "DENT": {
     "cap": 441,
     "price": 0.0007800385509103419,
-    "avgQuoteVolume": 5117.9352578611115
+    "avgQuoteVolume": 39281.12585318452
   },
   "MAGIC": {
     "cap": 449,
     "price": 0.24110208349122117,
-    "avgQuoteVolume": 221323.4923013591
+    "avgQuoteVolume": 1048788.3304711904
   },
   "SCR": {
     "cap": 450,
     "price": 0.3964754955427604,
-    "avgQuoteVolume": 20437.531345585314
+    "avgQuoteVolume": 206644.5685053571
   },
   "GLMR": {
     "cap": 451,
     "price": 0.07478508922759373,
-    "avgQuoteVolume": 7831.711092271827
+    "avgQuoteVolume": 65369.3298432738
   },
   "USTC": {
     "cap": 454,
     "price": 0.013239309835723866,
-    "avgQuoteVolume": 25775.032784196428
+    "avgQuoteVolume": 144821.10976160716
   },
   "SOPH": {
     "cap": 456,
     "price": 0.03655356354666951,
-    "avgQuoteVolume": 24588.057218844246
+    "avgQuoteVolume": 138505.16018714287
   },
   "SAGA": {
     "cap": 458,
     "price": 0.25670784233656696,
-    "avgQuoteVolume": 40053.02420635913
+    "avgQuoteVolume": 331889.8556436905
   },
   "ONG": {
     "cap": 466,
     "price": 0.16939686061682888,
-    "avgQuoteVolume": 7340.530593005954
+    "avgQuoteVolume": 41125.419739880956
   },
   "OG": {
     "cap": 467,
     "price": 16.539754410422706,
-    "avgQuoteVolume": 132054.81403087205
+    "avgQuoteVolume": 1019391.9371371311
   },
   "DOGS": {
     "cap": 472,
     "price": 0.00013461843041565356,
-    "avgQuoteVolume": 14792.501158758283
+    "avgQuoteVolume": 96641.32350575773
   },
   "NEWT": {
     "cap": 474,
     "price": 0.3213881313153173,
-    "avgQuoteVolume": 23063.11417746528
+    "avgQuoteVolume": 116154.235125
   },
   "INIT": {
     "cap": 475,
     "price": 0.4254410467992478,
-    "avgQuoteVolume": 68500.78642944443
+    "avgQuoteVolume": 414547.75173726195
   },
   "BANANAS31": {
     "cap": 479,
     "price": 0.006816251604103323,
-    "avgQuoteVolume": 70097.64157084178
+    "avgQuoteVolume": 590386.6610336489
   },
   "STEEM": {
     "cap": 481,
     "price": 0.12963779733228328,
-    "avgQuoteVolume": 3704.070994737103
+    "avgQuoteVolume": 27032.949010595243
   },
   "SLP": {
     "cap": 486,
     "price": 0.0018544694447584224,
-    "avgQuoteVolume": 10841.266111968254
+    "avgQuoteVolume": 96832.31053758926
   },
   "LA": {
     "cap": 488,
     "price": 0.33925419625573633,
-    "avgQuoteVolume": 32743.75398808532
+    "avgQuoteVolume": 293975.91120000003
   },
   "MOVR": {
     "cap": 497,
     "price": 6.529031857661428,
-    "avgQuoteVolume": 17209.725024350697
+    "avgQuoteVolume": 119358.24838127974
   },
   "TOWNS": {
     "cap": 505,
     "price": 0.029892130599220346,
-    "avgQuoteVolume": 280139.6289127273
+    "avgQuoteVolume": 908331.3413076191
   },
   "JOE": {
     "cap": 507,
     "price": 0.1572901126655921,
-    "avgQuoteVolume": 7179.804331987599
+    "avgQuoteVolume": 51927.36914986309
   },
   "VANRY": {
     "cap": 508,
     "price": 0.03160786629011668,
-    "avgQuoteVolume": 20036.19636547619
+    "avgQuoteVolume": 109739.14477559524
   },
   "API3": {
     "cap": 509,
     "price": 0.7233065392115775,
-    "avgQuoteVolume": 11977.477662147821
+    "avgQuoteVolume": 102610.956175
   },
   "HYPER": {
     "cap": 515,
     "price": 0.3510155655511867,
-    "avgQuoteVolume": 56275.14158890378
+    "avgQuoteVolume": 303664.3174633333
   },
   "SOLV": {
     "cap": 516,
     "price": 0.0414338336927892,
-    "avgQuoteVolume": 23850.010186577387
+    "avgQuoteVolume": 224686.98772339287
   },
   "HUMA": {
     "cap": 519,
     "price": 0.03519573773687073,
-    "avgQuoteVolume": 37828.87288891369
+    "avgQuoteVolume": 305201.9701246429
   },
   "CELR": {
     "cap": 521,
     "price": 0.0078124546646001405,
-    "avgQuoteVolume": 4993.917108685019
+    "avgQuoteVolume": 41387.20152517262
   },
   "WCT": {
     "cap": 524,
     "price": 0.3245078606687003,
-    "avgQuoteVolume": 64068.68818152778
+    "avgQuoteVolume": 597579.5838370238
   },
   "LISTA": {
     "cap": 526,
     "price": 0.27677180158717934,
-    "avgQuoteVolume": 29624.565258363087
+    "avgQuoteVolume": 276045.45560696424
   },
   "AUCTION": {
     "cap": 530,
     "price": 9.85747702548615,
-    "avgQuoteVolume": 14818.44984439484
+    "avgQuoteVolume": 115724.5977154762
   },
   "AGLD": {
     "cap": 532,
     "price": 0.7081313319282677,
-    "avgQuoteVolume": 5189.686183085318
+    "avgQuoteVolume": 39596.25836785715
   },
   "NIL": {
     "cap": 533,
     "price": 0.30364061333376896,
-    "avgQuoteVolume": 9740.980888963293
+    "avgQuoteVolume": 67441.8149132738
   },
   "TREE": {
     "cap": 536,
     "price": 0.373381055536755,
-    "avgQuoteVolume": 463465.778437753
+    "avgQuoteVolume": 4006028.0494286907
   },
   "EPIC": {
     "cap": 538,
     "price": 1.9415313406289758,
-    "avgQuoteVolume": 34298.99346755952
+    "avgQuoteVolume": 134470.21491488095
   },
   "SCRT": {
     "cap": 544,
     "price": 0.18084672708965377,
-    "avgQuoteVolume": 3035.0665366914686
+    "avgQuoteVolume": 24515.184881011908
   },
   "NTRN": {
     "cap": 546,
     "price": 0.09260956918668914,
-    "avgQuoteVolume": 5997.825936666668
+    "avgQuoteVolume": 56598.498176130954
   },
   "RIF": {
     "cap": 548,
     "price": 0.05616264875442642,
-    "avgQuoteVolume": 3463.100935119048
+    "avgQuoteVolume": 25621.954626190472
   },
   "EDU": {
     "cap": 552,
     "price": 0.13422419456614434,
-    "avgQuoteVolume": 17412.212795337302
+    "avgQuoteVolume": 181025.69265178568
   },
   "AERGO": {
     "cap": 554,
     "price": 0.11252380142245752,
-    "avgQuoteVolume": 16923.401293849205
+    "avgQuoteVolume": 21813.504458333333
   },
   "OXT": {
     "cap": 558,
     "price": 0.054503682400968236,
-    "avgQuoteVolume": 4106.832551835318
+    "avgQuoteVolume": 33726.014492261915
   },
   "C98": {
     "cap": 560,
     "price": 0.05320809766651392,
-    "avgQuoteVolume": 10427.814813516865
+    "avgQuoteVolume": 73470.64945488096
   },
   "TNSR": {
     "cap": 563,
     "price": 0.12774374708070396,
-    "avgQuoteVolume": 7482.887430029762
+    "avgQuoteVolume": 61871.24633220237
   },
   "CTK": {
     "cap": 585,
     "price": 0.33530081167008086,
-    "avgQuoteVolume": 9634.577117013889
+    "avgQuoteVolume": 82259.65690934523
   },
   "REZ": {
     "cap": 587,
     "price": 0.013890249676599404,
-    "avgQuoteVolume": 37876.25046562103
+    "avgQuoteVolume": 299215.4382815178
   },
   "TUT": {
     "cap": 588,
     "price": 0.05935330957783792,
-    "avgQuoteVolume": 21404.532699756946
+    "avgQuoteVolume": 79237.37333863096
   },
   "RESOLV": {
     "cap": 598,
     "price": 0.1679344848605241,
-    "avgQuoteVolume": 47911.848868606154
+    "avgQuoteVolume": 355123.78528577386
   },
   "HMSTR": {
     "cap": 600,
     "price": 0.0007403556876496056,
-    "avgQuoteVolume": 8809.325634925592
+    "avgQuoteVolume": 60839.53890535118
   },
   "AI": {
     "cap": 601,
     "price": 0.12394250042501966,
-    "avgQuoteVolume": 15109.472351106153
+    "avgQuoteVolume": 112421.95553416667
   },
   "RARE": {
     "cap": 612,
     "price": 0.055352421873314586,
-    "avgQuoteVolume": 50797.46626310021
+    "avgQuoteVolume": 111048.98179892857
   },
   "THE": {
     "cap": 615,
     "price": 0.4153792262332846,
-    "avgQuoteVolume": 33558.05314824901
+    "avgQuoteVolume": 290601.7264702976
   },
   "A2Z": {
     "cap": 621,
     "price": 0.006413633684028338,
-    "avgQuoteVolume": 153960.99813329466
+    "avgQuoteVolume": 650999.2815347738
   },
   "TRU": {
     "cap": 634,
     "price": 0.03245230401547677,
-    "avgQuoteVolume": 12595.805762748016
+    "avgQuoteVolume": 81826.9151797619
   },
   "ASR": {
     "cap": 635,
     "price": 5.543137040031185,
-    "avgQuoteVolume": 96691.26226483134
+    "avgQuoteVolume": 517167.7184732142
   },
   "HIGH": {
     "cap": 637,
     "price": 0.5682889021712291,
-    "avgQuoteVolume": 5450.741311433531
+    "avgQuoteVolume": 39431.56904830358
   },
   "PARTI": {
     "cap": 638,
     "price": 0.18411250006135674,
-    "avgQuoteVolume": 21953.198384270832
+    "avgQuoteVolume": 110527.3230089881
   },
   "KERNEL": {
     "cap": 639,
     "price": 0.19253661537497183,
-    "avgQuoteVolume": 54931.54761342263
+    "avgQuoteVolume": 227725.363163869
   },
   "SHELL": {
     "cap": 648,
     "price": 0.13983796150804317,
-    "avgQuoteVolume": 35154.440763516875
+    "avgQuoteVolume": 276723.29499940475
   },
   "ATA": {
     "cap": 649,
     "price": 0.04792203983473006,
-    "avgQuoteVolume": 3430.694703472222
+    "avgQuoteVolume": 25565.187560714287
   },
   "LUMIA": {
     "cap": 652,
     "price": 0.3179718391565926,
-    "avgQuoteVolume": 15888.88337701389
+    "avgQuoteVolume": 118855.7694564881
   },
   "FORTH": {
     "cap": 657,
     "price": 2.850656875373354,
-    "avgQuoteVolume": 17294.65691998016
+    "avgQuoteVolume": 185669.56828708333
   },
   "AVA": {
     "cap": 667,
     "price": 0.5697488956780075,
-    "avgQuoteVolume": 4181.450036274801
+    "avgQuoteVolume": 30251.791136250005
   },
   "ALICE": {
     "cap": 682,
     "price": 0.38914098626353527,
-    "avgQuoteVolume": 13555.872268382938
+    "avgQuoteVolume": 54243.956721047616
   },
   "ACE": {
     "cap": 685,
     "price": 0.5372687143818127,
-    "avgQuoteVolume": 7770.296043998017
+    "avgQuoteVolume": 52764.61238095239
   },
   "MAV": {
     "cap": 688,
     "price": 0.05578192833771898,
-    "avgQuoteVolume": 61144.56042426091
+    "avgQuoteVolume": 548464.7268713097
   },
   "C": {
     "cap": 693,
     "price": 0.23347815130415756,
-    "avgQuoteVolume": 61674.74388616567
+    "avgQuoteVolume": 391284.06014160713
   },
   "GPS": {
     "cap": 699,
     "price": 0.01458847677871944,
-    "avgQuoteVolume": 10948.01690665377
+    "avgQuoteVolume": 83677.14039175595
   },
   "SYS": {
     "cap": 705,
     "price": 0.04331998391172509,
-    "avgQuoteVolume": 6319.273049990079
+    "avgQuoteVolume": 53456.951616904764
   },
   "HEI": {
     "cap": 709,
     "price": 0.458860748417414,
-    "avgQuoteVolume": 56977.35687040179
+    "avgQuoteVolume": 410246.4554460714
   },
   "MUBARAK": {
     "cap": 715,
     "price": 0.034080033247213246,
-    "avgQuoteVolume": 35654.67270668105
+    "avgQuoteVolume": 260460.69547030356
   },
   "SANTOS": {
     "cap": 716,
     "price": 2.535674278092729,
-    "avgQuoteVolume": 55223.501977891865
+    "avgQuoteVolume": 520673.8029791667
   },
   "ARPA": {
     "cap": 717,
     "price": 0.022252784515138197,
-    "avgQuoteVolume": 8131.515067117064
+    "avgQuoteVolume": 61782.15073045239
   },
   "PHB": {
     "cap": 723,
     "price": 0.5683814427200751,
-    "avgQuoteVolume": 13774.457743998018
+    "avgQuoteVolume": 75895.19176488096
   },
   "NFP": {
     "cap": 727,
     "price": 0.06931499161501424,
-    "avgQuoteVolume": 9338.44987063492
+    "avgQuoteVolume": 68124.40348214285
   },
   "RAD": {
     "cap": 729,
     "price": 0.6332126515090285,
-    "avgQuoteVolume": 15481.462372519842
+    "avgQuoteVolume": 165359.97416785714
   },
   "BMT": {
     "cap": 746,
     "price": 0.07550397997874977,
-    "avgQuoteVolume": 31098.65735575397
+    "avgQuoteVolume": 295081.36185428564
   },
   "VIC": {
     "cap": 747,
     "price": 0.24613396816816369,
-    "avgQuoteVolume": 16518.979873093747
+    "avgQuoteVolume": 64055.63511454166
   },
   "HAEDAL": {
     "cap": 758,
     "price": 0.1342379202659508,
-    "avgQuoteVolume": 20918.74666824405
+    "avgQuoteVolume": 133356.66814910714
   },
   "TLM": {
     "cap": 762,
     "price": 0.0048631417750707225,
-    "avgQuoteVolume": 8310.338463219246
+    "avgQuoteVolume": 51661.32806922618
   },
   "GUN": {
     "cap": 768,
     "price": 0.027912936560651334,
-    "avgQuoteVolume": 24476.44321080357
+    "avgQuoteVolume": 110147.3747840476
   },
   "MBOX": {
     "cap": 771,
     "price": 0.05744328214777488,
-    "avgQuoteVolume": 10400.294648546627
+    "avgQuoteVolume": 73127.95338857142
   },
   "CATI": {
     "cap": 773,
     "price": 0.0877642391449621,
-    "avgQuoteVolume": 12624.067971944445
+    "avgQuoteVolume": 88091.25345220236
   },
   "RDNT": {
     "cap": 774,
     "price": 0.022107447368475835,
-    "avgQuoteVolume": 6603.264716254961
+    "avgQuoteVolume": 60319.39152571428
   },
   "DF": {
     "cap": 776,
     "price": 0.02837189512272901,
-    "avgQuoteVolume": 5442.947666944444
+    "avgQuoteVolume": 31578.122152857144
   },
   "HOOK": {
     "cap": 788,
     "price": 0.10657392084517696,
-    "avgQuoteVolume": 19193.80161488095
+    "avgQuoteVolume": 135858.65924130953
   },
   "PORTAL": {
     "cap": 795,
     "price": 0.04620413770987452,
-    "avgQuoteVolume": 18674.60877101686
+    "avgQuoteVolume": 116421.27468583333
   },
   "DEGO": {
     "cap": 803,
     "price": 1.240080195312309,
-    "avgQuoteVolume": 14477.722235773808
+    "avgQuoteVolume": 98932.99516535715
   },
   "MLN": {
     "cap": 812,
     "price": 8.442471344755507,
-    "avgQuoteVolume": 17924.687424399803
+    "avgQuoteVolume": 184354.54724434522
   },
   "SYN": {
     "cap": 813,
     "price": 0.1382788435846167,
-    "avgQuoteVolume": 22309.122061210317
+    "avgQuoteVolume": 103832.9760465476
   },
   "ALPINE": {
     "cap": 815,
     "price": 1.3361013084535927,
-    "avgQuoteVolume": 84529.21240304068
+    "avgQuoteVolume": 1002885.197063869
   },
   "GHST": {
     "cap": 820,
     "price": 0.4684561716002349,
-    "avgQuoteVolume": 9746.392898660715
+    "avgQuoteVolume": 86724.4323375
   },
   "IDEX": {
     "cap": 827,
     "price": 0.02505907437995901,
-    "avgQuoteVolume": 19016.096080388885
+    "avgQuoteVolume": 104641.39242330358
   },
   "TST": {
     "cap": 834,
     "price": 0.024992914166270513,
-    "avgQuoteVolume": 77759.70694681942
+    "avgQuoteVolume": 400631.8940202798
   },
   "D": {
     "cap": 854,
     "price": 0.03421104365780006,
-    "avgQuoteVolume": 8501.74906893353
+    "avgQuoteVolume": 35394.94022482143
   },
   "STO": {
     "cap": 872,
     "price": 0.09398559953170073,
-    "avgQuoteVolume": 18969.071651602186
+    "avgQuoteVolume": 103288.74198416667
   },
   "BADGER": {
     "cap": 881,
     "price": 1.0424308915750589,
-    "avgQuoteVolume": 10530.134819682537
+    "avgQuoteVolume": 39443.670853035714
   },
   "QUICK": {
     "cap": 895,
     "price": 26.528892927815722,
-    "avgQuoteVolume": 6276.301808392857
+    "avgQuoteVolume": 41896.34085202381
   },
   "BSW": {
     "cap": 954,
     "price": 0.02597559004726371,
-    "avgQuoteVolume": 51255.930385124004
+    "avgQuoteVolume": 198057.0185794643
   },
   "COS": {
     "cap": 956,
     "price": 0.0033509032005123334,
-    "avgQuoteVolume": 13455.994380393002
+    "avgQuoteVolume": 53851.05652052024
   },
   "REI": {
     "cap": 960,
     "price": 0.01804445961718461,
-    "avgQuoteVolume": 6591.109929292658
+    "avgQuoteVolume": 50824.23694911905
   },
   "MDT": {
     "cap": 995,
     "price": 0.022916849665913456,
-    "avgQuoteVolume": 27708.986240939485
+    "avgQuoteVolume": 222075.32110294048
   }
 }

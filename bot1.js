@@ -9,7 +9,7 @@ const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
 const AVG_VOLUME_INTERVAL = 21_600_000; // 6 hours
 const API_DELAY = 200; // ms between API calls
-const VOLUME_HISTORY_DAYS = 14;
+const VOLUME_HISTORY_DAYS = 7;
 
 class PumpDumpBot {
     constructor() {
@@ -58,7 +58,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24 / 6;
+                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24;
 
                 processed++;
                 this.log(`📈 ${symbol}: ${this.tokens[token].avgQuoteVolume.toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
@@ -98,34 +98,36 @@ class PumpDumpBot {
         }
     }
 
-    async getCurrentPrice(symbol) {
+    async getCurrentPrice(ticker) {
         try {
-            const ticker = await this.client.prices({symbol});
-            return parseFloat(ticker[symbol]);
+            const pair = `${ticker}USDT`
+            const prices = await this.client.prices({symbol: pair});
+            return parseFloat(prices[pair]);
         } catch (error) {
             console.error("❌ Error getting current price:", error.message);
             return null;
         }
     }
 
-    async exitTrade(symbol) {
-        const trade = this.tokens[symbol]
+    async exitTrade(ticker) {
+        const trade = this.tokens[ticker]
+        delete trade.isStarted;
         try {
-            const exitPrice = await this.getCurrentPrice(symbol);
+            const exitPrice = await this.getCurrentPrice(ticker);
             if (!exitPrice) {
-                this.log(`⚠️ Cannot get current price for ${symbol}`);
+                this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
             const exitSide = trade.side === 'BUY' ? 'SELL' : 'BUY';
             const pnlPercent = trade.side === 'BUY'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
-            const massage = `${exitSide} ${symbol}💰 ${pnlPercent.toFixed(2)}`
+            const massage = `${exitSide} ${ticker}💰 ${pnlPercent.toFixed(2)}`
             this.log(massage);
             await this.sendTelegramAlert(massage);
         } catch (error) {
-            console.error(`❌ Error exiting trade for ${symbol}:`, error.message);
-            await this.sendTelegramAlert(`❌ Failed to exit trade for ${symbol}: ${error.message}`);
+            console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
+            await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`);
         }
     }
 
@@ -147,7 +149,8 @@ class PumpDumpBot {
         const volumeRatio = currentVolume / avgVolume;
 
         // Only trigger if volume is significantly above average and token monitoring is enabled
-        if (currentVolume > avgVolume && !token.isStarted) {
+        if ((currentVolume > avgVolume) && !token.isStarted) {
+            token.isStarted = true
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
@@ -156,10 +159,7 @@ class PumpDumpBot {
             const isPump = buyVolume > sellVolume;
             const direction = isPump ? 'PUMP 🚀' : 'DUMP 📉';
 
-            const message = `${direction} detected for ${tokenSymbol}
-📊 Volume: ${currentVolume.toFixed(2)} USDT (${volumeRatio.toFixed(2)}x avg)
-💰 Buy: ${buyVolume.toFixed(2)} | Sell: ${sellVolume.toFixed(2)}
-⏰ Time: ${dayjs().format('HH:mm:ss')}`;
+            const message = `${direction} ${tokenSymbol}:${currentVolume.toFixed(2)} USDT(${volumeRatio.toFixed(2)}x avg)`;
             this.sendTelegramAlert(message);
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }
@@ -171,7 +171,7 @@ class PumpDumpBot {
         this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
 
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '1m', (candle) => {
+            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
                 this.detectPumpDump(candle);
             });
             this.log("✅ WebSocket connection established");

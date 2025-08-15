@@ -2,6 +2,10 @@
 
 A Node.js bot that monitors cryptocurrency trading pairs on Binance for unusual volume spikes that may indicate pump or dump activities. The bot sends real-time alerts via Telegram when suspicious trading patterns are detected.
 
+## Telegram signal chanel
+
+**@dp_crypto**
+
 ## Features
 
 - **Real-time Monitoring**: WebSocket connection to Binance for live 1-minute candle data
@@ -111,14 +115,6 @@ npm start
 - Triggers alerts when volume exceeds average threshold
 - Determines pump vs dump based on buy/sell volume ratio
 
-### Alert Format
-```
-🚀 PUMP detected for BTC
-📊 Volume: 1,234.56 USDT (3.45x avg)
-💰 Buy: 789.12 | Sell: 445.44
-⏰ Time: 14:32:15
-```
-
 ## Scheduling
 
 - **Volume Recalculation**: Every 6 hours
@@ -129,7 +125,7 @@ npm start
 
 ```
 pump-dump-bot/
-├── pump-dump-bot.js     # Main bot application
+├── bot1.js     # Main bot application
 ├── telegram.js          # Telegram messaging module
 ├── tokens1.json         # Token configuration
 ├── stat1.json          # Statistics tracking
