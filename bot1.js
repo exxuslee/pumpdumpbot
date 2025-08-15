@@ -21,6 +21,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
+        this.exitTimeoutMs = 300_000
     }
 
     log(message) {
@@ -160,7 +161,7 @@ class PumpDumpBot {
 💰 Buy: ${buyVolume.toFixed(2)} | Sell: ${sellVolume.toFixed(2)}
 ⏰ Time: ${dayjs().format('HH:mm:ss')}`;
             this.sendTelegramAlert(message);
-            setTimeout(() => this.exitTrade(symbol), this.exitTimeoutMs);
+            setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }
     }
 
