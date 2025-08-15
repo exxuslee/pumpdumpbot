@@ -21,7 +21,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
-        this.exitTimeoutMs = 300_000
+        this.exitTimeoutMs = 900_000
     }
 
     log(message) {
@@ -111,23 +111,28 @@ class PumpDumpBot {
 
     async exitTrade(ticker) {
         const trade = this.tokens[ticker]
-        delete trade.isStarted;
         try {
             const exitPrice = await this.getCurrentPrice(ticker);
             if (!exitPrice) {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const exitSide = trade.side === 'BUY' ? 'SELL' : 'BUY';
+            const stopSide = trade.side === 'BUY' ? '📈' : '📉';
             const pnlPercent = trade.side === 'BUY'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
-            const massage = `${exitSide} ${ticker}💰 ${pnlPercent.toFixed(2)}`
+            let ico
+            if (pnlPercent > 0) ico = "🚀"
+            else ico = "🔻"
+            const massage = `${ico}${stopSide} ${ticker}: ${trade.entryPrice} ${exitPrice} | ${pnlPercent.toFixed(2)}`
             this.log(massage);
             await this.sendTelegramAlert(massage);
         } catch (error) {
             console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
             await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`);
+        } finally {
+            delete trade.isStarted;
+            delete trade.entryPrice;
         }
     }
 
@@ -150,6 +155,7 @@ class PumpDumpBot {
 
         if ((currentVolume > avgVolume) && !token.isStarted) {
             token.isStarted = true
+            token.entryPrice = candle.close;
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
@@ -171,7 +177,7 @@ class PumpDumpBot {
         this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
 
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
+            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
                 this.detectPumpDump(candle);
             });
             this.log("✅ WebSocket connection established");
