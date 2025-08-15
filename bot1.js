@@ -146,20 +146,20 @@ class PumpDumpBot {
 
         const currentVolume = parseFloat(candle.quoteVolume);
         const avgVolume = token.avgQuoteVolume;
-        const volumeRatio = currentVolume / avgVolume;
-
         // Only trigger if volume is significantly above average and token monitoring is enabled
+
         if ((currentVolume > avgVolume) && !token.isStarted) {
             token.isStarted = true
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
+            const volumeRatio = buyVolume / sellVolume;
 
             // Determine direction based on buy vs sell volume
             const isPump = buyVolume > sellVolume;
             const direction = isPump ? 'PUMP 🚀' : 'DUMP 📉';
 
-            const message = `${direction} ${tokenSymbol}:${currentVolume.toFixed(2)} USDT(${volumeRatio.toFixed(2)}x avg)`;
+            const message = `${direction}(${volumeRatio.toFixed(2)}) ${tokenSymbol}: ${candle.close}`;
             this.sendTelegramAlert(message);
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }
