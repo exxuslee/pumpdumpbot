@@ -48,35 +48,13 @@ async function getPairs() {
         }
     }
     const sortedCMCap = Object.fromEntries(Object.entries(cmcRanks)
-        .filter(([, token]) => token.price > 0.0001)
+        .filter(([, token]) => token.price > 0.01)
         .filter(([, token]) => token.cap > 50 && token.cap < 1000 )
         .sort(([, a], [, b]) => a.cap - b.cap)
     )
 
-    let sortedWeek = await Promise.all(
-        Object.keys(sortedCMCap).map(async (coin) => {
-            try {
-                let week = await client.futuresCandles({symbol: `${coin}USDT`, interval: "1w", limit: 500});
-                const maxHigh = week.reduce((max, candle) => {
-                    const currentHigh = parseFloat(candle.volume);
-                    return currentHigh > max ? currentHigh : max;
-                }, -Infinity);
-                const now = parseFloat(week[0].volume);
-                if (maxHigh < now * 50) return coin
-                else return null
-            } catch (error) {
-                return null
-            }
-        })
-    )
-    sortedWeek = sortedWeek.filter(Boolean)
-
-    const finData = Object.fromEntries(Object.entries(sortedCMCap)
-        .filter(([coin]) => sortedWeek.includes(coin))
-    )
-
-    fs.writeFileSync(`tokens1.json`, JSON.stringify(finData, null, 2), 'utf8');
-    return sortedWeek
+    fs.writeFileSync(`tokens.json`, JSON.stringify(sortedCMCap, null, 2), 'utf8');
+    return sortedCMCap
 }
 
 getPairs().then(result => {
