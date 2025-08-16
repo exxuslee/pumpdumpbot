@@ -133,7 +133,7 @@ class PumpDumpBot {
             let ico
             if (pnlPercent > 0) ico = "🚀"
             else ico = "🔻"
-            const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+            const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
             this.log(massage);
             await this.sendTelegramAlert(massage, true);
         } catch (error) {
