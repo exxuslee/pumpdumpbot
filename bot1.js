@@ -134,7 +134,7 @@ class PumpDumpBot {
             let ico
             if (pnlPercent > 0) ico = "🚀"
             else ico = "🔻"
-            const massage = `${ico}${stopSide} ${ticker}: ${trade.entryPrice} ${exitPrice} | ${pnlPercent.toFixed(2)} | ${this.count.toFixed(2)}`
+            const massage = `${stopSide} ${ticker} ${ico}: ${trade.entryPrice} ${exitPrice} | ${pnlPercent.toFixed(2)} | ${this.count.toFixed(2)}`
             this.log(massage);
             await this.sendTelegramAlert(massage);
         } catch (error) {
@@ -172,12 +172,9 @@ class PumpDumpBot {
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
             const volumeRatio = buyVolume / sellVolume;
+            const direction = buyVolume > sellVolume ? '📈' : '📉';
 
-            // Determine direction based on buy vs sell volume
-            const isPump = buyVolume > sellVolume;
-            const direction = isPump ? 'PUMP 🚀' : 'DUMP 📉';
-
-            const message = `${direction}(${volumeRatio.toFixed(2)}) ${tokenSymbol}: ${candle.close}`;
+            const message = `${direction} ${tokenSymbol}: ${candle.close} (${volumeRatio.toFixed(2)}x ratio) `;
             this.sendTelegramAlert(message);
             await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
