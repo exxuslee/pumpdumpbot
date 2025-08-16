@@ -126,7 +126,6 @@ class PumpDumpBot {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const stopSide = trade.side === '📈' ? '📈' : '📉';
             const pnlPercent = trade.side === '📈'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
@@ -134,7 +133,7 @@ class PumpDumpBot {
             let ico
             if (pnlPercent > 0) ico = "🚀"
             else ico = "🔻"
-            const massage = `${stopSide} ${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+            const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
             this.log(massage);
             await this.sendTelegramAlert(massage, true);
         } catch (error) {
