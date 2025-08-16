@@ -38,6 +38,15 @@ class PumpDumpBot {
         }
     }
 
+    async writeStatFile() {
+        try {
+            await writeFile(STAT_FILE, JSON.stringify(this.count, null, 2));
+            this.log("✅ Stats file updated successfully");
+        } catch (error) {
+            console.error("❌ Error writing stats file:", error);
+        }
+    }
+
     async calculateAverageVolume() {
         this.log("📊 Calculating average volumes...");
 
@@ -121,10 +130,11 @@ class PumpDumpBot {
             const pnlPercent = trade.side === 'BUY'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
+            this.count = this.count + pnlPercent;
             let ico
             if (pnlPercent > 0) ico = "🚀"
             else ico = "🔻"
-            const massage = `${ico}${stopSide} ${ticker}: ${trade.entryPrice} ${exitPrice} | ${pnlPercent.toFixed(2)}`
+            const massage = `${ico}${stopSide} ${ticker}: ${trade.entryPrice} ${exitPrice} | ${pnlPercent.toFixed(2)} | ${this.count.toFixed(2)}`
             this.log(massage);
             await this.sendTelegramAlert(massage);
         } catch (error) {
@@ -133,6 +143,8 @@ class PumpDumpBot {
         } finally {
             delete trade.isStarted;
             delete trade.entryPrice;
+            await this.writeTokensFile();
+            await this.writeStatFile();
         }
     }
 
@@ -167,6 +179,7 @@ class PumpDumpBot {
 
             const message = `${direction}(${volumeRatio.toFixed(2)}) ${tokenSymbol}: ${candle.close}`;
             this.sendTelegramAlert(message);
+            await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }
     }
