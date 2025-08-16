@@ -7,7 +7,7 @@ const {writeFile} = require("node:fs/promises");
 // Constants
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
-const AVG_VOLUME_INTERVAL = 21_600_000; // 6 hours
+const INTERVAL_6H = 21_600_000; // 6 hours
 const API_DELAY = 200; // ms between API calls
 const VOLUME_HISTORY_DAYS = 7;
 
@@ -94,7 +94,7 @@ class PumpDumpBot {
         const msToNextMinute = secondsToNextMinute * 1000;
         this.log(`⏱️ Scheduling tasks to start in ${secondsToNextMinute} seconds`);
         setTimeout(() => {
-            setInterval(() => this.calculateAverageVolume(), AVG_VOLUME_INTERVAL);
+            setInterval(() => this.calculateAverageVolume(), INTERVAL_6H);
         }, msToNextMinute);
     }
 
@@ -165,7 +165,7 @@ class PumpDumpBot {
         // Only trigger if volume is significantly above average and token monitoring is enabled
 
         let start1 = currentVolume > avgVolume
-        let start2 = candle.eventTime > ((token.startTime ?? 0) + 21_600_000)
+        let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
 
         if (start1 && start2 && !token.side) {
             token.entryPrice = candle.close;
