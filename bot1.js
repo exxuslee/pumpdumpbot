@@ -21,7 +21,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
-        this.exitTimeoutMs = 1_200_000
+        this.exitTimeoutMs = 3_600_000
     }
 
     log(message) {
@@ -67,7 +67,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24;
+                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 4;
 
                 processed++;
                 this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume).toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
@@ -164,8 +164,12 @@ class PumpDumpBot {
         const avgVolume = token.avgQuoteVolume;
         // Only trigger if volume is significantly above average and token monitoring is enabled
 
-        if ((currentVolume > avgVolume) && !token.side) {
+        let start1 = currentVolume > avgVolume
+        let start2 = candle.eventTime > ((token.startTime ?? 0) + 21_600_000)
+
+        if (start1 && start2 && !token.side) {
             token.entryPrice = candle.close;
+            token.startTime = candle.eventTime
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
@@ -186,7 +190,7 @@ class PumpDumpBot {
         this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
 
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
+            this.wsConnection = this.client.ws.candles(pairs, '3m', candle => {
                 this.detectPumpDump(candle);
             });
             this.log("✅ WebSocket connection established");
