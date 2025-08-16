@@ -21,7 +21,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
-        this.exitTimeoutMs = 900_000
+        this.exitTimeoutMs = 1_200_000
     }
 
     log(message) {
@@ -40,7 +40,7 @@ class PumpDumpBot {
 
     async writeStatFile() {
         try {
-            await writeFile(STAT_FILE, JSON.stringify(this.count, null, 2));
+            await writeFile(STAT_FILE, JSON.stringify({count: this.count}, null, 2));
             this.log("✅ Stats file updated successfully");
         } catch (error) {
             console.error("❌ Error writing stats file:", error);
@@ -98,9 +98,9 @@ class PumpDumpBot {
         }, msToNextMinute);
     }
 
-    async sendTelegramAlert(message) {
+    async sendTelegramAlert(message, isSilent) {
         try {
-            await telegram.sendMessage(message, this.tgToken);
+            await telegram.sendMessage(message, this.tgToken, isSilent);
             this.log(`📱 Alert sent: ${message}`);
         } catch (error) {
             console.error("❌ Failed to send Telegram message:", error.message);
@@ -126,8 +126,8 @@ class PumpDumpBot {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const stopSide = trade.side === 'BUY' ? '📈' : '📉';
-            const pnlPercent = trade.side === 'BUY'
+            const stopSide = trade.side === '📈' ? '📈' : '📉';
+            const pnlPercent = trade.side === '📈'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
             this.count = this.count + pnlPercent;
@@ -136,12 +136,12 @@ class PumpDumpBot {
             else ico = "🔻"
             const massage = `${stopSide} ${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
             this.log(massage);
-            await this.sendTelegramAlert(massage);
+            await this.sendTelegramAlert(massage, true);
         } catch (error) {
             console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
-            await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`);
+            await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`, true);
         } finally {
-            delete trade.isStarted;
+            delete trade.side;
             delete trade.entryPrice;
             await this.writeTokensFile();
             await this.writeStatFile();
@@ -165,17 +165,17 @@ class PumpDumpBot {
         const avgVolume = token.avgQuoteVolume;
         // Only trigger if volume is significantly above average and token monitoring is enabled
 
-        if ((currentVolume > avgVolume) && !token.isStarted) {
-            token.isStarted = true
+        if ((currentVolume > avgVolume) && !token.side) {
             token.entryPrice = candle.close;
             const totalVolume = parseFloat(candle.volume);
             const buyVolume = parseFloat(candle.buyVolume);
             const sellVolume = totalVolume - buyVolume;
             const volumeRatio = buyVolume / sellVolume;
             const direction = buyVolume > sellVolume ? '📈' : '📉';
+            token.side = direction;
 
             const message = `${direction} ${tokenSymbol}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
-            this.sendTelegramAlert(message);
+            this.sendTelegramAlert(message, false);
             await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }
