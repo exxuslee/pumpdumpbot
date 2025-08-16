@@ -70,7 +70,7 @@ class PumpDumpBot {
                 this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 24;
 
                 processed++;
-                this.log(`📈 ${symbol}: ${this.tokens[token].avgQuoteVolume.toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
+                this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume).toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
 
                 // Rate limiting
                 await this.delay(API_DELAY);
@@ -134,7 +134,7 @@ class PumpDumpBot {
             let ico
             if (pnlPercent > 0) ico = "🚀"
             else ico = "🔻"
-            const massage = `${stopSide} ${ticker} ${ico}: ${trade.entryPrice.toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+            const massage = `${stopSide} ${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} | ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
             this.log(massage);
             await this.sendTelegramAlert(massage);
         } catch (error) {
@@ -174,7 +174,7 @@ class PumpDumpBot {
             const volumeRatio = buyVolume / sellVolume;
             const direction = buyVolume > sellVolume ? '📈' : '📉';
 
-            const message = `${direction} ${tokenSymbol}: ${candle.close.toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
+            const message = `${direction} ${tokenSymbol}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
             this.sendTelegramAlert(message);
             await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
