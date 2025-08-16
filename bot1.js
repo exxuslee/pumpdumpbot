@@ -67,10 +67,10 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume = totalVolume / candles.length / 4;
+                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 6);
 
                 processed++;
-                this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume).toFixed(2)} USDT/hour (${processed}/${tokenSymbols.length})`);
+                this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
 
                 // Rate limiting
                 await this.delay(API_DELAY);
@@ -151,23 +151,15 @@ class PumpDumpBot {
         const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
         const token = this.tokens[tokenSymbol];
 
-        if (!token) {
+        if (!token || !token.avgQuoteVolume4h) {
             console.warn(`⚠️ Unknown token: ${tokenSymbol}`);
             return;
         }
 
-        if (!token.avgQuoteVolume) {
-            return;
-        }
-
-        const currentVolume = parseFloat(candle.quoteVolume);
-        const avgVolume = token.avgQuoteVolume;
-        // Only trigger if volume is significantly above average and token monitoring is enabled
-
-        let start1 = currentVolume > avgVolume
+        let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
 
-        if (start1 && start2 && !token.side) {
+        if (start1 && start2) {
             token.entryPrice = candle.close;
             token.startTime = candle.eventTime
             const totalVolume = parseFloat(candle.volume);

@@ -12,12 +12,14 @@ async function getPairs() {
         .filter(pair => pair.endsWith('USDT'))
         .map(pair => pair.replace('USDT', ''))
         .map(pair => pair.replace('USDC', ''))
+        .map(pair => pair.replace('PAXG', ''))
         .filter(pair => !pair.includes('_'))
 
     let futurePrices = await client.futuresPrices()
     let futureNoUSDT = Object.keys(futurePrices)
         .map(pair => pair.replace('USDT', ''))
         .map(pair => pair.replace('USDC', ''))
+        .map(pair => pair.replace('PAXG', ''))
         .filter(pair => !pair.includes('_'))
 
     const commonPairs = futureNoUSDT.filter(pair => spotNoUSDT.includes(pair));
@@ -42,7 +44,7 @@ async function getPairs() {
             if (entries.length > 0) {
                 cmcRanks[symbol] = {
                     cap: entries[0].cmc_rank,
-                    price: entries[0].quote.USD.price
+                    price: Math.round(entries[0].quote.USD.price * 1000) / 1000,
                 };
             }
         }
