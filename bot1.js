@@ -21,7 +21,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
-        this.exitTimeoutMs = 3_600_000
+        this.exitTimeoutMs = 1_800_000
     }
 
     log(message) {
@@ -129,21 +129,26 @@ class PumpDumpBot {
             const pnlPercent = trade.side === '📈'
                 ? (exitPrice - trade.entryPrice) / exitPrice * 100
                 : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
-            this.count = this.count + pnlPercent;
-            let ico
-            if (pnlPercent > 0) ico = "🚀"
-            else ico = "🔻"
-            const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
-            this.log(massage);
-            await this.sendTelegramAlert(massage, true);
+
+            if (pnlPercent > 0 || ((Date.now() - trade.startTime) > (this.exitTimeoutMs + 60_000))) {
+                this.count = this.count + pnlPercent;
+                let ico
+                if (pnlPercent > 0) ico = "🚀"
+                else ico = "🔻"
+                const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+                this.log(massage);
+                await this.sendTelegramAlert(massage, true);
+                delete trade.side;
+                delete trade.entryPrice;
+                delete trade.startTime;
+                await this.writeTokensFile();
+                await this.writeStatFile();
+            } else {
+                setTimeout(() => this.exitTrade(ticker), this.exitTimeoutMs);
+            }
         } catch (error) {
             console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
             await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`, true);
-        } finally {
-            delete trade.side;
-            delete trade.entryPrice;
-            await this.writeTokensFile();
-            await this.writeStatFile();
         }
     }
 
