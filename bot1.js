@@ -127,19 +127,18 @@ class PumpDumpBot {
                 return;
             }
             const pnlPercent = trade.side === '📈'
-                ? (exitPrice - trade.entryPrice) / exitPrice * 100
-                : (trade.entryPrice - exitPrice) / trade.entryPrice * 100;
+                ? (exitPrice - trade.price) / exitPrice * 100
+                : (trade.price - exitPrice) / trade.price * 100;
 
             if (pnlPercent > 0 || ((Date.now() - trade.startTime) > (this.exitTimeoutMs + 60_000))) {
                 this.count = this.count + pnlPercent;
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
                 else ico = "🔻"
-                const massage = `${ticker} ${ico}: ${(+trade.entryPrice).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+                const massage = `${ticker} ${ico}: ${(+trade.price).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
                 this.log(massage);
                 await this.sendTelegramAlert(massage, true);
                 delete trade.side;
-                delete trade.entryPrice;
                 delete trade.startTime;
                 await this.writeTokensFile();
                 await this.writeStatFile();
@@ -167,11 +166,11 @@ class PumpDumpBot {
 
         let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = (candle.high - candle.low) / candle.high > 0.015
+        let start3 = ((candle.high - candle.low) / candle.high) > 0.01
         let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
 
         if (start1 && start2 && start3 && start4) {
-            token.entryPrice = candle.close;
+            token.price = candle.close;
             token.startTime = candle.eventTime
             const direction = buyVolume > sellVolume ? '📈' : '📉';
             token.side = direction;
