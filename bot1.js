@@ -169,7 +169,7 @@ class PumpDumpBot {
         let start3 = ((candle.high - candle.low) / candle.high) > 0.01
         let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
 
-        if (+start1 + start2 + start3 + start4 < 3) {
+        if ((+start1 + start2 + start3 + start4) < 3) {
             this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${candle.high}-${candle.low} ${buyVolume}/${sellVolume}`);
         }
 
