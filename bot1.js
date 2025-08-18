@@ -169,6 +169,10 @@ class PumpDumpBot {
         let start3 = ((candle.high - candle.low) / candle.high) > 0.01
         let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
 
+        if (+start1 + start2 + start3 + start4 < 3) {
+            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${candle.high}-${candle.low} ${buyVolume}/${sellVolume}`);
+        }
+
         if (start1 && start2 && start3 && start4) {
             token.price = candle.close;
             token.startTime = candle.eventTime
@@ -230,13 +234,28 @@ class PumpDumpBot {
     }
 }
 
-process.on('SIGINT', () => {
-    console.log('\n🛑 Received SIGINT, shutting down gracefully...');
-    if (global.bot) {
-        global.bot.stop();
-    }
-    process.exit(0);
-});
+process
+    .on(
+        'SIGINT'
+        , () => {
+            console
+                .log(
+                    '\n🛑 Received SIGINT, shutting down gracefully...'
+                )
+            ;
+
+            if (global
+
+                .bot
+            ) {
+                global
+                    .bot
+                    .stop();
+            }
+
+            process.exit(0);
+        })
+;
 
 const bot = new PumpDumpBot();
 global.bot = bot; // Store reference for graceful shutdown
