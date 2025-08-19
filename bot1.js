@@ -8,6 +8,7 @@ const {writeFile} = require("node:fs/promises");
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
 const INTERVAL_6H = 21_600_000; // 6 hours
+const INTERVAL_12H = 43_200_000; // 12 hours
 const API_DELAY = 200; // ms between API calls
 const VOLUME_HISTORY_DAYS = 7;
 
@@ -94,7 +95,7 @@ class PumpDumpBot {
         const msToNextMinute = secondsToNextMinute * 1000;
         this.log(`⏱️ Scheduling tasks to start in ${secondsToNextMinute} seconds`);
         setTimeout(() => {
-            setInterval(() => this.calculateAverageVolume(), INTERVAL_6H);
+            setInterval(() => this.calculateAverageVolume(), INTERVAL_12H);
         }, msToNextMinute);
     }
 
@@ -169,7 +170,7 @@ class PumpDumpBot {
         let start3 = ((candle.high - candle.low) / candle.high) > 0.01
         let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
 
-        if (((+start1 + start2 + start3 + start4) === 3) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
+        if (start1 && ((+ start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
             token.log = candle.eventTime
             this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
         }
