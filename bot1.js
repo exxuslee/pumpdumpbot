@@ -22,7 +22,7 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN;
         this.wsConnection = null;
-        this.exitTimeoutMs = 1_800_000
+        this.exitTimeoutMs = 1_200_000
     }
 
     log(message) {
@@ -33,7 +33,6 @@ class PumpDumpBot {
     async writeTokensFile() {
         try {
             await writeFile(TOKENS_FILE, JSON.stringify(this.tokens, null, 2));
-            this.log("✅ Tokens file updated successfully");
         } catch (error) {
             console.error("❌ Error writing tokens file:", error);
         }
@@ -42,7 +41,6 @@ class PumpDumpBot {
     async writeStatFile() {
         try {
             await writeFile(STAT_FILE, JSON.stringify({count: this.count}, null, 2));
-            this.log("✅ Stats file updated successfully");
         } catch (error) {
             console.error("❌ Error writing stats file:", error);
         }
@@ -131,7 +129,7 @@ class PumpDumpBot {
                 ? (exitPrice - trade.price) / exitPrice * 100
                 : (trade.price - exitPrice) / trade.price * 100;
 
-            if (pnlPercent > 0 || ((Date.now() - trade.startTime) > (this.exitTimeoutMs + 60_000))) {
+            if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
                 this.count = this.count + pnlPercent;
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
@@ -170,7 +168,7 @@ class PumpDumpBot {
         let start3 = ((candle.high - candle.low) / candle.high) > 0.01
         let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
 
-        if (start1 && ((+ start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
+        if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
             token.log = candle.eventTime
             this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
         }
@@ -236,27 +234,14 @@ class PumpDumpBot {
     }
 }
 
-process
-    .on(
-        'SIGINT'
-        , () => {
-            console
-                .log(
-                    '\n🛑 Received SIGINT, shutting down gracefully...'
-                )
-            ;
+process.on('SIGINT', () => {
+    console.log('\n🛑 Received SIGINT, shutting down gracefully...');
+    if (global.bot) {
+        global.bot.stop();
+    }
 
-            if (global
-
-                .bot
-            ) {
-                global
-                    .bot
-                    .stop();
-            }
-
-            process.exit(0);
-        })
+    process.exit(0);
+})
 ;
 
 const bot = new PumpDumpBot();
