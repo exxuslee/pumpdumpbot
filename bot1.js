@@ -66,7 +66,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 6);
+                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 4);
 
                 processed++;
                 this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
@@ -131,14 +131,14 @@ class PumpDumpBot {
 
             if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
                 this.count = this.count + pnlPercent;
+                let direction = trade.side === '📈' ? '📈' : '📉';
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
                 else ico = "🔻"
-                const massage = `${ticker} ${ico}: ${(+trade.price).toFixed(3)} ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+                const massage = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
                 this.log(massage);
                 await this.sendTelegramAlert(massage, true);
                 delete trade.side;
-                delete trade.startTime;
                 await this.writeTokensFile();
                 await this.writeStatFile();
             } else {
@@ -174,12 +174,12 @@ class PumpDumpBot {
         }
 
         if (start1 && start2 && start3 && start4) {
-            token.price = candle.close;
+            token.price = +candle.close;
             token.startTime = candle.eventTime
             const direction = buyVolume > sellVolume ? '📈' : '📉';
             token.side = direction;
 
-            const message = `${direction} ${tokenSymbol}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
+            const message = `${tokenSymbol} ${direction}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
             this.sendTelegramAlert(message, false);
             await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
