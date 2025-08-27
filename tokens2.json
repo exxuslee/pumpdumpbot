@@ -1562,7 +1562,8 @@
     "price": 0.1025,
     "avgQuoteVolume4h": 269045,
     "log": 1756319522778,
-    "startTime": 1756319520776
+    "startTime": 1756319520776,
+    "side": "📈"
   },
   "HAEDAL": {
     "cap": 770,
