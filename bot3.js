@@ -165,7 +165,7 @@ class PumpDumpBot {
 
         let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = ((candle.high - candle.low) / candle.high) > 0.01
+        let start3 = ((candle.high - candle.low) / candle.high) > 0.03
         let start4 = (volumeRatio > 1.5) && ((candle.open - candle.close) < 0);
         let start5 = (volumeRatio < 0.66) && ((candle.open - candle.close) > 0);
 

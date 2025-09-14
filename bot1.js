@@ -20,7 +20,7 @@ class PumpDumpBot {
             apiKey: process.env.BINANCE_PUBLIC_KEY,
             apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
-        this.tgToken = process.env.TELEGRAM_TOKEN;
+        this.tgToken = process.env.TELEGRAM_TOKEN3;
         this.wsConnection = null;
         this.exitTimeoutMs = 1_200_000
     }
