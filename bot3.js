@@ -5,8 +5,8 @@ const telegram = require('./telegram');
 const {writeFile} = require("node:fs/promises");
 
 // Constants
-const TOKENS_FILE = './tokens1.json';
-const STAT_FILE = './stat1.json';
+const TOKENS_FILE = './tokens3.json';
+const STAT_FILE = './stat3.json';
 const INTERVAL_6H = 21_600_000; // 6 hours
 const INTERVAL_12H = 43_200_000; // 12 hours
 const API_DELAY = 200; // ms between API calls
@@ -20,7 +20,7 @@ class PumpDumpBot {
             apiKey: process.env.BINANCE_PUBLIC_KEY,
             apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
-        this.tgToken = process.env.TELEGRAM_TOKEN;
+        this.tgToken = process.env.TELEGRAM_TOKEN5;
         this.wsConnection = null;
         this.exitTimeoutMs = 1_200_000
     }
@@ -165,15 +165,16 @@ class PumpDumpBot {
 
         let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = ((candle.high - candle.low) / candle.high) > 0.03
-        let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
+        let start3 = ((candle.high - candle.low) / candle.high) > 0.01
+        let start4 = (volumeRatio > 1.5) && ((candle.open - candle.close) < 0);
+        let start5 = (volumeRatio < 0.66) && ((candle.open - candle.close) > 0);
 
-        if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
+        if (start1 && ((+start2 + start3 + start4 + start5) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
             token.log = candle.eventTime
-            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
+            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4}${+start5} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
         }
 
-        if (start1 && start2 && start3 && start4) {
+        if (start1 && start2 && start3 && (start4 || start5)) {
             token.price = +candle.close;
             token.startTime = candle.eventTime
             const direction = buyVolume > sellVolume ? '📈' : '📉';
