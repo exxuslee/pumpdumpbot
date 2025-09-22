@@ -66,7 +66,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 4);
+                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 24);
 
                 processed++;
                 this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
@@ -166,15 +166,14 @@ class PumpDumpBot {
         let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
         let start3 = ((candle.high - candle.low) / candle.high) > 0.03
-        let start4 = (volumeRatio > 1.5) && ((candle.open - candle.close) < 0);
-        let start5 = (volumeRatio < 0.66) && ((candle.open - candle.close) > 0);
+        let start4 = (volumeRatio > 1.5) || (volumeRatio < 0.66);
 
-        if (start1 && ((+start2 + start3 + start4 + start5) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
+        if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
             token.log = candle.eventTime
-            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4}${+start5} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
+            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
         }
 
-        if (start1 && start2 && start3 && (start4 || start5)) {
+        if (start1 && start2 && start3 && start4) {
             token.price = +candle.close;
             token.startTime = candle.eventTime
             const direction = buyVolume > sellVolume ? '📈' : '📉';
@@ -194,7 +193,7 @@ class PumpDumpBot {
 
         try {
             this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
-                this.detectPumpDump(candle);
+                this.detectPumpDump(candle).then(r => true);
             });
             this.log("✅ WebSocket connection established");
         } catch (error) {

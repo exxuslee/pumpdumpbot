@@ -192,7 +192,7 @@ class PumpDumpBot {
         this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
 
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
+            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
                 this.detectPumpDump(candle);
             });
             this.log("✅ WebSocket connection established");
