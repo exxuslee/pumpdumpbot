@@ -7,12 +7,12 @@ const {writeFile} = require("node:fs/promises");
 // Constants
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
-const INTERVAL_6H = 21_600_000; // 6 hours
-const INTERVAL_12H = 43_200_000; // 12 hours
-const API_DELAY = 200; // ms between API calls
-const VOLUME_HISTORY_DAYS = 7;
+const MINUTE_MS = 60_000;
+const HOUR_MS = 3_600_000;
+const EXTREMUM_BREAK_TIME = 15 * MINUTE_MS; // 15 minutes
+const REVERSAL_CONFIRMATION_TIME = 5 * MINUTE_MS; // 5 minutes for reversal confirmation
 
-class PumpDumpBot {
+class ExtremumTradingBot {
     constructor() {
         this.tokens = require(TOKENS_FILE);
         this.count = require(STAT_FILE).count;
@@ -22,12 +22,31 @@ class PumpDumpBot {
         });
         this.tgToken = process.env.TELEGRAM_TOKEN3;
         this.wsConnection = null;
-        this.exitTimeoutMs = 1_200_000
+        this.exitTimeoutMs = 1_200_000;
+
+        // Initialize token data structure
+        this.initializeTokenData();
     }
 
     log(message) {
         const timeLog = dayjs().format('HH:mm:ss');
         console.log(`${timeLog} ${message}`);
+    }
+
+    initializeTokenData() {
+        Object.keys(this.tokens).forEach(token => {
+            if (!this.tokens[token].extremums) {
+                this.tokens[token].extremums = {
+                    hourlyCandles: [], // Store last 60 1-minute candles
+                    localMax: null,
+                    localMin: null,
+                    maxBreakTime: null,
+                    minBreakTime: null,
+                    lastExtremumUpdate: Date.now(),
+                    pendingTrade: null // {type: 'long'/'short', confirmationTime: timestamp}
+                };
+            }
+        });
     }
 
     async writeTokensFile() {
@@ -46,57 +65,6 @@ class PumpDumpBot {
         }
     }
 
-    async calculateAverageVolume() {
-        this.log("📊 Calculating average volumes...");
-
-        const tokenSymbols = Object.keys(this.tokens);
-        let processed = 0;
-
-        for (const token of tokenSymbols) {
-            try {
-                const symbol = `${token}USDT`;
-                const candles = await this.client.candles({
-                    symbol,
-                    interval: "1d",
-                    limit: VOLUME_HISTORY_DAYS
-                });
-
-                // Calculate average hourly quote volume
-                const totalVolume = candles.reduce((sum, candle) => {
-                    return sum + parseFloat(candle.quoteVolume);
-                }, 0);
-
-                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 4);
-
-                processed++;
-                this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
-
-                // Rate limiting
-                await this.delay(API_DELAY);
-
-            } catch (error) {
-                console.error(`❌ Error calculating volume for ${token}:`, error.message);
-            }
-        }
-
-        await this.writeTokensFile();
-        this.log("✅ Average volume calculation completed");
-    }
-
-    delay(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    setupScheduledTasks() {
-        const now = dayjs();
-        const secondsToNextMinute = 60 - now.second();
-        const msToNextMinute = secondsToNextMinute * 1000;
-        this.log(`⏱️ Scheduling tasks to start in ${secondsToNextMinute} seconds`);
-        setTimeout(() => {
-            setInterval(() => this.calculateAverageVolume(), INTERVAL_12H);
-        }, msToNextMinute);
-    }
-
     async sendTelegramAlert(message, isSilent) {
         try {
             await telegram.sendMessage(message, this.tgToken, isSilent);
@@ -108,7 +76,7 @@ class PumpDumpBot {
 
     async getCurrentPrice(ticker) {
         try {
-            const pair = `${ticker}USDT`
+            const pair = `${ticker}USDT`;
             const prices = await this.client.prices({symbol: pair});
             return parseFloat(prices[pair]);
         } catch (error) {
@@ -117,27 +85,186 @@ class PumpDumpBot {
         }
     }
 
+    updateHourlyCandles(tokenSymbol, candle) {
+        const token = this.tokens[tokenSymbol];
+        if (!token || !token.extremums) return;
+
+        const candleData = {
+            time: candle.eventTime,
+            high: parseFloat(candle.high),
+            low: parseFloat(candle.low),
+        };
+
+        // Add new candle
+        token.extremums.hourlyCandles.push(candleData);
+
+        // Keep only last 60 minutes of data
+        const hourAgo = Date.now() - HOUR_MS;
+        token.extremums.hourlyCandles = token.extremums.hourlyCandles
+            .filter(c => c.time > hourAgo);
+
+        // Update extremums every 5 minutes or when we have significant data
+        if (Date.now() - token.extremums.lastExtremumUpdate > 5 * MINUTE_MS ||
+            token.extremums.hourlyCandles.length >= 5) {
+            this.updateLocalExtremums(tokenSymbol);
+        }
+    }
+
+    updateLocalExtremums(tokenSymbol) {
+        const token = this.tokens[tokenSymbol];
+        const candles = token.extremums.hourlyCandles;
+
+        if (candles.length < 10) return; // Need at least 10 candles for reliable extremums
+
+        let maxPrice = -Infinity;
+        let minPrice = Infinity;
+        let maxTime = 0;
+        let minTime = 0;
+
+        // Find local extremums in the last hour
+        candles.forEach(candle => {
+            if (candle.high > maxPrice) {
+                maxPrice = candle.high;
+                maxTime = candle.time;
+            }
+            if (candle.low < minPrice) {
+                minPrice = candle.low;
+                minTime = candle.time;
+            }
+        });
+
+        const oldMax = token.extremums.localMax?.price || 0;
+        const oldMin = token.extremums.localMin?.price || 1_000_000.0;
+
+        if (Math.abs(maxPrice - oldMax) / oldMax > 0.002) {
+            token.extremums.localMax = { price: maxPrice, time: maxTime };
+            this.log(`📈 ${tokenSymbol}:\tMax old:${oldMax.toFixed(4)} new:${maxPrice.toFixed(4)}`);
+        }
+
+        if (Math.abs(minPrice - oldMin) / oldMin > 0.002) {
+            token.extremums.localMin = { price: minPrice, time: minTime };
+            this.log(`📉 ${tokenSymbol}:\tMin old:${oldMin.toFixed(4)} new:${minPrice.toFixed(4)}`);
+        }
+
+        token.extremums.lastExtremumUpdate = Date.now();
+    }
+
+    checkExtremumBreak(tokenSymbol, candle) {
+        const token = this.tokens[tokenSymbol];
+        const ext = token.extremums;
+        const currentPrice = parseFloat(candle.close);
+        const currentTime = candle.eventTime;
+
+        if (!ext.localMax || !ext.localMin) return;
+
+        // Check for max break (upward breakout)
+        if (currentPrice > ext.localMax.price && !ext.maxBreakTime) {
+            ext.maxBreakTime = currentTime;
+            this.log(`🔥 ${tokenSymbol}:\tMax broken! ${currentPrice.toFixed(4)} > ${ext.localMax.price.toFixed(4)}`);
+        }
+
+        // Check for min break (downward breakout)
+        if (currentPrice < ext.localMin.price && !ext.minBreakTime) {
+            ext.minBreakTime = currentTime;
+            this.log(`🔥 ${tokenSymbol}:\tMin broken! ${currentPrice.toFixed(4)} < ${ext.localMin.price.toFixed(4)}`);
+        }
+
+        // Reset break times if price returns within range
+        if (currentPrice <= ext.localMax.price && ext.maxBreakTime) {
+            if (currentTime - ext.maxBreakTime > REVERSAL_CONFIRMATION_TIME) {
+                this.log(`↩️ ${tokenSymbol}: Max break invalidated`);
+                ext.maxBreakTime = null;
+            }
+        }
+
+        if (currentPrice >= ext.localMin.price && ext.minBreakTime) {
+            if (currentTime - ext.minBreakTime > REVERSAL_CONFIRMATION_TIME) {
+                this.log(`↩️ ${tokenSymbol}: Min break invalidated`);
+                ext.minBreakTime = null;
+            }
+        }
+
+        // Check for trading opportunity
+        this.checkTradingOpportunity(tokenSymbol, currentPrice, currentTime);
+    }
+
+    checkTradingOpportunity(tokenSymbol, currentPrice, currentTime) {
+        const token = this.tokens[tokenSymbol];
+        const ext = token.extremums;
+
+        // Skip if already in trade
+        if (token.side) return;
+
+        const maxBreakAge = ext.maxBreakTime ? (currentTime - ext.maxBreakTime) : null;
+        const minBreakAge = ext.minBreakTime ? (currentTime - ext.minBreakTime) : null;
+
+        // Long opportunity: Max broken within 15 min, then min broken (reversal confirmed)
+        if (maxBreakAge && maxBreakAge <= EXTREMUM_BREAK_TIME &&
+            minBreakAge && minBreakAge <= EXTREMUM_BREAK_TIME &&
+            minBreakAge < maxBreakAge) { // Min break happened after max break
+
+            if (currentPrice > ext.localMin.price) { // Price moving up from min
+                this.enterTrade(tokenSymbol, 'long', currentPrice, currentTime);
+            }
+        }
+
+        // Short opportunity: Min broken within 15 min, then max broken (reversal confirmed)
+        if (minBreakAge && minBreakAge <= EXTREMUM_BREAK_TIME &&
+            maxBreakAge && maxBreakAge <= EXTREMUM_BREAK_TIME &&
+            maxBreakAge < minBreakAge) { // Max break happened after min break
+
+            if (currentPrice < ext.localMax.price) { // Price moving down from max
+                this.enterTrade(tokenSymbol, 'short', currentPrice, currentTime);
+            }
+        }
+    }
+
+    async enterTrade(tokenSymbol, side, price, time) {
+        const token = this.tokens[tokenSymbol];
+
+        token.side = side === 'long' ? '📈' : '📉';
+        token.price = price;
+        token.startTime = time;
+
+        const direction = side === 'long' ? '🟢 ' : '🔴 ';
+        const message = `${tokenSymbol} ${direction}: ${price.toFixed(4)} | Max: ${token.extremums.localMax.price.toFixed(4)} | Min: ${token.extremums.localMin.price.toFixed(4)}`;
+
+        this.log(`🎯 ${message}`);
+        await this.sendTelegramAlert(message, false);
+        await this.writeTokensFile();
+
+        // Reset break times after trade entry
+        token.extremums.maxBreakTime = null;
+        token.extremums.minBreakTime = null;
+
+        setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
+    }
+
     async exitTrade(ticker) {
-        const trade = this.tokens[ticker]
+        const trade = this.tokens[ticker];
         try {
             const exitPrice = await this.getCurrentPrice(ticker);
             if (!exitPrice) {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const pnlPercent = trade.side === '📈'
-                ? (exitPrice - trade.price) / exitPrice * 100
+
+            const isLong = trade.side === '📈';
+            const pnlPercent = isLong
+                ? (exitPrice - trade.price) / trade.price * 100
                 : (trade.price - exitPrice) / trade.price * 100;
 
-            if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
+            const timePassed = Date.now() - trade.startTime;
+
+            if (pnlPercent > 0.3 || pnlPercent < -2 || timePassed > 1_800_000) { // 0.3% profit, -2% stop loss, or 30 min timeout
                 this.count = this.count + pnlPercent;
-                let direction = trade.side === '📈' ? '📈' : '📉';
-                let ico
-                if (pnlPercent > 0) ico = "🚀"
-                else ico = "🔻"
-                const massage = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
-                this.log(massage);
-                await this.sendTelegramAlert(massage, true);
+                const direction = isLong ? '🟢' : '🔴';
+                const ico = pnlPercent > 0 ? "🚀" : "🔻";
+                const message = `${ticker} ${direction}${ico}: ${trade.price.toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${this.count.toFixed(2)}%`;
+
+                this.log(message);
+                await this.sendTelegramAlert(message, true);
+
                 delete trade.side;
                 await this.writeTokensFile();
                 await this.writeStatFile();
@@ -150,50 +277,32 @@ class PumpDumpBot {
         }
     }
 
-    async detectPumpDump(candle) {
+    async processCandle(candle) {
         const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
         const token = this.tokens[tokenSymbol];
 
-        if (!token || !token.avgQuoteVolume4h) {
+        if (!token) {
             console.warn(`⚠️ Unknown token: ${tokenSymbol}`);
             return;
         }
 
-        const buyVolume = parseFloat(candle.buyVolume);
-        const sellVolume = parseFloat(candle.volume) - buyVolume;
-        const volumeRatio = buyVolume / sellVolume;
+        // Update hourly candles data
+        this.updateHourlyCandles(tokenSymbol, candle);
 
-        let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
-        let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = ((candle.high - candle.low) / candle.high) > 0.03
-        let start4 = (volumeRatio > 1.3) || (volumeRatio < 0.75);
-
-        if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
-            token.log = candle.eventTime
-            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
-        }
-
-        if (start1 && start2 && start3 && start4) {
-            token.price = +candle.close;
-            token.startTime = candle.eventTime
-            const direction = buyVolume > sellVolume ? '📈' : '📉';
-            token.side = direction;
-
-            const message = `${tokenSymbol} ${direction}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
-            this.sendTelegramAlert(message, false);
-            await this.writeTokensFile();
-            setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
-        }
+        // Check for extremum breaks and trading opportunities
+        this.checkExtremumBreak(tokenSymbol, candle);
     }
 
     startWebSocketMonitoring() {
         const pairs = Object.keys(this.tokens).map(key => `${key}USDT`);
 
-        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
+        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs on 1-minute candles`);
 
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
-                this.detectPumpDump(candle);
+            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
+                this.processCandle(candle).catch(error => {
+                    console.error("❌ Error processing candle:", error);
+                });
             });
             this.log("✅ WebSocket connection established");
         } catch (error) {
@@ -203,19 +312,18 @@ class PumpDumpBot {
     }
 
     async start() {
-        this.log("💵 == PUMP/DUMP BOT STARTING == 💵");
+        this.log("📊 == EXTREMUM TRADING BOT STARTING == 📊");
 
         try {
             if (!process.env.BINANCE_PUBLIC_KEY || !process.env.BINANCE_PRIVATE_KEY) {
                 throw new Error("Missing Binance API credentials");
             }
-            if (!process.env.TELEGRAM_TOKEN) {
+            if (!process.env.TELEGRAM_TOKEN5) {
                 throw new Error("Missing Telegram token");
             }
-            await this.calculateAverageVolume();
-            this.setupScheduledTasks();
+
             this.startWebSocketMonitoring();
-            this.log("🚀 Bot is now running!");
+            this.log("🚀 Bot is now running with extremum tracking!");
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
             process.exit(1);
@@ -239,13 +347,11 @@ process.on('SIGINT', () => {
     if (global.bot) {
         global.bot.stop();
     }
-
     process.exit(0);
-})
-;
+});
 
-const bot = new PumpDumpBot();
-global.bot = bot; // Store reference for graceful shutdown
+const bot = new ExtremumTradingBot();
+global.bot = bot;
 bot.start().catch(error => {
     console.error("💥 Unhandled error:", error);
     process.exit(1);
