@@ -130,7 +130,7 @@ class PumpDumpBot {
                 : (trade.price - exitPrice) / trade.price * 100;
 
             if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
-                this.count = this.count + pnlPercent;
+                this.count = this.count + pnlPercent - 0.05;
                 let direction = trade.side === '📈' ? '📈' : '📉';
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
