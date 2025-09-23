@@ -93,6 +93,7 @@ class ExtremumTradingBot {
             time: candle.eventTime,
             high: parseFloat(candle.high),
             low: parseFloat(candle.low),
+            volume: parseFloat(candle.volume),
         };
 
         // Add new candle
@@ -108,6 +109,15 @@ class ExtremumTradingBot {
             token.extremums.hourlyCandles.length >= 5) {
             this.updateLocalExtremums(tokenSymbol);
         }
+    }
+
+    calculateHourlyTotalVolume(tokenSymbol) {
+        const token = this.tokens[tokenSymbol];
+        if (!token || !token.extremums) return 0;
+
+        return token.extremums.hourlyCandles.reduce((sum, candle) => {
+            return sum + candle.volume;
+        }, 0);
     }
 
     updateLocalExtremums(tokenSymbol) {
@@ -185,15 +195,22 @@ class ExtremumTradingBot {
         }
 
         // Check for trading opportunity
-        this.checkTradingOpportunity(tokenSymbol, currentPrice, currentTime);
+        this.checkTradingOpportunity(tokenSymbol, currentPrice, currentTime, parseFloat(candle.volume));
     }
 
-    checkTradingOpportunity(tokenSymbol, currentPrice, currentTime) {
+    checkTradingOpportunity(tokenSymbol, currentPrice, currentTime, currentVolume) {
         const token = this.tokens[tokenSymbol];
         const ext = token.extremums;
 
         // Skip if already in trade
         if (token.side) return;
+
+        // Check volume condition - current candle volume must be greater than hourly total
+        const hourlyTotalVolume = this.calculateHourlyTotalVolume(tokenSymbol);
+        if (currentVolume <= hourlyTotalVolume) {
+            this.log(`${ticker}: Volume condition not met (${currentVolume.toFixed(2)} <= ${hourlyTotalVolume.toFixed(2)})`);
+            return; // Skip if volume condition not met
+        }
 
         const maxBreakAge = ext.maxBreakTime ? (currentTime - ext.maxBreakTime) : null;
         const minBreakAge = ext.minBreakTime ? (currentTime - ext.minBreakTime) : null;
@@ -204,7 +221,7 @@ class ExtremumTradingBot {
             minBreakAge < maxBreakAge) { // Min break happened after max break
 
             if (currentPrice > ext.localMin.price) { // Price moving up from min
-                this.enterTrade(tokenSymbol, 'long', currentPrice, currentTime);
+                this.enterTrade(tokenSymbol, 'long', currentPrice, currentTime, currentVolume, hourlyTotalVolume);
             }
         }
 
@@ -214,12 +231,12 @@ class ExtremumTradingBot {
             maxBreakAge < minBreakAge) { // Max break happened after min break
 
             if (currentPrice < ext.localMax.price) { // Price moving down from max
-                this.enterTrade(tokenSymbol, 'short', currentPrice, currentTime);
+                this.enterTrade(tokenSymbol, 'short', currentPrice, currentTime, currentVolume, hourlyTotalVolume);
             }
         }
     }
 
-    async enterTrade(tokenSymbol, side, price, time) {
+    async enterTrade(tokenSymbol, side, price, time, currentVolume, hourlyVolume) {
         const token = this.tokens[tokenSymbol];
 
         token.side = side === 'long' ? '📈' : '📉';
@@ -227,7 +244,8 @@ class ExtremumTradingBot {
         token.startTime = time;
 
         const direction = side === 'long' ? '🟢 ' : '🔴 ';
-        const message = `${tokenSymbol} ${direction}: ${price.toFixed(4)} | Max: ${token.extremums.localMax.price.toFixed(4)} | Min: ${token.extremums.localMin.price.toFixed(4)}`;
+        const volumeRatio = (currentVolume / hourlyVolume).toFixed(2);
+        const message = `${tokenSymbol} ${direction}: ${price.toFixed(4)} | Vol: ${volumeRatio}x | Max: ${token.extremums.localMax.price.toFixed(4)} | Min: ${token.extremums.localMin.price.toFixed(4)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);
@@ -318,7 +336,7 @@ class ExtremumTradingBot {
             if (!process.env.BINANCE_PUBLIC_KEY || !process.env.BINANCE_PRIVATE_KEY) {
                 throw new Error("Missing Binance API credentials");
             }
-            if (!process.env.TELEGRAM_TOKEN5) {
+            if (!process.env.TELEGRAM_TOKEN3) {
                 throw new Error("Missing Telegram token");
             }
 
