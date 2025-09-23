@@ -257,7 +257,7 @@ class ExtremumTradingBot {
             const timePassed = Date.now() - trade.startTime;
 
             if (pnlPercent > 0.3 || pnlPercent < -2 || timePassed > 1_800_000) { // 0.3% profit, -2% stop loss, or 30 min timeout
-                this.count = this.count + pnlPercent - 0.05;
+                this.count = this.count + pnlPercent - 0.1;
                 const direction = isLong ? '🟢' : '🔴';
                 const ico = pnlPercent > 0 ? "🚀" : "🔻";
                 const message = `${ticker} ${direction}${ico}: ${trade.price.toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${this.count.toFixed(2)}%`;
