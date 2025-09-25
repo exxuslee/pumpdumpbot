@@ -66,7 +66,7 @@ class PumpDumpBot {
                     return sum + parseFloat(candle.quoteVolume);
                 }, 0);
 
-                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 4);
+                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 24);
 
                 processed++;
                 this.log(`📈 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
@@ -130,7 +130,7 @@ class PumpDumpBot {
                 : (trade.price - exitPrice) / trade.price * 100;
 
             if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
-                this.count = this.count + pnlPercent;
+                this.count = this.count + pnlPercent - 0.1;
                 let direction = trade.side === '📈' ? '📈' : '📉';
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
@@ -165,7 +165,7 @@ class PumpDumpBot {
 
         let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
         let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = ((candle.high - candle.low) / candle.high) > 0.01
+        let start3 = ((candle.high - candle.low) / candle.high) > 0.03
         let start4 = (volumeRatio > 1.5) || (volumeRatio < 0.66);
 
         if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
@@ -193,7 +193,7 @@ class PumpDumpBot {
 
         try {
             this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
-                this.detectPumpDump(candle);
+                this.detectPumpDump(candle).then(r => true);
             });
             this.log("✅ WebSocket connection established");
         } catch (error) {

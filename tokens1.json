@@ -1,1178 +1,1369 @@
 {
   "ATOM": {
     "cap": 52,
-    "price": 4.153
+    "price": 4.072,
+    "avgQuoteVolume4h": 268623
   },
   "VET": {
     "cap": 53,
-    "price": 0.023
+    "price": 0.022,
+    "avgQuoteVolume4h": 275534
   },
   "ALGO": {
-    "cap": 54,
-    "price": 0.213
-  },
-  "RENDER": {
     "cap": 55,
-    "price": 3.602
+    "price": 0.207,
+    "avgQuoteVolume4h": 288983
   },
   "PENGU": {
-    "cap": 56,
-    "price": 0.03
+    "cap": 58,
+    "price": 0.029,
+    "avgQuoteVolume4h": 1988844
+  },
+  "RENDER": {
+    "cap": 59,
+    "price": 3.468,
+    "avgQuoteVolume4h": 323871
   },
   "SEI": {
-    "cap": 59,
-    "price": 0.29
+    "cap": 60,
+    "price": 0.282,
+    "avgQuoteVolume4h": 1114304
   },
   "SKY": {
-    "cap": 61,
-    "price": 0.07
+    "cap": 62,
+    "price": 0.065,
+    "avgQuoteVolume4h": 372433
   },
   "FIL": {
-    "cap": 62,
-    "price": 2.256
+    "cap": 63,
+    "price": 2.183,
+    "avgQuoteVolume4h": 518517
   },
   "TRUMP": {
     "cap": 64,
-    "price": 7.649
+    "price": 7.524,
+    "avgQuoteVolume4h": 1032692
   },
   "JUP": {
     "cap": 65,
-    "price": 0.463
-  },
-  "FET": {
-    "cap": 66,
-    "price": 0.59
+    "price": 0.456,
+    "avgQuoteVolume4h": 231306
   },
   "IMX": {
-    "cap": 67,
-    "price": 0.718
+    "cap": 66,
+    "price": 0.731,
+    "avgQuoteVolume4h": 415724
   },
-  "OP": {
-    "cap": 70,
-    "price": 0.695
+  "FET": {
+    "cap": 67,
+    "price": 0.577,
+    "avgQuoteVolume4h": 403398
   },
   "INJ": {
-    "cap": 71,
-    "price": 12.229
+    "cap": 70,
+    "price": 11.959,
+    "avgQuoteVolume4h": 377757
   },
-  "0G": {
-    "cap": 73,
-    "price": 5.433
+  "OP": {
+    "cap": 71,
+    "price": 0.667,
+    "avgQuoteVolume4h": 704207
+  },
+  "QNT": {
+    "cap": 72,
+    "price": 93.213,
+    "avgQuoteVolume4h": 124232
   },
   "TIA": {
     "cap": 74,
-    "price": 1.453
-  },
-  "QNT": {
-    "cap": 75,
-    "price": 95.286
+    "price": 1.411,
+    "avgQuoteVolume4h": 540287
   },
   "STX": {
-    "cap": 77,
-    "price": 0.597
+    "cap": 76,
+    "price": 0.582,
+    "avgQuoteVolume4h": 95566
   },
   "LDO": {
-    "cap": 78,
-    "price": 1.114
-  },
-  "CAKE": {
-    "cap": 81,
-    "price": 2.81
-  },
-  "CRV": {
-    "cap": 82,
-    "price": 0.672
+    "cap": 77,
+    "price": 1.083,
+    "avgQuoteVolume4h": 640347
   },
   "KAIA": {
-    "cap": 84,
-    "price": 0.15
-  },
-  "GRT": {
-    "cap": 85,
-    "price": 0.084
+    "cap": 78,
+    "price": 0.155,
+    "avgQuoteVolume4h": 165033
   },
   "ZEC": {
+    "cap": 79,
+    "price": 58.335,
+    "avgQuoteVolume4h": 222138
+  },
+  "CRV": {
+    "cap": 81,
+    "price": 0.67,
+    "avgQuoteVolume4h": 721995
+  },
+  "CAKE": {
+    "cap": 83,
+    "price": 2.686,
+    "avgQuoteVolume4h": 1161778
+  },
+  "GRT": {
     "cap": 86,
-    "price": 54.408
+    "price": 0.082,
+    "avgQuoteVolume4h": 148210
   },
   "PYTH": {
     "cap": 87,
-    "price": 0.15
+    "price": 0.146,
+    "avgQuoteVolume4h": 345953
+  },
+  "ETHFI": {
+    "cap": 88,
+    "price": 1.621,
+    "avgQuoteVolume4h": 1168219
   },
   "DEXE": {
-    "cap": 88,
-    "price": 9.882
+    "cap": 89,
+    "price": 9.563,
+    "avgQuoteVolume4h": 469392
   },
   "PENDLE": {
     "cap": 91,
-    "price": 4.68
+    "price": 4.639,
+    "avgQuoteVolume4h": 473798
   },
   "WIF": {
-    "cap": 92,
-    "price": 0.783
+    "cap": 93,
+    "price": 0.762,
+    "avgQuoteVolume4h": 950250
   },
   "ENS": {
-    "cap": 93,
-    "price": 20.792
-  },
-  "ETHFI": {
-    "cap": 93,
-    "price": 1.501
-  },
-  "XTZ": {
     "cap": 95,
-    "price": 0.708
+    "price": 20.212,
+    "avgQuoteVolume4h": 234104
   },
   "CFX": {
-    "cap": 96,
-    "price": 0.146
+    "cap": 97,
+    "price": 0.142,
+    "avgQuoteVolume4h": 355485
   },
   "THETA": {
-    "cap": 98,
-    "price": 0.738
+    "cap": 99,
+    "price": 0.719,
+    "avgQuoteVolume4h": 104793
+  },
+  "XTZ": {
+    "cap": 100,
+    "price": 0.669,
+    "avgQuoteVolume4h": 73494
   },
   "S": {
-    "cap": 100,
-    "price": 0.252
+    "cap": 101,
+    "price": 0.242,
+    "avgQuoteVolume4h": 665145
   },
   "VIRTUAL": {
-    "cap": 101,
-    "price": 1.083
-  },
-  "GALA": {
     "cap": 102,
-    "price": 0.015
+    "price": 1.05,
+    "avgQuoteVolume4h": 395286
   },
   "SAND": {
+    "cap": 103,
+    "price": 0.266,
+    "avgQuoteVolume4h": 188012
+  },
+  "GALA": {
     "cap": 104,
-    "price": 0.272
+    "price": 0.015,
+    "avgQuoteVolume4h": 464922
   },
   "IOTA": {
     "cap": 105,
-    "price": 0.17
-  },
-  "A": {
-    "cap": 106,
-    "price": 0.422
-  },
-  "JASMY": {
-    "cap": 108,
-    "price": 0.013
+    "price": 0.166,
+    "avgQuoteVolume4h": 108773
   },
   "JTO": {
+    "cap": 108,
+    "price": 1.604,
+    "avgQuoteVolume4h": 157414
+  },
+  "JASMY": {
     "cap": 109,
-    "price": 1.628
-  },
-  "MANA": {
-    "cap": 113,
-    "price": 0.293
-  },
-  "FLOW": {
-    "cap": 114,
-    "price": 0.358
+    "price": 0.012,
+    "avgQuoteVolume4h": 99894
   },
   "EIGEN": {
+    "cap": 111,
+    "price": 1.71,
+    "avgQuoteVolume4h": 1151538
+  },
+  "MANA": {
+    "cap": 114,
+    "price": 0.286,
+    "avgQuoteVolume4h": 131650
+  },
+  "FLOW": {
     "cap": 115,
-    "price": 1.695
+    "price": 0.347,
+    "avgQuoteVolume4h": 31505
   },
   "SUN": {
-    "cap": 116,
-    "price": 0.029
-  },
-  "TWT": {
     "cap": 118,
-    "price": 1.242
+    "price": 0.027,
+    "avgQuoteVolume4h": 2467915
   },
   "ZRO": {
     "cap": 119,
-    "price": 2.153
+    "price": 2.055,
+    "avgQuoteVolume4h": 437977
   },
-  "AVNT": {
+  "TWT": {
     "cap": 121,
-    "price": 1.948
+    "price": 1.173,
+    "avgQuoteVolume4h": 1914595
   },
   "STRK": {
     "cap": 123,
-    "price": 0.12
+    "price": 0.118,
+    "avgQuoteVolume4h": 200158
   },
   "SYRUP": {
-    "cap": 123,
-    "price": 0.408
-  },
-  "LINEA": {
-    "cap": 126,
-    "price": 0.031
-  },
-  "FORM": {
-    "cap": 127,
-    "price": 1.262
-  },
-  "DYDX": {
-    "cap": 128,
-    "price": 0.606
+    "cap": 125,
+    "price": 0.396,
+    "avgQuoteVolume4h": 296178
   },
   "W": {
+    "cap": 126,
+    "price": 0.099,
+    "avgQuoteVolume4h": 800102
+  },
+  "DYDX": {
+    "cap": 127,
+    "price": 0.591,
+    "avgQuoteVolume4h": 405426
+  },
+  "FORM": {
     "cap": 129,
-    "price": 0.1
+    "price": 1.135,
+    "avgQuoteVolume4h": 724998
+  },
+  "LINEA": {
+    "cap": 131,
+    "price": 0.027,
+    "avgQuoteVolume4h": 14201825
   },
   "NEO": {
-    "cap": 133,
-    "price": 5.909
+    "cap": 132,
+    "price": 5.781,
+    "avgQuoteVolume4h": 129349
   },
   "RUNE": {
-    "cap": 134,
-    "price": 1.178
-  },
-  "APE": {
-    "cap": 136,
-    "price": 0.535
+    "cap": 133,
+    "price": 1.15,
+    "avgQuoteVolume4h": 206018
   },
   "ZK": {
+    "cap": 136,
+    "price": 0.049,
+    "avgQuoteVolume4h": 153980
+  },
+  "APE": {
     "cap": 137,
-    "price": 0.05
+    "price": 0.523,
+    "avgQuoteVolume4h": 156256
   },
   "CHZ": {
-    "cap": 139,
-    "price": 0.04
+    "cap": 138,
+    "price": 0.039,
+    "avgQuoteVolume4h": 86755
   },
   "COMP": {
-    "cap": 140,
-    "price": 41.518
+    "cap": 139,
+    "price": 40.686,
+    "avgQuoteVolume4h": 91131
   },
   "AR": {
     "cap": 141,
-    "price": 5.902
+    "price": 5.731,
+    "avgQuoteVolume4h": 182855
   },
   "EGLD": {
-    "cap": 144,
-    "price": 12.92
+    "cap": 143,
+    "price": 12.64,
+    "avgQuoteVolume4h": 76445
   },
   "AXS": {
     "cap": 145,
-    "price": 2.206
+    "price": 2.143,
+    "avgQuoteVolume4h": 96152
   },
   "KAVA": {
-    "cap": 151,
-    "price": 0.321
+    "cap": 150,
+    "price": 0.318,
+    "avgQuoteVolume4h": 79817
   },
   "SUPER": {
-    "cap": 154,
-    "price": 0.535
+    "cap": 151,
+    "price": 0.519,
+    "avgQuoteVolume4h": 45837
   },
   "1INCH": {
-    "cap": 156,
-    "price": 0.236
-  },
-  "AXL": {
-    "cap": 157,
-    "price": 0.314
+    "cap": 155,
+    "price": 0.231,
+    "avgQuoteVolume4h": 58154
   },
   "BERA": {
-    "cap": 158,
-    "price": 2.554
+    "cap": 156,
+    "price": 2.534,
+    "avgQuoteVolume4h": 522218
   },
   "JST": {
-    "cap": 160,
-    "price": 0.033
+    "cap": 159,
+    "price": 0.032,
+    "avgQuoteVolume4h": 160690
   },
   "CVX": {
-    "cap": 161,
-    "price": 3.283
+    "cap": 160,
+    "price": 3.209,
+    "avgQuoteVolume4h": 103447
   },
   "MOVE": {
+    "cap": 161,
+    "price": 0.113,
+    "avgQuoteVolume4h": 104605
+  },
+  "AXL": {
     "cap": 162,
-    "price": 0.115
+    "price": 0.297,
+    "avgQuoteVolume4h": 90083
   },
   "PLUME": {
-    "cap": 166,
-    "price": 0.101
-  },
-  "BARD": {
-    "cap": 167,
-    "price": 1.293
-  },
-  "LPT": {
-    "cap": 170,
-    "price": 6.243
-  },
-  "DASH": {
-    "cap": 176,
-    "price": 21.086
-  },
-  "KAITO": {
-    "cap": 180,
-    "price": 1.013
-  },
-  "KSM": {
-    "cap": 183,
-    "price": 14.112
+    "cap": 163,
+    "price": 0.1,
+    "avgQuoteVolume4h": 402430
   },
   "SNX": {
-    "cap": 184,
-    "price": 0.694
+    "cap": 168,
+    "price": 0.826,
+    "avgQuoteVolume4h": 308665
   },
-  "BIO": {
+  "LPT": {
+    "cap": 173,
+    "price": 6.028,
+    "avgQuoteVolume4h": 99939
+  },
+  "DASH": {
+    "cap": 177,
+    "price": 20.618,
+    "avgQuoteVolume4h": 46423
+  },
+  "SFP": {
+    "cap": 180,
+    "price": 0.487,
+    "avgQuoteVolume4h": 263405
+  },
+  "KAITO": {
+    "cap": 181,
+    "price": 0.995,
+    "avgQuoteVolume4h": 121387
+  },
+  "KSM": {
     "cap": 186,
-    "price": 0.14
+    "price": 13.714,
+    "avgQuoteVolume4h": 69883
+  },
+  "AWE": {
+    "cap": 188,
+    "price": 0.117,
+    "avgQuoteVolume4h": 326503
   },
   "QTUM": {
     "cap": 188,
-    "price": 2.156
+    "price": 2.146,
+    "avgQuoteVolume4h": 55776
   },
   "IOTX": {
-    "cap": 189,
-    "price": 0.024
+    "cap": 191,
+    "price": 0.024,
+    "avgQuoteVolume4h": 55756
   },
   "GLM": {
-    "cap": 190,
-    "price": 0.225
-  },
-  "SFP": {
-    "cap": 191,
-    "price": 0.449
+    "cap": 192,
+    "price": 0.22,
+    "avgQuoteVolume4h": 24435
   },
   "BAT": {
-    "cap": 196,
-    "price": 0.145
-  },
-  "ZIL": {
-    "cap": 197,
-    "price": 0.011
+    "cap": 195,
+    "price": 0.144,
+    "avgQuoteVolume4h": 24213
   },
   "PNUT": {
-    "cap": 198,
-    "price": 0.211
+    "cap": 200,
+    "price": 0.206,
+    "avgQuoteVolume4h": 346749
   },
-  "MINA": {
-    "cap": 227,
-    "price": 0.164
+  "ZIL": {
+    "cap": 226,
+    "price": 0.011,
+    "avgQuoteVolume4h": 49626
   },
   "ZRX": {
     "cap": 230,
-    "price": 0.238
+    "price": 0.235,
+    "avgQuoteVolume4h": 50453
   },
-  "KMNO": {
-    "cap": 233,
-    "price": 0.07
+  "MINA": {
+    "cap": 232,
+    "price": 0.159,
+    "avgQuoteVolume4h": 64170
   },
   "GAS": {
     "cap": 235,
-    "price": 3.015
+    "price": 2.963,
+    "avgQuoteVolume4h": 23877
+  },
+  "KMNO": {
+    "cap": 236,
+    "price": 0.067,
+    "avgQuoteVolume4h": 361706
   },
   "ROSE": {
-    "cap": 237,
-    "price": 0.026
-  },
-  "SUSHI": {
-    "cap": 240,
-    "price": 0.673
+    "cap": 239,
+    "price": 0.025,
+    "avgQuoteVolume4h": 134890
   },
   "BLUR": {
+    "cap": 240,
+    "price": 0.074,
+    "avgQuoteVolume4h": 65110
+  },
+  "SUSHI": {
     "cap": 241,
-    "price": 0.076
+    "price": 0.656,
+    "avgQuoteVolume4h": 149063
   },
   "ASTR": {
-    "cap": 242,
-    "price": 0.023
+    "cap": 246,
+    "price": 0.022,
+    "avgQuoteVolume4h": 87201
   },
   "RVN": {
-    "cap": 243,
-    "price": 0.012
+    "cap": 247,
+    "price": 0.012,
+    "avgQuoteVolume4h": 44203
   },
   "OM": {
-    "cap": 246,
-    "price": 0.17
-  },
-  "ID": {
-    "cap": 247,
-    "price": 0.152
+    "cap": 248,
+    "price": 0.165,
+    "avgQuoteVolume4h": 325462
   },
   "PROM": {
-    "cap": 248,
-    "price": 9.75
-  },
-  "SAHARA": {
     "cap": 249,
-    "price": 0.08
+    "price": 9.637,
+    "avgQuoteVolume4h": 83776
   },
-  "ORDI": {
+  "ID": {
     "cap": 250,
-    "price": 8.397
+    "price": 0.147,
+    "avgQuoteVolume4h": 126904
+  },
+  "GMX": {
+    "cap": 252,
+    "price": 16.665,
+    "avgQuoteVolume4h": 247212
   },
   "YFI": {
-    "cap": 252,
-    "price": 5168.762
-  },
-  "AWE": {
     "cap": 253,
-    "price": 0.089
+    "price": 5041.166,
+    "avgQuoteVolume4h": 44684
+  },
+  "SAHARA": {
+    "cap": 254,
+    "price": 0.077,
+    "avgQuoteVolume4h": 96953
+  },
+  "ORDI": {
+    "cap": 255,
+    "price": 8.114,
+    "avgQuoteVolume4h": 246022
   },
   "ACH": {
     "cap": 256,
-    "price": 0.018
-  },
-  "GMX": {
-    "cap": 257,
-    "price": 16.66
-  },
-  "BB": {
-    "cap": 259,
-    "price": 0.208
+    "price": 0.018,
+    "avgQuoteVolume4h": 82082
   },
   "T": {
-    "cap": 263,
-    "price": 0.015
-  },
-  "OPEN": {
     "cap": 265,
-    "price": 0.724
-  },
-  "PROVE": {
-    "cap": 266,
-    "price": 0.79
-  },
-  "CELO": {
-    "cap": 267,
-    "price": 0.265
-  },
-  "BABY": {
-    "cap": 268,
-    "price": 0.058
-  },
-  "SOMI": {
-    "cap": 272,
-    "price": 0.937
-  },
-  "COW": {
-    "cap": 276,
-    "price": 0.283
+    "price": 0.015,
+    "avgQuoteVolume4h": 46428
   },
   "HEMI": {
-    "cap": 278,
-    "price": 0.149
+    "cap": 270,
+    "price": 0.154,
+    "avgQuoteVolume4h": 6208939
   },
-  "RED": {
+  "CELO": {
+    "cap": 271,
+    "price": 0.259,
+    "avgQuoteVolume4h": 39610
+  },
+  "PROVE": {
+    "cap": 275,
+    "price": 0.759,
+    "avgQuoteVolume4h": 209066
+  },
+  "COW": {
     "cap": 281,
-    "price": 0.512
-  },
-  "SKL": {
-    "cap": 285,
-    "price": 0.024
+    "price": 0.275,
+    "avgQuoteVolume4h": 69717
   },
   "OMNI": {
+    "cap": 282,
+    "price": 4.124,
+    "avgQuoteVolume4h": 378929
+  },
+  "OPEN": {
+    "cap": 283,
+    "price": 0.657,
+    "avgQuoteVolume4h": 16244053
+  },
+  "SKL": {
+    "cap": 284,
+    "price": 0.024,
+    "avgQuoteVolume4h": 162582
+  },
+  "RED": {
     "cap": 286,
-    "price": 4.155
+    "price": 0.495,
+    "avgQuoteVolume4h": 72805
   },
-  "ZKC": {
-    "cap": 291,
-    "price": 0.683
-  },
-  "ANKR": {
-    "cap": 292,
-    "price": 0.014
-  },
-  "SIGN": {
-    "cap": 293,
-    "price": 0.101
+  "SOMI": {
+    "cap": 287,
+    "price": 0.855,
+    "avgQuoteVolume4h": 1724373
   },
   "VANA": {
-    "cap": 299,
-    "price": 4.329
+    "cap": 288,
+    "price": 4.505,
+    "avgQuoteVolume4h": 484496
   },
-  "NXPC": {
-    "cap": 303,
-    "price": 0.614
+  "ANKR": {
+    "cap": 289,
+    "price": 0.013,
+    "avgQuoteVolume4h": 32949
+  },
+  "ME": {
+    "cap": 304,
+    "price": 0.746,
+    "avgQuoteVolume4h": 555338
   },
   "ICX": {
-    "cap": 304,
-    "price": 0.117
+    "cap": 308,
+    "price": 0.115,
+    "avgQuoteVolume4h": 16156
+  },
+  "ZKC": {
+    "cap": 310,
+    "price": 0.612,
+    "avgQuoteVolume4h": 1188659
+  },
+  "NXPC": {
+    "cap": 311,
+    "price": 0.595,
+    "avgQuoteVolume4h": 73625
   },
   "LAYER": {
-    "cap": 305,
-    "price": 0.445
+    "cap": 315,
+    "price": 0.43,
+    "avgQuoteVolume4h": 94218
   },
   "POLYX": {
-    "cap": 311,
-    "price": 0.125
+    "cap": 316,
+    "price": 0.121,
+    "avgQuoteVolume4h": 30914
   },
   "WOO": {
-    "cap": 313,
-    "price": 0.065
-  },
-  "NMR": {
-    "cap": 315,
-    "price": 16.116
-  },
-  "STG": {
-    "cap": 315,
-    "price": 0.186
-  },
-  "ALT": {
     "cap": 318,
-    "price": 0.029
-  },
-  "ARKM": {
-    "cap": 320,
-    "price": 0.538
-  },
-  "GMT": {
-    "cap": 321,
-    "price": 0.039
+    "price": 0.063,
+    "avgQuoteVolume4h": 86202
   },
   "MASK": {
+    "cap": 321,
+    "price": 1.195,
+    "avgQuoteVolume4h": 47441
+  },
+  "WAVES": {
     "cap": 322,
-    "price": 1.206
+    "price": 1.002,
+    "avgQuoteVolume4h": 154894
   },
   "ORCA": {
     "cap": 323,
-    "price": 2.007
+    "price": 1.982,
+    "avgQuoteVolume4h": 49028
   },
-  "WAVES": {
+  "SIGN": {
     "cap": 324,
-    "price": 1.007
+    "price": 0.087,
+    "avgQuoteVolume4h": 1153130
   },
-  "ENJ": {
+  "GMT": {
+    "cap": 325,
+    "price": 0.038,
+    "avgQuoteVolume4h": 94931
+  },
+  "NMR": {
     "cap": 326,
-    "price": 0.063
+    "price": 15.455,
+    "avgQuoteVolume4h": 343246
+  },
+  "STG": {
+    "cap": 327,
+    "price": 0.178,
+    "avgQuoteVolume4h": 102948
   },
   "RPL": {
-    "cap": 327,
-    "price": 5.433
+    "cap": 329,
+    "price": 5.3,
+    "avgQuoteVolume4h": 39867
+  },
+  "ENJ": {
+    "cap": 331,
+    "price": 0.061,
+    "avgQuoteVolume4h": 45110
   },
   "ZEN": {
-    "cap": 328,
-    "price": 6.758
-  },
-  "ME": {
-    "cap": 331,
-    "price": 0.691
+    "cap": 332,
+    "price": 6.539,
+    "avgQuoteVolume4h": 91707
   },
   "KDA": {
-    "cap": 332,
-    "price": 0.346
+    "cap": 333,
+    "price": 0.34,
+    "avgQuoteVolume4h": 65298
   },
   "LRC": {
-    "cap": 335,
-    "price": 0.084
-  },
-  "ONT": {
-    "cap": 336,
-    "price": 0.124
+    "cap": 334,
+    "price": 0.082,
+    "avgQuoteVolume4h": 32057
   },
   "SNT": {
-    "cap": 337,
-    "price": 0.023
-  },
-  "BAND": {
-    "cap": 341,
-    "price": 0.665
+    "cap": 339,
+    "price": 0.023,
+    "avgQuoteVolume4h": 121546
   },
   "IO": {
-    "cap": 342,
-    "price": 0.536
+    "cap": 341,
+    "price": 0.54,
+    "avgQuoteVolume4h": 186871
   },
-  "COTI": {
+  "ONT": {
     "cap": 343,
-    "price": 0.046
+    "price": 0.118,
+    "avgQuoteVolume4h": 23119
+  },
+  "BAND": {
+    "cap": 345,
+    "price": 0.653,
+    "avgQuoteVolume4h": 37720
   },
   "UMA": {
-    "cap": 344,
-    "price": 1.206
+    "cap": 346,
+    "price": 1.194,
+    "avgQuoteVolume4h": 37958
+  },
+  "COTI": {
+    "cap": 350,
+    "price": 0.045,
+    "avgQuoteVolume4h": 48052
   },
   "SSV": {
-    "cap": 345,
-    "price": 7.749
-  },
-  "HOLO": {
-    "cap": 347,
-    "price": 0.312
+    "cap": 352,
+    "price": 7.549,
+    "avgQuoteVolume4h": 107889
   },
   "SXP": {
-    "cap": 352,
-    "price": 0.161
+    "cap": 354,
+    "price": 0.159,
+    "avgQuoteVolume4h": 35161
+  },
+  "HOLO": {
+    "cap": 358,
+    "price": 0.294,
+    "avgQuoteVolume4h": 2668190
   },
   "XVS": {
-    "cap": 361,
-    "price": 6.294
-  },
-  "BIGTIME": {
-    "cap": 368,
-    "price": 0.049
+    "cap": 363,
+    "price": 6.112,
+    "avgQuoteVolume4h": 79094
   },
   "SXT": {
-    "cap": 371,
-    "price": 0.07
+    "cap": 374,
+    "price": 0.068,
+    "avgQuoteVolume4h": 72860
   },
   "STORJ": {
-    "cap": 372,
-    "price": 0.234
-  },
-  "AIXBT": {
-    "cap": 374,
-    "price": 0.097
+    "cap": 375,
+    "price": 0.227,
+    "avgQuoteVolume4h": 19652
   },
   "YGG": {
-    "cap": 377,
-    "price": 0.157
-  },
-  "RLC": {
-    "cap": 379,
-    "price": 1.063
-  },
-  "AEVO": {
-    "cap": 382,
-    "price": 0.1
+    "cap": 380,
+    "price": 0.153,
+    "avgQuoteVolume4h": 181118
   },
   "BICO": {
-    "cap": 383,
-    "price": 0.092
+    "cap": 385,
+    "price": 0.091,
+    "avgQuoteVolume4h": 37279
   },
   "HIVE": {
-    "cap": 384,
-    "price": 0.186
-  },
-  "LA": {
     "cap": 386,
-    "price": 0.468
+    "price": 0.182,
+    "avgQuoteVolume4h": 18717
   },
-  "ERA": {
-    "cap": 388,
-    "price": 0.596
+  "RLC": {
+    "cap": 387,
+    "price": 1.022,
+    "avgQuoteVolume4h": 34224
   },
   "HOME": {
-    "cap": 390,
-    "price": 0.032
+    "cap": 388,
+    "price": 0.032,
+    "avgQuoteVolume4h": 71572
   },
-  "ILV": {
+  "ERA": {
     "cap": 391,
-    "price": 13.372
+    "price": 0.572,
+    "avgQuoteVolume4h": 54294
   },
   "METIS": {
-    "cap": 393,
-    "price": 13.329
-  },
-  "PEOPLE": {
-    "cap": 396,
-    "price": 0.017
+    "cap": 391,
+    "price": 12.948,
+    "avgQuoteVolume4h": 88644
   },
   "TRB": {
-    "cap": 397,
-    "price": 31.517
+    "cap": 395,
+    "price": 31.095,
+    "avgQuoteVolume4h": 128431
   },
-  "SPK": {
-    "cap": 398,
-    "price": 0.049
+  "ILV": {
+    "cap": 399,
+    "price": 12.767,
+    "avgQuoteVolume4h": 53708
   },
-  "POWR": {
-    "cap": 404,
-    "price": 0.148
+  "PEOPLE": {
+    "cap": 400,
+    "price": 0.017,
+    "avgQuoteVolume4h": 121689
   },
   "PIXEL": {
+    "cap": 401,
+    "price": 0.028,
+    "avgQuoteVolume4h": 80178
+  },
+  "SPK": {
+    "cap": 404,
+    "price": 0.047,
+    "avgQuoteVolume4h": 290969
+  },
+  "POWR": {
     "cap": 405,
-    "price": 0.028
+    "price": 0.144,
+    "avgQuoteVolume4h": 11425
   },
   "CVC": {
     "cap": 406,
-    "price": 0.084
+    "price": 0.082,
+    "avgQuoteVolume4h": 11991
   },
   "MANTA": {
-    "cap": 408,
-    "price": 0.185
+    "cap": 410,
+    "price": 0.179,
+    "avgQuoteVolume4h": 81597
   },
   "ARK": {
-    "cap": 410,
-    "price": 0.43
-  },
-  "EDU": {
     "cap": 411,
-    "price": 0.141
+    "price": 0.419,
+    "avgQuoteVolume4h": 34244
   },
   "CYBER": {
     "cap": 413,
-    "price": 1.566
+    "price": 1.538,
+    "avgQuoteVolume4h": 123865
   },
   "STRAX": {
-    "cap": 414,
-    "price": 0.04
-  },
-  "ANIME": {
-    "cap": 418,
-    "price": 0.014
-  },
-  "FIDA": {
-    "cap": 419,
-    "price": 0.08
+    "cap": 416,
+    "price": 0.039,
+    "avgQuoteVolume4h": 14847
   },
   "WAXP": {
-    "cap": 420,
-    "price": 0.018
+    "cap": 419,
+    "price": 0.018,
+    "avgQuoteVolume4h": 14513
   },
-  "PHA": {
-    "cap": 424,
-    "price": 0.097
+  "NIL": {
+    "cap": 420,
+    "price": 0.3,
+    "avgQuoteVolume4h": 57151
   },
   "PUNDIX": {
-    "cap": 425,
-    "price": 0.305
+    "cap": 423,
+    "price": 0.3,
+    "avgQuoteVolume4h": 50762
   },
-  "LISTA": {
-    "cap": 431,
-    "price": 0.312
+  "FIDA": {
+    "cap": 425,
+    "price": 0.078,
+    "avgQuoteVolume4h": 58779
+  },
+  "EDU": {
+    "cap": 428,
+    "price": 0.131,
+    "avgQuoteVolume4h": 367090
+  },
+  "PHA": {
+    "cap": 429,
+    "price": 0.094,
+    "avgQuoteVolume4h": 123205
   },
   "BNT": {
     "cap": 434,
-    "price": 0.665
-  },
-  "BAL": {
-    "cap": 437,
-    "price": 1.123
-  },
-  "XAI": {
-    "cap": 438,
-    "price": 0.043
-  },
-  "FLUX": {
-    "cap": 444,
-    "price": 0.185
-  },
-  "CHR": {
-    "cap": 445,
-    "price": 0.085
+    "price": 0.651,
+    "avgQuoteVolume4h": 7911
   },
   "OG": {
-    "cap": 446,
-    "price": 16.681
+    "cap": 439,
+    "price": 17.232,
+    "avgQuoteVolume4h": 476203
   },
-  "DIA": {
-    "cap": 449,
-    "price": 0.598
-  },
-  "JOE": {
-    "cap": 452,
-    "price": 0.177
+  "BAL": {
+    "cap": 440,
+    "price": 1.101,
+    "avgQuoteVolume4h": 68848
   },
   "TUT": {
-    "cap": 453,
-    "price": 0.085
+    "cap": 442,
+    "price": 0.088,
+    "avgQuoteVolume4h": 2064674
   },
-  "LQTY": {
-    "cap": 455,
-    "price": 0.742
+  "LA": {
+    "cap": 444,
+    "price": 0.379,
+    "avgQuoteVolume4h": 471131
   },
-  "DYM": {
-    "cap": 457,
-    "price": 0.19
+  "XAI": {
+    "cap": 446,
+    "price": 0.042,
+    "avgQuoteVolume4h": 126758
   },
-  "CGPT": {
-    "cap": 459,
-    "price": 0.081
+  "LISTA": {
+    "cap": 447,
+    "price": 0.292,
+    "avgQuoteVolume4h": 839300
   },
-  "API3": {
-    "cap": 460,
-    "price": 0.807
+  "CHR": {
+    "cap": 448,
+    "price": 0.084,
+    "avgQuoteVolume4h": 35846
   },
-  "ACX": {
-    "cap": 462,
-    "price": 0.114
+  "FLUX": {
+    "cap": 449,
+    "price": 0.182,
+    "avgQuoteVolume4h": 29771
   },
   "HUMA": {
+    "cap": 450,
+    "price": 0.032,
+    "avgQuoteVolume4h": 406778
+  },
+  "CGPT": {
+    "cap": 454,
+    "price": 0.08,
+    "avgQuoteVolume4h": 62371
+  },
+  "LQTY": {
+    "cap": 456,
+    "price": 0.715,
+    "avgQuoteVolume4h": 86159
+  },
+  "ACX": {
+    "cap": 460,
+    "price": 0.11,
+    "avgQuoteVolume4h": 35305
+  },
+  "API3": {
+    "cap": 461,
+    "price": 0.778,
+    "avgQuoteVolume4h": 74237
+  },
+  "DYM": {
+    "cap": 462,
+    "price": 0.18,
+    "avgQuoteVolume4h": 74825
+  },
+  "DIA": {
     "cap": 464,
-    "price": 0.031
+    "price": 0.56,
+    "avgQuoteVolume4h": 30250
   },
-  "CTSI": {
-    "cap": 470,
-    "price": 0.077
-  },
-  "BANANA": {
-    "cap": 471,
-    "price": 16.869
-  },
-  "COOKIE": {
-    "cap": 472,
-    "price": 0.11
+  "JOE": {
+    "cap": 468,
+    "price": 0.164,
+    "avgQuoteVolume4h": 101681
   },
   "USUAL": {
-    "cap": 473,
-    "price": 0.055
-  },
-  "CETUS": {
     "cap": 475,
-    "price": 0.079
+    "price": 0.053,
+    "avgQuoteVolume4h": 176509
+  },
+  "COOKIE": {
+    "cap": 477,
+    "price": 0.107,
+    "avgQuoteVolume4h": 119801
   },
   "ONG": {
-    "cap": 480,
-    "price": 0.155
+    "cap": 479,
+    "price": 0.152,
+    "avgQuoteVolume4h": 41158
+  },
+  "CTSI": {
+    "cap": 485,
+    "price": 0.073,
+    "avgQuoteVolume4h": 70697
   },
   "LSK": {
-    "cap": 483,
-    "price": 0.32
+    "cap": 487,
+    "price": 0.311,
+    "avgQuoteVolume4h": 18626
   },
   "STEEM": {
-    "cap": 491,
-    "price": 0.122
+    "cap": 488,
+    "price": 0.12,
+    "avgQuoteVolume4h": 15504
   },
   "KNC": {
-    "cap": 492,
-    "price": 0.338
+    "cap": 491,
+    "price": 0.329,
+    "avgQuoteVolume4h": 21139
   },
   "USTC": {
-    "cap": 494,
-    "price": 0.011
+    "cap": 495,
+    "price": 0.011,
+    "avgQuoteVolume4h": 87005
   },
   "SAGA": {
-    "cap": 501,
-    "price": 0.214
-  },
-  "GLMR": {
-    "cap": 506,
-    "price": 0.06
+    "cap": 497,
+    "price": 0.209,
+    "avgQuoteVolume4h": 126519
   },
   "SOLV": {
-    "cap": 508,
-    "price": 0.041
+    "cap": 505,
+    "price": 0.041,
+    "avgQuoteVolume4h": 68871
   },
-  "NIL": {
-    "cap": 509,
-    "price": 0.311
+  "GLMR": {
+    "cap": 516,
+    "price": 0.057,
+    "avgQuoteVolume4h": 36267
   },
   "SOPH": {
-    "cap": 513,
-    "price": 0.03
+    "cap": 517,
+    "price": 0.029,
+    "avgQuoteVolume4h": 58358
   },
   "RIF": {
-    "cap": 516,
-    "price": 0.059
+    "cap": 519,
+    "price": 0.058,
+    "avgQuoteVolume4h": 17367
   },
   "MTL": {
-    "cap": 524,
-    "price": 0.655
+    "cap": 525,
+    "price": 0.648,
+    "avgQuoteVolume4h": 21265
   },
   "EPIC": {
-    "cap": 525,
-    "price": 1.861
+    "cap": 532,
+    "price": 1.8,
+    "avgQuoteVolume4h": 92512
   },
   "MOVR": {
-    "cap": 527,
-    "price": 5.55
+    "cap": 533,
+    "price": 5.352,
+    "avgQuoteVolume4h": 49600
   },
   "MAGIC": {
-    "cap": 528,
-    "price": 0.175
-  },
-  "CTK": {
-    "cap": 533,
-    "price": 0.363
-  },
-  "KERNEL": {
     "cap": 535,
-    "price": 0.227
+    "price": 0.17,
+    "avgQuoteVolume4h": 80183
   },
   "AUCTION": {
-    "cap": 536,
-    "price": 8.789
+    "cap": 538,
+    "price": 8.623,
+    "avgQuoteVolume4h": 115264
   },
   "SCR": {
-    "cap": 538,
-    "price": 0.277
-  },
-  "WCT": {
-    "cap": 540,
-    "price": 0.282
+    "cap": 539,
+    "price": 0.275,
+    "avgQuoteVolume4h": 42069
   },
   "INIT": {
-    "cap": 546,
-    "price": 0.314
+    "cap": 544,
+    "price": 0.314,
+    "avgQuoteVolume4h": 153934
+  },
+  "CTK": {
+    "cap": 548,
+    "price": 0.336,
+    "avgQuoteVolume4h": 73385
+  },
+  "WCT": {
+    "cap": 550,
+    "price": 0.27,
+    "avgQuoteVolume4h": 222179
   },
   "NTRN": {
-    "cap": 552,
-    "price": 0.085
+    "cap": 553,
+    "price": 0.083,
+    "avgQuoteVolume4h": 23420
   },
-  "DOLO": {
-    "cap": 557,
-    "price": 0.114
+  "KERNEL": {
+    "cap": 563,
+    "price": 0.207,
+    "avgQuoteVolume4h": 276769
   },
   "SCRT": {
-    "cap": 563,
-    "price": 0.156
+    "cap": 564,
+    "price": 0.153,
+    "avgQuoteVolume4h": 19797
   },
   "HYPER": {
-    "cap": 566,
-    "price": 0.28
+    "cap": 570,
+    "price": 0.273,
+    "avgQuoteVolume4h": 151725
   },
   "AGLD": {
-    "cap": 567,
-    "price": 0.571
+    "cap": 573,
+    "price": 0.559,
+    "avgQuoteVolume4h": 64061
+  },
+  "DOLO": {
+    "cap": 579,
+    "price": 0.108,
+    "avgQuoteVolume4h": 357647
   },
   "OXT": {
-    "cap": 569,
-    "price": 0.049
+    "cap": 580,
+    "price": 0.048,
+    "avgQuoteVolume4h": 29518
   },
   "AERGO": {
-    "cap": 578,
-    "price": 0.101
-  },
-  "AI": {
-    "cap": 578,
-    "price": 0.122
-  },
-  "THE": {
-    "cap": 589,
-    "price": 0.43
+    "cap": 584,
+    "price": 0.097,
+    "avgQuoteVolume4h": 21814
   },
   "VANRY": {
-    "cap": 591,
-    "price": 0.024
-  },
-  "NEWT": {
-    "cap": 592,
-    "price": 0.221
-  },
-  "HFT": {
-    "cap": 595,
-    "price": 0.078
+    "cap": 585,
+    "price": 0.024,
+    "avgQuoteVolume4h": 74277
   },
   "C98": {
-    "cap": 600,
-    "price": 0.046
+    "cap": 593,
+    "price": 0.046,
+    "avgQuoteVolume4h": 158023
   },
-  "TREE": {
-    "cap": 601,
-    "price": 0.294
+  "NEWT": {
+    "cap": 596,
+    "price": 0.214,
+    "avgQuoteVolume4h": 62725
   },
-  "TOWNS": {
-    "cap": 603,
-    "price": 0.022
+  "THE": {
+    "cap": 599,
+    "price": 0.407,
+    "avgQuoteVolume4h": 1497842
   },
   "REZ": {
-    "cap": 606,
-    "price": 0.011
+    "cap": 601,
+    "price": 0.011,
+    "avgQuoteVolume4h": 191269
+  },
+  "HFT": {
+    "cap": 602,
+    "price": 0.075,
+    "avgQuoteVolume4h": 73314
+  },
+  "TOWNS": {
+    "cap": 611,
+    "price": 0.021,
+    "avgQuoteVolume4h": 138124
+  },
+  "TREE": {
+    "cap": 612,
+    "price": 0.276,
+    "avgQuoteVolume4h": 285814
   },
   "MAV": {
-    "cap": 615,
-    "price": 0.063
+    "cap": 614,
+    "price": 0.062,
+    "avgQuoteVolume4h": 245315
   },
   "RARE": {
-    "cap": 626,
-    "price": 0.051
+    "cap": 623,
+    "price": 0.05,
+    "avgQuoteVolume4h": 58865
   },
   "TNSR": {
-    "cap": 628,
-    "price": 0.101
-  },
-  "LUMIA": {
-    "cap": 648,
-    "price": 0.291
-  },
-  "OGN": {
-    "cap": 655,
-    "price": 0.058
-  },
-  "HIGH": {
-    "cap": 658,
-    "price": 0.486
-  },
-  "TRU": {
-    "cap": 660,
-    "price": 0.028
-  },
-  "ALPINE": {
-    "cap": 668,
-    "price": 1.971
+    "cap": 631,
+    "price": 0.099,
+    "avgQuoteVolume4h": 32626
   },
   "SHELL": {
-    "cap": 669,
-    "price": 0.122
+    "cap": 644,
+    "price": 0.127,
+    "avgQuoteVolume4h": 184722
+  },
+  "ALPINE": {
+    "cap": 645,
+    "price": 2.065,
+    "avgQuoteVolume4h": 93198
+  },
+  "LUMIA": {
+    "cap": 654,
+    "price": 0.288,
+    "avgQuoteVolume4h": 38063
+  },
+  "TRU": {
+    "cap": 655,
+    "price": 0.029,
+    "avgQuoteVolume4h": 28320
+  },
+  "OGN": {
+    "cap": 665,
+    "price": 0.056,
+    "avgQuoteVolume4h": 30157
+  },
+  "HIGH": {
+    "cap": 667,
+    "price": 0.475,
+    "avgQuoteVolume4h": 23827
   },
   "AVA": {
-    "cap": 677,
-    "price": 0.514
+    "cap": 676,
+    "price": 0.512,
+    "avgQuoteVolume4h": 103782
+  },
+  "PARTI": {
+    "cap": 682,
+    "price": 0.1554,
+    "avgQuoteVolume4h": 96323,
+    "startTime": 1758776865061,
+    "log": 1758777831056
   },
   "RESOLV": {
-    "cap": 680,
-    "price": 0.115
-  },
-  "ACE": {
-    "cap": 684,
-    "price": 0.473
+    "cap": 683,
+    "price": 0.112,
+    "avgQuoteVolume4h": 221740
   },
   "FORTH": {
-    "cap": 686,
-    "price": 2.468
+    "cap": 684,
+    "price": 2.418,
+    "avgQuoteVolume4h": 16971
   },
   "ATA": {
     "cap": 687,
-    "price": 0.039
+    "price": 0.038,
+    "avgQuoteVolume4h": 15078
   },
   "MITO": {
-    "cap": 693,
-    "price": 0.191
-  },
-  "HAEDAL": {
-    "cap": 700,
-    "price": 0.149
-  },
-  "C": {
-    "cap": 708,
-    "price": 0.212
-  },
-  "TST": {
-    "cap": 711,
-    "price": 0.035
+    "cap": 702,
+    "price": 0.184,
+    "avgQuoteVolume4h": 393180
   },
   "ARPA": {
-    "cap": 714,
-    "price": 0.022
+    "cap": 712,
+    "price": 0.021,
+    "avgQuoteVolume4h": 52048
   },
-  "PARTI": {
-    "cap": 717,
-    "price": 0.14
-  },
-  "MUBARAK": {
-    "cap": 727,
-    "price": 0.032
+  "HAEDAL": {
+    "cap": 718,
+    "price": 0.139,
+    "avgQuoteVolume4h": 112339
   },
   "RAD": {
-    "cap": 730,
-    "price": 0.616
+    "cap": 721,
+    "price": 0.615,
+    "avgQuoteVolume4h": 29131
+  },
+  "TST": {
+    "cap": 729,
+    "price": 0.033,
+    "avgQuoteVolume4h": 570125
   },
   "ALICE": {
     "cap": 733,
-    "price": 0.317
-  },
-  "ACT": {
-    "cap": 735,
-    "price": 0.033
+    "price": 0.312,
+    "avgQuoteVolume4h": 44700
   },
   "NFP": {
-    "cap": 756,
-    "price": 0.06
+    "cap": 734,
+    "price": 0.062,
+    "avgQuoteVolume4h": 35421
   },
-  "SYS": {
-    "cap": 761,
-    "price": 0.036
+  "MUBARAK": {
+    "cap": 740,
+    "price": 0.031,
+    "avgQuoteVolume4h": 437624
   },
   "PHB": {
-    "cap": 766,
-    "price": 0.501
+    "cap": 755,
+    "price": 0.495,
+    "avgQuoteVolume4h": 40706
+  },
+  "SYS": {
+    "cap": 756,
+    "price": 0.035,
+    "avgQuoteVolume4h": 17759
   },
   "HEI": {
-    "cap": 767,
-    "price": 0.379
+    "cap": 770,
+    "price": 0.365,
+    "avgQuoteVolume4h": 88956
   },
   "GPS": {
-    "cap": 768,
-    "price": 0.011
-  },
-  "MBOX": {
-    "cap": 769,
-    "price": 0.059
-  },
-  "BMT": {
-    "cap": 775,
-    "price": 0.066
+    "cap": 771,
+    "price": 0.011,
+    "avgQuoteVolume4h": 64721
   },
   "GTC": {
     "cap": 776,
-    "price": 0.3
+    "price": 0.288,
+    "avgQuoteVolume4h": 43862
   },
-  "CATI": {
-    "cap": 789,
-    "price": 0.082
+  "MBOX": {
+    "cap": 783,
+    "price": 0.055,
+    "avgQuoteVolume4h": 52885
   },
   "DUSK": {
-    "cap": 797,
-    "price": 0.055
-  },
-  "HOOK": {
-    "cap": 801,
-    "price": 0.103
+    "cap": 794,
+    "price": 0.054,
+    "avgQuoteVolume4h": 22431
   },
   "GUN": {
-    "cap": 805,
-    "price": 0.024
+    "cap": 796,
+    "price": 0.023,
+    "avgQuoteVolume4h": 95694
+  },
+  "HOOK": {
+    "cap": 798,
+    "price": 0.1,
+    "avgQuoteVolume4h": 234177
   },
   "DEGO": {
-    "cap": 807,
-    "price": 1.232
+    "cap": 802,
+    "price": 1.217,
+    "avgQuoteVolume4h": 30011
+  },
+  "ACT": {
+    "cap": 808,
+    "price": 0.02,
+    "avgQuoteVolume4h": 126229
   },
   "VIC": {
-    "cap": 815,
-    "price": 0.207
+    "cap": 813,
+    "price": 0.202,
+    "avgQuoteVolume4h": 19681
   },
   "DF": {
-    "cap": 817,
-    "price": 0.025
+    "cap": 815,
+    "price": 0.025,
+    "avgQuoteVolume4h": 18171
   },
   "RDNT": {
-    "cap": 831,
-    "price": 0.019
+    "cap": 827,
+    "price": 0.019,
+    "avgQuoteVolume4h": 50605
   },
   "IDEX": {
-    "cap": 836,
-    "price": 0.025
+    "cap": 834,
+    "price": 0.024,
+    "avgQuoteVolume4h": 18955
   },
   "SANTOS": {
-    "cap": 842,
-    "price": 1.768
+    "cap": 841,
+    "price": 1.735,
+    "avgQuoteVolume4h": 58235
   },
   "OMG": {
-    "cap": 846,
-    "price": 0.168
+    "cap": 855,
+    "price": 0.161,
+    "avgQuoteVolume4h": 66490
   },
   "PORTAL": {
-    "cap": 849,
-    "price": 0.04
+    "cap": 858,
+    "price": 0.039,
+    "avgQuoteVolume4h": 59084
   },
   "MLN": {
-    "cap": 867,
-    "price": 7.272
+    "cap": 869,
+    "price": 7.211,
+    "avgQuoteVolume4h": 16586
   },
   "GHST": {
-    "cap": 871,
-    "price": 0.409
+    "cap": 873,
+    "price": 0.401,
+    "avgQuoteVolume4h": 13302
   },
   "SYN": {
-    "cap": 881,
-    "price": 0.111
+    "cap": 887,
+    "price": 0.11,
+    "avgQuoteVolume4h": 27788
   },
   "STO": {
-    "cap": 894,
-    "price": 0.089
+    "cap": 896,
+    "price": 0.089,
+    "avgQuoteVolume4h": 125698
   },
   "D": {
-    "cap": 900,
-    "price": 0.031
-  },
-  "NKN": {
-    "cap": 913,
-    "price": 0.024
-  },
-  "BEL": {
-    "cap": 922,
-    "price": 0.233
+    "cap": 903,
+    "price": 0.03,
+    "avgQuoteVolume4h": 32071
   },
   "BADGER": {
-    "cap": 931,
-    "price": 0.904
+    "cap": 918,
+    "price": 0.934,
+    "avgQuoteVolume4h": 39444
+  },
+  "NKN": {
+    "cap": 922,
+    "price": 0.023,
+    "avgQuoteVolume4h": 26909
+  },
+  "BEL": {
+    "cap": 930,
+    "price": 0.229,
+    "avgQuoteVolume4h": 43789
   },
   "PERP": {
-    "cap": 937,
-    "price": 0.271
-  },
-  "ALPHA": {
-    "cap": 939,
-    "price": 0.019
+    "cap": 932,
+    "price": 0.276,
+    "avgQuoteVolume4h": 187004
   },
   "ASR": {
-    "cap": 955,
-    "price": 2.204
+    "cap": 961,
+    "price": 2.139,
+    "avgQuoteVolume4h": 75324
+  },
+  "ALPHA": {
+    "cap": 982,
+    "price": 0.017,
+    "avgQuoteVolume4h": 84542
   },
   "QUICK": {
-    "cap": 981,
-    "price": 21.988
-  },
-  "FLM": {
-    "cap": 990,
-    "price": 0.028
+    "cap": 985,
+    "price": 21.614,
+    "avgQuoteVolume4h": 21177
   }
 }

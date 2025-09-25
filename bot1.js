@@ -8,49 +8,25 @@ const {writeFile} = require("node:fs/promises");
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
 const MINUTE_MS = 60_000;
-const HOUR_MS = 3_600_000; // 1 hour in milliseconds
-const EXTREMUM_BREAK_TIME = 15 * MINUTE_MS; // 15 minutes
-const REVERSAL_CONFIRMATION_TIME = 5 * MINUTE_MS; // 5 minutes for reversal confirmation
-const HOURLY_UPDATE_INTERVAL = 30 * MINUTE_MS; // Update hourly data every 5 minutes
-const CANDLE_LIMIT = 2; // Get last 2 hourly candles
+const HOURLY_UPDATE_INTERVAL = 30 * MINUTE_MS;
 
 class ExtremumTradingBot {
     constructor() {
         this.tokens = require(TOKENS_FILE);
         this.count = require(STAT_FILE).count;
         this.client = Binance.default({
-            apiKey: process.env.BINANCE_PUBLIC_KEY,
-            apiSecret: process.env.BINANCE_PRIVATE_KEY,
+            apiKey: process.env.BINANCE_PUBLIC_KEY, apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
         this.tgToken = process.env.TELEGRAM_TOKEN3;
         this.wsConnection = null;
-        this.exitTimeoutMs = 1_200_000;
+        this.exitTimeoutMs = 30_000;
+        this.retryExitTimeoutMs = 30_000;
         this.hourlyUpdateInterval = null;
-
-        // Initialize token data structure
-        this.initializeTokenData();
     }
 
     log(message) {
         const timeLog = dayjs().format('HH:mm:ss');
         console.log(`${timeLog} ${message}`);
-    }
-
-    initializeTokenData() {
-        Object.keys(this.tokens).forEach(token => {
-            if (!this.tokens[token].extremums) {
-                this.tokens[token].extremums = {
-                    minuteCandles: [],
-                    triggerVolume: 0,
-                    localMax: null,
-                    localMin: null,
-                    maxBreakTime: null,
-                    minBreakTime: null,
-                    lastExtremumUpdate: Date.now(),
-                    pendingTrade: null // {type: 'long'/'short', confirmationTime: timestamp}
-                };
-            }
-        });
     }
 
     async writeTokensFile() {
@@ -89,52 +65,56 @@ class ExtremumTradingBot {
         }
     }
 
-    async getHourlyVolume(tokenSymbol) {
+    async getHourlyCandes(tokenSymbol) {
         try {
             const pair = `${tokenSymbol}USDT`;
-            const candles = await this.client.candles({
-                symbol: pair,
-                interval: "1h",
-                limit: CANDLE_LIMIT
+            const candles = await this.client.futuresCandles({
+                symbol: pair, interval: "15m", limit: 9
             });
 
             if (!candles || candles.length === 0) {
                 this.log(`⚠️ No hourly candles received for ${tokenSymbol}`);
-                return 0;
+                return {};
             }
 
-            // Get the current (incomplete) hourly candle volume
-            const currentHourCandle = candles[candles.length - 1];
-            const hourlyVolume = parseFloat(currentHourCandle.volume);
+            let sumVolume = 0.0;
+            let min = 1_000_000.0;
+            let max = 0.0;
+            for (let i = 0; i < candles.length - 1; i++) {
+                min = Math.min(min, parseFloat(candles[i].low))
+                max = Math.max(max, parseFloat(candles[i].high))
+                sumVolume = sumVolume + parseFloat(candles[i].quoteVolume) / 4.0;
+            }
+            let overHigh = candles[candles.length - 1].high > max;
+            let overLow = candles[candles.length - 1].low < min;
 
-            this.log(`📊 ${tokenSymbol}: Hourly volume updated: ${hourlyVolume.toFixed(2)}`);
-            return hourlyVolume;
-
+            this.log(`📊 ${tokenSymbol}: quoteVolume ${sumVolume.toFixed(2)}`);
+            return {triggerVolume: sumVolume, min: min, max: max, overHigh: overHigh, overLow: overLow};
         } catch (error) {
             console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
-            return 0;
+            return {};
         }
     }
 
-    async updateAllHourlyVolumes() {
+    async updateAllHourly() {
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
-            token.extremums.triggerVolume = await this.getHourlyVolume(tokenSymbol);
+            token.extremums = await this.getHourlyCandes(tokenSymbol);
         });
 
         await Promise.all(updatePromises);
         this.log(`✅ Updated hourly volumes for ${Object.keys(this.tokens).length} tokens`);
     }
 
-    startHourlyVolumeUpdates() {
+    startHourlyUpdates() {
         // Initial update
-        this.updateAllHourlyVolumes().catch(error => {
+        this.updateAllHourly().catch(error => {
             console.error("❌ Error in initial hourly volume update:", error);
         });
 
         // Set up periodic updates every 5 minutes
         this.hourlyUpdateInterval = setInterval(() => {
-            this.updateAllHourlyVolumes().catch(error => {
+            this.updateAllHourly().catch(error => {
                 console.error("❌ Error in periodic hourly volume update:", error);
             });
         }, HOURLY_UPDATE_INTERVAL);
@@ -142,163 +122,19 @@ class ExtremumTradingBot {
         this.log(`🕐 Hourly volume updates scheduled every ${HOURLY_UPDATE_INTERVAL / MINUTE_MS} minutes`);
     }
 
-    updateMinuteCandles(tokenSymbol, candle) {
-        const token = this.tokens[tokenSymbol];
-        if (!token || !token.extremums) return;
-
-        const candleData = {
-            time: candle.eventTime,
-            high: parseFloat(candle.high),
-            low: parseFloat(candle.low),
-            volume: parseFloat(candle.volume),
-        };
-
-        // Add new candle
-        token.extremums.minuteCandles.push(candleData);
-
-        // Keep only last 60 minutes of data
-        const hourAgo = Date.now() - HOUR_MS;
-        token.extremums.minuteCandles = token.extremums.minuteCandles
-            .filter(c => c.time > hourAgo);
-
-        // Update extremums every 5 minutes or when we have significant data
-        if (Date.now() - token.extremums.lastExtremumUpdate > 5 * MINUTE_MS ||
-            token.extremums.minuteCandles.length >= 5) {
-            this.updateLocalExtremums(tokenSymbol);
-        }
-    }
-
-    updateLocalExtremums(tokenSymbol) {
-        const token = this.tokens[tokenSymbol];
-        const candles = token.extremums.minuteCandles;
-
-        if (candles.length < 10) return; // Need at least 10 candles for reliable extremums
-
-        let maxPrice = -Infinity;
-        let minPrice = Infinity;
-        let maxTime = 0;
-        let minTime = 0;
-
-        // Find local extremums in the last hour
-        candles.forEach(candle => {
-            if (candle.high > maxPrice) {
-                maxPrice = candle.high;
-                maxTime = candle.time;
-            }
-            if (candle.low < minPrice) {
-                minPrice = candle.low;
-                minTime = candle.time;
-            }
-        });
-
-        const oldMax = token.extremums.localMax?.price || 0;
-        const oldMin = token.extremums.localMin?.price || 1_000_000.0;
-
-        if (Math.abs(maxPrice - oldMax) / oldMax > 0.002) {
-            token.extremums.localMax = {price: maxPrice, time: maxTime};
-            this.log(`📈 ${tokenSymbol}:\tMax old:${oldMax.toFixed(4)} new:${maxPrice.toFixed(4)}`);
-        }
-
-        if (Math.abs(minPrice - oldMin) / oldMin > 0.002) {
-            token.extremums.localMin = {price: minPrice, time: minTime};
-            this.log(`📉 ${tokenSymbol}:\tMin old:${oldMin.toFixed(4)} new:${minPrice.toFixed(4)}`);
-        }
-
-        token.extremums.lastExtremumUpdate = Date.now();
-    }
-
-    checkExtremumBreak(tokenSymbol, candle) {
-        const token = this.tokens[tokenSymbol];
-        const ext = token.extremums;
-        const currentPrice = parseFloat(candle.close);
-        const currentTime = candle.eventTime;
-
-        if (!ext.localMax || !ext.localMin) return;
-
-        // Check for max break (upward breakout)
-        if (currentPrice > ext.localMax.price && !ext.maxBreakTime) {
-            ext.maxBreakTime = currentTime;
-            this.log(`🔥 ${tokenSymbol}:\tMax broken! ${currentPrice.toFixed(4)} > ${ext.localMax.price.toFixed(4)}`);
-        }
-
-        // Check for min break (downward breakout)
-        if (currentPrice < ext.localMin.price && !ext.minBreakTime) {
-            ext.minBreakTime = currentTime;
-            this.log(`🔥 ${tokenSymbol}:\tMin broken! ${currentPrice.toFixed(4)} < ${ext.localMin.price.toFixed(4)}`);
-        }
-
-        // Reset break times if price returns within range
-        if (currentPrice <= ext.localMax.price && ext.maxBreakTime) {
-            if (currentTime - ext.maxBreakTime > REVERSAL_CONFIRMATION_TIME) {
-                this.log(`↩️ ${tokenSymbol}: Max break invalidated`);
-                ext.maxBreakTime = null;
-            }
-        }
-
-        if (currentPrice >= ext.localMin.price && ext.minBreakTime) {
-            if (currentTime - ext.minBreakTime > REVERSAL_CONFIRMATION_TIME) {
-                this.log(`↩️ ${tokenSymbol}: Min break invalidated`);
-                ext.minBreakTime = null;
-            }
-        }
-
-        // Check for trading opportunity
-        this.checkTradingOpportunity(tokenSymbol, currentPrice, currentTime, parseFloat(candle.volume));
-    }
-
-    checkTradingOpportunity(tokenSymbol, currentPrice, currentTime, currentVolume) {
-        const token = this.tokens[tokenSymbol];
-        const ext = token.extremums;
-
-        // Skip if already in trade
-        if (token.side) return;
-
-        // Check volume condition - current candle volume must be greater than hourly volume
-        if (!ext.triggerVolume || currentVolume <= ext.triggerVolume) {
-            return; // Skip if volume condition not met
-        }
-
-        const maxBreakAge = ext.maxBreakTime ? (currentTime - ext.maxBreakTime) : null;
-        const minBreakAge = ext.minBreakTime ? (currentTime - ext.minBreakTime) : null;
-
-        // Long opportunity: Max broken within 15 min, then min broken (reversal confirmed)
-        if (maxBreakAge && maxBreakAge <= EXTREMUM_BREAK_TIME &&
-            minBreakAge && minBreakAge <= EXTREMUM_BREAK_TIME &&
-            minBreakAge < maxBreakAge) { // Min break happened after max break
-
-            if (currentPrice > ext.localMin.price) { // Price moving up from min
-                this.enterTrade(tokenSymbol, 'long', currentPrice, currentTime, currentVolume, ext.triggerVolume);
-            }
-        }
-
-        // Short opportunity: Min broken within 15 min, then max broken (reversal confirmed)
-        if (minBreakAge && minBreakAge <= EXTREMUM_BREAK_TIME &&
-            maxBreakAge && maxBreakAge <= EXTREMUM_BREAK_TIME &&
-            maxBreakAge < minBreakAge) { // Max break happened after min break
-
-            if (currentPrice < ext.localMax.price) { // Price moving down from max
-                this.enterTrade(tokenSymbol, 'short', currentPrice, currentTime, currentVolume, ext.triggerVolume);
-            }
-        }
-    }
-
-    async enterTrade(tokenSymbol, side, price, time, currentVolume, triggerVolume) {
+    async enterTrade(tokenSymbol, side, candle) {
         const token = this.tokens[tokenSymbol];
 
-        token.side = side === 'long' ? '📈' : '📉';
-        token.price = price;
-        token.startTime = time;
+        token.side = side === '📈' ? '📈' : '📉';
+        token.price = candle.close;
+        token.startTime = candle.close;
 
         const direction = side === 'long' ? '🟢 ' : '🔴 ';
-        const message = `${tokenSymbol} ${direction}: ${price.toFixed(4)} | Max: ${token.extremums.localMax.price.toFixed(4)} | Min: ${token.extremums.localMin.price.toFixed(4)}`;
+        const message = `${tokenSymbol} ${direction}: ${candle.closeTime.toFixed(3)} ${candle.quoteVolume.toFixed(0)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);
         await this.writeTokensFile();
-
-        // Reset break times after trade entry
-        token.extremums.maxBreakTime = null;
-        token.extremums.minBreakTime = null;
 
         setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
     }
@@ -313,13 +149,11 @@ class ExtremumTradingBot {
             }
 
             const isLong = trade.side === '📈';
-            const pnlPercent = isLong
-                ? (exitPrice - trade.price) / trade.price * 100
-                : (trade.price - exitPrice) / trade.price * 100;
+            const pnlPercent = isLong ? (exitPrice - trade.price) / trade.price * 100 : (trade.price - exitPrice) / trade.price * 100;
 
             const timePassed = Date.now() - trade.startTime;
 
-            if (pnlPercent > 0.3 || pnlPercent < -2 || timePassed > 1_800_000) { // 0.3% profit, -2% stop loss, or 30 min timeout
+            if (pnlPercent > 0.3 || pnlPercent < -2.0 || timePassed > 300_000) { // 0.3% profit, -2% stop loss, or 5 min timeout
                 this.count = this.count + pnlPercent - 0.1;
                 const direction = isLong ? '🟢' : '🔴';
                 const ico = pnlPercent > 0 ? "🚀" : "🔻";
@@ -332,7 +166,7 @@ class ExtremumTradingBot {
                 await this.writeTokensFile();
                 await this.writeStatFile();
             } else {
-                setTimeout(() => this.exitTrade(ticker), this.exitTimeoutMs);
+                setTimeout(() => this.exitTrade(ticker), this.retryExitTimeoutMs);
             }
         } catch (error) {
             console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
@@ -343,17 +177,21 @@ class ExtremumTradingBot {
     async processCandle(candle) {
         const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
         const token = this.tokens[tokenSymbol];
-
         if (!token) {
             console.warn(`⚠️ Unknown token: ${tokenSymbol}`);
             return;
         }
+        const ext = token.extremums;
 
-        // Update minute candles data for extremum detection
-        this.updateMinuteCandles(tokenSymbol, candle);
+        if (token.side || !ext.quoteVolume || candle.quoteVolume <= ext.triggerVolume) return;
 
-        // Check for extremum breaks and trading opportunities
-        this.checkExtremumBreak(tokenSymbol, candle);
+        if (candle.close > ext.max && ext.overLow) {
+            this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
+        }
+
+        if (candle.close < ext.min && ext.overHigh) {
+            this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
+        }
     }
 
     startWebSocketMonitoring() {
@@ -384,13 +222,8 @@ class ExtremumTradingBot {
             if (!process.env.TELEGRAM_TOKEN3) {
                 throw new Error("Missing Telegram token");
             }
-
-            // Start hourly volume updates
-            this.startHourlyVolumeUpdates();
-
-            // Start WebSocket monitoring
+            this.startHourlyUpdates();
             this.startWebSocketMonitoring();
-
             this.log("🚀 Bot is now running with extremum tracking and hourly volume API updates!");
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
