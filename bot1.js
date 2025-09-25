@@ -7,8 +7,6 @@ const {writeFile} = require("node:fs/promises");
 // Constants
 const TOKENS_FILE = './tokens1.json';
 const STAT_FILE = './stat1.json';
-const MINUTE_MS = 60_000;
-const HOURLY_UPDATE_INTERVAL = 30 * MINUTE_MS;
 
 class ExtremumTradingBot {
     constructor() {
@@ -88,8 +86,9 @@ class ExtremumTradingBot {
             let overHigh = candles[candles.length - 1].high > max;
             let overLow = candles[candles.length - 1].low < min;
 
-            this.log(`📊 ${tokenSymbol}: quoteVolume ${sumVolume.toFixed(2)}`);
-            return {triggerVolume: sumVolume, min: min, max: max, overHigh: overHigh, overLow: overLow};
+            let ext = {triggerVolume: sumVolume.toFixed(0), min: min, max: max, overHigh: overHigh, overLow: overLow}
+            if (overHigh || overLow) this.log(`📊 ${tokenSymbol}: \tvol:${ext.triggerVolume} \tmin:${ext.min} \tmax:${ext.max} \toverHL:${+ext.overHigh}${+ext.overLow}`);
+            return ext;
         } catch (error) {
             console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
             return {};
@@ -107,19 +106,14 @@ class ExtremumTradingBot {
     }
 
     startHourlyUpdates() {
-        // Initial update
         this.updateAllHourly().catch(error => {
             console.error("❌ Error in initial hourly volume update:", error);
         });
-
-        // Set up periodic updates every 5 minutes
         this.hourlyUpdateInterval = setInterval(() => {
             this.updateAllHourly().catch(error => {
                 console.error("❌ Error in periodic hourly volume update:", error);
             });
-        }, HOURLY_UPDATE_INTERVAL);
-
-        this.log(`🕐 Hourly volume updates scheduled every ${HOURLY_UPDATE_INTERVAL / MINUTE_MS} minutes`);
+        }, 120_000);
     }
 
     async enterTrade(tokenSymbol, side, candle) {
