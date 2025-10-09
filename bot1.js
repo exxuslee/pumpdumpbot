@@ -83,8 +83,12 @@ class ExtremumTradingBot {
                 max = Math.max(max, parseFloat(candles[i].high))
                 sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 120.0)
             }
-            let overHigh = candles[candles.length - 4].high > max;
-            let overLow = candles[candles.length - 4].low < min;
+            let overHigh = false;
+            let overLow = false;
+            for (let i = candles.length - 4; i < candles.length; i++) {
+                overHigh = overHigh || (parseFloat(candles[i].high) > max)
+                overLow = overLow || (parseFloat(candles[i].low) < min)
+            }
 
             return {triggerVolume: sumVolume.toFixed(0), min: min, max: max, overHigh: overHigh, overLow: overLow};
         } catch (error) {
