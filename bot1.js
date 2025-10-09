@@ -111,7 +111,7 @@ class ExtremumTradingBot {
             .forEach(r => {
                 if (r.extremums?.overHigh || r.extremums?.overLow) {
                     this.log(
-                        `📊 ${r.key}: \tvol:${r.extremums.triggerVolume} \tmin:${r.extremums.min} \tmax:${r.extremums.max} \toverHL:${+r.extremums.overHigh}${+r.extremums.overLow}`
+                        `📊 ${r.key}:   \tvol:${r.extremums.triggerVolume} \tmin:${r.extremums.min} \tmax:${r.extremums.max} \toverHL:${+r.extremums.overHigh}${+r.extremums.overLow}`
                     );
                 }
             });
@@ -136,9 +136,9 @@ class ExtremumTradingBot {
 
         token.side = side
         token.price = candle.close;
-        token.startTime = candle.close;
+        token.startTime = Date.now();
 
-        const message = `${tokenSymbol} ${side}: ${candle.closeTime.toFixed(3)} ${candle.quoteVolume.toFixed(0)}`;
+        const message = `${tokenSymbol} ${side}: ${(candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);
@@ -163,7 +163,7 @@ class ExtremumTradingBot {
             if (pnlPercent > 0.3 || pnlPercent < -2.0 || timePassed > 300_000) { // 0.3% profit, -2% stop loss, or 5 min timeout
                 this.count = this.count + pnlPercent - 0.1;
                 const ico = pnlPercent > 0 ? "🚀" : "🔻";
-                const message = `${ticker} ${trade.side}${ico}: ${trade.price.toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${this.count.toFixed(2)}%`;
+                const message = `${ticker} ${trade.side}${ico}: ${(+trade.price).toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
 
                 this.log(message);
                 await this.sendTelegramAlert(message, true);
