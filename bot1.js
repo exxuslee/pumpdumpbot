@@ -116,6 +116,7 @@ class ExtremumTradingBot {
                 }
             });
 
+        await this.writeTokensFile();
         this.log(`✅ Updated hourly volumes for ${Object.keys(this.tokens).length} tokens`);
     }
 
@@ -188,7 +189,7 @@ class ExtremumTradingBot {
         }
         const ext = token.extremums;
 
-        if (token.side || !ext.quoteVolume || candle.quoteVolume <= ext.triggerVolume) return;
+        if (token.side || !ext.triggerVolume || (candle.quoteVolume < ext.triggerVolume)) return;
 
         if ((candle.close > ext.max) && ext.overLow) {
             this.enterTrade(tokenSymbol, '🟢', candle).then(r => true);
