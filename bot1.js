@@ -81,7 +81,7 @@ class ExtremumTradingBot {
             for (let i = 0; i < candles.length - 4; i++) {
                 min = Math.min(min, parseFloat(candles[i].low))
                 max = Math.max(max, parseFloat(candles[i].high))
-                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 120.0)
+                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 20.0)
             }
             let overHigh = false;
             let overLow = false;
@@ -90,7 +90,7 @@ class ExtremumTradingBot {
                 overLow = overLow || (parseFloat(candles[i].low) < min)
             }
 
-            return {triggerVolume: sumVolume.toFixed(0), min: min, max: max, overHigh: overHigh, overLow: overLow};
+            return {triggerVolume: +sumVolume.toFixed(0), min: min, max: max, overHigh: overHigh, overLow: overLow};
         } catch (error) {
             console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
             return {};
@@ -101,13 +101,13 @@ class ExtremumTradingBot {
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
             let newExtremums = await this.getHourlyCandes(tokenSymbol);
+            token.extremums = newExtremums;
             if (
                 ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh)
                 || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow)
             ) {
-                `📊 ${token.key}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`
+                this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`)
             }
-            token.extremums = newExtremums;
         });
 
         await Promise.all(updatePromises);
@@ -117,13 +117,14 @@ class ExtremumTradingBot {
             (acc, token) => {
                 if (token.extremums.overHigh) acc.overHigh += 1;
                 if (token.extremums.overLow) acc.overLow += 1;
+                if (!token.extremums.overHigh && !token.extremums.overLow) acc.inMiddle += 1;
                 return acc;
             },
-            {overHigh: 0, overLow: 0}
+            {overHigh: 0, overLow: 0, inMiddle: 0}
         );
 
         await this.writeTokensFile();
-        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}. Total: ${Object.keys(this.tokens).length}`);
+        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}. InMiddle: ${counts.inMiddle}`);
     }
 
     startHourlyUpdates() {
@@ -144,7 +145,7 @@ class ExtremumTradingBot {
         token.price = candle.close;
         token.startTime = Date.now();
 
-        const message = `${tokenSymbol} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
+        const message = `${tokenSymbol} ${token.cap} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);
@@ -162,7 +163,7 @@ class ExtremumTradingBot {
                 return;
             }
 
-            const isLong = trade.side === '🟢';
+            const isLong = trade.side === '📈';
             const pnlPercent = isLong ? (exitPrice - trade.price) / trade.price * 100 : (trade.price - exitPrice) / trade.price * 100;
             const timePassed = Date.now() - trade.startTime;
 
@@ -196,11 +197,11 @@ class ExtremumTradingBot {
         if (token.side || !ext.triggerVolume || (candle.quoteVolume < ext.triggerVolume)) return;
 
         if ((candle.close > ext.max) && ext.overLow) {
-            this.enterTrade(tokenSymbol, '🟢', candle).then(r => true);
+            this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
         }
 
         if ((candle.close < ext.min) && ext.overHigh) {
-            this.enterTrade(tokenSymbol, '🔴', candle).then(r => true);
+            this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
         }
     }
 
@@ -229,7 +230,7 @@ class ExtremumTradingBot {
             if (!process.env.TELEGRAM_TOKEN3) {
                 throw new Error("Missing Telegram token");
             }
-            this.startHourlyUpdates();
+            await this.startHourlyUpdates();
             this.startWebSocketMonitoring();
             this.log("🚀 Bot is now running with extremum tracking and hourly volume API updates!");
         } catch (error) {

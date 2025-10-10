@@ -7,22 +7,19 @@ const {writeFile} = require("node:fs/promises");
 // Constants
 const TOKENS_FILE = './tokens3.json';
 const STAT_FILE = './stat3.json';
-const INTERVAL_6H = 21_600_000; // 6 hours
-const INTERVAL_12H = 43_200_000; // 12 hours
-const API_DELAY = 200; // ms between API calls
-const VOLUME_HISTORY_DAYS = 7;
 
-class PumpDumpBot {
+class ExtremumTradingBot {
     constructor() {
         this.tokens = require(TOKENS_FILE);
         this.count = require(STAT_FILE).count;
         this.client = Binance.default({
-            apiKey: process.env.BINANCE_PUBLIC_KEY,
-            apiSecret: process.env.BINANCE_PRIVATE_KEY,
+            apiKey: process.env.BINANCE_PUBLIC_KEY, apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
         this.tgToken = process.env.TELEGRAM_TOKEN5;
         this.wsConnection = null;
-        this.exitTimeoutMs = 1_200_000
+        this.exitTimeoutMs = 3600_000;
+        this.retryExitTimeoutMs = 30_000;
+        this.hourlyUpdateInterval = null;
     }
 
     log(message) {
@@ -46,57 +43,6 @@ class PumpDumpBot {
         }
     }
 
-    async calculateAverageVolume() {
-        this.log("📊 Calculating average volumes...");
-
-        const tokenSymbols = Object.keys(this.tokens);
-        let processed = 0;
-
-        for (const token of tokenSymbols) {
-            try {
-                const symbol = `${token}USDT`;
-                const candles = await this.client.candles({
-                    symbol,
-                    interval: "1d",
-                    limit: VOLUME_HISTORY_DAYS
-                });
-
-                // Calculate average hourly quote volume
-                const totalVolume = candles.reduce((sum, candle) => {
-                    return sum + parseFloat(candle.quoteVolume);
-                }, 0);
-
-                this.tokens[token].avgQuoteVolume4h = Math.round(totalVolume / candles.length / 24);
-
-                processed++;
-                this.log(`🟢 ${symbol}: ${(+this.tokens[token].avgQuoteVolume4h).toFixed(2)} USDT/4hour (${processed}/${tokenSymbols.length})`);
-
-                // Rate limiting
-                await this.delay(API_DELAY);
-
-            } catch (error) {
-                console.error(`❌ Error calculating volume for ${token}:`, error.message);
-            }
-        }
-
-        await this.writeTokensFile();
-        this.log("✅ Average volume calculation completed");
-    }
-
-    delay(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    setupScheduledTasks() {
-        const now = dayjs();
-        const secondsToNextMinute = 60 - now.second();
-        const msToNextMinute = secondsToNextMinute * 1000;
-        this.log(`⏱️ Scheduling tasks to start in ${secondsToNextMinute} seconds`);
-        setTimeout(() => {
-            setInterval(() => this.calculateAverageVolume(), INTERVAL_12H);
-        }, msToNextMinute);
-    }
-
     async sendTelegramAlert(message, isSilent) {
         try {
             await telegram.sendMessage(message, this.tgToken, isSilent);
@@ -108,7 +54,7 @@ class PumpDumpBot {
 
     async getCurrentPrice(ticker) {
         try {
-            const pair = `${ticker}USDT`
+            const pair = `${ticker}USDT`;
             const prices = await this.client.prices({symbol: pair});
             return parseFloat(prices[pair]);
         } catch (error) {
@@ -117,32 +63,123 @@ class PumpDumpBot {
         }
     }
 
+    async getHourlyCandes(tokenSymbol) {
+        try {
+            const pair = `${tokenSymbol}USDT`;
+            const candles = await this.client.futuresCandles({
+                symbol: pair, interval: "15m", limit: 17
+            });
+
+            if (!candles || candles.length === 0) {
+                this.log(`⚠️ No hourly candles received for ${tokenSymbol}`);
+                return {};
+            }
+
+            let sumVolume = 0.0;
+            let min = 1_000_000.0;
+            let max = 0.0;
+            for (let i = 0; i < candles.length - 4; i++) {
+                min = Math.min(min, parseFloat(candles[i].low))
+                max = Math.max(max, parseFloat(candles[i].high))
+                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 20.0)
+            }
+            let overLow= 1_000_000.0;
+            let overHigh = 0.0;
+            for (let i = candles.length - 4; i < candles.length; i++) {
+                overLow = Math.min(overLow, parseFloat(candles[i].low))
+                overHigh = Math.max(overHigh, parseFloat(candles[i].high))
+            }
+
+            return {triggerVolume: +sumVolume.toFixed(0), max: max, min: min, overHigh: overHigh, overLow: overLow};
+        } catch (error) {
+            console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
+            return {};
+        }
+    }
+
+    async updateAllHourly() {
+        const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
+            const token = this.tokens[tokenSymbol];
+            let newExtremums = await this.getHourlyCandes(tokenSymbol);
+            token.extremums = newExtremums;
+            if (
+                ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh > newExtremums.max)
+                || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow < newExtremums.min)
+            ) {
+                this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`)
+            }
+        });
+
+        await Promise.all(updatePromises);
+
+        const tokensArray = Object.entries(this.tokens).map(([key, value]) => ({key, ...value,}));
+        const counts = tokensArray.reduce(
+            (acc, token) => {
+                if (token.extremums.overHigh > token.extremums.max) acc.overHigh += 1;
+                if (token.extremums.overLow < token.extremums.min) acc.overLow += 1;
+                return acc;
+            },
+            {overHigh: 0, overLow: 0}
+        );
+
+        await this.writeTokensFile();
+        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}`);
+    }
+
+    startHourlyUpdates() {
+        this.updateAllHourly().catch(error => {
+            console.error("❌ Error in initial hourly volume update:", error);
+        });
+        this.hourlyUpdateInterval = setInterval(() => {
+            this.updateAllHourly().catch(error => {
+                console.error("❌ Error in periodic hourly volume update:", error);
+            });
+        }, 120_000);
+    }
+
+    async enterTrade(tokenSymbol, side, candle) {
+        const token = this.tokens[tokenSymbol];
+
+        token.side = side
+        token.price = candle.close;
+        token.startTime = Date.now();
+
+        const message = `${tokenSymbol} ${token.cap} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
+
+        this.log(`🎯 ${message}`);
+        await this.sendTelegramAlert(message, false);
+        await this.writeTokensFile();
+
+        setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
+    }
+
     async exitTrade(ticker) {
-        const trade = this.tokens[ticker]
+        const trade = this.tokens[ticker];
         try {
             const exitPrice = await this.getCurrentPrice(ticker);
             if (!exitPrice) {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const pnlPercent = trade.side === '🟢'
-                ? (exitPrice - trade.price) / exitPrice * 100
-                : (trade.price - exitPrice) / trade.price * 100;
 
-            if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
+            const isLong = trade.side === '📈';
+            const pnlPercent = isLong ? (exitPrice - trade.price) / trade.price * 100 : (trade.price - exitPrice) / trade.price * 100;
+            const timePassed = Date.now() - trade.startTime;
+
+            const stopBuy = isLong && ((trade.extremums.overHigh - trade.extremums.max) * 2 / 3 > ticker.close);
+            const stopSell = !isLong && ((trade.extremums.min - trade.extremums.overLow) * 2 / 3 < ticker.close);
+
+            if (stopBuy || stopSell || pnlPercent < -2.0 || timePassed > 300_000) {
                 this.count = this.count + pnlPercent - 0.1;
-                let direction = trade.side === '🟢' ? '🟢' : '🔴';
-                let ico
-                if (pnlPercent > 0) ico = "🚀"
-                else ico = "🔻"
-                const massage = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
-                this.log(massage);
-                await this.sendTelegramAlert(massage, true);
+                const ico = pnlPercent > 0 ? "🚀" : "🔻";
+                const message = `${ticker} ${trade.side}${ico}: ${(+trade.price).toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
+                await this.sendTelegramAlert(message, true);
+
                 delete trade.side;
                 await this.writeTokensFile();
                 await this.writeStatFile();
             } else {
-                setTimeout(() => this.exitTrade(ticker), this.exitTimeoutMs);
+                setTimeout(() => this.exitTrade(ticker), this.retryExitTimeoutMs);
             }
         } catch (error) {
             console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
@@ -150,50 +187,34 @@ class PumpDumpBot {
         }
     }
 
-    async detectPumpDump(candle) {
+    async processCandle(candle) {
         const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
         const token = this.tokens[tokenSymbol];
-
-        if (!token || !token.avgQuoteVolume4h) {
+        if (!token) {
             console.warn(`⚠️ Unknown token: ${tokenSymbol}`);
             return;
         }
+        const ext = token.extremums;
 
-        const buyVolume = parseFloat(candle.buyVolume);
-        const sellVolume = parseFloat(candle.volume) - buyVolume;
-        const volumeRatio = buyVolume / sellVolume;
+        if (token.side || !ext.triggerVolume || (candle.quoteVolume < ext.triggerVolume)) return;
 
-        let start1 = parseFloat(candle.quoteVolume) > token.avgQuoteVolume4h
-        let start2 = candle.eventTime > ((token.startTime ?? 0) + INTERVAL_6H)
-        let start3 = ((candle.high - candle.low) / candle.high) > 0.03
-        let start4 = (volumeRatio > 1.5) || (volumeRatio < 0.66);
-
-        if (start1 && ((+start2 + start3 + start4) === 2) && ((Date.now() - (token.log ?? 0)) > 600_000)) {
-            token.log = candle.eventTime
-            this.log(`${tokenSymbol}: ${+start1}${+start2}${+start3}${+start4} ${(+candle.high).toFixed(3)}-${(+candle.low).toFixed(3)} ${buyVolume}/${sellVolume.toFixed(0)}`);
+        if ((candle.close > ext.max) && (ext.min > ext.overLow)) {
+            this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
         }
 
-        if (start1 && start2 && start3 && start4) {
-            token.price = +candle.close;
-            token.startTime = candle.eventTime
-            const direction = buyVolume > sellVolume ? '🔴' : '🟢';
-            token.side = direction;
-
-            const message = `${tokenSymbol} ${direction}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
-            this.sendTelegramAlert(message, false);
-            await this.writeTokensFile();
-            setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
+        if ((candle.close < ext.min) && (ext.max < ext.overHigh)) {
+            this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
         }
     }
 
     startWebSocketMonitoring() {
         const pairs = Object.keys(this.tokens).map(key => `${key}USDT`);
-
-        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs`);
-
+        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs on 1-minute candles`);
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
-                this.detectPumpDump(candle).then(r => true);
+            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
+                this.processCandle(candle).catch(error => {
+                    console.error("❌ Error processing candle:", error);
+                });
             });
             this.log("✅ WebSocket connection established");
         } catch (error) {
@@ -203,20 +224,17 @@ class PumpDumpBot {
     }
 
     async start() {
-        this.log("💵 == PUMP/DUMP BOT STARTING == 💵");
-        this.sendTelegramAlert("PUMP/DUMP BOT 5m reverse", false);
-
+        this.log("📊 == EXTREMUM TRADING BOT STARTING == 📊");
         try {
             if (!process.env.BINANCE_PUBLIC_KEY || !process.env.BINANCE_PRIVATE_KEY) {
                 throw new Error("Missing Binance API credentials");
             }
-            if (!process.env.TELEGRAM_TOKEN) {
+            if (!process.env.TELEGRAM_TOKEN3) {
                 throw new Error("Missing Telegram token");
             }
-            await this.calculateAverageVolume();
-            this.setupScheduledTasks();
+            await this.startHourlyUpdates();
             this.startWebSocketMonitoring();
-            this.log("🚀 Bot is now running!");
+            this.log("🚀 Bot is now running with extremum tracking and hourly volume API updates!");
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
             process.exit(1);
@@ -231,6 +249,11 @@ class PumpDumpBot {
             this.log("✅ WebSocket connection closed");
         }
 
+        if (this.hourlyUpdateInterval) {
+            clearInterval(this.hourlyUpdateInterval);
+            this.log("✅ Hourly update interval cleared");
+        }
+
         this.log("👋 Bot stopped");
     }
 }
@@ -240,13 +263,11 @@ process.on('SIGINT', () => {
     if (global.bot) {
         global.bot.stop();
     }
-
     process.exit(0);
-})
-;
+});
 
-const bot = new PumpDumpBot();
-global.bot = bot; // Store reference for graceful shutdown
+const bot = new ExtremumTradingBot();
+global.bot = bot;
 bot.start().catch(error => {
     console.error("💥 Unhandled error:", error);
     process.exit(1);
