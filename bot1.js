@@ -138,7 +138,7 @@ class ExtremumTradingBot {
         token.price = candle.close;
         token.startTime = Date.now();
 
-        const message = `${tokenSymbol} ${side}: ${(candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
+        const message = `${tokenSymbol} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);

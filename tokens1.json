@@ -4,9 +4,9 @@
     "price": 4.072,
     "avgQuoteVolume4h": 268623,
     "extremums": {
-      "triggerVolume": "104380",
-      "min": 3.98,
-      "max": 4.046,
+      "triggerVolume": "39088",
+      "min": 4.023,
+      "max": 4.059,
       "overHigh": false,
       "overLow": false
     }
@@ -16,9 +16,9 @@
     "price": 0.022,
     "avgQuoteVolume4h": 275534,
     "extremums": {
-      "triggerVolume": "33664",
-      "min": 0.021676,
-      "max": 0.022215,
+      "triggerVolume": "9581",
+      "min": 0.021922,
+      "max": 0.022087,
       "overHigh": false,
       "overLow": false
     }
@@ -28,10 +28,10 @@
     "price": 0.207,
     "avgQuoteVolume4h": 288983,
     "extremums": {
-      "triggerVolume": "64177",
-      "min": 0.2129,
-      "max": 0.2183,
-      "overHigh": false,
+      "triggerVolume": "30909",
+      "min": 0.2166,
+      "max": 0.2186,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -40,10 +40,10 @@
     "price": 0.029,
     "avgQuoteVolume4h": 1988844,
     "extremums": {
-      "triggerVolume": "400145",
-      "min": 0.029519,
-      "max": 0.030661,
-      "overHigh": false,
+      "triggerVolume": "133272",
+      "min": 0.02996,
+      "max": 0.030383,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -52,8 +52,8 @@
     "price": 3.468,
     "avgQuoteVolume4h": 323871,
     "extremums": {
-      "triggerVolume": "91292",
-      "min": 3.165,
+      "triggerVolume": "35142",
+      "min": 3.233,
       "max": 3.265,
       "overHigh": false,
       "overLow": false
@@ -64,9 +64,9 @@
     "price": 0.282,
     "avgQuoteVolume4h": 1114304,
     "extremums": {
-      "triggerVolume": "172856",
-      "min": 0.2709,
-      "max": 0.2808,
+      "triggerVolume": "48621",
+      "min": 0.2754,
+      "max": 0.279,
       "overHigh": false,
       "overLow": false
     }
@@ -76,10 +76,10 @@
     "price": 0.065,
     "avgQuoteVolume4h": 372433,
     "extremums": {
-      "triggerVolume": "5722",
-      "min": 0.06584,
-      "max": 0.06725,
-      "overHigh": false,
+      "triggerVolume": "3444",
+      "min": 0.06641,
+      "max": 0.06698,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -88,10 +88,10 @@
     "price": 2.183,
     "avgQuoteVolume4h": 518517,
     "extremums": {
-      "triggerVolume": "300017",
-      "min": 2.216,
-      "max": 2.276,
-      "overHigh": false,
+      "triggerVolume": "93789",
+      "min": 2.254,
+      "max": 2.277,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -100,10 +100,10 @@
     "price": 7.524,
     "avgQuoteVolume4h": 1032692,
     "extremums": {
-      "triggerVolume": "319302",
-      "min": 7.378,
-      "max": 7.581,
-      "overHigh": false,
+      "triggerVolume": "100986",
+      "min": 7.458,
+      "max": 7.528,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -112,10 +112,10 @@
     "price": 0.456,
     "avgQuoteVolume4h": 231306,
     "extremums": {
-      "triggerVolume": "64600",
-      "min": 0.4192,
-      "max": 0.4321,
-      "overHigh": false,
+      "triggerVolume": "32756",
+      "min": 0.4257,
+      "max": 0.4294,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -124,9 +124,9 @@
     "price": 0.731,
     "avgQuoteVolume4h": 415724,
     "extremums": {
-      "triggerVolume": "31013",
-      "min": 0.6687,
-      "max": 0.6882,
+      "triggerVolume": "17587",
+      "min": 0.6777,
+      "max": 0.6875,
       "overHigh": false,
       "overLow": false
     }
@@ -136,11 +136,11 @@
     "price": 0.577,
     "avgQuoteVolume4h": 403398,
     "extremums": {
-      "triggerVolume": "228541",
-      "min": 0.4945,
-      "max": 0.5276,
+      "triggerVolume": "127464",
+      "min": 0.487,
+      "max": 0.502,
       "overHigh": false,
-      "overLow": true
+      "overLow": false
     }
   },
   "INJ": {
@@ -148,10 +148,10 @@
     "price": 11.959,
     "avgQuoteVolume4h": 377757,
     "extremums": {
-      "triggerVolume": "126949",
-      "min": 11.793,
-      "max": 12.207,
-      "overHigh": false,
+      "triggerVolume": "49217",
+      "min": 12.001,
+      "max": 12.109,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -160,9 +160,9 @@
     "price": 0.667,
     "avgQuoteVolume4h": 704207,
     "extremums": {
-      "triggerVolume": "182354",
-      "min": 0.6829,
-      "max": 0.7002,
+      "triggerVolume": "66965",
+      "min": 0.6931,
+      "max": 0.7011,
       "overHigh": false,
       "overLow": false
     }
@@ -172,9 +172,9 @@
     "price": 93.213,
     "avgQuoteVolume4h": 124232,
     "extremums": {
-      "triggerVolume": "16244",
-      "min": 99,
-      "max": 101.83,
+      "triggerVolume": "10647",
+      "min": 99.99,
+      "max": 101.15,
       "overHigh": false,
       "overLow": false
     }
@@ -184,9 +184,9 @@
     "price": 1.411,
     "avgQuoteVolume4h": 540287,
     "extremums": {
-      "triggerVolume": "198848",
-      "min": 1.4064,
-      "max": 1.4424,
+      "triggerVolume": "97080",
+      "min": 1.4216,
+      "max": 1.4434,
       "overHigh": false,
       "overLow": false
     }
@@ -196,9 +196,9 @@
     "price": 0.582,
     "avgQuoteVolume4h": 95566,
     "extremums": {
-      "triggerVolume": "25425",
-      "min": 0.5808,
-      "max": 0.5966,
+      "triggerVolume": "12220",
+      "min": 0.5874,
+      "max": 0.5929,
       "overHigh": false,
       "overLow": false
     }
@@ -208,10 +208,10 @@
     "price": 1.083,
     "avgQuoteVolume4h": 640347,
     "extremums": {
-      "triggerVolume": "193310",
-      "min": 1.1163,
-      "max": 1.1548,
-      "overHigh": false,
+      "triggerVolume": "65452",
+      "min": 1.1348,
+      "max": 1.15,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -220,9 +220,9 @@
     "price": 0.155,
     "avgQuoteVolume4h": 165033,
     "extremums": {
-      "triggerVolume": "12781",
-      "min": 0.137,
-      "max": 0.1399,
+      "triggerVolume": "5729",
+      "min": 0.1383,
+      "max": 0.1395,
       "overHigh": false,
       "overLow": false
     }
@@ -232,10 +232,10 @@
     "price": 58.335,
     "avgQuoteVolume4h": 222138,
     "extremums": {
-      "triggerVolume": "1228667",
-      "min": 180.12,
-      "max": 194.25,
-      "overHigh": true,
+      "triggerVolume": "1229944",
+      "min": 200.53,
+      "max": 217.99,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -244,10 +244,10 @@
     "price": 0.67,
     "avgQuoteVolume4h": 721995,
     "extremums": {
-      "triggerVolume": "186823",
-      "min": 0.708,
-      "max": 0.729,
-      "overHigh": false,
+      "triggerVolume": "124234",
+      "min": 0.723,
+      "max": 0.735,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -256,9 +256,9 @@
     "price": 2.686,
     "avgQuoteVolume4h": 1161778,
     "extremums": {
-      "triggerVolume": "364977",
-      "min": 3.6351,
-      "max": 3.8089,
+      "triggerVolume": "128422",
+      "min": 3.69,
+      "max": 3.795,
       "overHigh": false,
       "overLow": false
     }
@@ -268,9 +268,9 @@
     "price": 0.082,
     "avgQuoteVolume4h": 148210,
     "extremums": {
-      "triggerVolume": "21962",
-      "min": 0.07922,
-      "max": 0.08093,
+      "triggerVolume": "10078",
+      "min": 0.08049,
+      "max": 0.08128,
       "overHigh": false,
       "overLow": false
     }
@@ -280,9 +280,9 @@
     "price": 0.146,
     "avgQuoteVolume4h": 345953,
     "extremums": {
-      "triggerVolume": "69270",
-      "min": 0.15055,
-      "max": 0.15581,
+      "triggerVolume": "31216",
+      "min": 0.1539,
+      "max": 0.15553,
       "overHigh": false,
       "overLow": false
     }
@@ -292,11 +292,11 @@
     "price": 1.621,
     "avgQuoteVolume4h": 1168219,
     "extremums": {
-      "triggerVolume": "130075",
-      "min": 1.602,
-      "max": 1.634,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "61595",
+      "min": 1.6135,
+      "max": 1.6404,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "DEXE": {
@@ -304,10 +304,10 @@
     "price": 9.563,
     "avgQuoteVolume4h": 469392,
     "extremums": {
-      "triggerVolume": "38796",
-      "min": 10.564,
-      "max": 11.377,
-      "overHigh": false,
+      "triggerVolume": "7598",
+      "min": 10.983,
+      "max": 11.232,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -316,11 +316,11 @@
     "price": 4.639,
     "avgQuoteVolume4h": 473798,
     "extremums": {
-      "triggerVolume": "69411",
-      "min": 4.3809,
-      "max": 4.4906,
-      "overHigh": false,
-      "overLow": true
+      "triggerVolume": "41849",
+      "min": 4.4291,
+      "max": 4.492,
+      "overHigh": true,
+      "overLow": false
     }
   },
   "WIF": {
@@ -328,9 +328,9 @@
     "price": 0.762,
     "avgQuoteVolume4h": 950250,
     "extremums": {
-      "triggerVolume": "355842",
-      "min": 0.6872,
-      "max": 0.706,
+      "triggerVolume": "119510",
+      "min": 0.6983,
+      "max": 0.7076,
       "overHigh": false,
       "overLow": false
     }
@@ -340,10 +340,10 @@
     "price": 20.212,
     "avgQuoteVolume4h": 234104,
     "extremums": {
-      "triggerVolume": "52171",
-      "min": 20.2,
-      "max": 20.699,
-      "overHigh": false,
+      "triggerVolume": "18867",
+      "min": 20.421,
+      "max": 20.624,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -352,9 +352,9 @@
     "price": 0.142,
     "avgQuoteVolume4h": 355485,
     "extremums": {
-      "triggerVolume": "48771",
-      "min": 0.13623,
-      "max": 0.1406,
+      "triggerVolume": "17480",
+      "min": 0.13855,
+      "max": 0.13996,
       "overHigh": false,
       "overLow": false
     }
@@ -364,9 +364,9 @@
     "price": 0.719,
     "avgQuoteVolume4h": 104793,
     "extremums": {
-      "triggerVolume": "22212",
-      "min": 0.6941,
-      "max": 0.7091,
+      "triggerVolume": "12866",
+      "min": 0.6984,
+      "max": 0.7082,
       "overHigh": false,
       "overLow": false
     }
@@ -376,10 +376,10 @@
     "price": 0.669,
     "avgQuoteVolume4h": 73494,
     "extremums": {
-      "triggerVolume": "18662",
-      "min": 0.657,
-      "max": 0.671,
-      "overHigh": false,
+      "triggerVolume": "8453",
+      "min": 0.666,
+      "max": 0.674,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -388,9 +388,9 @@
     "price": 0.242,
     "avgQuoteVolume4h": 665145,
     "extremums": {
-      "triggerVolume": "95191",
-      "min": 0.2589,
-      "max": 0.2666,
+      "triggerVolume": "47311",
+      "min": 0.2644,
+      "max": 0.2728,
       "overHigh": false,
       "overLow": false
     }
@@ -400,9 +400,9 @@
     "price": 1.05,
     "avgQuoteVolume4h": 395286,
     "extremums": {
-      "triggerVolume": "87054",
-      "min": 1.0251,
-      "max": 1.0679,
+      "triggerVolume": "38723",
+      "min": 1.0445,
+      "max": 1.0618,
       "overHigh": false,
       "overLow": false
     }
@@ -412,9 +412,9 @@
     "price": 0.266,
     "avgQuoteVolume4h": 188012,
     "extremums": {
-      "triggerVolume": "48608",
-      "min": 0.2572,
-      "max": 0.26325,
+      "triggerVolume": "28326",
+      "min": 0.26219,
+      "max": 0.26467,
       "overHigh": false,
       "overLow": false
     }
@@ -424,9 +424,9 @@
     "price": 0.015,
     "avgQuoteVolume4h": 464922,
     "extremums": {
-      "triggerVolume": "129424",
-      "min": 0.01478,
-      "max": 0.0152,
+      "triggerVolume": "55620",
+      "min": 0.01518,
+      "max": 0.01538,
       "overHigh": false,
       "overLow": false
     }
@@ -436,11 +436,11 @@
     "price": 0.166,
     "avgQuoteVolume4h": 108773,
     "extremums": {
-      "triggerVolume": "19716",
-      "min": 0.1751,
-      "max": 0.1801,
+      "triggerVolume": "6380",
+      "min": 0.1781,
+      "max": 0.1802,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "JTO": {
@@ -448,10 +448,10 @@
     "price": 1.604,
     "avgQuoteVolume4h": 157414,
     "extremums": {
-      "triggerVolume": "26912",
-      "min": 1.5247,
-      "max": 1.5664,
-      "overHigh": false,
+      "triggerVolume": "11201",
+      "min": 1.5429,
+      "max": 1.5589,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -460,9 +460,9 @@
     "price": 0.012,
     "avgQuoteVolume4h": 99894,
     "extremums": {
-      "triggerVolume": "18511",
-      "min": 0.012018,
-      "max": 0.012429,
+      "triggerVolume": "10142",
+      "min": 0.012254,
+      "max": 0.012402,
       "overHigh": false,
       "overLow": false
     }
@@ -472,11 +472,11 @@
     "price": 1.71,
     "avgQuoteVolume4h": 1151538,
     "extremums": {
-      "triggerVolume": "162272",
-      "min": 1.741,
-      "max": 1.8015,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "73170",
+      "min": 1.785,
+      "max": 1.8176,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "MANA": {
@@ -484,10 +484,10 @@
     "price": 0.286,
     "avgQuoteVolume4h": 131650,
     "extremums": {
-      "triggerVolume": "32405",
-      "min": 0.3082,
-      "max": 0.3142,
-      "overHigh": true,
+      "triggerVolume": "24732",
+      "min": 0.3142,
+      "max": 0.3185,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -496,9 +496,9 @@
     "price": 0.347,
     "avgQuoteVolume4h": 31505,
     "extremums": {
-      "triggerVolume": "36577",
-      "min": 0.351,
-      "max": 0.36,
+      "triggerVolume": "19219",
+      "min": 0.353,
+      "max": 0.359,
       "overHigh": false,
       "overLow": false
     }
@@ -508,9 +508,9 @@
     "price": 0.027,
     "avgQuoteVolume4h": 2467915,
     "extremums": {
-      "triggerVolume": "29639",
-      "min": 0.025505,
-      "max": 0.026151,
+      "triggerVolume": "6404",
+      "min": 0.025579,
+      "max": 0.025742,
       "overHigh": false,
       "overLow": false
     }
@@ -520,9 +520,9 @@
     "price": 2.055,
     "avgQuoteVolume4h": 437977,
     "extremums": {
-      "triggerVolume": "67679",
-      "min": 2.2478,
-      "max": 2.3566,
+      "triggerVolume": "34548",
+      "min": 2.2587,
+      "max": 2.3029,
       "overHigh": false,
       "overLow": false
     }
@@ -532,10 +532,10 @@
     "price": 1.173,
     "avgQuoteVolume4h": 1914595,
     "extremums": {
-      "triggerVolume": "86700",
-      "min": 1.4261,
-      "max": 1.4979,
-      "overHigh": false,
+      "triggerVolume": "55079",
+      "min": 1.4483,
+      "max": 1.53,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -544,10 +544,10 @@
     "price": 0.118,
     "avgQuoteVolume4h": 200158,
     "extremums": {
-      "triggerVolume": "78124",
-      "min": 0.1515,
-      "max": 0.157,
-      "overHigh": false,
+      "triggerVolume": "23790",
+      "min": 0.1534,
+      "max": 0.1559,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -556,11 +556,11 @@
     "price": 0.396,
     "avgQuoteVolume4h": 296178,
     "extremums": {
-      "triggerVolume": "40728",
-      "min": 0.38388,
-      "max": 0.39488,
+      "triggerVolume": "11805",
+      "min": 0.38964,
+      "max": 0.39419,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "W": {
@@ -568,10 +568,10 @@
     "price": 0.099,
     "avgQuoteVolume4h": 800102,
     "extremums": {
-      "triggerVolume": "77979",
-      "min": 0.10764,
-      "max": 0.11171,
-      "overHigh": false,
+      "triggerVolume": "37217",
+      "min": 0.11011,
+      "max": 0.11139,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -580,10 +580,10 @@
     "price": 0.591,
     "avgQuoteVolume4h": 405426,
     "extremums": {
-      "triggerVolume": "62811",
-      "min": 0.553,
-      "max": 0.569,
-      "overHigh": false,
+      "triggerVolume": "24272",
+      "min": 0.562,
+      "max": 0.568,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -592,9 +592,9 @@
     "price": 1.135,
     "avgQuoteVolume4h": 724998,
     "extremums": {
-      "triggerVolume": "341405",
-      "min": 1.1411,
-      "max": 1.2353,
+      "triggerVolume": "152633",
+      "min": 1.1643,
+      "max": 1.2398,
       "overHigh": false,
       "overLow": false
     }
@@ -604,10 +604,10 @@
     "price": 0.027,
     "avgQuoteVolume4h": 14201825,
     "extremums": {
-      "triggerVolume": "108861",
-      "min": 0.02462,
-      "max": 0.02522,
-      "overHigh": false,
+      "triggerVolume": "45723",
+      "min": 0.02504,
+      "max": 0.02542,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -616,10 +616,10 @@
     "price": 5.781,
     "avgQuoteVolume4h": 129349,
     "extremums": {
-      "triggerVolume": "22571",
-      "min": 5.932,
+      "triggerVolume": "10183",
+      "min": 6.027,
       "max": 6.083,
-      "overHigh": false,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -628,10 +628,10 @@
     "price": 1.15,
     "avgQuoteVolume4h": 206018,
     "extremums": {
-      "triggerVolume": "25244",
-      "min": 1.126,
-      "max": 1.154,
-      "overHigh": false,
+      "triggerVolume": "12666",
+      "min": 1.146,
+      "max": 1.156,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -640,9 +640,9 @@
     "price": 0.049,
     "avgQuoteVolume4h": 153980,
     "extremums": {
-      "triggerVolume": "28183",
-      "min": 0.053,
-      "max": 0.05466,
+      "triggerVolume": "11262",
+      "min": 0.05388,
+      "max": 0.05451,
       "overHigh": false,
       "overLow": false
     }
@@ -652,9 +652,9 @@
     "price": 0.523,
     "avgQuoteVolume4h": 156256,
     "extremums": {
-      "triggerVolume": "36580",
-      "min": 0.5463,
-      "max": 0.5584,
+      "triggerVolume": "13450",
+      "min": 0.555,
+      "max": 0.56,
       "overHigh": false,
       "overLow": false
     }
@@ -664,9 +664,9 @@
     "price": 0.039,
     "avgQuoteVolume4h": 86755,
     "extremums": {
-      "triggerVolume": "19276",
-      "min": 0.0402,
-      "max": 0.04101,
+      "triggerVolume": "11719",
+      "min": 0.04081,
+      "max": 0.04136,
       "overHigh": false,
       "overLow": false
     }
@@ -676,9 +676,9 @@
     "price": 40.686,
     "avgQuoteVolume4h": 91131,
     "extremums": {
-      "triggerVolume": "20674",
-      "min": 41.02,
-      "max": 41.73,
+      "triggerVolume": "8048",
+      "min": 41.48,
+      "max": 41.87,
       "overHigh": false,
       "overLow": false
     }
@@ -688,9 +688,9 @@
     "price": 5.731,
     "avgQuoteVolume4h": 182855,
     "extremums": {
-      "triggerVolume": "30379",
-      "min": 5.537,
-      "max": 5.756,
+      "triggerVolume": "8914",
+      "min": 5.645,
+      "max": 5.715,
       "overHigh": false,
       "overLow": false
     }
@@ -700,9 +700,9 @@
     "price": 12.64,
     "avgQuoteVolume4h": 76445,
     "extremums": {
-      "triggerVolume": "19153",
-      "min": 12.71,
-      "max": 13.062,
+      "triggerVolume": "9631",
+      "min": 13.029,
+      "max": 13.17,
       "overHigh": false,
       "overLow": false
     }
@@ -712,10 +712,10 @@
     "price": 2.143,
     "avgQuoteVolume4h": 96152,
     "extremums": {
-      "triggerVolume": "54270",
-      "min": 2.068,
-      "max": 2.117,
-      "overHigh": true,
+      "triggerVolume": "96939",
+      "min": 2.136,
+      "max": 2.251,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -724,10 +724,10 @@
     "price": "0.33050000",
     "avgQuoteVolume4h": 79817,
     "extremums": {
-      "triggerVolume": "10994",
-      "min": 0.3181,
-      "max": 0.324,
-      "overHigh": true,
+      "triggerVolume": "19816",
+      "min": 0.3291,
+      "max": 0.337,
+      "overHigh": false,
       "overLow": false
     },
     "side": "🟢",
@@ -738,10 +738,10 @@
     "price": 0.519,
     "avgQuoteVolume4h": 45837,
     "extremums": {
-      "triggerVolume": "15176",
-      "min": 0.55,
-      "max": 0.5668,
-      "overHigh": false,
+      "triggerVolume": "10185",
+      "min": 0.5574,
+      "max": 0.5639,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -750,10 +750,10 @@
     "price": 0.231,
     "avgQuoteVolume4h": 58154,
     "extremums": {
-      "triggerVolume": "12958",
-      "min": 0.243,
-      "max": 0.2487,
-      "overHigh": false,
+      "triggerVolume": "6171",
+      "min": 0.2477,
+      "max": 0.2504,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -762,11 +762,11 @@
     "price": 2.534,
     "avgQuoteVolume4h": 522218,
     "extremums": {
-      "triggerVolume": "59455",
-      "min": 2.634,
-      "max": 2.707,
+      "triggerVolume": "31055",
+      "min": 2.678,
+      "max": 2.723,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "JST": {
@@ -774,9 +774,9 @@
     "price": 0.032,
     "avgQuoteVolume4h": 160690,
     "extremums": {
-      "triggerVolume": "2280",
-      "min": 0.032164,
-      "max": 0.032503,
+      "triggerVolume": "552",
+      "min": 0.032312,
+      "max": 0.032424,
       "overHigh": false,
       "overLow": false
     }
@@ -786,10 +786,10 @@
     "price": 3.209,
     "avgQuoteVolume4h": 103447,
     "extremums": {
-      "triggerVolume": "10254",
-      "min": 3.18,
-      "max": 3.286,
-      "overHigh": false,
+      "triggerVolume": "5148",
+      "min": 3.199,
+      "max": 3.242,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -798,10 +798,10 @@
     "price": 0.113,
     "avgQuoteVolume4h": 104605,
     "extremums": {
-      "triggerVolume": "16675",
-      "min": 0.1061,
-      "max": 0.1085,
-      "overHigh": false,
+      "triggerVolume": "6172",
+      "min": 0.1079,
+      "max": 0.1089,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -810,9 +810,9 @@
     "price": 0.297,
     "avgQuoteVolume4h": 90083,
     "extremums": {
-      "triggerVolume": "11483",
-      "min": 0.2838,
-      "max": 0.2903,
+      "triggerVolume": "7196",
+      "min": 0.2881,
+      "max": 0.2927,
       "overHigh": false,
       "overLow": false
     }
@@ -822,10 +822,10 @@
     "price": 0.1,
     "avgQuoteVolume4h": 402430,
     "extremums": {
-      "triggerVolume": "42033",
-      "min": 0.09706,
-      "max": 0.10008,
-      "overHigh": false,
+      "triggerVolume": "21706",
+      "min": 0.09892,
+      "max": 0.10179,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -834,10 +834,10 @@
     "price": 0.826,
     "avgQuoteVolume4h": 308665,
     "extremums": {
-      "triggerVolume": "29160",
-      "min": 1.074,
-      "max": 1.113,
-      "overHigh": true,
+      "triggerVolume": "116329",
+      "min": 1.129,
+      "max": 1.199,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -846,9 +846,9 @@
     "price": 6.028,
     "avgQuoteVolume4h": 99939,
     "extremums": {
-      "triggerVolume": "18689",
-      "min": 6.087,
-      "max": 6.254,
+      "triggerVolume": "7475",
+      "min": 6.162,
+      "max": 6.234,
       "overHigh": false,
       "overLow": false
     }
@@ -858,10 +858,10 @@
     "price": 20.618,
     "avgQuoteVolume4h": 46423,
     "extremums": {
-      "triggerVolume": "54180",
-      "min": 30.16,
-      "max": 31.93,
-      "overHigh": false,
+      "triggerVolume": "128447",
+      "min": 31.57,
+      "max": 35.58,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -870,9 +870,9 @@
     "price": 0.487,
     "avgQuoteVolume4h": 263405,
     "extremums": {
-      "triggerVolume": "7540",
-      "min": 0.4943,
-      "max": 0.5106,
+      "triggerVolume": "4770",
+      "min": 0.5027,
+      "max": 0.5108,
       "overHigh": false,
       "overLow": false
     }
@@ -882,10 +882,10 @@
     "price": 0.995,
     "avgQuoteVolume4h": 121387,
     "extremums": {
-      "triggerVolume": "54582",
-      "min": 1.2728,
-      "max": 1.3025,
-      "overHigh": false,
+      "triggerVolume": "24946",
+      "min": 1.285,
+      "max": 1.2993,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -894,10 +894,10 @@
     "price": 13.714,
     "avgQuoteVolume4h": 69883,
     "extremums": {
-      "triggerVolume": "11324",
-      "min": 14.28,
-      "max": 14.628,
-      "overHigh": false,
+      "triggerVolume": "3473",
+      "min": 14.534,
+      "max": 14.647,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -906,9 +906,9 @@
     "price": 0.117,
     "avgQuoteVolume4h": 326503,
     "extremums": {
-      "triggerVolume": "13467",
-      "min": 0.09302,
-      "max": 0.09618,
+      "triggerVolume": "4490",
+      "min": 0.09491,
+      "max": 0.09636,
       "overHigh": false,
       "overLow": false
     }
@@ -918,9 +918,9 @@
     "price": 2.146,
     "avgQuoteVolume4h": 55776,
     "extremums": {
-      "triggerVolume": "47089",
-      "min": 2.251,
-      "max": 2.348,
+      "triggerVolume": "22978",
+      "min": 2.34,
+      "max": 2.387,
       "overHigh": true,
       "overLow": false
     }
@@ -930,9 +930,9 @@
     "price": 0.024,
     "avgQuoteVolume4h": 55756,
     "extremums": {
-      "triggerVolume": "4400",
-      "min": 0.02334,
-      "max": 0.02369,
+      "triggerVolume": "1758",
+      "min": 0.02352,
+      "max": 0.02379,
       "overHigh": false,
       "overLow": false
     }
@@ -942,10 +942,10 @@
     "price": 0.22,
     "avgQuoteVolume4h": 24435,
     "extremums": {
-      "triggerVolume": "5485",
-      "min": 0.21166,
-      "max": 0.21616,
-      "overHigh": false,
+      "triggerVolume": "2458",
+      "min": 0.21561,
+      "max": 0.21799,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -954,10 +954,10 @@
     "price": 0.144,
     "avgQuoteVolume4h": 24213,
     "extremums": {
-      "triggerVolume": "49541",
-      "min": 0.1531,
-      "max": 0.1606,
-      "overHigh": false,
+      "triggerVolume": "75985",
+      "min": 0.1595,
+      "max": 0.1744,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -966,9 +966,9 @@
     "price": 0.206,
     "avgQuoteVolume4h": 346749,
     "extremums": {
-      "triggerVolume": "85648",
-      "min": 0.19684,
-      "max": 0.20325,
+      "triggerVolume": "31968",
+      "min": 0.1998,
+      "max": 0.20314,
       "overHigh": false,
       "overLow": false
     }
@@ -978,10 +978,10 @@
     "price": 0.011,
     "avgQuoteVolume4h": 49626,
     "extremums": {
-      "triggerVolume": "8615",
-      "min": 0.01036,
-      "max": 0.0106,
-      "overHigh": false,
+      "triggerVolume": "4835",
+      "min": 0.01051,
+      "max": 0.01062,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -990,10 +990,10 @@
     "price": 0.235,
     "avgQuoteVolume4h": 50453,
     "extremums": {
-      "triggerVolume": "11617",
-      "min": 0.2394,
-      "max": 0.2474,
-      "overHigh": false,
+      "triggerVolume": "7850",
+      "min": 0.2431,
+      "max": 0.2455,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1002,10 +1002,10 @@
     "price": 0.159,
     "avgQuoteVolume4h": 64170,
     "extremums": {
-      "triggerVolume": "14565",
-      "min": 0.1557,
-      "max": 0.1607,
-      "overHigh": false,
+      "triggerVolume": "5322",
+      "min": 0.1588,
+      "max": 0.1609,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1014,9 +1014,9 @@
     "price": 2.963,
     "avgQuoteVolume4h": 23877,
     "extremums": {
-      "triggerVolume": "4948",
-      "min": 2.918,
-      "max": 2.991,
+      "triggerVolume": "2128",
+      "min": 2.961,
+      "max": 2.989,
       "overHigh": false,
       "overLow": false
     }
@@ -1026,9 +1026,9 @@
     "price": 0.067,
     "avgQuoteVolume4h": 361706,
     "extremums": {
-      "triggerVolume": "13915",
-      "min": 0.0709,
-      "max": 0.0731,
+      "triggerVolume": "7654",
+      "min": 0.07113,
+      "max": 0.0725,
       "overHigh": false,
       "overLow": false
     }
@@ -1038,9 +1038,9 @@
     "price": 0.025,
     "avgQuoteVolume4h": 134890,
     "extremums": {
-      "triggerVolume": "16536",
-      "min": 0.0243,
-      "max": 0.02501,
+      "triggerVolume": "5370",
+      "min": 0.02483,
+      "max": 0.02511,
       "overHigh": false,
       "overLow": false
     }
@@ -1050,9 +1050,9 @@
     "price": 0.074,
     "avgQuoteVolume4h": 65110,
     "extremums": {
-      "triggerVolume": "8979",
-      "min": 0.07006,
-      "max": 0.07158,
+      "triggerVolume": "4336",
+      "min": 0.07128,
+      "max": 0.07199,
       "overHigh": false,
       "overLow": false
     }
@@ -1062,8 +1062,8 @@
     "price": 0.656,
     "avgQuoteVolume4h": 149063,
     "extremums": {
-      "triggerVolume": "39442",
-      "min": 0.6644,
+      "triggerVolume": "13321",
+      "min": 0.6784,
       "max": 0.6849,
       "overHigh": false,
       "overLow": false
@@ -1074,11 +1074,11 @@
     "price": 0.022,
     "avgQuoteVolume4h": 87201,
     "extremums": {
-      "triggerVolume": "15467",
-      "min": 0.025229,
-      "max": 0.025947,
+      "triggerVolume": "7664",
+      "min": 0.02533,
+      "max": 0.025737,
       "overHigh": false,
-      "overLow": true
+      "overLow": false
     }
   },
   "RVN": {
@@ -1086,10 +1086,10 @@
     "price": 0.012,
     "avgQuoteVolume4h": 44203,
     "extremums": {
-      "triggerVolume": "6268",
-      "min": 0.01128,
-      "max": 0.01153,
-      "overHigh": false,
+      "triggerVolume": "3251",
+      "min": 0.01142,
+      "max": 0.01151,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1098,10 +1098,10 @@
     "price": 0.165,
     "avgQuoteVolume4h": 325462,
     "extremums": {
-      "triggerVolume": "50148",
-      "min": 0.1555,
-      "max": 0.15976,
-      "overHigh": false,
+      "triggerVolume": "23718",
+      "min": 0.15778,
+      "max": 0.16148,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1110,9 +1110,9 @@
     "price": 9.637,
     "avgQuoteVolume4h": 83776,
     "extremums": {
-      "triggerVolume": "3932",
-      "min": 10.184,
-      "max": 10.346,
+      "triggerVolume": "3501",
+      "min": 10.186,
+      "max": 10.327,
       "overHigh": false,
       "overLow": false
     }
@@ -1122,10 +1122,10 @@
     "price": 0.147,
     "avgQuoteVolume4h": 126904,
     "extremums": {
-      "triggerVolume": "10314",
-      "min": 0.14258,
-      "max": 0.1468,
-      "overHigh": false,
+      "triggerVolume": "3637",
+      "min": 0.14555,
+      "max": 0.14716,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1134,10 +1134,10 @@
     "price": 16.665,
     "avgQuoteVolume4h": 247212,
     "extremums": {
-      "triggerVolume": "8496",
-      "min": 13.49,
-      "max": 13.807,
-      "overHigh": true,
+      "triggerVolume": "4795",
+      "min": 13.699,
+      "max": 13.887,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1146,9 +1146,9 @@
     "price": 5041.166,
     "avgQuoteVolume4h": 44684,
     "extremums": {
-      "triggerVolume": "7526",
-      "min": 5259,
-      "max": 5381,
+      "triggerVolume": "6339",
+      "min": 5260,
+      "max": 5322,
       "overHigh": false,
       "overLow": false
     }
@@ -1158,10 +1158,10 @@
     "price": 0.077,
     "avgQuoteVolume4h": 96953,
     "extremums": {
-      "triggerVolume": "15227",
-      "min": 0.07578,
-      "max": 0.07829,
-      "overHigh": false,
+      "triggerVolume": "5354",
+      "min": 0.07609,
+      "max": 0.07716,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1170,10 +1170,10 @@
     "price": 8.114,
     "avgQuoteVolume4h": 246022,
     "extremums": {
-      "triggerVolume": "100595",
-      "min": 7.632,
-      "max": 7.883,
-      "overHigh": false,
+      "triggerVolume": "28724",
+      "min": 7.743,
+      "max": 7.859,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1182,11 +1182,11 @@
     "price": 0.018,
     "avgQuoteVolume4h": 82082,
     "extremums": {
-      "triggerVolume": "24553",
-      "min": 0.018232,
-      "max": 0.018791,
+      "triggerVolume": "14032",
+      "min": 0.018644,
+      "max": 0.019013,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "T": {
@@ -1194,9 +1194,9 @@
     "price": 0.015,
     "avgQuoteVolume4h": 46428,
     "extremums": {
-      "triggerVolume": "3577",
-      "min": 0.01489,
-      "max": 0.01518,
+      "triggerVolume": "5180",
+      "min": 0.01512,
+      "max": 0.01537,
       "overHigh": false,
       "overLow": false
     }
@@ -1206,9 +1206,9 @@
     "price": 0.154,
     "avgQuoteVolume4h": 6208939,
     "extremums": {
-      "triggerVolume": "78009",
-      "min": 0.083491,
-      "max": 0.088449,
+      "triggerVolume": "40197",
+      "min": 0.085469,
+      "max": 0.088304,
       "overHigh": false,
       "overLow": true
     }
@@ -1218,11 +1218,11 @@
     "price": 0.259,
     "avgQuoteVolume4h": 39610,
     "extremums": {
-      "triggerVolume": "73445",
-      "min": 0.359,
-      "max": 0.373,
+      "triggerVolume": "37950",
+      "min": 0.36,
+      "max": 0.371,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "PROVE": {
@@ -1230,9 +1230,9 @@
     "price": 0.759,
     "avgQuoteVolume4h": 209066,
     "extremums": {
-      "triggerVolume": "29417",
-      "min": 0.7536,
-      "max": 0.795,
+      "triggerVolume": "12013",
+      "min": 0.785,
+      "max": 0.8024,
       "overHigh": false,
       "overLow": false
     }
@@ -1242,9 +1242,9 @@
     "price": 0.275,
     "avgQuoteVolume4h": 69717,
     "extremums": {
-      "triggerVolume": "7464",
-      "min": 0.2678,
-      "max": 0.2754,
+      "triggerVolume": "6121",
+      "min": 0.2731,
+      "max": 0.2771,
       "overHigh": false,
       "overLow": false
     }
@@ -1266,10 +1266,10 @@
     "price": 0.657,
     "avgQuoteVolume4h": 16244053,
     "extremums": {
-      "triggerVolume": "69743",
-      "min": 0.5426,
-      "max": 0.5644,
-      "overHigh": false,
+      "triggerVolume": "24029",
+      "min": 0.5454,
+      "max": 0.5563,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1278,9 +1278,9 @@
     "price": 0.024,
     "avgQuoteVolume4h": 162582,
     "extremums": {
-      "triggerVolume": "13991",
-      "min": 0.02292,
-      "max": 0.02376,
+      "triggerVolume": "6011",
+      "min": 0.02327,
+      "max": 0.02355,
       "overHigh": false,
       "overLow": false
     }
@@ -1290,9 +1290,9 @@
     "price": 0.495,
     "avgQuoteVolume4h": 72805,
     "extremums": {
-      "triggerVolume": "14884",
-      "min": 0.4573,
-      "max": 0.4698,
+      "triggerVolume": "13051",
+      "min": 0.468,
+      "max": 0.4819,
       "overHigh": false,
       "overLow": false
     }
@@ -1302,11 +1302,11 @@
     "price": 0.855,
     "avgQuoteVolume4h": 1724373,
     "extremums": {
-      "triggerVolume": "96745",
-      "min": 0.7424,
-      "max": 0.7612,
+      "triggerVolume": "31845",
+      "min": 0.7409,
+      "max": 0.7566,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "VANA": {
@@ -1314,9 +1314,9 @@
     "price": 4.505,
     "avgQuoteVolume4h": 484496,
     "extremums": {
-      "triggerVolume": "9556",
-      "min": 3.728,
-      "max": 3.847,
+      "triggerVolume": "5869",
+      "min": 3.782,
+      "max": 3.869,
       "overHigh": false,
       "overLow": false
     }
@@ -1326,8 +1326,8 @@
     "price": 0.013,
     "avgQuoteVolume4h": 32949,
     "extremums": {
-      "triggerVolume": "5500",
-      "min": 0.01331,
+      "triggerVolume": "2258",
+      "min": 0.01356,
       "max": 0.01366,
       "overHigh": false,
       "overLow": false
@@ -1338,9 +1338,9 @@
     "price": 0.746,
     "avgQuoteVolume4h": 555338,
     "extremums": {
-      "triggerVolume": "8955",
-      "min": 0.5653,
-      "max": 0.5784,
+      "triggerVolume": "2840",
+      "min": 0.5759,
+      "max": 0.5802,
       "overHigh": false,
       "overLow": false
     }
@@ -1350,9 +1350,9 @@
     "price": 0.115,
     "avgQuoteVolume4h": 16156,
     "extremums": {
-      "triggerVolume": "3714",
-      "min": 0.1108,
-      "max": 0.1135,
+      "triggerVolume": "1934",
+      "min": 0.1123,
+      "max": 0.1134,
       "overHigh": false,
       "overLow": false
     }
@@ -1362,9 +1362,9 @@
     "price": 0.612,
     "avgQuoteVolume4h": 1188659,
     "extremums": {
-      "triggerVolume": "39670",
-      "min": 0.2659,
-      "max": 0.2786,
+      "triggerVolume": "20735",
+      "min": 0.2764,
+      "max": 0.2847,
       "overHigh": false,
       "overLow": false
     }
@@ -1374,10 +1374,10 @@
     "price": 0.595,
     "avgQuoteVolume4h": 73625,
     "extremums": {
-      "triggerVolume": "13753",
-      "min": 0.4787,
-      "max": 0.4933,
-      "overHigh": false,
+      "triggerVolume": "5250",
+      "min": 0.4877,
+      "max": 0.494,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1386,10 +1386,10 @@
     "price": 0.43,
     "avgQuoteVolume4h": 94218,
     "extremums": {
-      "triggerVolume": "7865",
-      "min": 0.382,
-      "max": 0.3935,
-      "overHigh": false,
+      "triggerVolume": "3431",
+      "min": 0.3874,
+      "max": 0.3916,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1398,9 +1398,9 @@
     "price": 0.121,
     "avgQuoteVolume4h": 30914,
     "extremums": {
-      "triggerVolume": "3262",
-      "min": 0.11176,
-      "max": 0.1144,
+      "triggerVolume": "1110",
+      "min": 0.11339,
+      "max": 0.11404,
       "overHigh": false,
       "overLow": false
     }
@@ -1410,10 +1410,10 @@
     "price": 0.063,
     "avgQuoteVolume4h": 86202,
     "extremums": {
-      "triggerVolume": "8977",
-      "min": 0.06421,
-      "max": 0.06627,
-      "overHigh": false,
+      "triggerVolume": "5991",
+      "min": 0.06594,
+      "max": 0.0669,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1422,9 +1422,9 @@
     "price": 1.195,
     "avgQuoteVolume4h": 47441,
     "extremums": {
-      "triggerVolume": "11833",
-      "min": 1.2245,
-      "max": 1.2547,
+      "triggerVolume": "7748",
+      "min": 1.2377,
+      "max": 1.2526,
       "overHigh": false,
       "overLow": false
     }
@@ -1446,10 +1446,10 @@
     "price": 1.982,
     "avgQuoteVolume4h": 49028,
     "extremums": {
-      "triggerVolume": "6703",
-      "min": 1.947,
-      "max": 1.987,
-      "overHigh": false,
+      "triggerVolume": "2998",
+      "min": 1.979,
+      "max": 2.002,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1458,9 +1458,9 @@
     "price": 0.087,
     "avgQuoteVolume4h": 1153130,
     "extremums": {
-      "triggerVolume": "9091",
-      "min": 0.06044,
-      "max": 0.06235,
+      "triggerVolume": "2998",
+      "min": 0.06129,
+      "max": 0.06206,
       "overHigh": false,
       "overLow": false
     }
@@ -1470,9 +1470,9 @@
     "price": 0.038,
     "avgQuoteVolume4h": 94931,
     "extremums": {
-      "triggerVolume": "14503",
-      "min": 0.03677,
-      "max": 0.03764,
+      "triggerVolume": "6807",
+      "min": 0.03745,
+      "max": 0.03788,
       "overHigh": false,
       "overLow": false
     }
@@ -1482,9 +1482,9 @@
     "price": 15.455,
     "avgQuoteVolume4h": 343246,
     "extremums": {
-      "triggerVolume": "46587",
-      "min": 15.5,
-      "max": 16.05,
+      "triggerVolume": "12912",
+      "min": 15.702,
+      "max": 15.926,
       "overHigh": false,
       "overLow": false
     }
@@ -1494,9 +1494,9 @@
     "price": 0.178,
     "avgQuoteVolume4h": 102948,
     "extremums": {
-      "triggerVolume": "12804",
-      "min": 0.1951,
-      "max": 0.204,
+      "triggerVolume": "5585",
+      "min": 0.1965,
+      "max": 0.1995,
       "overHigh": false,
       "overLow": false
     }
@@ -1506,10 +1506,10 @@
     "price": 5.3,
     "avgQuoteVolume4h": 39867,
     "extremums": {
-      "triggerVolume": "3542",
-      "min": 4.748,
-      "max": 4.861,
-      "overHigh": false,
+      "triggerVolume": "1427",
+      "min": 4.809,
+      "max": 4.87,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1518,10 +1518,10 @@
     "price": 0.061,
     "avgQuoteVolume4h": 45110,
     "extremums": {
-      "triggerVolume": "8053",
-      "min": 0.05868,
-      "max": 0.06037,
-      "overHigh": false,
+      "triggerVolume": "4788",
+      "min": 0.06009,
+      "max": 0.06081,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1530,10 +1530,10 @@
     "price": "11.79800000",
     "avgQuoteVolume4h": 91707,
     "extremums": {
-      "triggerVolume": "164436",
-      "min": 11.145,
-      "max": 11.765,
-      "overHigh": true,
+      "triggerVolume": "230033",
+      "min": 11.659,
+      "max": 12.537,
+      "overHigh": false,
       "overLow": false
     },
     "side": "🟢",
@@ -1544,9 +1544,9 @@
     "price": 0.34,
     "avgQuoteVolume4h": 65298,
     "extremums": {
-      "triggerVolume": "5640",
-      "min": 0.34,
-      "max": 0.3496,
+      "triggerVolume": "3690",
+      "min": 0.3474,
+      "max": 0.3518,
       "overHigh": false,
       "overLow": false
     }
@@ -1556,9 +1556,9 @@
     "price": 0.082,
     "avgQuoteVolume4h": 32057,
     "extremums": {
-      "triggerVolume": "13006",
-      "min": 0.08252,
-      "max": 0.08479,
+      "triggerVolume": "5744",
+      "min": 0.08409,
+      "max": 0.08532,
       "overHigh": false,
       "overLow": false
     }
@@ -1580,10 +1580,10 @@
     "price": 0.54,
     "avgQuoteVolume4h": 186871,
     "extremums": {
-      "triggerVolume": "47485",
-      "min": 0.4942,
-      "max": 0.5142,
-      "overHigh": false,
+      "triggerVolume": "18858",
+      "min": 0.503,
+      "max": 0.5167,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1592,9 +1592,9 @@
     "price": 0.118,
     "avgQuoteVolume4h": 23119,
     "extremums": {
-      "triggerVolume": "11202",
-      "min": 0.1195,
-      "max": 0.1226,
+      "triggerVolume": "3518",
+      "min": 0.1218,
+      "max": 0.1233,
       "overHigh": false,
       "overLow": false
     }
@@ -1604,11 +1604,11 @@
     "price": 0.653,
     "avgQuoteVolume4h": 37720,
     "extremums": {
-      "triggerVolume": "5349",
-      "min": 0.6574,
-      "max": 0.6738,
+      "triggerVolume": "4245",
+      "min": 0.6624,
+      "max": 0.6751,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "UMA": {
@@ -1616,9 +1616,9 @@
     "price": 1.194,
     "avgQuoteVolume4h": 37958,
     "extremums": {
-      "triggerVolume": "10824",
-      "min": 1.198,
-      "max": 1.235,
+      "triggerVolume": "5435",
+      "min": 1.206,
+      "max": 1.223,
       "overHigh": false,
       "overLow": false
     }
@@ -1628,9 +1628,9 @@
     "price": 0.045,
     "avgQuoteVolume4h": 48052,
     "extremums": {
-      "triggerVolume": "23880",
-      "min": 0.04835,
-      "max": 0.05091,
+      "triggerVolume": "12243",
+      "min": 0.049,
+      "max": 0.05018,
       "overHigh": false,
       "overLow": false
     }
@@ -1640,10 +1640,10 @@
     "price": "7.87900000",
     "avgQuoteVolume4h": 107889,
     "extremums": {
-      "triggerVolume": "25957",
-      "min": 7.699,
-      "max": 7.878,
-      "overHigh": true,
+      "triggerVolume": "10272",
+      "min": 7.861,
+      "max": 8.014,
+      "overHigh": false,
       "overLow": false
     },
     "startTime": "7.87900000"
@@ -1653,10 +1653,10 @@
     "price": 0.159,
     "avgQuoteVolume4h": 35161,
     "extremums": {
-      "triggerVolume": "6128",
-      "min": 0.1522,
-      "max": 0.1556,
-      "overHigh": false,
+      "triggerVolume": "3097",
+      "min": 0.155,
+      "max": 0.1561,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1665,9 +1665,9 @@
     "price": 0.294,
     "avgQuoteVolume4h": 2668190,
     "extremums": {
-      "triggerVolume": "37475",
-      "min": 0.1895,
-      "max": 0.1955,
+      "triggerVolume": "12321",
+      "min": 0.1932,
+      "max": 0.197,
       "overHigh": false,
       "overLow": false
     }
@@ -1677,9 +1677,9 @@
     "price": 6.112,
     "avgQuoteVolume4h": 79094,
     "extremums": {
-      "triggerVolume": "14894",
-      "min": 6.708,
-      "max": 6.981,
+      "triggerVolume": "4294",
+      "min": 6.815,
+      "max": 6.902,
       "overHigh": false,
       "overLow": false
     }
@@ -1689,9 +1689,9 @@
     "price": 0.068,
     "avgQuoteVolume4h": 72860,
     "extremums": {
-      "triggerVolume": "55001",
-      "min": 0.06932,
-      "max": 0.07601,
+      "triggerVolume": "11013",
+      "min": 0.07014,
+      "max": 0.07238,
       "overHigh": false,
       "overLow": false
     }
@@ -1701,9 +1701,9 @@
     "price": 0.227,
     "avgQuoteVolume4h": 19652,
     "extremums": {
-      "triggerVolume": "4622",
-      "min": 0.2215,
-      "max": 0.2264,
+      "triggerVolume": "3657",
+      "min": 0.226,
+      "max": 0.2287,
       "overHigh": false,
       "overLow": false
     }
@@ -1713,10 +1713,10 @@
     "price": 0.153,
     "avgQuoteVolume4h": 181118,
     "extremums": {
-      "triggerVolume": "21769",
-      "min": 0.1566,
-      "max": 0.1634,
-      "overHigh": true,
+      "triggerVolume": "32040",
+      "min": 0.1663,
+      "max": 0.1726,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1725,9 +1725,9 @@
     "price": 0.091,
     "avgQuoteVolume4h": 37279,
     "extremums": {
-      "triggerVolume": "3388",
-      "min": 0.08858,
-      "max": 0.09076,
+      "triggerVolume": "2132",
+      "min": 0.09,
+      "max": 0.09135,
       "overHigh": false,
       "overLow": false
     }
@@ -1737,9 +1737,9 @@
     "price": 0.182,
     "avgQuoteVolume4h": 18717,
     "extremums": {
-      "triggerVolume": "3598",
-      "min": 0.17819,
-      "max": 0.18377,
+      "triggerVolume": "1130",
+      "min": 0.18028,
+      "max": 0.18142,
       "overHigh": false,
       "overLow": false
     }
@@ -1749,10 +1749,10 @@
     "price": 1.022,
     "avgQuoteVolume4h": 34224,
     "extremums": {
-      "triggerVolume": "3880",
-      "min": 1.0297,
-      "max": 1.0525,
-      "overHigh": true,
+      "triggerVolume": "4042",
+      "min": 1.0544,
+      "max": 1.0751,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1761,10 +1761,10 @@
     "price": 0.032,
     "avgQuoteVolume4h": 71572,
     "extremums": {
-      "triggerVolume": "5927",
-      "min": 0.028568,
-      "max": 0.029361,
-      "overHigh": true,
+      "triggerVolume": "1286",
+      "min": 0.029115,
+      "max": 0.029507,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1773,9 +1773,9 @@
     "price": 0.572,
     "avgQuoteVolume4h": 54294,
     "extremums": {
-      "triggerVolume": "5040",
-      "min": 0.4912,
-      "max": 0.5033,
+      "triggerVolume": "4133",
+      "min": 0.4974,
+      "max": 0.5045,
       "overHigh": false,
       "overLow": false
     }
@@ -1785,9 +1785,9 @@
     "price": 12.948,
     "avgQuoteVolume4h": 88644,
     "extremums": {
-      "triggerVolume": "5909",
-      "min": 12.37,
-      "max": 12.75,
+      "triggerVolume": "9483",
+      "min": 12.83,
+      "max": 13.22,
       "overHigh": false,
       "overLow": false
     }
@@ -1797,10 +1797,10 @@
     "price": 31.095,
     "avgQuoteVolume4h": 128431,
     "extremums": {
-      "triggerVolume": "27391",
-      "min": 31.6,
-      "max": 32.578,
-      "overHigh": false,
+      "triggerVolume": "22336",
+      "min": 32.261,
+      "max": 32.741,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1809,10 +1809,10 @@
     "price": 12.767,
     "avgQuoteVolume4h": 53708,
     "extremums": {
-      "triggerVolume": "6761",
-      "min": 13.799,
-      "max": 14.166,
-      "overHigh": true,
+      "triggerVolume": "6704",
+      "min": 14.14,
+      "max": 14.572,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1821,9 +1821,9 @@
     "price": 0.017,
     "avgQuoteVolume4h": 121689,
     "extremums": {
-      "triggerVolume": "40600",
-      "min": 0.01619,
-      "max": 0.01682,
+      "triggerVolume": "15036",
+      "min": 0.01637,
+      "max": 0.01659,
       "overHigh": false,
       "overLow": false
     }
@@ -1833,10 +1833,10 @@
     "price": 0.028,
     "avgQuoteVolume4h": 80178,
     "extremums": {
-      "triggerVolume": "11637",
-      "min": 0.02527,
-      "max": 0.02649,
-      "overHigh": true,
+      "triggerVolume": "15141",
+      "min": 0.02637,
+      "max": 0.02769,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1845,10 +1845,10 @@
     "price": 0.047,
     "avgQuoteVolume4h": 290969,
     "extremums": {
-      "triggerVolume": "36332",
-      "min": 0.04631,
-      "max": 0.04725,
-      "overHigh": false,
+      "triggerVolume": "11970",
+      "min": 0.04675,
+      "max": 0.04741,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1857,9 +1857,9 @@
     "price": 0.144,
     "avgQuoteVolume4h": 11425,
     "extremums": {
-      "triggerVolume": "2331",
-      "min": 0.1381,
-      "max": 0.1414,
+      "triggerVolume": "1134",
+      "min": 0.1404,
+      "max": 0.1413,
       "overHigh": false,
       "overLow": false
     }
@@ -1869,10 +1869,10 @@
     "price": 0.082,
     "avgQuoteVolume4h": 11991,
     "extremums": {
-      "triggerVolume": "1735",
-      "min": 0.07927,
-      "max": 0.08126,
-      "overHigh": false,
+      "triggerVolume": "1319",
+      "min": 0.08041,
+      "max": 0.08124,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -1881,10 +1881,10 @@
     "price": 0.179,
     "avgQuoteVolume4h": 81597,
     "extremums": {
-      "triggerVolume": "7638",
-      "min": 0.172,
-      "max": 0.1772,
-      "overHigh": true,
+      "triggerVolume": "5469",
+      "min": 0.1783,
+      "max": 0.1814,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1893,9 +1893,9 @@
     "price": 0.419,
     "avgQuoteVolume4h": 34244,
     "extremums": {
-      "triggerVolume": "3602",
-      "min": 0.4194,
-      "max": 0.4295,
+      "triggerVolume": "1749",
+      "min": 0.4241,
+      "max": 0.4272,
       "overHigh": false,
       "overLow": false
     }
@@ -1905,10 +1905,10 @@
     "price": 1.538,
     "avgQuoteVolume4h": 123865,
     "extremums": {
-      "triggerVolume": "12743",
-      "min": 1.486,
-      "max": 1.525,
-      "overHigh": true,
+      "triggerVolume": "5049",
+      "min": 1.513,
+      "max": 1.533,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -1929,9 +1929,9 @@
     "price": 0.018,
     "avgQuoteVolume4h": 14513,
     "extremums": {
-      "triggerVolume": "2151",
-      "min": 0.01699,
-      "max": 0.01731,
+      "triggerVolume": "1507",
+      "min": 0.01721,
+      "max": 0.01743,
       "overHigh": false,
       "overLow": false
     }
@@ -1941,9 +1941,9 @@
     "price": 0.3,
     "avgQuoteVolume4h": 57151,
     "extremums": {
-      "triggerVolume": "13397",
-      "min": 0.3318,
-      "max": 0.3511,
+      "triggerVolume": "31453",
+      "min": 0.3498,
+      "max": 0.3691,
       "overHigh": false,
       "overLow": false
     }
@@ -1953,9 +1953,9 @@
     "price": 0.3,
     "avgQuoteVolume4h": 50762,
     "extremums": {
-      "triggerVolume": "2361",
-      "min": 0.3005,
-      "max": 0.3076,
+      "triggerVolume": "1254",
+      "min": 0.3043,
+      "max": 0.3083,
       "overHigh": false,
       "overLow": false
     }
@@ -1965,9 +1965,9 @@
     "price": 0.078,
     "avgQuoteVolume4h": 58779,
     "extremums": {
-      "triggerVolume": "8478",
-      "min": 0.07606,
-      "max": 0.07844,
+      "triggerVolume": "4048",
+      "min": 0.07776,
+      "max": 0.07867,
       "overHigh": false,
       "overLow": false
     }
@@ -1977,9 +1977,9 @@
     "price": 0.131,
     "avgQuoteVolume4h": 367090,
     "extremums": {
-      "triggerVolume": "15238",
-      "min": 0.1361,
-      "max": 0.142,
+      "triggerVolume": "6569",
+      "min": 0.1411,
+      "max": 0.1431,
       "overHigh": false,
       "overLow": false
     }
@@ -1989,10 +1989,10 @@
     "price": 0.094,
     "avgQuoteVolume4h": 123205,
     "extremums": {
-      "triggerVolume": "4407",
-      "min": 0.0928,
-      "max": 0.096,
-      "overHigh": false,
+      "triggerVolume": "3411",
+      "min": 0.09561,
+      "max": 0.0977,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2001,9 +2001,9 @@
     "price": 0.651,
     "avgQuoteVolume4h": 7911,
     "extremums": {
-      "triggerVolume": "3074",
-      "min": 0.6664,
-      "max": 0.6867,
+      "triggerVolume": "1967",
+      "min": 0.6706,
+      "max": 0.6796,
       "overHigh": false,
       "overLow": false
     }
@@ -2013,9 +2013,9 @@
     "price": 17.232,
     "avgQuoteVolume4h": 476203,
     "extremums": {
-      "triggerVolume": "34271",
-      "min": 16.251,
-      "max": 16.791,
+      "triggerVolume": "14293",
+      "min": 16.451,
+      "max": 16.732,
       "overHigh": true,
       "overLow": false
     }
@@ -2037,11 +2037,11 @@
     "price": 0.088,
     "avgQuoteVolume4h": 2064674,
     "extremums": {
-      "triggerVolume": "27602",
-      "min": 0.08711,
-      "max": 0.0896,
+      "triggerVolume": "13845",
+      "min": 0.08742,
+      "max": 0.0891,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "LA": {
@@ -2049,11 +2049,11 @@
     "price": 0.379,
     "avgQuoteVolume4h": 471131,
     "extremums": {
-      "triggerVolume": "17964",
-      "min": 0.3664,
-      "max": 0.3767,
+      "triggerVolume": "9283",
+      "min": 0.3749,
+      "max": 0.3806,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "XAI": {
@@ -2061,10 +2061,10 @@
     "price": 0.042,
     "avgQuoteVolume4h": 126758,
     "extremums": {
-      "triggerVolume": "31845",
-      "min": 0.03857,
-      "max": 0.04,
-      "overHigh": true,
+      "triggerVolume": "22361",
+      "min": 0.04012,
+      "max": 0.04136,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2073,10 +2073,10 @@
     "price": 0.292,
     "avgQuoteVolume4h": 839300,
     "extremums": {
-      "triggerVolume": "112766",
-      "min": 0.4265,
-      "max": 0.4492,
-      "overHigh": true,
+      "triggerVolume": "41426",
+      "min": 0.4422,
+      "max": 0.4555,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2085,10 +2085,10 @@
     "price": 0.084,
     "avgQuoteVolume4h": 35846,
     "extremums": {
-      "triggerVolume": "7838",
-      "min": 0.0815,
-      "max": 0.0842,
-      "overHigh": true,
+      "triggerVolume": "12774",
+      "min": 0.0858,
+      "max": 0.0886,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2097,10 +2097,10 @@
     "price": 0.182,
     "avgQuoteVolume4h": 29771,
     "extremums": {
-      "triggerVolume": "2501",
-      "min": 0.1793,
-      "max": 0.1834,
-      "overHigh": false,
+      "triggerVolume": "1641",
+      "min": 0.1822,
+      "max": 0.1843,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2109,9 +2109,9 @@
     "price": 0.032,
     "avgQuoteVolume4h": 406778,
     "extremums": {
-      "triggerVolume": "17915",
-      "min": 0.033244,
-      "max": 0.034588,
+      "triggerVolume": "9352",
+      "min": 0.03374,
+      "max": 0.034282,
       "overHigh": false,
       "overLow": false
     }
@@ -2121,9 +2121,9 @@
     "price": 0.08,
     "avgQuoteVolume4h": 62371,
     "extremums": {
-      "triggerVolume": "4404",
-      "min": 0.07672,
-      "max": 0.07884,
+      "triggerVolume": "2276",
+      "min": 0.07846,
+      "max": 0.07936,
       "overHigh": true,
       "overLow": false
     }
@@ -2133,11 +2133,11 @@
     "price": 0.715,
     "avgQuoteVolume4h": 86159,
     "extremums": {
-      "triggerVolume": "7559",
-      "min": 0.6989,
-      "max": 0.7211,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "4181",
+      "min": 0.7197,
+      "max": 0.73,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "ACX": {
@@ -2145,10 +2145,10 @@
     "price": 0.11,
     "avgQuoteVolume4h": 35305,
     "extremums": {
-      "triggerVolume": "2371",
-      "min": 0.11,
-      "max": 0.1125,
-      "overHigh": true,
+      "triggerVolume": "1689",
+      "min": 0.1132,
+      "max": 0.1145,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2157,9 +2157,9 @@
     "price": 0.778,
     "avgQuoteVolume4h": 74237,
     "extremums": {
-      "triggerVolume": "67846",
-      "min": 0.8007,
-      "max": 0.8233,
+      "triggerVolume": "24843",
+      "min": 0.7983,
+      "max": 0.8127,
       "overHigh": false,
       "overLow": false
     }
@@ -2169,10 +2169,10 @@
     "price": 0.18,
     "avgQuoteVolume4h": 74825,
     "extremums": {
-      "triggerVolume": "8625",
-      "min": 0.1623,
-      "max": 0.1675,
-      "overHigh": true,
+      "triggerVolume": "4898",
+      "min": 0.1671,
+      "max": 0.1706,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2181,11 +2181,11 @@
     "price": 0.56,
     "avgQuoteVolume4h": 30250,
     "extremums": {
-      "triggerVolume": "5198",
-      "min": 0.5168,
-      "max": 0.5353,
+      "triggerVolume": "2189",
+      "min": 0.524,
+      "max": 0.5308,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "JOE": {
@@ -2193,10 +2193,10 @@
     "price": 0.164,
     "avgQuoteVolume4h": 101681,
     "extremums": {
-      "triggerVolume": "4096",
-      "min": 0.14835,
-      "max": 0.15281,
-      "overHigh": false,
+      "triggerVolume": "1947",
+      "min": 0.15064,
+      "max": 0.153,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2205,10 +2205,10 @@
     "price": 0.053,
     "avgQuoteVolume4h": 176509,
     "extremums": {
-      "triggerVolume": "34780",
-      "min": 0.04651,
-      "max": 0.04825,
-      "overHigh": false,
+      "triggerVolume": "9754",
+      "min": 0.04706,
+      "max": 0.04773,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2217,10 +2217,10 @@
     "price": 0.107,
     "avgQuoteVolume4h": 119801,
     "extremums": {
-      "triggerVolume": "12448",
-      "min": 0.1129,
-      "max": 0.1185,
-      "overHigh": false,
+      "triggerVolume": "4358",
+      "min": 0.1148,
+      "max": 0.1164,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2229,10 +2229,10 @@
     "price": 0.152,
     "avgQuoteVolume4h": 41158,
     "extremums": {
-      "triggerVolume": "4616",
-      "min": 0.14479,
-      "max": 0.14785,
-      "overHigh": false,
+      "triggerVolume": "994",
+      "min": 0.14682,
+      "max": 0.14789,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2241,9 +2241,9 @@
     "price": 0.073,
     "avgQuoteVolume4h": 70697,
     "extremums": {
-      "triggerVolume": "5641",
-      "min": 0.0704,
-      "max": 0.0729,
+      "triggerVolume": "4117",
+      "min": 0.0713,
+      "max": 0.0727,
       "overHigh": false,
       "overLow": false
     }
@@ -2253,10 +2253,10 @@
     "price": 0.311,
     "avgQuoteVolume4h": 18626,
     "extremums": {
-      "triggerVolume": "3242",
-      "min": 0.2772,
-      "max": 0.2827,
-      "overHigh": false,
+      "triggerVolume": "1337",
+      "min": 0.2812,
+      "max": 0.2833,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2265,10 +2265,10 @@
     "price": 0.12,
     "avgQuoteVolume4h": 15504,
     "extremums": {
-      "triggerVolume": "2552",
-      "min": 0.11692,
-      "max": 0.1202,
-      "overHigh": false,
+      "triggerVolume": "1375",
+      "min": 0.11776,
+      "max": 0.11864,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2277,10 +2277,10 @@
     "price": 0.329,
     "avgQuoteVolume4h": 21139,
     "extremums": {
-      "triggerVolume": "3724",
-      "min": 0.3194,
-      "max": 0.3274,
-      "overHigh": false,
+      "triggerVolume": "1576",
+      "min": 0.3252,
+      "max": 0.3276,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2289,11 +2289,11 @@
     "price": 0.011,
     "avgQuoteVolume4h": 87005,
     "extremums": {
-      "triggerVolume": "3272",
-      "min": 0.010573,
-      "max": 0.010849,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "1948",
+      "min": 0.010825,
+      "max": 0.010931,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "SAGA": {
@@ -2301,10 +2301,10 @@
     "price": 0.209,
     "avgQuoteVolume4h": 126519,
     "extremums": {
-      "triggerVolume": "24782",
-      "min": 0.191,
-      "max": 0.1986,
-      "overHigh": false,
+      "triggerVolume": "8173",
+      "min": 0.1955,
+      "max": 0.198,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2313,9 +2313,9 @@
     "price": 0.041,
     "avgQuoteVolume4h": 68871,
     "extremums": {
-      "triggerVolume": "6364",
-      "min": 0.04169,
-      "max": 0.04232,
+      "triggerVolume": "4108",
+      "min": 0.0418,
+      "max": 0.04252,
       "overHigh": false,
       "overLow": false
     }
@@ -2337,10 +2337,10 @@
     "price": 0.029,
     "avgQuoteVolume4h": 58358,
     "extremums": {
-      "triggerVolume": "25539",
-      "min": 0.028402,
-      "max": 0.029584,
-      "overHigh": true,
+      "triggerVolume": "13302",
+      "min": 0.02912,
+      "max": 0.030237,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2349,9 +2349,9 @@
     "price": 0.058,
     "avgQuoteVolume4h": 17367,
     "extremums": {
-      "triggerVolume": "2356",
-      "min": 0.05362,
-      "max": 0.05535,
+      "triggerVolume": "944",
+      "min": 0.05435,
+      "max": 0.05471,
       "overHigh": false,
       "overLow": false
     }
@@ -2361,10 +2361,10 @@
     "price": 0.648,
     "avgQuoteVolume4h": 21265,
     "extremums": {
-      "triggerVolume": "2710",
-      "min": 0.6114,
-      "max": 0.6239,
-      "overHigh": false,
+      "triggerVolume": "1047",
+      "min": 0.6211,
+      "max": 0.625,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2373,11 +2373,11 @@
     "price": 1.8,
     "avgQuoteVolume4h": 92512,
     "extremums": {
-      "triggerVolume": "32551",
-      "min": 1.4602,
-      "max": 1.6099,
+      "triggerVolume": "7924",
+      "min": 1.4952,
+      "max": 1.5348,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "MOVR": {
@@ -2385,9 +2385,9 @@
     "price": 5.352,
     "avgQuoteVolume4h": 49600,
     "extremums": {
-      "triggerVolume": "2269",
-      "min": 5.3,
-      "max": 5.433,
+      "triggerVolume": "2412",
+      "min": 5.392,
+      "max": 5.468,
       "overHigh": false,
       "overLow": false
     }
@@ -2397,9 +2397,9 @@
     "price": 0.17,
     "avgQuoteVolume4h": 80183,
     "extremums": {
-      "triggerVolume": "43337",
-      "min": 0.1619,
-      "max": 0.1692,
+      "triggerVolume": "20031",
+      "min": 0.1649,
+      "max": 0.168,
       "overHigh": false,
       "overLow": false
     }
@@ -2409,11 +2409,11 @@
     "price": 8.623,
     "avgQuoteVolume4h": 115264,
     "extremums": {
-      "triggerVolume": "10039",
-      "min": 8.065,
-      "max": 8.242,
+      "triggerVolume": "4831",
+      "min": 8.142,
+      "max": 8.23,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "SCR": {
@@ -2421,9 +2421,9 @@
     "price": 0.275,
     "avgQuoteVolume4h": 42069,
     "extremums": {
-      "triggerVolume": "6543",
-      "min": 0.2523,
-      "max": 0.2611,
+      "triggerVolume": "2377",
+      "min": 0.2568,
+      "max": 0.2609,
       "overHigh": false,
       "overLow": false
     }
@@ -2433,10 +2433,10 @@
     "price": 0.314,
     "avgQuoteVolume4h": 153934,
     "extremums": {
-      "triggerVolume": "9773",
-      "min": 0.2975,
-      "max": 0.3073,
-      "overHigh": false,
+      "triggerVolume": "3715",
+      "min": 0.3021,
+      "max": 0.3066,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2445,10 +2445,10 @@
     "price": 0.336,
     "avgQuoteVolume4h": 73385,
     "extremums": {
-      "triggerVolume": "1213",
-      "min": 0.3372,
-      "max": 0.3456,
-      "overHigh": false,
+      "triggerVolume": "820",
+      "min": 0.3441,
+      "max": 0.3484,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2457,9 +2457,9 @@
     "price": 0.27,
     "avgQuoteVolume4h": 222179,
     "extremums": {
-      "triggerVolume": "27878",
-      "min": 0.245,
-      "max": 0.2533,
+      "triggerVolume": "14418",
+      "min": 0.2483,
+      "max": 0.2548,
       "overHigh": false,
       "overLow": false
     }
@@ -2469,10 +2469,10 @@
     "price": 0.083,
     "avgQuoteVolume4h": 23420,
     "extremums": {
-      "triggerVolume": "2928",
-      "min": 0.07505,
-      "max": 0.07685,
-      "overHigh": true,
+      "triggerVolume": "1567",
+      "min": 0.07682,
+      "max": 0.07793,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2481,10 +2481,10 @@
     "price": 0.207,
     "avgQuoteVolume4h": 276769,
     "extremums": {
-      "triggerVolume": "33246",
-      "min": 0.2053,
-      "max": 0.2213,
-      "overHigh": false,
+      "triggerVolume": "10669",
+      "min": 0.2133,
+      "max": 0.2178,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2493,10 +2493,10 @@
     "price": 0.153,
     "avgQuoteVolume4h": 19797,
     "extremums": {
-      "triggerVolume": "6719",
-      "min": 0.1766,
-      "max": 0.1901,
-      "overHigh": false,
+      "triggerVolume": "2263",
+      "min": 0.188,
+      "max": 0.1916,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2505,10 +2505,10 @@
     "price": 0.273,
     "avgQuoteVolume4h": 151725,
     "extremums": {
-      "triggerVolume": "12077",
-      "min": 0.2515,
-      "max": 0.2578,
-      "overHigh": true,
+      "triggerVolume": "5882",
+      "min": 0.258,
+      "max": 0.261,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2517,10 +2517,10 @@
     "price": 0.559,
     "avgQuoteVolume4h": 64061,
     "extremums": {
-      "triggerVolume": "3791",
-      "min": 0.5362,
-      "max": 0.5479,
-      "overHigh": false,
+      "triggerVolume": "1789",
+      "min": 0.5464,
+      "max": 0.5511,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2529,9 +2529,9 @@
     "price": 0.108,
     "avgQuoteVolume4h": 357647,
     "extremums": {
-      "triggerVolume": "24019",
-      "min": 0.10547,
-      "max": 0.10844,
+      "triggerVolume": "23592",
+      "min": 0.10595,
+      "max": 0.1112,
       "overHigh": false,
       "overLow": false
     }
@@ -2541,9 +2541,9 @@
     "price": 0.048,
     "avgQuoteVolume4h": 29518,
     "extremums": {
-      "triggerVolume": "2554",
-      "min": 0.0475,
-      "max": 0.04844,
+      "triggerVolume": "1013",
+      "min": 0.04821,
+      "max": 0.04854,
       "overHigh": false,
       "overLow": false
     }
@@ -2553,11 +2553,11 @@
     "price": 0.097,
     "avgQuoteVolume4h": 21814,
     "extremums": {
-      "triggerVolume": "3451",
-      "min": 0.0957,
-      "max": 0.09833,
+      "triggerVolume": "877",
+      "min": 0.09692,
+      "max": 0.09758,
       "overHigh": false,
-      "overLow": false
+      "overLow": true
     }
   },
   "VANRY": {
@@ -2565,10 +2565,10 @@
     "price": 0.024,
     "avgQuoteVolume4h": 74277,
     "extremums": {
-      "triggerVolume": "7581",
-      "min": 0.02497,
-      "max": 0.02576,
-      "overHigh": true,
+      "triggerVolume": "4467",
+      "min": 0.02585,
+      "max": 0.02623,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2577,11 +2577,11 @@
     "price": 0.046,
     "avgQuoteVolume4h": 158023,
     "extremums": {
-      "triggerVolume": "24132",
-      "min": 0.0542,
-      "max": 0.0567,
+      "triggerVolume": "18501",
+      "min": 0.056,
+      "max": 0.0569,
       "overHigh": false,
-      "overLow": true
+      "overLow": false
     }
   },
   "NEWT": {
@@ -2589,9 +2589,9 @@
     "price": 0.214,
     "avgQuoteVolume4h": 62725,
     "extremums": {
-      "triggerVolume": "7716",
-      "min": 0.1912,
-      "max": 0.1969,
+      "triggerVolume": "4550",
+      "min": 0.1936,
+      "max": 0.1973,
       "overHigh": false,
       "overLow": false
     }
@@ -2601,10 +2601,10 @@
     "price": 0.407,
     "avgQuoteVolume4h": 1497842,
     "extremums": {
-      "triggerVolume": "38873",
-      "min": 0.4125,
-      "max": 0.4335,
-      "overHigh": false,
+      "triggerVolume": "11028",
+      "min": 0.4194,
+      "max": 0.428,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2613,9 +2613,9 @@
     "price": 0.011,
     "avgQuoteVolume4h": 191269,
     "extremums": {
-      "triggerVolume": "66388",
-      "min": 0.0142,
-      "max": 0.01509,
+      "triggerVolume": "76277",
+      "min": 0.01478,
+      "max": 0.01589,
       "overHigh": false,
       "overLow": false
     }
@@ -2625,9 +2625,9 @@
     "price": 0.075,
     "avgQuoteVolume4h": 73314,
     "extremums": {
-      "triggerVolume": "6819",
-      "min": 0.06927,
-      "max": 0.07121,
+      "triggerVolume": "2876",
+      "min": 0.07103,
+      "max": 0.07182,
       "overHigh": false,
       "overLow": false
     }
@@ -2637,9 +2637,9 @@
     "price": 0.021,
     "avgQuoteVolume4h": 138124,
     "extremums": {
-      "triggerVolume": "13654",
-      "min": 0.01736,
-      "max": 0.01803,
+      "triggerVolume": "5028",
+      "min": 0.01746,
+      "max": 0.01786,
       "overHigh": false,
       "overLow": false
     }
@@ -2649,9 +2649,9 @@
     "price": 0.276,
     "avgQuoteVolume4h": 285814,
     "extremums": {
-      "triggerVolume": "30199",
-      "min": 0.2317,
-      "max": 0.2421,
+      "triggerVolume": "9577",
+      "min": 0.2354,
+      "max": 0.239,
       "overHigh": false,
       "overLow": false
     }
@@ -2661,10 +2661,10 @@
     "price": 0.062,
     "avgQuoteVolume4h": 245315,
     "extremums": {
-      "triggerVolume": "15736",
-      "min": 0.04888,
-      "max": 0.05022,
-      "overHigh": true,
+      "triggerVolume": "5347",
+      "min": 0.0498,
+      "max": 0.05067,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2673,9 +2673,9 @@
     "price": 0.05,
     "avgQuoteVolume4h": 58865,
     "extremums": {
-      "triggerVolume": "6646",
-      "min": 0.0479,
-      "max": 0.04912,
+      "triggerVolume": "4568",
+      "min": 0.04855,
+      "max": 0.04908,
       "overHigh": false,
       "overLow": false
     }
@@ -2685,10 +2685,10 @@
     "price": 0.099,
     "avgQuoteVolume4h": 32626,
     "extremums": {
-      "triggerVolume": "3230",
-      "min": 0.0945,
-      "max": 0.0972,
-      "overHigh": true,
+      "triggerVolume": "1856",
+      "min": 0.0969,
+      "max": 0.0986,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2697,9 +2697,9 @@
     "price": 0.127,
     "avgQuoteVolume4h": 184722,
     "extremums": {
-      "triggerVolume": "12535",
-      "min": 0.1155,
-      "max": 0.1201,
+      "triggerVolume": "5187",
+      "min": 0.1185,
+      "max": 0.1208,
       "overHigh": false,
       "overLow": false
     }
@@ -2709,9 +2709,9 @@
     "price": 2.065,
     "avgQuoteVolume4h": 93198,
     "extremums": {
-      "triggerVolume": "45001",
-      "min": 1.3308,
-      "max": 1.3885,
+      "triggerVolume": "20826",
+      "min": 1.3314,
+      "max": 1.3604,
       "overHigh": false,
       "overLow": false
     }
@@ -2721,9 +2721,9 @@
     "price": 0.288,
     "avgQuoteVolume4h": 38063,
     "extremums": {
-      "triggerVolume": "2761",
-      "min": 0.2523,
-      "max": 0.2598,
+      "triggerVolume": "1754",
+      "min": 0.259,
+      "max": 0.2628,
       "overHigh": false,
       "overLow": false
     }
@@ -2733,10 +2733,10 @@
     "price": 0.029,
     "avgQuoteVolume4h": 28320,
     "extremums": {
-      "triggerVolume": "4544",
-      "min": 0.02608,
-      "max": 0.02685,
-      "overHigh": true,
+      "triggerVolume": "2695",
+      "min": 0.02716,
+      "max": 0.02755,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2745,11 +2745,11 @@
     "price": 0.056,
     "avgQuoteVolume4h": 30157,
     "extremums": {
-      "triggerVolume": "4921",
-      "min": 0.0571,
-      "max": 0.0586,
+      "triggerVolume": "3472",
+      "min": 0.0578,
+      "max": 0.0584,
       "overHigh": false,
-      "overLow": true
+      "overLow": false
     }
   },
   "HIGH": {
@@ -2757,9 +2757,9 @@
     "price": 0.475,
     "avgQuoteVolume4h": 23827,
     "extremums": {
-      "triggerVolume": "8928",
-      "min": 0.4333,
-      "max": 0.4587,
+      "triggerVolume": "2798",
+      "min": 0.4572,
+      "max": 0.4643,
       "overHigh": false,
       "overLow": false
     }
@@ -2769,9 +2769,9 @@
     "price": 0.512,
     "avgQuoteVolume4h": 103782,
     "extremums": {
-      "triggerVolume": "4932",
-      "min": 0.4834,
-      "max": 0.4983,
+      "triggerVolume": "1729",
+      "min": 0.4957,
+      "max": 0.5007,
       "overHigh": false,
       "overLow": false
     }
@@ -2783,9 +2783,9 @@
     "startTime": 1758776865061,
     "log": 1758777831056,
     "extremums": {
-      "triggerVolume": "11075",
-      "min": 0.1255,
-      "max": 0.1316,
+      "triggerVolume": "29817",
+      "min": 0.1272,
+      "max": 0.1338,
       "overHigh": false,
       "overLow": false
     }
@@ -2795,9 +2795,9 @@
     "price": 0.112,
     "avgQuoteVolume4h": 221740,
     "extremums": {
-      "triggerVolume": "18150",
-      "min": 0.09638,
-      "max": 0.10015,
+      "triggerVolume": "9537",
+      "min": 0.09671,
+      "max": 0.09946,
       "overHigh": false,
       "overLow": false
     }
@@ -2807,9 +2807,9 @@
     "price": 2.418,
     "avgQuoteVolume4h": 16971,
     "extremums": {
-      "triggerVolume": "5067",
-      "min": 2.618,
-      "max": 2.761,
+      "triggerVolume": "868",
+      "min": 2.641,
+      "max": 2.67,
       "overHigh": false,
       "overLow": false
     }
@@ -2819,10 +2819,10 @@
     "price": 0.038,
     "avgQuoteVolume4h": 15078,
     "extremums": {
-      "triggerVolume": "3787",
-      "min": 0.0391,
-      "max": 0.0399,
-      "overHigh": true,
+      "triggerVolume": "1679",
+      "min": 0.04,
+      "max": 0.0405,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2831,11 +2831,11 @@
     "price": 0.184,
     "avgQuoteVolume4h": 393180,
     "extremums": {
-      "triggerVolume": "15374",
-      "min": 0.15485,
-      "max": 0.16049,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "9078",
+      "min": 0.15551,
+      "max": 0.1608,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "ARPA": {
@@ -2843,10 +2843,10 @@
     "price": 0.021,
     "avgQuoteVolume4h": 52048,
     "extremums": {
-      "triggerVolume": "3524",
-      "min": 0.02018,
-      "max": 0.02066,
-      "overHigh": false,
+      "triggerVolume": "1757",
+      "min": 0.02063,
+      "max": 0.02084,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2855,10 +2855,10 @@
     "price": 0.139,
     "avgQuoteVolume4h": 112339,
     "extremums": {
-      "triggerVolume": "5287",
-      "min": 0.12678,
-      "max": 0.13031,
-      "overHigh": false,
+      "triggerVolume": "1277",
+      "min": 0.12838,
+      "max": 0.12976,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2879,10 +2879,10 @@
     "price": 0.033,
     "avgQuoteVolume4h": 570125,
     "extremums": {
-      "triggerVolume": "41178",
-      "min": 0.03157,
-      "max": 0.03467,
-      "overHigh": false,
+      "triggerVolume": "11962",
+      "min": 0.03215,
+      "max": 0.03292,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2891,10 +2891,10 @@
     "price": 0.312,
     "avgQuoteVolume4h": 44700,
     "extremums": {
-      "triggerVolume": "445396",
-      "min": 0.376,
-      "max": 0.491,
-      "overHigh": true,
+      "triggerVolume": "1659852",
+      "min": 0.446,
+      "max": 0.667,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2903,10 +2903,10 @@
     "price": 0.062,
     "avgQuoteVolume4h": 35421,
     "extremums": {
-      "triggerVolume": "5339",
-      "min": 0.058,
-      "max": 0.06004,
-      "overHigh": true,
+      "triggerVolume": "5424",
+      "min": 0.06042,
+      "max": 0.06176,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2915,10 +2915,10 @@
     "price": 0.031,
     "avgQuoteVolume4h": 437624,
     "extremums": {
-      "triggerVolume": "55421",
-      "min": 0.03372,
-      "max": 0.03581,
-      "overHigh": false,
+      "triggerVolume": "18404",
+      "min": 0.03386,
+      "max": 0.03463,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2927,10 +2927,10 @@
     "price": 0.495,
     "avgQuoteVolume4h": 40706,
     "extremums": {
-      "triggerVolume": "9240",
-      "min": 0.5512,
-      "max": 0.5659,
-      "overHigh": true,
+      "triggerVolume": "4231",
+      "min": 0.5667,
+      "max": 0.5777,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2939,9 +2939,9 @@
     "price": 0.035,
     "avgQuoteVolume4h": 17759,
     "extremums": {
-      "triggerVolume": "2361",
-      "min": 0.03406,
-      "max": 0.03495,
+      "triggerVolume": "1967",
+      "min": 0.03483,
+      "max": 0.0354,
       "overHigh": false,
       "overLow": false
     }
@@ -2951,10 +2951,10 @@
     "price": 0.365,
     "avgQuoteVolume4h": 88956,
     "extremums": {
-      "triggerVolume": "4452",
-      "min": 0.3202,
-      "max": 0.3335,
-      "overHigh": false,
+      "triggerVolume": "1156",
+      "min": 0.3277,
+      "max": 0.3303,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -2963,9 +2963,9 @@
     "price": 0.011,
     "avgQuoteVolume4h": 64721,
     "extremums": {
-      "triggerVolume": "23693",
-      "min": 0.0128,
-      "max": 0.01342,
+      "triggerVolume": "9788",
+      "min": 0.01289,
+      "max": 0.01329,
       "overHigh": false,
       "overLow": false
     }
@@ -2975,9 +2975,9 @@
     "price": 0.288,
     "avgQuoteVolume4h": 43862,
     "extremums": {
-      "triggerVolume": "5611",
-      "min": 0.266,
-      "max": 0.273,
+      "triggerVolume": "2236",
+      "min": 0.273,
+      "max": 0.278,
       "overHigh": false,
       "overLow": false
     }
@@ -2987,10 +2987,10 @@
     "price": 0.055,
     "avgQuoteVolume4h": 52885,
     "extremums": {
-      "triggerVolume": "24890",
-      "min": 0.05596,
-      "max": 0.0615,
-      "overHigh": true,
+      "triggerVolume": "67260",
+      "min": 0.06311,
+      "max": 0.06947,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -2999,9 +2999,9 @@
     "price": 0.054,
     "avgQuoteVolume4h": 22431,
     "extremums": {
-      "triggerVolume": "2977",
-      "min": 0.06064,
-      "max": 0.0623,
+      "triggerVolume": "1642",
+      "min": 0.06174,
+      "max": 0.06256,
       "overHigh": false,
       "overLow": false
     }
@@ -3011,9 +3011,9 @@
     "price": 0.023,
     "avgQuoteVolume4h": 95694,
     "extremums": {
-      "triggerVolume": "3967",
-      "min": 0.0256,
-      "max": 0.02621,
+      "triggerVolume": "2513",
+      "min": 0.02641,
+      "max": 0.02681,
       "overHigh": true,
       "overLow": false
     }
@@ -3023,10 +3023,10 @@
     "price": 0.1,
     "avgQuoteVolume4h": 234177,
     "extremums": {
-      "triggerVolume": "16077",
-      "min": 0.09369,
-      "max": 0.09781,
-      "overHigh": true,
+      "triggerVolume": "5387",
+      "min": 0.0986,
+      "max": 0.10008,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3035,11 +3035,11 @@
     "price": 1.217,
     "avgQuoteVolume4h": 30011,
     "extremums": {
-      "triggerVolume": "4897",
-      "min": 1.1508,
-      "max": 1.1704,
-      "overHigh": true,
-      "overLow": false
+      "triggerVolume": "3082",
+      "min": 1.152,
+      "max": 1.1757,
+      "overHigh": false,
+      "overLow": true
     }
   },
   "ACT": {
@@ -3047,10 +3047,10 @@
     "price": 0.02,
     "avgQuoteVolume4h": 126229,
     "extremums": {
-      "triggerVolume": "20220",
-      "min": 0.03112,
-      "max": 0.03237,
-      "overHigh": false,
+      "triggerVolume": "6918",
+      "min": 0.03164,
+      "max": 0.03214,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -3059,10 +3059,10 @@
     "price": 0.202,
     "avgQuoteVolume4h": 19681,
     "extremums": {
-      "triggerVolume": "1802",
-      "min": 0.2029,
-      "max": 0.2072,
-      "overHigh": true,
+      "triggerVolume": "914",
+      "min": 0.2074,
+      "max": 0.2091,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3071,9 +3071,9 @@
     "price": 0.025,
     "avgQuoteVolume4h": 18171,
     "extremums": {
-      "triggerVolume": "2283",
-      "min": 0.0253,
-      "max": 0.02589,
+      "triggerVolume": "1009",
+      "min": 0.02577,
+      "max": 0.02601,
       "overHigh": false,
       "overLow": false
     }
@@ -3083,10 +3083,10 @@
     "price": 0.019,
     "avgQuoteVolume4h": 50605,
     "extremums": {
-      "triggerVolume": "4286",
-      "min": 0.02011,
-      "max": 0.02074,
-      "overHigh": true,
+      "triggerVolume": "98515",
+      "min": 0.02093,
+      "max": 0.02509,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3107,9 +3107,9 @@
     "price": 1.735,
     "avgQuoteVolume4h": 58235,
     "extremums": {
-      "triggerVolume": "7083",
-      "min": 1.884,
-      "max": 1.936,
+      "triggerVolume": "2448",
+      "min": 1.892,
+      "max": 1.919,
       "overHigh": false,
       "overLow": false
     }
@@ -3131,10 +3131,10 @@
     "price": 0.039,
     "avgQuoteVolume4h": 59084,
     "extremums": {
-      "triggerVolume": "8623",
-      "min": 0.03623,
-      "max": 0.03769,
-      "overHigh": true,
+      "triggerVolume": "5241",
+      "min": 0.0373,
+      "max": 0.03878,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3143,10 +3143,10 @@
     "price": 7.211,
     "avgQuoteVolume4h": 16586,
     "extremums": {
-      "triggerVolume": "1507",
-      "min": 7.631,
-      "max": 7.783,
-      "overHigh": false,
+      "triggerVolume": "950",
+      "min": 7.734,
+      "max": 7.824,
+      "overHigh": true,
       "overLow": false
     }
   },
@@ -3155,10 +3155,10 @@
     "price": 0.401,
     "avgQuoteVolume4h": 13302,
     "extremums": {
-      "triggerVolume": "4238",
-      "min": 0.3734,
-      "max": 0.3877,
-      "overHigh": true,
+      "triggerVolume": "5124",
+      "min": 0.3912,
+      "max": 0.4075,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3167,10 +3167,10 @@
     "price": 0.11,
     "avgQuoteVolume4h": 27788,
     "extremums": {
-      "triggerVolume": "2745",
-      "min": 0.1067,
-      "max": 0.1094,
-      "overHigh": true,
+      "triggerVolume": "1500",
+      "min": 0.1096,
+      "max": 0.1108,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3179,10 +3179,10 @@
     "price": 0.089,
     "avgQuoteVolume4h": 125698,
     "extremums": {
-      "triggerVolume": "215243",
-      "min": 0.18859,
-      "max": 0.20385,
-      "overHigh": true,
+      "triggerVolume": "75726",
+      "min": 0.19276,
+      "max": 0.20855,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3191,10 +3191,10 @@
     "price": 0.03,
     "avgQuoteVolume4h": 32071,
     "extremums": {
-      "triggerVolume": "17192",
-      "min": 0.0296,
-      "max": 0.03237,
-      "overHigh": true,
+      "triggerVolume": "18666",
+      "min": 0.03102,
+      "max": 0.03376,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3215,10 +3215,10 @@
     "price": 0.023,
     "avgQuoteVolume4h": 26909,
     "extremums": {
-      "triggerVolume": "2632",
-      "min": 0.02417,
-      "max": 0.02485,
-      "overHigh": true,
+      "triggerVolume": "2148",
+      "min": 0.02492,
+      "max": 0.02535,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3227,10 +3227,10 @@
     "price": 0.229,
     "avgQuoteVolume4h": 43789,
     "extremums": {
-      "triggerVolume": "4630",
-      "min": 0.2244,
-      "max": 0.2302,
-      "overHigh": true,
+      "triggerVolume": "2364",
+      "min": 0.2303,
+      "max": 0.2335,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3239,9 +3239,9 @@
     "price": 0.276,
     "avgQuoteVolume4h": 187004,
     "extremums": {
-      "triggerVolume": "3776",
-      "min": 0.2762,
-      "max": 0.2845,
+      "triggerVolume": "3158",
+      "min": 0.2781,
+      "max": 0.2846,
       "overHigh": false,
       "overLow": false
     }
@@ -3251,10 +3251,10 @@
     "price": 2.139,
     "avgQuoteVolume4h": 75324,
     "extremums": {
-      "triggerVolume": "5261",
-      "min": 2.217,
-      "max": 2.269,
-      "overHigh": true,
+      "triggerVolume": "1592",
+      "min": 2.233,
+      "max": 2.259,
+      "overHigh": false,
       "overLow": false
     }
   },
@@ -3275,9 +3275,9 @@
     "price": 21.614,
     "avgQuoteVolume4h": 21177,
     "extremums": {
-      "triggerVolume": "1716",
-      "min": 0.02319,
-      "max": 0.02383,
+      "triggerVolume": "637",
+      "min": 0.02342,
+      "max": 0.02366,
       "overHigh": false,
       "overLow": false
     }
