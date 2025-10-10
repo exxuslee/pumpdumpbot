@@ -100,24 +100,30 @@ class ExtremumTradingBot {
     async updateAllHourly() {
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
-            token.extremums = await this.getHourlyCandes(tokenSymbol);
+            let newExtremums = await this.getHourlyCandes(tokenSymbol);
+            if (
+                ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh)
+                || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow)
+            ) {
+                `📊 ${token.key}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`
+            }
+            token.extremums = newExtremums;
         });
 
         await Promise.all(updatePromises);
 
         const tokensArray = Object.entries(this.tokens).map(([key, value]) => ({key, ...value,}));
-        tokensArray
-            .sort((a, b) => a.key.localeCompare(b.key))
-            .forEach(r => {
-                if (r.extremums?.overHigh || r.extremums?.overLow) {
-                    this.log(
-                        `📊 ${r.key}:   \tvol:${r.extremums.triggerVolume} \tmin:${r.extremums.min} \tmax:${r.extremums.max} \toverHL:${+r.extremums.overHigh}${+r.extremums.overLow}`
-                    );
-                }
-            });
+        const counts = tokensArray.reduce(
+            (acc, token) => {
+                if (token.extremums.overHigh) acc.overHigh += 1;
+                if (token.extremums.overLow) acc.overLow += 1;
+                return acc;
+            },
+            {overHigh: 0, overLow: 0}
+        );
 
         await this.writeTokensFile();
-        this.log(`✅ Updated hourly volumes for ${Object.keys(this.tokens).length} tokens`);
+        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}. Total: ${Object.keys(this.tokens).length}`);
     }
 
     startHourlyUpdates() {
@@ -164,8 +170,6 @@ class ExtremumTradingBot {
                 this.count = this.count + pnlPercent - 0.1;
                 const ico = pnlPercent > 0 ? "🚀" : "🔻";
                 const message = `${ticker} ${trade.side}${ico}: ${(+trade.price).toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
-
-                this.log(message);
                 await this.sendTelegramAlert(message, true);
 
                 delete trade.side;
