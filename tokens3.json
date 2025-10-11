@@ -3,1224 +3,1221 @@
     "cap": 54,
     "price": 0.153,
     "extremums": {
-      "triggerVolume": 334759,
-      "max": 0.192,
+      "triggerVolume": 229697,
+      "max": 0.1912,
       "min": 0.1884,
-      "overHigh": 0.1905,
-      "overLow": 0.1877
+      "overHigh": 0.1892,
+      "overLow": 0.1835
     }
   },
   "ATOM": {
     "cap": 55,
     "price": 2.842,
     "extremums": {
-      "triggerVolume": 653197,
+      "triggerVolume": 610593,
       "max": 3.242,
-      "min": 3.15,
-      "overHigh": 3.217,
-      "overLow": 3.179
+      "min": 3.166,
+      "overHigh": 3.209,
+      "overLow": 3.11
     }
   },
   "PENGU": {
     "cap": 56,
     "price": 0.021,
     "extremums": {
-      "triggerVolume": 1587786,
-      "max": 0.023574,
-      "min": 0.022566,
-      "overHigh": 0.022835,
-      "overLow": 0.022351
+      "triggerVolume": 1391518,
+      "max": 0.023404,
+      "min": 0.022558,
+      "overHigh": 0.022646,
+      "overLow": 0.021744
     }
   },
   "VET": {
     "cap": 57,
     "price": 0.015,
     "extremums": {
-      "triggerVolume": 243505,
+      "triggerVolume": 198551,
       "max": 0.017567,
       "min": 0.01712,
-      "overHigh": 0.017319,
-      "overLow": 0.017121
+      "overHigh": 0.017244,
+      "overLow": 0.016724
     }
   },
   "SKY": {
     "cap": 58,
-    "price": 0.054,
+    "price": "0.05807000",
     "extremums": {
-      "triggerVolume": 43328,
-      "max": 0.05884,
+      "triggerVolume": 42180,
+      "max": 0.0589,
       "min": 0.05811,
-      "overHigh": 0.0589,
-      "overLow": 0.05813
+      "overHigh": 0.05862,
+      "overLow": 0.05782
     }
   },
   "SEI": {
     "cap": 62,
     "price": 0.193,
     "extremums": {
-      "triggerVolume": 371525,
-      "max": 0.2211,
+      "triggerVolume": 292544,
+      "max": 0.2202,
       "min": 0.2152,
-      "overHigh": 0.2179,
-      "overLow": 0.2134
+      "overHigh": 0.2161,
+      "overLow": 0.2089
     }
   },
   "RENDER": {
     "cap": 65,
     "price": 2.091,
     "extremums": {
-      "triggerVolume": 541683,
-      "max": 2.542,
+      "triggerVolume": 477918,
+      "max": 2.512,
       "min": 2.442,
-      "overHigh": 2.466,
-      "overLow": 2.427
+      "overHigh": 2.451,
+      "overLow": 2.368
     }
   },
   "TRUMP": {
     "cap": 67,
     "price": 5.363,
     "extremums": {
-      "triggerVolume": 2121622,
+      "triggerVolume": 1758931,
       "max": 6.178,
-      "min": 5.989,
-      "overHigh": 6.011,
-      "overLow": 5.93
+      "min": 5.96,
+      "overHigh": 5.966,
+      "overLow": 5.835
     }
   },
   "QNT": {
     "cap": 68,
     "price": 86.653,
     "extremums": {
-      "triggerVolume": 183582,
+      "triggerVolume": 154526,
       "max": 92.58,
-      "min": 88.98,
-      "overHigh": 90.89,
-      "overLow": 89.9
+      "min": 89.18,
+      "overHigh": 90.43,
+      "overLow": 87.52
     }
   },
   "FIL": {
     "cap": 69,
     "price": 1.471,
     "extremums": {
-      "triggerVolume": 1402938,
+      "triggerVolume": 1247649,
       "max": 1.671,
-      "min": 1.636,
-      "overHigh": 1.645,
-      "overLow": 1.608
+      "min": 1.632,
+      "overHigh": 1.634,
+      "overLow": 1.575
     }
   },
   "JUP": {
     "cap": 70,
     "price": 0.311,
     "extremums": {
-      "triggerVolume": 260266,
-      "max": 0.3422,
+      "triggerVolume": 228224,
+      "max": 0.3412,
       "min": 0.3338,
-      "overHigh": 0.3372,
-      "overLow": 0.3317
+      "overHigh": 0.3346,
+      "overLow": 0.3259
     }
   },
   "CAKE": {
     "cap": 73,
     "price": 2.615,
     "extremums": {
-      "triggerVolume": 695349,
+      "triggerVolume": 582239,
       "max": 2.8408,
       "min": 2.7385,
-      "overHigh": 2.833,
-      "overLow": 2.7832
+      "overHigh": 2.8021,
+      "overLow": 2.7012
     }
   },
   "IMX": {
     "cap": 74,
     "price": 0.431,
     "extremums": {
-      "triggerVolume": 167766,
-      "max": 0.5111,
+      "triggerVolume": 128954,
+      "max": 0.5074,
       "min": 0.4969,
-      "overHigh": 0.5009,
-      "overLow": 0.4939
+      "overHigh": 0.4975,
+      "overLow": 0.4831
     }
   },
   "XPL": {
     "cap": 75,
     "price": 0.468,
     "extremums": {
-      "triggerVolume": 6174267,
-      "max": 0.4401,
-      "min": 0.4115,
-      "overHigh": 0.4177,
-      "overLow": 0.4012
+      "triggerVolume": 5368672,
+      "max": 0.4337,
+      "min": 0.4031,
+      "overHigh": 0.4092,
+      "overLow": 0.3971
     }
   },
   "2Z": {
     "cap": 76,
     "price": 0.228,
     "extremums": {
-      "triggerVolume": 474069,
-      "max": 0.27479,
-      "min": 0.26682,
-      "overHigh": 0.26927,
-      "overLow": 0.26427
+      "triggerVolume": 400622,
+      "max": 0.27376,
+      "min": 0.26604,
+      "overHigh": 0.26646,
+      "overLow": 0.2592
     }
   },
   "OP": {
     "cap": 78,
     "price": 0.442,
     "extremums": {
-      "triggerVolume": 1002053,
-      "max": 0.489,
+      "triggerVolume": 701080,
+      "max": 0.4877,
       "min": 0.4785,
-      "overHigh": 0.4842,
-      "overLow": 0.4743
+      "overHigh": 0.4797,
+      "overLow": 0.4608
     }
   },
   "INJ": {
     "cap": 80,
     "price": 7.723,
     "extremums": {
-      "triggerVolume": 576728,
-      "max": 9.069,
-      "min": 8.851,
-      "overHigh": 8.884,
-      "overLow": 8.743
+      "triggerVolume": 480010,
+      "max": 9.034,
+      "min": 8.819,
+      "overHigh": 8.826,
+      "overLow": 8.516
     }
   },
   "FET": {
     "cap": 82,
     "price": 0.304,
     "extremums": {
-      "triggerVolume": 734280,
-      "max": 0.4091,
-      "min": 0.3915,
-      "overHigh": 0.395,
-      "overLow": 0.3903
+      "triggerVolume": 597885,
+      "max": 0.4033,
+      "min": 0.3903,
+      "overHigh": 0.3938,
+      "overLow": 0.382
     }
   },
   "STX": {
     "cap": 83,
     "price": 0.397,
     "extremums": {
-      "triggerVolume": 99930,
-      "max": 0.4463,
-      "min": 0.4388,
-      "overHigh": 0.4411,
-      "overLow": 0.4342
+      "triggerVolume": 90647,
+      "max": 0.4456,
+      "min": 0.4376,
+      "overHigh": 0.4376,
+      "overLow": 0.4266
     }
   },
   "TIA": {
     "cap": 84,
     "price": 0.842,
     "extremums": {
-      "triggerVolume": 822524,
-      "max": 1.0065,
-      "min": 0.976,
-      "overHigh": 0.9827,
-      "overLow": 0.9632
+      "triggerVolume": 705892,
+      "max": 0.9952,
+      "min": 0.9724,
+      "overHigh": 0.9744,
+      "overLow": 0.9436
     }
   },
   "LDO": {
     "cap": 85,
     "price": 0.747,
     "extremums": {
-      "triggerVolume": 910478,
+      "triggerVolume": 685109,
       "max": 0.8615,
-      "min": 0.8389,
-      "overHigh": 0.8487,
-      "overLow": 0.8351
+      "min": 0.8415,
+      "overHigh": 0.8434,
+      "overLow": 0.8125
     }
   },
   "KAIA": {
     "cap": 87,
     "price": 0.099,
     "extremums": {
-      "triggerVolume": 72721,
-      "max": 0.1093,
+      "triggerVolume": 50772,
+      "max": 0.109,
       "min": 0.1073,
-      "overHigh": 0.1085,
-      "overLow": 0.1074
+      "overHigh": 0.108,
+      "overLow": 0.1056
     }
   },
   "CRV": {
     "cap": 88,
     "price": 0.425,
     "extremums": {
-      "triggerVolume": 682560,
+      "triggerVolume": 600094,
       "max": 0.52,
-      "min": 0.506,
-      "overHigh": 0.511,
-      "overLow": 0.499
+      "min": 0.503,
+      "overHigh": 0.504,
+      "overLow": 0.486
     }
   },
   "XTZ": {
     "cap": 89,
     "price": 0.546,
     "extremums": {
-      "triggerVolume": 122418,
+      "triggerVolume": 102752,
       "max": 0.602,
-      "min": 0.589,
-      "overHigh": 0.595,
-      "overLow": 0.588
+      "min": 0.591,
+      "overHigh": 0.592,
+      "overLow": 0.576
     }
   },
   "GRT": {
     "cap": 90,
     "price": 0.055,
     "extremums": {
-      "triggerVolume": 165674,
+      "triggerVolume": 145512,
       "max": 0.06663,
-      "min": 0.06516,
-      "overHigh": 0.06538,
-      "overLow": 0.06429
+      "min": 0.06488,
+      "overHigh": 0.06492,
+      "overLow": 0.06294
     }
   },
   "PYTH": {
     "cap": 91,
     "price": 0.098,
     "extremums": {
-      "triggerVolume": 370847,
+      "triggerVolume": 337699,
       "max": 0.11407,
       "min": 0.11041,
-      "overHigh": 0.11283,
-      "overLow": 0.11078
+      "overHigh": 0.11187,
+      "overLow": 0.10812
     }
   },
   "IOTA": {
     "cap": 92,
     "price": 0.139,
     "extremums": {
-      "triggerVolume": 91880,
+      "triggerVolume": 79019,
       "max": 0.1454,
       "min": 0.1431,
-      "overHigh": 0.1442,
-      "overLow": 0.1421
+      "overHigh": 0.1433,
+      "overLow": 0.1387
     }
   },
   "ETHFI": {
     "cap": 93,
     "price": 1.061,
     "extremums": {
-      "triggerVolume": 735001,
-      "max": 1.2015,
+      "triggerVolume": 491452,
+      "max": 1.1892,
       "min": 1.1608,
-      "overHigh": 1.1763,
-      "overLow": 1.1512
+      "overHigh": 1.1663,
+      "overLow": 1.1242
     }
   },
   "PENDLE": {
     "cap": 93,
     "price": 3.239,
     "extremums": {
-      "triggerVolume": 487440,
-      "max": 3.6324,
+      "triggerVolume": 381421,
+      "max": 3.6358,
       "min": 3.5483,
-      "overHigh": 3.6358,
-      "overLow": 3.5604
+      "overHigh": 3.5908,
+      "overLow": 3.4665
     }
   },
   "TWT": {
     "cap": 96,
     "price": 1.232,
     "extremums": {
-      "triggerVolume": 249337,
-      "max": 1.4044,
+      "triggerVolume": 146161,
+      "max": 1.3809,
       "min": 1.347,
-      "overHigh": 1.3621,
-      "overLow": 1.348
+      "overHigh": 1.3604,
+      "overLow": 1.317
     }
   },
   "ENS": {
     "cap": 102,
     "price": 12.929,
     "extremums": {
-      "triggerVolume": 213502,
+      "triggerVolume": 176019,
       "max": 15.908,
-      "min": 15.628,
-      "overHigh": 15.666,
-      "overLow": 15.465
+      "min": 15.562,
+      "overHigh": 15.569,
+      "overLow": 15.085
     }
   },
   "SUN": {
     "cap": 103,
     "price": 0.025,
     "extremums": {
-      "triggerVolume": 132060,
+      "triggerVolume": 99347,
       "max": 0.024534,
-      "min": 0.024074,
-      "overHigh": 0.024453,
-      "overLow": 0.02431
+      "min": 0.024237,
+      "overHigh": 0.024366,
+      "overLow": 0.02423
     }
   },
   "0G": {
     "cap": 105,
     "price": 2.235,
     "extremums": {
-      "triggerVolume": 348778,
-      "max": 2.3263,
-      "min": 2.2428,
-      "overHigh": 2.2516,
-      "overLow": 2.2231
+      "triggerVolume": 303580,
+      "max": 2.3176,
+      "min": 2.2281,
+      "overHigh": 2.2441,
+      "overLow": 2.1952
     }
   },
   "ZRO": {
     "cap": 105,
     "price": 1.611,
     "extremums": {
-      "triggerVolume": 173482,
-      "max": 1.8299,
+      "triggerVolume": 150915,
+      "max": 1.8189,
       "min": 1.787,
-      "overHigh": 1.8077,
-      "overLow": 1.7846
+      "overHigh": 1.802,
+      "overLow": 1.7629
     }
   },
   "CFX": {
     "cap": 106,
     "price": 0.092,
     "extremums": {
-      "triggerVolume": 193328,
-      "max": 0.10455,
+      "triggerVolume": 140919,
+      "max": 0.10429,
       "min": 0.10289,
-      "overHigh": 0.10364,
-      "overLow": 0.10196
+      "overHigh": 0.10293,
+      "overLow": 0.09993
     }
   },
   "S": {
     "cap": 108,
     "price": 0.163,
     "extremums": {
-      "triggerVolume": 680074,
+      "triggerVolume": 606598,
       "max": 0.1941,
-      "min": 0.1862,
-      "overHigh": 0.1919,
-      "overLow": 0.188
+      "min": 0.1868,
+      "overHigh": 0.1897,
+      "overLow": 0.1827
     }
   },
   "DASH": {
     "cap": 109,
     "price": 36.579,
     "extremums": {
-      "triggerVolume": 674786,
-      "max": 40.06,
-      "min": 37.92,
-      "overHigh": 40.52,
-      "overLow": 39.03
+      "triggerVolume": 612782,
+      "max": 40.52,
+      "min": 38.04,
+      "overHigh": 40.26,
+      "overLow": 38.66
     }
   },
   "SAND": {
     "cap": 110,
     "price": 0.171,
     "extremums": {
-      "triggerVolume": 214975,
-      "max": 0.20476,
-      "min": 0.20101,
-      "overHigh": 0.20225,
-      "overLow": 0.19902
+      "triggerVolume": 152868,
+      "max": 0.20443,
+      "min": 0.20064,
+      "overHigh": 0.20082,
+      "overLow": 0.19489
     }
   },
   "EIGEN": {
     "cap": 111,
     "price": 1.144,
     "extremums": {
-      "triggerVolume": 766415,
-      "max": 1.2502,
+      "triggerVolume": 637711,
+      "max": 1.2302,
       "min": 1.1932,
-      "overHigh": 1.2157,
-      "overLow": 1.1907
+      "overHigh": 1.2071,
+      "overLow": 1.1508
     }
   },
   "STRK": {
     "cap": 112,
     "price": 0.102,
     "extremums": {
-      "triggerVolume": 383408,
-      "max": 0.1183,
+      "triggerVolume": 293591,
+      "max": 0.1179,
       "min": 0.1145,
-      "overHigh": 0.1174,
-      "overLow": 0.1153
+      "overHigh": 0.1166,
+      "overLow": 0.1129
     }
   },
   "THETA": {
     "cap": 113,
     "price": "0.51800000",
     "extremums": {
-      "triggerVolume": 166450,
+      "triggerVolume": 152769,
       "max": 0.5109,
-      "min": 0.4982,
-      "overHigh": 0.5029,
-      "overLow": 0.4949
-    },
-    "startTime": 1760191477650
+      "min": 0.4974,
+      "overHigh": 0.4978,
+      "overLow": 0.4824
+    }
   },
   "VIRTUAL": {
     "cap": 114,
     "price": 0.657,
     "extremums": {
-      "triggerVolume": 444424,
-      "max": 0.7514,
-      "min": 0.7304,
-      "overHigh": 0.7376,
-      "overLow": 0.7203
+      "triggerVolume": 340080,
+      "max": 0.7501,
+      "min": 0.7263,
+      "overHigh": 0.7268,
+      "overLow": 0.7009
     }
   },
   "DEXE": {
     "cap": 116,
     "price": 5.108,
     "extremums": {
-      "triggerVolume": 157788,
-      "max": 6.151,
-      "min": 5.871,
-      "overHigh": 5.936,
-      "overLow": 5.787
+      "triggerVolume": 132987,
+      "max": 6.105,
+      "min": 5.831,
+      "overHigh": 5.853,
+      "overLow": 5.562
     }
   },
   "MORPHO": {
     "cap": 117,
     "price": 1.23,
     "extremums": {
-      "triggerVolume": 1168637,
-      "max": 1.8905,
-      "min": 1.6309,
-      "overHigh": 1.6669,
-      "overLow": 1.6135
+      "triggerVolume": 446787,
+      "max": 1.7075,
+      "min": 1.6143,
+      "overHigh": 1.6365,
+      "overLow": 1.582
     }
   },
   "MANA": {
     "cap": 118,
     "price": 0.209,
     "extremums": {
-      "triggerVolume": 171069,
-      "max": 0.2477,
-      "min": 0.2428,
-      "overHigh": 0.2448,
-      "overLow": 0.2409
+      "triggerVolume": 131560,
+      "max": 0.2475,
+      "min": 0.2425,
+      "overHigh": 0.2431,
+      "overLow": 0.2354
     }
   },
   "SYRUP": {
     "cap": 119,
     "price": 0.336,
     "extremums": {
-      "triggerVolume": 110046,
-      "max": 0.34813,
+      "triggerVolume": 96467,
+      "max": 0.34853,
       "min": 0.33749,
-      "overHigh": 0.34853,
-      "overLow": 0.34118
+      "overHigh": 0.34414,
+      "overLow": 0.33294
     }
   },
   "FLOW": {
     "cap": 122,
     "price": 0.248,
     "extremums": {
-      "triggerVolume": 132461,
-      "max": 0.28,
+      "triggerVolume": 113018,
+      "max": 0.279,
       "min": 0.275,
-      "overHigh": 0.277,
-      "overLow": 0.274
+      "overHigh": 0.276,
+      "overLow": 0.268
     }
   },
   "A": {
     "cap": 125,
     "price": 0.242,
     "extremums": {
-      "triggerVolume": 73893,
-      "max": 0.2826,
+      "triggerVolume": 55632,
+      "max": 0.2823,
       "min": 0.2776,
-      "overHigh": 0.282,
-      "overLow": 0.2779
+      "overHigh": 0.2798,
+      "overLow": 0.2721
     }
   },
   "WIF": {
     "cap": 126,
     "price": 0.378,
     "extremums": {
-      "triggerVolume": 1394870,
-      "max": 0.5166,
-      "min": 0.5017,
-      "overHigh": 0.5066,
-      "overLow": 0.4958
+      "triggerVolume": 1050675,
+      "max": 0.5162,
+      "min": 0.5007,
+      "overHigh": 0.5019,
+      "overLow": 0.4819
     }
   },
   "JTO": {
     "cap": 131,
     "price": 0.927,
     "extremums": {
-      "triggerVolume": 322235,
-      "max": 1.1326,
-      "min": 1.0829,
-      "overHigh": 1.0992,
-      "overLow": 1.0811
+      "triggerVolume": 142555,
+      "max": 1.1159,
+      "min": 1.0905,
+      "overHigh": 1.0917,
+      "overLow": 1.0499
     }
   },
   "WAL": {
     "cap": 134,
     "price": 0.228,
     "extremums": {
-      "triggerVolume": 313520,
-      "max": 0.2435,
+      "triggerVolume": 264492,
+      "max": 0.2409,
       "min": 0.2338,
-      "overHigh": 0.2371,
-      "overLow": 0.233
+      "overHigh": 0.2352,
+      "overLow": 0.2266
     }
   },
   "W": {
     "cap": 135,
     "price": 0.068,
     "extremums": {
-      "triggerVolume": 303013,
-      "max": 0.07864,
-      "min": 0.07625,
-      "overHigh": 0.07659,
-      "overLow": 0.07496
+      "triggerVolume": 254762,
+      "max": 0.07839,
+      "min": 0.07586,
+      "overHigh": 0.076,
+      "overLow": 0.0734
     }
   },
   "JST": {
     "cap": 139,
     "price": "0.03068000",
     "extremums": {
-      "triggerVolume": 24845,
+      "triggerVolume": 19945,
       "max": 0.030622,
-      "min": 0.030397,
-      "overHigh": 0.030558,
-      "overLow": 0.03046
-    },
-    "startTime": 1760191004055
+      "min": 0.030429,
+      "overHigh": 0.030543,
+      "overLow": 0.030329
+    }
   },
   "COMP": {
     "cap": 140,
     "price": "33.11000000",
     "extremums": {
-      "triggerVolume": 208694,
-      "max": 33.66,
-      "min": 32.89,
-      "overHigh": 33,
-      "overLow": 32.43
-    },
-    "startTime": 1760190623969
+      "triggerVolume": 185284,
+      "max": 33.52,
+      "min": 32.63,
+      "overHigh": 32.64,
+      "overLow": 31.75
+    }
   },
   "SNX": {
     "cap": 141,
     "price": 0.843,
     "extremums": {
-      "triggerVolume": 297885,
-      "max": 1.053,
-      "min": 0.973,
-      "overHigh": 0.987,
-      "overLow": 0.972
+      "triggerVolume": 259786,
+      "max": 1.029,
+      "min": 0.972,
+      "overHigh": 0.981,
+      "overLow": 0.95
     }
   },
   "NEO": {
     "cap": 142,
     "price": 4.088,
     "extremums": {
-      "triggerVolume": 124387,
-      "max": 4.658,
-      "min": 4.578,
-      "overHigh": 4.601,
-      "overLow": 4.54
+      "triggerVolume": 124589,
+      "max": 4.65,
+      "min": 4.572,
+      "overHigh": 4.581,
+      "overLow": 4.437
     }
   },
   "RUNE": {
     "cap": 143,
     "price": 0.8,
     "extremums": {
-      "triggerVolume": 130082,
-      "max": 0.901,
+      "triggerVolume": 105966,
+      "max": 0.897,
       "min": 0.884,
-      "overHigh": 0.894,
-      "overLow": 0.882
+      "overHigh": 0.89,
+      "overLow": 0.867
     }
   },
   "CHZ": {
     "cap": 145,
     "price": 0.028,
     "extremums": {
-      "triggerVolume": 94640,
-      "max": 0.03305,
-      "min": 0.03247,
-      "overHigh": 0.0326,
-      "overLow": 0.03216
+      "triggerVolume": 69289,
+      "max": 0.03287,
+      "min": 0.03238,
+      "overHigh": 0.03237,
+      "overLow": 0.0315
     }
   },
   "ZK": {
     "cap": 148,
     "price": 0.033,
     "extremums": {
-      "triggerVolume": 125317,
-      "max": 0.04375,
-      "min": 0.04156,
-      "overHigh": 0.04191,
-      "overLow": 0.04139
+      "triggerVolume": 105365,
+      "max": 0.04278,
+      "min": 0.04148,
+      "overHigh": 0.04198,
+      "overLow": 0.04025
     }
   },
   "KAITO": {
     "cap": 150,
     "price": 1.097,
     "extremums": {
-      "triggerVolume": 218475,
+      "triggerVolume": 184407,
       "max": 1.1319,
       "min": 1.1113,
-      "overHigh": 1.1207,
-      "overLow": 1.1074
+      "overHigh": 1.1172,
+      "overLow": 1.0878
     }
   },
   "FORM": {
     "cap": 153,
     "price": 0.666,
     "extremums": {
-      "triggerVolume": 692264,
-      "max": 0.7878,
+      "triggerVolume": 622951,
+      "max": 0.7821,
       "min": 0.746,
-      "overHigh": 0.7804,
-      "overLow": 0.7522
+      "overHigh": 0.7635,
+      "overLow": 0.7248
     }
   },
   "LINEA": {
     "cap": 154,
     "price": 0.016,
     "extremums": {
-      "triggerVolume": 511080,
-      "max": 0.0186,
+      "triggerVolume": 386923,
+      "max": 0.01858,
       "min": 0.01822,
-      "overHigh": 0.0185,
-      "overLow": 0.01812
+      "overHigh": 0.01829,
+      "overLow": 0.01768
     }
   },
   "1INCH": {
     "cap": 156,
     "price": 0.176,
     "extremums": {
-      "triggerVolume": 204927,
-      "max": 0.1966,
-      "min": 0.185,
-      "overHigh": 0.1858,
-      "overLow": 0.1832
+      "triggerVolume": 87349,
+      "max": 0.1879,
+      "min": 0.1846,
+      "overHigh": 0.1847,
+      "overLow": 0.1784
     }
   },
   "AXS": {
     "cap": 158,
     "price": 1.472,
     "extremums": {
-      "triggerVolume": 133106,
-      "max": 1.621,
-      "min": 1.587,
-      "overHigh": 1.591,
-      "overLow": 1.556
+      "triggerVolume": 127581,
+      "max": 1.62,
+      "min": 1.573,
+      "overHigh": 1.577,
+      "overLow": 1.52
     }
   },
   "EGLD": {
     "cap": 158,
     "price": 8.511,
     "extremums": {
-      "triggerVolume": 138841,
-      "max": 10.015,
-      "min": 9.763,
-      "overHigh": 9.819,
-      "overLow": 9.662
+      "triggerVolume": 117274,
+      "max": 9.979,
+      "min": 9.75,
+      "overHigh": 9.756,
+      "overLow": 9.446
     }
   },
   "BERA": {
     "cap": 160,
     "price": 1.83,
     "extremums": {
-      "triggerVolume": 533517,
-      "max": 1.84,
-      "min": 1.782,
-      "overHigh": 1.815,
-      "overLow": 1.775
+      "triggerVolume": 336303,
+      "max": 1.824,
+      "min": 1.792,
+      "overHigh": 1.794,
+      "overLow": 1.728
     }
   },
   "SUPER": {
     "cap": 161,
     "price": 0.371,
     "extremums": {
-      "triggerVolume": 88201,
-      "max": 0.4229,
-      "min": 0.4121,
-      "overHigh": 0.4136,
-      "overLow": 0.4083
+      "triggerVolume": 70536,
+      "max": 0.4197,
+      "min": 0.4113,
+      "overHigh": 0.4117,
+      "overLow": 0.4016
     }
   },
   "AR": {
     "cap": 162,
     "price": 3.529,
     "extremums": {
-      "triggerVolume": 198795,
-      "max": 4.278,
+      "triggerVolume": 169542,
+      "max": 4.239,
       "min": 4.134,
-      "overHigh": 4.176,
-      "overLow": 4.107
+      "overHigh": 4.138,
+      "overLow": 3.954
     }
   },
   "DYDX": {
     "cap": 164,
     "price": 0.293,
     "extremums": {
-      "triggerVolume": 408228,
-      "max": 0.38,
-      "min": 0.365,
-      "overHigh": 0.367,
-      "overLow": 0.36
+      "triggerVolume": 334505,
+      "max": 0.375,
+      "min": 0.362,
+      "overHigh": 0.364,
+      "overLow": 0.352
     }
   },
   "APE": {
     "cap": 172,
     "price": 0.274,
     "extremums": {
-      "triggerVolume": 190412,
+      "triggerVolume": 165344,
       "max": 0.3811,
       "min": 0.3737,
-      "overHigh": 0.3787,
-      "overLow": 0.3714
+      "overHigh": 0.3756,
+      "overLow": 0.3588
     }
   },
   "FF": {
     "cap": 174,
     "price": 0.087,
     "extremums": {
-      "triggerVolume": 1038370,
-      "max": 0.11883,
-      "min": 0.11356,
-      "overHigh": 0.11596,
-      "overLow": 0.11388
+      "triggerVolume": 734200,
+      "max": 0.11775,
+      "min": 0.11388,
+      "overHigh": 0.11515,
+      "overLow": 0.11082
     }
   },
   "SFP": {
     "cap": 175,
     "price": 0.4,
     "extremums": {
-      "triggerVolume": 40274,
+      "triggerVolume": 31466,
       "max": 0.407,
       "min": 0.3966,
-      "overHigh": 0.4037,
-      "overLow": 0.397
+      "overHigh": 0.4004,
+      "overLow": 0.3869
     }
   },
   "BAT": {
     "cap": 176,
     "price": 0.133,
     "extremums": {
-      "triggerVolume": 84047,
-      "max": 0.148,
-      "min": 0.1439,
-      "overHigh": 0.1447,
-      "overLow": 0.1422
+      "triggerVolume": 59420,
+      "max": 0.1471,
+      "min": 0.1433,
+      "overHigh": 0.1434,
+      "overLow": 0.1395
     }
   },
   "MOVE": {
     "cap": 178,
     "price": 0.068,
     "extremums": {
-      "triggerVolume": 104918,
+      "triggerVolume": 87768,
       "max": 0.0831,
       "min": 0.0816,
-      "overHigh": 0.0824,
-      "overLow": 0.0812
+      "overHigh": 0.0817,
+      "overLow": 0.0795
     }
   },
   "LPT": {
     "cap": 179,
     "price": 4.052,
     "extremums": {
-      "triggerVolume": 143706,
+      "triggerVolume": 99191,
       "max": 4.881,
-      "min": 4.747,
-      "overHigh": 4.836,
-      "overLow": 4.771
+      "min": 4.777,
+      "overHigh": 4.827,
+      "overLow": 4.662
     }
   },
   "CVX": {
     "cap": 181,
     "price": 1.903,
     "extremums": {
-      "triggerVolume": 49964,
+      "triggerVolume": 35214,
       "max": 2.366,
-      "min": 2.313,
-      "overHigh": 2.335,
-      "overLow": 2.284
+      "min": 2.302,
+      "overHigh": 2.303,
+      "overLow": 2.229
     }
   },
   "AXL": {
     "cap": 183,
     "price": 0.172,
     "extremums": {
-      "triggerVolume": 43885,
+      "triggerVolume": 33801,
       "max": 0.2056,
-      "min": 0.2013,
-      "overHigh": 0.2038,
-      "overLow": 0.2005
+      "min": 0.2014,
+      "overHigh": 0.2021,
+      "overLow": 0.1957
     }
   },
   "QTUM": {
     "cap": 184,
     "price": 1.689,
     "extremums": {
-      "triggerVolume": 85672,
+      "triggerVolume": 68353,
       "max": 1.942,
-      "min": 1.909,
-      "overHigh": 1.917,
-      "overLow": 1.89
+      "min": 1.904,
+      "overHigh": 1.905,
+      "overLow": 1.855
     }
   },
   "PLUME": {
     "cap": 187,
     "price": 0.059,
     "extremums": {
-      "triggerVolume": 302561,
+      "triggerVolume": 243934,
       "max": 0.08981,
-      "min": 0.08447,
-      "overHigh": 0.08538,
-      "overLow": 0.08351
+      "min": 0.08414,
+      "overHigh": 0.08427,
+      "overLow": 0.08202
     }
   },
   "ZEN": {
     "cap": 188,
     "price": 10.14,
     "extremums": {
-      "triggerVolume": 1266824,
-      "max": 13.492,
+      "triggerVolume": 1393477,
+      "max": 13.756,
       "min": 12.323,
-      "overHigh": 13.756,
-      "overLow": 12.917
+      "overHigh": 13.392,
+      "overLow": 12.895
     }
   },
   "SAHARA": {
     "cap": 190,
     "price": 0.075,
     "extremums": {
-      "triggerVolume": 251987,
-      "max": 0.07631,
+      "triggerVolume": 205689,
+      "max": 0.07584,
       "min": 0.07358,
-      "overHigh": 0.0749,
-      "overLow": 0.07381
+      "overHigh": 0.07447,
+      "overLow": 0.07228
     }
   },
   "GLM": {
     "cap": 192,
     "price": 0.169,
     "extremums": {
-      "triggerVolume": 51968,
+      "triggerVolume": 39177,
       "max": 0.18064,
-      "min": 0.17831,
-      "overHigh": 0.17922,
-      "overLow": 0.17628
+      "min": 0.17753,
+      "overHigh": 0.17761,
+      "overLow": 0.17332
     }
   },
   "PROM": {
     "cap": 193,
     "price": 9.225,
     "extremums": {
-      "triggerVolume": 120828,
-      "max": 10.343,
-      "min": 9.902,
+      "triggerVolume": 65715,
+      "max": 10.158,
+      "min": 9.873,
       "overHigh": 9.972,
-      "overLow": 9.873
+      "overLow": 9.878
     }
   },
   "KSM": {
     "cap": 194,
     "price": 9.807,
     "extremums": {
-      "triggerVolume": 70885,
-      "max": 11.23,
-      "min": 10.912,
-      "overHigh": 10.962,
-      "overLow": 10.761
+      "triggerVolume": 62754,
+      "max": 11.201,
+      "min": 10.852,
+      "overHigh": 10.86,
+      "overLow": 10.458
     }
   },
   "KAVA": {
     "cap": 195,
     "price": 0.154,
     "extremums": {
-      "triggerVolume": 1492975,
-      "max": 0.228,
-      "min": 0.1855,
+      "triggerVolume": 970821,
+      "max": 0.2069,
+      "min": 0.1863,
       "overHigh": 0.1886,
-      "overLow": 0.1854
+      "overLow": 0.1813
     }
   },
   "KMNO": {
     "cap": 199,
     "price": 0.053,
     "extremums": {
-      "triggerVolume": 93257,
-      "max": 0.06152,
-      "min": 0.05985,
-      "overHigh": 0.06015,
-      "overLow": 0.05919
+      "triggerVolume": 77957,
+      "max": 0.06117,
+      "min": 0.05971,
+      "overHigh": 0.05975,
+      "overLow": 0.05807
     }
   },
   "AWE": {
     "cap": 240,
     "price": 0.08,
     "extremums": {
-      "triggerVolume": 37714,
+      "triggerVolume": 28386,
       "max": 0.08922,
       "min": 0.08728,
-      "overHigh": 0.08855,
-      "overLow": 0.08806
+      "overHigh": 0.08853,
+      "overLow": 0.08645
     }
   },
   "YFI": {
     "cap": 241,
     "price": 4564.339,
     "extremums": {
-      "triggerVolume": 62459,
-      "max": 4791,
+      "triggerVolume": 47567,
+      "max": 4782,
       "min": 4712,
-      "overHigh": 4757,
-      "overLow": 4713
+      "overHigh": 4740,
+      "overLow": 4630
     }
   },
   "ZRX": {
     "cap": 245,
     "price": 0.173,
     "extremums": {
-      "triggerVolume": 57728,
+      "triggerVolume": 50422,
       "max": 0.1999,
       "min": 0.1965,
-      "overHigh": 0.1988,
-      "overLow": 0.1958
+      "overHigh": 0.1972,
+      "overLow": 0.1921
     }
   },
   "GAS": {
     "cap": 253,
     "price": 2.142,
     "extremums": {
-      "triggerVolume": 38242,
+      "triggerVolume": 28263,
       "max": 2.546,
-      "min": 2.495,
-      "overHigh": 2.527,
-      "overLow": 2.493
+      "min": 2.511,
+      "overHigh": 2.51,
+      "overLow": 2.45
     }
   },
   "CELO": {
     "cap": 255,
     "price": 0.235,
     "extremums": {
-      "triggerVolume": 442895,
+      "triggerVolume": 408631,
       "max": 0.299,
-      "min": 0.287,
-      "overHigh": 0.29,
-      "overLow": 0.283
+      "min": 0.285,
+      "overHigh": 0.286,
+      "overLow": 0.277
     }
   },
   "ROSE": {
     "cap": 257,
     "price": 0.018,
     "extremums": {
-      "triggerVolume": 96283,
-      "max": 0.02015,
-      "min": 0.01973,
-      "overHigh": 0.01982,
-      "overLow": 0.01952
+      "triggerVolume": 82159,
+      "max": 0.02006,
+      "min": 0.01968,
+      "overHigh": 0.0197,
+      "overLow": 0.019
     }
   },
   "AVNT": {
     "cap": 264,
     "price": 0.5,
     "extremums": {
-      "triggerVolume": 1080390,
-      "max": 0.6668,
-      "min": 0.6157,
-      "overHigh": 0.6205,
-      "overLow": 0.5984
+      "triggerVolume": 1059658,
+      "max": 0.6553,
+      "min": 0.6008,
+      "overHigh": 0.6048,
+      "overLow": 0.5882
     }
   },
   "ASTR": {
     "cap": 265,
     "price": 0.016,
     "extremums": {
-      "triggerVolume": 63065,
+      "triggerVolume": 50296,
       "max": 0.019759,
-      "min": 0.019341,
-      "overHigh": 0.019537,
-      "overLow": 0.019105
+      "min": 0.019241,
+      "overHigh": 0.019274,
+      "overLow": 0.018734
     }
   },
   "PNUT": {
     "cap": 271,
     "price": 0.126,
     "extremums": {
-      "triggerVolume": 435515,
-      "max": 0.14566,
+      "triggerVolume": 317301,
+      "max": 0.14403,
       "min": 0.14063,
-      "overHigh": 0.14277,
-      "overLow": 0.1402
+      "overHigh": 0.14155,
+      "overLow": 0.13612
     }
   },
   "BIO": {
     "cap": 272,
     "price": 0.072,
     "extremums": {
-      "triggerVolume": 373746,
-      "max": 0.0872,
-      "min": 0.08438,
-      "overHigh": 0.08482,
-      "overLow": 0.0832
+      "triggerVolume": 299898,
+      "max": 0.08662,
+      "min": 0.08367,
+      "overHigh": 0.08386,
+      "overLow": 0.08141
     }
   },
   "BARD": {
     "cap": 276,
     "price": 0.535,
     "extremums": {
-      "triggerVolume": 203287,
-      "max": 0.678,
-      "min": 0.6623,
-      "overHigh": 0.6657,
-      "overLow": 0.6531
+      "triggerVolume": 173078,
+      "max": 0.6765,
+      "min": 0.6576,
+      "overHigh": 0.6588,
+      "overLow": 0.6439
     }
   },
   "MINA": {
     "cap": 279,
     "price": 0.094,
     "extremums": {
-      "triggerVolume": 79793,
-      "max": 0.1179,
+      "triggerVolume": 65567,
+      "max": 0.117,
       "min": 0.1147,
-      "overHigh": 0.1162,
-      "overLow": 0.1142
+      "overHigh": 0.1151,
+      "overLow": 0.1115
     }
   },
   "SUSHI": {
     "cap": 281,
     "price": 0.411,
     "extremums": {
-      "triggerVolume": 155093,
-      "max": 0.5216,
-      "min": 0.5063,
-      "overHigh": 0.5086,
-      "overLow": 0.4982
+      "triggerVolume": 121112,
+      "max": 0.5197,
+      "min": 0.5021,
+      "overHigh": 0.5026,
+      "overLow": 0.4857
     }
   },
   "T": {
     "cap": 282,
     "price": 0.012,
     "extremums": {
-      "triggerVolume": 50890,
-      "max": 0.01225,
+      "triggerVolume": 36815,
+      "max": 0.01222,
       "min": 0.01206,
-      "overHigh": 0.01216,
-      "overLow": 0.01203
+      "overHigh": 0.01214,
+      "overLow": 0.01201
     }
   },
   "BLUR": {
     "cap": 284,
     "price": 0.045,
     "extremums": {
-      "triggerVolume": 54178,
-      "max": 0.05163,
+      "triggerVolume": 42105,
+      "max": 0.05161,
       "min": 0.05071,
-      "overHigh": 0.05122,
-      "overLow": 0.0504
+      "overHigh": 0.05085,
+      "overLow": 0.04923
     }
   },
   "OM": {
     "cap": 285,
     "price": 0.106,
     "extremums": {
-      "triggerVolume": 392833,
+      "triggerVolume": 338730,
       "max": 0.1113,
-      "min": 0.10825,
-      "overHigh": 0.10917,
-      "overLow": 0.10718
+      "min": 0.1081,
+      "overHigh": 0.10828,
+      "overLow": 0.10395
     }
   },
   "ACH": {
     "cap": 289,
     "price": 0.012,
     "extremums": {
-      "triggerVolume": 105023,
+      "triggerVolume": 98617,
       "max": 0.013129,
-      "min": 0.012862,
-      "overHigh": 0.013016,
-      "overLow": 0.012817
+      "min": 0.012898,
+      "overHigh": 0.01297,
+      "overLow": 0.012547
     }
   },
   "IOTX": {
     "cap": 294,
     "price": 0.012,
     "extremums": {
-      "triggerVolume": 182526,
+      "triggerVolume": 188709,
       "max": 0.01424,
       "min": 0.01323,
       "overHigh": 0.01366,
-      "overLow": 0.01341
+      "overLow": 0.01302
     }
   },
   "PROVE": {
     "cap": 295,
     "price": 0.564,
     "extremums": {
-      "triggerVolume": 1889767,
+      "triggerVolume": 1823868,
       "max": 0.8206,
-      "min": 0.7167,
-      "overHigh": 0.7802,
-      "overLow": 0.7522
+      "min": 0.743,
+      "overHigh": 0.7687,
+      "overLow": 0.7371
     }
   },
   "ID": {
     "cap": 300,
     "price": 0.09,
     "extremums": {
-      "triggerVolume": 62033,
-      "max": 0.11136,
+      "triggerVolume": 48642,
+      "max": 0.11101,
       "min": 0.10891,
-      "overHigh": 0.10976,
-      "overLow": 0.10803
+      "overHigh": 0.10907,
+      "overLow": 0.1059
     }
   },
   "RED": {
     "cap": 312,
     "price": 0.353,
     "extremums": {
-      "triggerVolume": 53273,
-      "max": 0.3779,
-      "min": 0.37,
-      "overHigh": 0.3755,
-      "overLow": 0.3678
+      "triggerVolume": 36097,
+      "max": 0.3775,
+      "min": 0.3713,
+      "overHigh": 0.3734,
+      "overLow": 0.3618
     }
   },
   "STG": {
     "cap": 320,
     "price": 0.147,
     "extremums": {
-      "triggerVolume": 38948,
-      "max": 0.163,
+      "triggerVolume": 31249,
+      "max": 0.1628,
       "min": 0.1606,
-      "overHigh": 0.1616,
-      "overLow": 0.1593
+      "overHigh": 0.1607,
+      "overLow": 0.157
     }
   },
   "COW": {
     "cap": 321,
     "price": 0.186,
     "extremums": {
-      "triggerVolume": 158194,
+      "triggerVolume": 149919,
       "max": 0.2529,
-      "min": 0.2431,
-      "overHigh": 0.2446,
-      "overLow": 0.2413
+      "min": 0.2427,
+      "overHigh": 0.243,
+      "overLow": 0.2366
     }
   },
   "GMX": {
     "cap": 322,
     "price": 9.166,
     "extremums": {
-      "triggerVolume": 52194,
-      "max": 10.623,
+      "triggerVolume": 47418,
+      "max": 10.592,
       "min": 10.314,
-      "overHigh": 10.543,
-      "overLow": 10.389
+      "overHigh": 10.568,
+      "overLow": 10.276
     }
   },
   "LRC": {
     "cap": 328,
     "price": 0.065,
     "extremums": {
-      "triggerVolume": 42110,
+      "triggerVolume": 32208,
       "max": 0.07042,
       "min": 0.06912,
-      "overHigh": 0.06999,
-      "overLow": 0.06884
+      "overHigh": 0.06937,
+      "overLow": 0.06742
     }
   },
   "SNT": {
@@ -1238,11 +1235,11 @@
     "cap": 330,
     "price": 0.015,
     "extremums": {
-      "triggerVolume": 93752,
-      "max": 0.0183,
-      "min": 0.01789,
-      "overHigh": 0.01803,
-      "overLow": 0.01775
+      "triggerVolume": 71768,
+      "max": 0.01822,
+      "min": 0.01788,
+      "overHigh": 0.01789,
+      "overLow": 0.01724
     }
   },
   "WAVES": {
@@ -1260,341 +1257,341 @@
     "cap": 332,
     "price": 0.082,
     "extremums": {
-      "triggerVolume": 28882,
-      "max": 0.0881,
-      "min": 0.0866,
-      "overHigh": 0.087,
-      "overLow": 0.0856
+      "triggerVolume": 26206,
+      "max": 0.0879,
+      "min": 0.0862,
+      "overHigh": 0.0863,
+      "overLow": 0.084
     }
   },
   "ORDI": {
     "cap": 333,
     "price": 4.206,
     "extremums": {
-      "triggerVolume": 378021,
-      "max": 5.239,
-      "min": 5.069,
-      "overHigh": 5.113,
-      "overLow": 5.011
+      "triggerVolume": 340010,
+      "max": 5.199,
+      "min": 5.054,
+      "overHigh": 5.064,
+      "overLow": 4.874
     }
   },
   "ORCA": {
     "cap": 337,
     "price": 1.426,
     "extremums": {
-      "triggerVolume": 38154,
+      "triggerVolume": 30165,
       "max": 1.64,
-      "min": 1.599,
-      "overHigh": 1.634,
-      "overLow": 1.606
+      "min": 1.611,
+      "overHigh": 1.62,
+      "overLow": 1.57
     }
   },
   "NMR": {
     "cap": 340,
     "price": 11.081,
     "extremums": {
-      "triggerVolume": 374450,
-      "max": 13.258,
+      "triggerVolume": 274255,
+      "max": 13.009,
       "min": 12.593,
-      "overHigh": 12.776,
-      "overLow": 12.57
+      "overHigh": 12.728,
+      "overLow": 12.413
     }
   },
   "BB": {
     "cap": 342,
     "price": 0.105,
     "extremums": {
-      "triggerVolume": 187112,
-      "max": 0.12101,
+      "triggerVolume": 118573,
+      "max": 0.117,
       "min": 0.11285,
-      "overHigh": 0.11483,
-      "overLow": 0.1128
+      "overHigh": 0.11415,
+      "overLow": 0.10934
     }
   },
   "COTI": {
     "cap": 345,
     "price": 0.034,
     "extremums": {
-      "triggerVolume": 46318,
-      "max": 0.03738,
-      "min": 0.03618,
-      "overHigh": 0.03656,
-      "overLow": 0.03586
+      "triggerVolume": 37694,
+      "max": 0.03702,
+      "min": 0.03616,
+      "overHigh": 0.03622,
+      "overLow": 0.03506
     }
   },
   "LISTA": {
     "cap": 346,
     "price": 0.331,
     "extremums": {
-      "triggerVolume": 382185,
+      "triggerVolume": 273323,
       "max": 0.3817,
-      "min": 0.3549,
-      "overHigh": 0.3739,
-      "overLow": 0.3643
+      "min": 0.3588,
+      "overHigh": 0.3683,
+      "overLow": 0.3563
     }
   },
   "ALT": {
     "cap": 348,
     "price": 0.018,
     "extremums": {
-      "triggerVolume": 129946,
-      "max": 0.02063,
-      "min": 0.0199,
-      "overHigh": 0.01996,
-      "overLow": 0.01965
+      "triggerVolume": 113041,
+      "max": 0.02047,
+      "min": 0.01974,
+      "overHigh": 0.01979,
+      "overLow": 0.01914
     }
   },
   "BABY": {
     "cap": 350,
     "price": 0.029,
     "extremums": {
-      "triggerVolume": 58754,
-      "max": 0.03416,
+      "triggerVolume": 51123,
+      "max": 0.03387,
       "min": 0.03298,
-      "overHigh": 0.03362,
-      "overLow": 0.03294
+      "overHigh": 0.0332,
+      "overLow": 0.03208
     }
   },
   "MASK": {
     "cap": 353,
     "price": 0.805,
     "extremums": {
-      "triggerVolume": 109276,
-      "max": 0.9122,
-      "min": 0.8888,
-      "overHigh": 0.8916,
-      "overLow": 0.8774
+      "triggerVolume": 84265,
+      "max": 0.9071,
+      "min": 0.884,
+      "overHigh": 0.8843,
+      "overLow": 0.8625
     }
   },
   "SOMI": {
     "cap": 354,
     "price": 0.5,
     "extremums": {
-      "triggerVolume": 312526,
-      "max": 0.5736,
-      "min": 0.556,
-      "overHigh": 0.5594,
-      "overLow": 0.5478
+      "triggerVolume": 268765,
+      "max": 0.5695,
+      "min": 0.5521,
+      "overHigh": 0.5539,
+      "overLow": 0.5415
     }
   },
   "WOO": {
     "cap": 356,
     "price": 0.042,
     "extremums": {
-      "triggerVolume": 43405,
-      "max": 0.04484,
+      "triggerVolume": 34593,
+      "max": 0.04419,
       "min": 0.04323,
-      "overHigh": 0.04405,
-      "overLow": 0.04328
+      "overHigh": 0.04375,
+      "overLow": 0.04222
     }
   },
   "POLYX": {
     "cap": 358,
     "price": 0.079,
     "extremums": {
-      "triggerVolume": 23887,
+      "triggerVolume": 16497,
       "max": 0.08682,
       "min": 0.08506,
-      "overHigh": 0.0866,
-      "overLow": 0.08577
+      "overHigh": 0.0863,
+      "overLow": 0.08383
     }
   },
   "XVS": {
     "cap": 360,
     "price": 4.757,
     "extremums": {
-      "triggerVolume": 32567,
+      "triggerVolume": 25951,
       "max": 5.243,
       "min": 5.092,
-      "overHigh": 5.214,
-      "overLow": 5.137
+      "overHigh": 5.174,
+      "overLow": 5.028
     }
   },
   "BAND": {
     "cap": 361,
     "price": 0.467,
     "extremums": {
-      "triggerVolume": 31731,
+      "triggerVolume": 25702,
       "max": 0.5054,
-      "min": 0.4938,
-      "overHigh": 0.5042,
-      "overLow": 0.4944
+      "min": 0.4958,
+      "overHigh": 0.499,
+      "overLow": 0.482
     }
   },
   "ONT": {
     "cap": 365,
     "price": 0.083,
     "extremums": {
-      "triggerVolume": 42850,
-      "max": 0.097,
+      "triggerVolume": 30018,
+      "max": 0.0962,
       "min": 0.0945,
-      "overHigh": 0.0953,
-      "overLow": 0.094
+      "overHigh": 0.0947,
+      "overLow": 0.0922
     }
   },
   "LAYER": {
     "cap": 366,
     "price": 0.267,
     "extremums": {
-      "triggerVolume": 68926,
-      "max": 0.2972,
+      "triggerVolume": 54481,
+      "max": 0.2964,
       "min": 0.2914,
-      "overHigh": 0.2954,
-      "overLow": 0.2912
+      "overHigh": 0.2935,
+      "overLow": 0.2848
     }
   },
   "HOME": {
     "cap": 369,
     "price": 0.027,
     "extremums": {
-      "triggerVolume": 37706,
-      "max": 0.02814,
+      "triggerVolume": 31184,
+      "max": 0.028017,
       "min": 0.027366,
-      "overHigh": 0.027949,
-      "overLow": 0.027626
+      "overHigh": 0.027799,
+      "overLow": 0.027074
     }
   },
   "SXP": {
     "cap": 370,
     "price": 0.112,
     "extremums": {
-      "triggerVolume": 29078,
+      "triggerVolume": 24110,
       "max": 0.1228,
-      "min": 0.1215,
-      "overHigh": 0.1223,
-      "overLow": 0.1207
+      "min": 0.1214,
+      "overHigh": 0.1214,
+      "overLow": 0.1183
     }
   },
   "RLC": {
     "cap": 374,
     "price": 0.839,
     "extremums": {
-      "triggerVolume": 46954,
+      "triggerVolume": 35435,
       "max": 0.8854,
       "min": 0.8544,
-      "overHigh": 0.8699,
-      "overLow": 0.8551
+      "overHigh": 0.863,
+      "overLow": 0.8408
     }
   },
   "GMT": {
     "cap": 376,
     "price": 0.023,
     "extremums": {
-      "triggerVolume": 100935,
+      "triggerVolume": 89070,
       "max": 0.02756,
       "min": 0.02689,
-      "overHigh": 0.02728,
-      "overLow": 0.02688
+      "overHigh": 0.02716,
+      "overLow": 0.02629
     }
   },
   "RPL": {
     "cap": 380,
     "price": 3.321,
     "extremums": {
-      "triggerVolume": 37383,
+      "triggerVolume": 32223,
       "max": 3.711,
       "min": 3.532,
-      "overHigh": 3.673,
-      "overLow": 3.597
+      "overHigh": 3.623,
+      "overLow": 3.479
     }
   },
   "OPEN": {
     "cap": 382,
     "price": 0.335,
     "extremums": {
-      "triggerVolume": 946527,
-      "max": 0.4297,
-      "min": 0.3938,
-      "overHigh": 0.4133,
-      "overLow": 0.4032
+      "triggerVolume": 679343,
+      "max": 0.4287,
+      "min": 0.4052,
+      "overHigh": 0.4085,
+      "overLow": 0.3973
     }
   },
   "VANA": {
     "cap": 383,
     "price": 2.364,
     "extremums": {
-      "triggerVolume": 42619,
-      "max": 2.808,
+      "triggerVolume": 32374,
+      "max": 2.794,
       "min": 2.742,
-      "overHigh": 2.766,
-      "overLow": 2.727
+      "overHigh": 2.751,
+      "overLow": 2.662
     }
   },
   "ILV": {
     "cap": 385,
     "price": 10.644,
     "extremums": {
-      "triggerVolume": 34339,
+      "triggerVolume": 25157,
       "max": 11.481,
       "min": 11.186,
-      "overHigh": 11.373,
-      "overLow": 11.187
+      "overHigh": 11.29,
+      "overLow": 10.939
     }
   },
   "OG": {
     "cap": 385,
     "price": 16.337,
     "extremums": {
-      "triggerVolume": 175152,
-      "max": 16.344,
+      "triggerVolume": 148038,
+      "max": 16.213,
       "min": 15.781,
-      "overHigh": 16.133,
-      "overLow": 15.83
+      "overHigh": 15.934,
+      "overLow": 15.798
     }
   },
   "KDA": {
     "cap": 389,
     "price": 0.21,
     "extremums": {
-      "triggerVolume": 46384,
-      "max": 0.2477,
+      "triggerVolume": 38702,
+      "max": 0.247,
       "min": 0.2406,
-      "overHigh": 0.2436,
-      "overLow": 0.2391
+      "overHigh": 0.2416,
+      "overLow": 0.231
     }
   },
   "ENJ": {
     "cap": 396,
     "price": 0.037,
     "extremums": {
-      "triggerVolume": 45204,
-      "max": 0.04599,
-      "min": 0.04517,
-      "overHigh": 0.04536,
-      "overLow": 0.04455
+      "triggerVolume": 37332,
+      "max": 0.04592,
+      "min": 0.04496,
+      "overHigh": 0.045,
+      "overLow": 0.04341
     }
   },
   "NXPC": {
     "cap": 397,
     "price": 0.323,
     "extremums": {
-      "triggerVolume": 54536,
-      "max": 0.3648,
-      "min": 0.3582,
-      "overHigh": 0.3597,
-      "overLow": 0.3537
+      "triggerVolume": 46671,
+      "max": 0.3647,
+      "min": 0.3559,
+      "overHigh": 0.3563,
+      "overLow": 0.3455
     }
   },
   "NIL": {
     "cap": 399,
     "price": 0.263,
     "extremums": {
-      "triggerVolume": 111091,
+      "triggerVolume": 97502,
       "max": 0.2827,
-      "min": 0.2578,
-      "overHigh": 0.274,
-      "overLow": 0.2644
+      "min": 0.2644,
+      "overHigh": 0.2681,
+      "overLow": 0.2563
     }
   },
   "UMA": {
     "cap": 400,
     "price": 0.776,
     "extremums": {
-      "triggerVolume": 62549,
-      "max": 0.956,
-      "min": 0.933,
-      "overHigh": 0.94,
-      "overLow": 0.93
+      "triggerVolume": 56059,
+      "max": 0.955,
+      "min": 0.93,
+      "overHigh": 0.938,
+      "overLow": 0.917
     }
   },
   "STRAX": {
@@ -1612,110 +1609,110 @@
     "cap": 402,
     "price": 0.07,
     "extremums": {
-      "triggerVolume": 206247,
-      "max": 0.07246,
+      "triggerVolume": 167605,
+      "max": 0.07077,
       "min": 0.06884,
-      "overHigh": 0.07023,
-      "overLow": 0.0689
+      "overHigh": 0.06953,
+      "overLow": 0.06763
     }
   },
   "YGG": {
     "cap": 408,
     "price": 0.111,
     "extremums": {
-      "triggerVolume": 101522,
-      "max": 0.1191,
+      "triggerVolume": 81493,
+      "max": 0.1177,
       "min": 0.1149,
-      "overHigh": 0.1168,
-      "overLow": 0.1145
+      "overHigh": 0.1158,
+      "overLow": 0.1118
     }
   },
   "SXT": {
     "cap": 409,
     "price": 0.047,
     "extremums": {
-      "triggerVolume": 61875,
-      "max": 0.06135,
+      "triggerVolume": 53032,
+      "max": 0.06146,
       "min": 0.05972,
-      "overHigh": 0.06146,
-      "overLow": 0.06013
+      "overHigh": 0.06069,
+      "overLow": 0.05872
     }
   },
   "ARK": {
     "cap": 412,
     "price": 0.344,
     "extremums": {
-      "triggerVolume": 20374,
+      "triggerVolume": 14698,
       "max": 0.3677,
       "min": 0.3618,
-      "overHigh": 0.3638,
-      "overLow": 0.3594
+      "overHigh": 0.3622,
+      "overLow": 0.353
     }
   },
   "ARKM": {
     "cap": 415,
     "price": 0.292,
     "extremums": {
-      "triggerVolume": 205359,
-      "max": 0.3654,
-      "min": 0.3507,
-      "overHigh": 0.3525,
-      "overLow": 0.3424
+      "triggerVolume": 180884,
+      "max": 0.3601,
+      "min": 0.3476,
+      "overHigh": 0.3482,
+      "overLow": 0.3338
     }
   },
   "HIVE": {
     "cap": 417,
     "price": 0.133,
     "extremums": {
-      "triggerVolume": 18240,
+      "triggerVolume": 16163,
       "max": 0.14418,
       "min": 0.14165,
-      "overHigh": 0.143,
-      "overLow": 0.14107
+      "overHigh": 0.1423,
+      "overLow": 0.1386
     }
   },
   "BNT": {
     "cap": 418,
     "price": 0.569,
     "extremums": {
-      "triggerVolume": 12756,
-      "max": 0.5929,
+      "triggerVolume": 11924,
+      "max": 0.5897,
       "min": 0.5819,
-      "overHigh": 0.5864,
-      "overLow": 0.5794
+      "overHigh": 0.5834,
+      "overLow": 0.5691
     }
   },
   "IO": {
     "cap": 420,
     "price": 0.299,
     "extremums": {
-      "triggerVolume": 146937,
-      "max": 0.3435,
-      "min": 0.3319,
-      "overHigh": 0.336,
-      "overLow": 0.3289
+      "triggerVolume": 125351,
+      "max": 0.34,
+      "min": 0.3308,
+      "overHigh": 0.3325,
+      "overLow": 0.322
     }
   },
   "SSV": {
     "cap": 423,
     "price": 4.556,
     "extremums": {
-      "triggerVolume": 90976,
+      "triggerVolume": 76094,
       "max": 5.182,
       "min": 5.003,
-      "overHigh": 5.158,
-      "overLow": 5.04
+      "overHigh": 5.121,
+      "overLow": 4.888
     }
   },
   "SPK": {
     "cap": 427,
     "price": 0.035,
     "extremums": {
-      "triggerVolume": 135892,
-      "max": 0.03954,
-      "min": 0.03855,
-      "overHigh": 0.0389,
-      "overLow": 0.03826
+      "triggerVolume": 96130,
+      "max": 0.03944,
+      "min": 0.03852,
+      "overHigh": 0.03857,
+      "overLow": 0.03735
     }
   },
   "BAL": {
@@ -1733,553 +1730,551 @@
     "cap": 434,
     "price": 0.03,
     "extremums": {
-      "triggerVolume": 65395,
-      "max": 0.03427,
-      "min": 0.0334,
-      "overHigh": 0.03351,
-      "overLow": 0.03314
+      "triggerVolume": 59360,
+      "max": 0.03417,
+      "min": 0.03334,
+      "overHigh": 0.03339,
+      "overLow": 0.03234
     }
   },
   "POWR": {
     "cap": 438,
     "price": 0.107,
     "extremums": {
-      "triggerVolume": 260546,
-      "max": 0.1177,
+      "triggerVolume": 255623,
+      "max": 0.1174,
       "min": 0.1091,
-      "overHigh": 0.1158,
-      "overLow": 0.1141
+      "overHigh": 0.1147,
+      "overLow": 0.112
     }
   },
   "PUNDIX": {
     "cap": 438,
     "price": 0.237,
     "extremums": {
-      "triggerVolume": 99304,
-      "max": 0.302,
+      "triggerVolume": 37899,
+      "max": 0.2944,
       "min": 0.2821,
-      "overHigh": 0.2849,
-      "overLow": 0.2805
+      "overHigh": 0.2826,
+      "overLow": 0.2779
     }
   },
   "ME": {
     "cap": 442,
     "price": 0.362,
     "extremums": {
-      "triggerVolume": 62059,
-      "max": 0.444,
-      "min": 0.434,
-      "overHigh": 0.4366,
-      "overLow": 0.4305
+      "triggerVolume": 48635,
+      "max": 0.4417,
+      "min": 0.4339,
+      "overHigh": 0.4346,
+      "overLow": 0.4209
     }
   },
   "MIRA": {
     "cap": 443,
     "price": 0.316,
     "extremums": {
-      "triggerVolume": 398785,
-      "max": 0.3503,
+      "triggerVolume": 348617,
+      "max": 0.3431,
       "min": 0.3313,
-      "overHigh": 0.3379,
-      "overLow": 0.3324
+      "overHigh": 0.3352,
+      "overLow": 0.3272
     }
   },
   "STORJ": {
     "cap": 444,
     "price": 0.143,
     "extremums": {
-      "triggerVolume": 28990,
-      "max": 0.1669,
+      "triggerVolume": 23225,
+      "max": 0.1667,
       "min": 0.1639,
-      "overHigh": 0.1656,
-      "overLow": 0.1631
+      "overHigh": 0.1643,
+      "overLow": 0.1593
     }
   },
   "HUMA": {
     "cap": 448,
     "price": 0.026,
     "extremums": {
-      "triggerVolume": 70849,
-      "max": 0.027511,
-      "min": 0.026715,
-      "overHigh": 0.026777,
-      "overLow": 0.026432
+      "triggerVolume": 54085,
+      "max": 0.027361,
+      "min": 0.026621,
+      "overHigh": 0.02666,
+      "overLow": 0.026006
     }
   },
   "TRB": {
     "cap": 449,
     "price": 21.866,
     "extremums": {
-      "triggerVolume": 153348,
-      "max": 24.229,
-      "min": 23.664,
-      "overHigh": 23.825,
-      "overLow": 23.447
+      "triggerVolume": 128830,
+      "max": 24.216,
+      "min": 23.662,
+      "overHigh": 23.679,
+      "overLow": 22.84
     }
   },
   "CVC": {
     "cap": 450,
     "price": 0.059,
     "extremums": {
-      "triggerVolume": 16080,
+      "triggerVolume": 11344,
       "max": 0.06437,
       "min": 0.06337,
-      "overHigh": 0.06422,
-      "overLow": 0.06334
+      "overHigh": 0.0638,
+      "overLow": 0.06216
     }
   },
   "LA": {
     "cap": 451,
     "price": 0.305,
     "extremums": {
-      "triggerVolume": 64111,
+      "triggerVolume": 56169,
       "max": 0.3078,
       "min": 0.3013,
-      "overHigh": 0.3059,
-      "overLow": 0.3017
+      "overHigh": 0.3032,
+      "overLow": 0.2932
     }
   },
   "SIGN": {
     "cap": 453,
     "price": 0.043,
     "extremums": {
-      "triggerVolume": 41866,
+      "triggerVolume": 34673,
       "max": 0.0431,
-      "min": 0.04221,
-      "overHigh": 0.04243,
-      "overLow": 0.04171
+      "min": 0.04194,
+      "overHigh": 0.04207,
+      "overLow": 0.04088
     }
   },
   "BICO": {
     "cap": 465,
     "price": 0.057,
     "extremums": {
-      "triggerVolume": 21940,
-      "max": 0.06676,
+      "triggerVolume": 16521,
+      "max": 0.06616,
       "min": 0.06491,
-      "overHigh": 0.06592,
-      "overLow": 0.06482
+      "overHigh": 0.06527,
+      "overLow": 0.06303
     }
   },
   "WAXP": {
     "cap": 471,
     "price": 0.012,
     "extremums": {
-      "triggerVolume": 15240,
+      "triggerVolume": 13641,
       "max": 0.01346,
       "min": 0.01323,
-      "overHigh": 0.0134,
-      "overLow": 0.01325
+      "overHigh": 0.01335,
+      "overLow": 0.01301
     }
   },
   "AEVO": {
     "cap": 474,
     "price": 0.06,
     "extremums": {
-      "triggerVolume": 101594,
-      "max": 0.06655,
+      "triggerVolume": 76189,
+      "max": 0.06593,
       "min": 0.06451,
-      "overHigh": 0.06564,
-      "overLow": 0.06445
+      "overHigh": 0.06525,
+      "overLow": 0.06245
     }
   },
   "API3": {
     "cap": 476,
     "price": 0.631,
     "extremums": {
-      "triggerVolume": 187529,
-      "max": 0.6177,
+      "triggerVolume": 150463,
+      "max": 0.6152,
       "min": 0.6008,
-      "overHigh": 0.6118,
-      "overLow": 0.6006
+      "overHigh": 0.6075,
+      "overLow": 0.5826
     }
   },
   "FIDA": {
     "cap": 478,
     "price": 0.054,
     "extremums": {
-      "triggerVolume": 32554,
+      "triggerVolume": 26592,
       "max": 0.0609,
       "min": 0.05951,
-      "overHigh": 0.06043,
-      "overLow": 0.05953
+      "overHigh": 0.06005,
+      "overLow": 0.0575
     }
   },
   "SCRT": {
     "cap": 481,
     "price": 0.164,
     "extremums": {
-      "triggerVolume": 25935,
-      "max": 0.1771,
+      "triggerVolume": 22632,
+      "max": 0.176,
       "min": 0.1726,
-      "overHigh": 0.1748,
-      "overLow": 0.1725
+      "overHigh": 0.1743,
+      "overLow": 0.1664
     }
   },
   "ERA": {
     "cap": 483,
     "price": 0.353,
     "extremums": {
-      "triggerVolume": 31187,
-      "max": 0.3869,
+      "triggerVolume": 24771,
+      "max": 0.3862,
       "min": 0.3789,
-      "overHigh": 0.3825,
-      "overLow": 0.3772
+      "overHigh": 0.3801,
+      "overLow": 0.3687
     }
   },
   "AIXBT": {
     "cap": 484,
     "price": 0.053,
     "extremums": {
-      "triggerVolume": 190935,
-      "max": 0.06173,
+      "triggerVolume": 148935,
+      "max": 0.06082,
       "min": 0.05937,
-      "overHigh": 0.06011,
-      "overLow": 0.05893
+      "overHigh": 0.05951,
+      "overLow": 0.05716
     }
   },
   "METIS": {
     "cap": 487,
     "price": 7.82,
     "extremums": {
-      "triggerVolume": 32295,
-      "max": 9.74,
+      "triggerVolume": 26771,
+      "max": 9.76,
       "min": 9.47,
-      "overHigh": 9.76,
-      "overLow": 9.55
+      "overHigh": 9.62,
+      "overLow": 9.32
     }
   },
   "FLUX": {
     "cap": 493,
     "price": 0.13,
     "extremums": {
-      "triggerVolume": 23889,
-      "max": 0.1328,
+      "triggerVolume": 21992,
+      "max": 0.1325,
       "min": 0.1283,
-      "overHigh": 0.131,
-      "overLow": 0.1288
+      "overHigh": 0.1302,
+      "overLow": 0.126
     }
   },
   "PHA": {
     "cap": 503,
     "price": 0.06,
     "extremums": {
-      "triggerVolume": 30117,
-      "max": 0.07126,
-      "min": 0.0696,
-      "overHigh": 0.07038,
-      "overLow": 0.06924
+      "triggerVolume": 29431,
+      "max": 0.0708,
+      "min": 0.0693,
+      "overHigh": 0.0698,
+      "overLow": 0.06735
     }
   },
   "KNC": {
     "cap": 507,
     "price": 0.253,
     "extremums": {
-      "triggerVolume": 26900,
-      "max": 0.2715,
+      "triggerVolume": 22127,
+      "max": 0.2714,
       "min": 0.267,
-      "overHigh": 0.2708,
-      "overLow": 0.2668
+      "overHigh": 0.2697,
+      "overLow": 0.2616
     }
   },
   "STEEM": {
     "cap": 511,
     "price": 0.09,
     "extremums": {
-      "triggerVolume": 15188,
-      "max": 0.09416,
+      "triggerVolume": 11297,
+      "max": 0.09414,
       "min": 0.0929,
-      "overHigh": 0.09356,
-      "overLow": 0.09243
+      "overHigh": 0.09297,
+      "overLow": 0.09069
     }
   },
   "NOM": {
     "cap": 512,
     "price": 0.016,
     "extremums": {
-      "triggerVolume": 149997,
-      "max": 0.02102,
+      "triggerVolume": 138197,
+      "max": 0.02079,
       "min": 0.01931,
-      "overHigh": 0.01993,
-      "overLow": 0.01941
+      "overHigh": 0.01959,
+      "overLow": 0.01911
     }
   },
   "EDU": {
     "cap": 513,
     "price": 0.08,
     "extremums": {
-      "triggerVolume": 50981,
-      "max": 0.1037,
+      "triggerVolume": 39517,
+      "max": 0.1025,
       "min": 0.099,
-      "overHigh": 0.1013,
-      "overLow": 0.0997
+      "overHigh": 0.101,
+      "overLow": 0.0965
     }
   },
   "COOKIE": {
     "cap": 514,
     "price": 0.077,
     "extremums": {
-      "triggerVolume": 83389,
-      "max": 0.0905,
+      "triggerVolume": 64528,
+      "max": 0.0902,
       "min": 0.0876,
-      "overHigh": 0.089,
-      "overLow": 0.0872
+      "overHigh": 0.0882,
+      "overLow": 0.0845
     }
   },
   "RIF": {
     "cap": 517,
     "price": 0.047,
     "extremums": {
-      "triggerVolume": 11384,
+      "triggerVolume": 9938,
       "max": 0.04674,
       "min": 0.04599,
-      "overHigh": 0.04663,
-      "overLow": 0.04608
+      "overHigh": 0.04632,
+      "overLow": 0.04544
     }
   },
   "ONG": {
     "cap": 519,
     "price": 0.109,
     "extremums": {
-      "triggerVolume": 14603,
+      "triggerVolume": 11817,
       "max": 0.12175,
-      "min": 0.12025,
-      "overHigh": 0.12071,
-      "overLow": 0.11903
+      "min": 0.11977,
+      "overHigh": 0.11981,
+      "overLow": 0.11699
     }
   },
   "CTK": {
     "cap": 521,
     "price": 0.308,
     "extremums": {
-      "triggerVolume": 14547,
-      "max": 0.3098,
+      "triggerVolume": 10348,
+      "max": 0.3093,
       "min": 0.3029,
-      "overHigh": 0.3074,
-      "overLow": 0.3025
+      "overHigh": 0.3054,
+      "overLow": 0.2973
     }
   },
   "XAI": {
     "cap": 522,
     "price": 0.023,
     "extremums": {
-      "triggerVolume": 127113,
-      "max": 0.02796,
+      "triggerVolume": 107206,
+      "max": 0.02765,
       "min": 0.02696,
-      "overHigh": 0.02754,
-      "overLow": 0.02704
+      "overHigh": 0.02733,
+      "overLow": 0.0264
     }
   },
   "PIXEL": {
     "cap": 523,
     "price": 0.015,
     "extremums": {
-      "triggerVolume": 39173,
-      "max": 0.01816,
+      "triggerVolume": 28849,
+      "max": 0.01797,
       "min": 0.01746,
-      "overHigh": 0.01797,
-      "overLow": 0.01762
+      "overHigh": 0.01775,
+      "overLow": 0.01712
     }
   },
   "CYBER": {
     "cap": 527,
     "price": 0.878,
     "extremums": {
-      "triggerVolume": 80375,
-      "max": 1.024,
+      "triggerVolume": 68859,
+      "max": 1.018,
       "min": 0.993,
-      "overHigh": 1.014,
-      "overLow": 0.996
+      "overHigh": 1.007,
+      "overLow": 0.97
     }
   },
   "STO": {
     "cap": 528,
     "price": 0.202,
     "extremums": {
-      "triggerVolume": 310229,
+      "triggerVolume": 252882,
       "max": 0.18937,
       "min": 0.17749,
-      "overHigh": 0.18872,
-      "overLow": 0.18326
+      "overHigh": 0.18529,
+      "overLow": 0.17609
     }
   },
   "CHR": {
     "cap": 530,
     "price": 0.053,
     "extremums": {
-      "triggerVolume": 34885,
-      "max": 0.0654,
+      "triggerVolume": 31574,
+      "max": 0.0652,
       "min": 0.0639,
-      "overHigh": 0.0649,
-      "overLow": 0.064
+      "overHigh": 0.0646,
+      "overLow": 0.0627
     }
   },
   "LSK": {
     "cap": 533,
     "price": 0.222,
     "extremums": {
-      "triggerVolume": 12961,
-      "max": 0.2296,
+      "triggerVolume": 11301,
+      "max": 0.2294,
       "min": 0.2261,
-      "overHigh": 0.2285,
-      "overLow": 0.2252
+      "overHigh": 0.2267,
+      "overLow": 0.2211
     }
   },
   "REZ": {
     "cap": 534,
     "price": 0.011,
     "extremums": {
-      "triggerVolume": 116982,
-      "max": 0.01079,
+      "triggerVolume": 98447,
+      "max": 0.0104,
       "min": 0.00992,
-      "overHigh": 0.01021,
-      "overLow": 0.01001
+      "overHigh": 0.01012,
+      "overLow": 0.00975
     }
   },
   "ACX": {
     "cap": 542,
     "price": 0.071,
     "extremums": {
-      "triggerVolume": 13939,
-      "max": 0.0851,
-      "min": 0.083,
-      "overHigh": 0.0834,
-      "overLow": 0.082
+      "triggerVolume": 8853,
+      "max": 0.0846,
+      "min": 0.0827,
+      "overHigh": 0.0828,
+      "overLow": 0.0798
     }
   },
   "LQTY": {
     "cap": 544,
     "price": 0.459,
     "extremums": {
-      "triggerVolume": 37194,
-      "max": 0.5235,
+      "triggerVolume": 31195,
+      "max": 0.522,
       "min": 0.5081,
-      "overHigh": 0.5188,
-      "overLow": 0.51
+      "overHigh": 0.5164,
+      "overLow": 0.5036
     }
   },
   "MANTA": {
     "cap": 547,
     "price": 0.095,
     "extremums": {
-      "triggerVolume": 156160,
-      "max": 0.129,
+      "triggerVolume": 76347,
+      "max": 0.1246,
       "min": 0.1217,
-      "overHigh": 0.1232,
-      "overLow": 0.1208
+      "overHigh": 0.122,
+      "overLow": 0.1179
     }
   },
   "BANANA": {
     "cap": 550,
     "price": 10.696,
     "extremums": {
-      "triggerVolume": 31556,
-      "max": 13.245,
+      "triggerVolume": 24340,
+      "max": 13.236,
       "min": 12.992,
-      "overHigh": 13.148,
-      "overLow": 12.931
+      "overHigh": 13.036,
+      "overLow": 12.625
     }
   },
   "CGPT": {
     "cap": 554,
     "price": 0.049,
     "extremums": {
-      "triggerVolume": 32382,
-      "max": 0.05916,
+      "triggerVolume": 19603,
+      "max": 0.05911,
       "min": 0.05778,
-      "overHigh": 0.059,
-      "overLow": 0.05794
+      "overHigh": 0.0587,
+      "overLow": 0.05652
     }
   },
   "CTSI": {
     "cap": 561,
     "price": 0.048,
     "extremums": {
-      "triggerVolume": 22031,
-      "max": 0.0542,
+      "triggerVolume": 20613,
+      "max": 0.0539,
       "min": 0.0529,
-      "overHigh": 0.0537,
-      "overLow": 0.0526
+      "overHigh": 0.0531,
+      "overLow": 0.0517
     }
   },
   "JOE": {
     "cap": 571,
     "price": 0.103,
     "extremums": {
-      "triggerVolume": 20513,
-      "max": 0.11732,
+      "triggerVolume": 14853,
+      "max": 0.11698,
       "min": 0.11446,
-      "overHigh": 0.11594,
-      "overLow": 0.11385
+      "overHigh": 0.11498,
+      "overLow": 0.11115
     }
   },
   "DIA": {
     "cap": 573,
     "price": 0.343,
     "extremums": {
-      "triggerVolume": 60278,
+      "triggerVolume": 45706,
       "max": 0.4407,
-      "min": 0.4238,
-      "overHigh": 0.4335,
-      "overLow": 0.4247
+      "min": 0.4275,
+      "overHigh": 0.4291,
+      "overLow": 0.4132
     }
   },
   "SOPH": {
     "cap": 580,
     "price": 0.02,
     "extremums": {
-      "triggerVolume": 38560,
-      "max": 0.02228,
-      "min": 0.021666,
-      "overHigh": 0.021743,
-      "overLow": 0.021389
+      "triggerVolume": 35070,
+      "max": 0.022115,
+      "min": 0.021541,
+      "overHigh": 0.021551,
+      "overLow": 0.020954
     }
   },
   "HOLO": {
     "cap": 586,
     "price": 0.114,
     "extremums": {
-      "triggerVolume": 87282,
-      "max": 0.1391,
+      "triggerVolume": 72056,
+      "max": 0.1383,
       "min": 0.1345,
-      "overHigh": 0.1365,
-      "overLow": 0.1338
+      "overHigh": 0.1349,
+      "overLow": 0.1304
     }
   },
   "MTL": {
     "cap": 596,
     "price": 0.435,
     "extremums": {
-      "triggerVolume": 15532,
-      "max": 0.49,
+      "triggerVolume": 13625,
+      "max": 0.4886,
       "min": 0.4812,
-      "overHigh": 0.4861,
-      "overLow": 0.4769
+      "overHigh": 0.4816,
+      "overLow": 0.4696
     }
   },
   "OXT": {
     "cap": 596,
     "price": 0.038,
     "extremums": {
-      "triggerVolume": 14609,
+      "triggerVolume": 13686,
       "max": 0.04107,
       "min": 0.04042,
-      "overHigh": 0.04097,
-      "overLow": 0.04052
+      "overHigh": 0.04073,
+      "overLow": 0.03979
     }
   },
   "MOVR": {
     "cap": 599,
     "price": "4.13800000",
     "extremums": {
-      "triggerVolume": 55620,
-      "max": 4.309,
+      "triggerVolume": 51597,
+      "max": 4.189,
       "min": 4.017,
-      "overHigh": 4.171,
-      "overLow": 4.1
-    },
-    "side": "📉",
-    "startTime": 1760197850979
+      "overHigh": 4.143,
+      "overLow": 4.056
+    }
   },
   "GLMR": {
     "cap": 603,
@@ -2296,365 +2291,363 @@
     "cap": 605,
     "price": 0.098,
     "extremums": {
-      "triggerVolume": 48615,
-      "max": 0.119,
+      "triggerVolume": 38062,
+      "max": 0.1174,
       "min": 0.1145,
-      "overHigh": 0.1166,
-      "overLow": 0.1148
+      "overHigh": 0.1159,
+      "overLow": 0.1116
     }
   },
   "USUAL": {
     "cap": 613,
     "price": 0.029,
     "extremums": {
-      "triggerVolume": 117528,
-      "max": 0.03333,
-      "min": 0.032,
-      "overHigh": 0.03215,
-      "overLow": 0.03118
+      "triggerVolume": 110872,
+      "max": 0.03327,
+      "min": 0.03146,
+      "overHigh": 0.03151,
+      "overLow": 0.0303
     }
   },
   "AGLD": {
     "cap": 619,
     "price": 0.416,
     "extremums": {
-      "triggerVolume": 24480,
-      "max": 0.4166,
+      "triggerVolume": 20262,
+      "max": 0.4154,
       "min": 0.4102,
-      "overHigh": 0.4125,
-      "overLow": 0.407
+      "overHigh": 0.411,
+      "overLow": 0.3995
     }
   },
   "ZKC": {
     "cap": 620,
     "price": 0.179,
     "extremums": {
-      "triggerVolume": 124776,
-      "max": 0.1897,
-      "min": 0.1826,
-      "overHigh": 0.1844,
-      "overLow": 0.1806
+      "triggerVolume": 108679,
+      "max": 0.1884,
+      "min": 0.1818,
+      "overHigh": 0.1822,
+      "overLow": 0.1765
     }
   },
   "AERGO": {
     "cap": 637,
     "price": 0.071,
     "extremums": {
-      "triggerVolume": 21599,
+      "triggerVolume": 16973,
       "max": 0.07556,
       "min": 0.07447,
-      "overHigh": 0.07538,
-      "overLow": 0.07467
+      "overHigh": 0.07506,
+      "overLow": 0.07318
     }
   },
   "KERNEL": {
     "cap": 641,
     "price": 0.143,
     "extremums": {
-      "triggerVolume": 142370,
-      "max": 0.1567,
-      "min": 0.1498,
-      "overHigh": 0.1554,
-      "overLow": 0.1516
+      "triggerVolume": 87064,
+      "max": 0.1563,
+      "min": 0.1514,
+      "overHigh": 0.1533,
+      "overLow": 0.1482
     }
   },
   "SAGA": {
     "cap": 644,
     "price": 0.11,
     "extremums": {
-      "triggerVolume": 101804,
-      "max": 0.132,
+      "triggerVolume": 90756,
+      "max": 0.1307,
       "min": 0.1276,
-      "overHigh": 0.1297,
-      "overLow": 0.1265
+      "overHigh": 0.1282,
+      "overLow": 0.1203
     }
   },
   "CETUS": {
     "cap": 647,
     "price": "0.04800000",
     "extremums": {
-      "triggerVolume": 65119,
-      "max": 0.04926,
+      "triggerVolume": 54227,
+      "max": 0.04888,
       "min": 0.04755,
-      "overHigh": 0.04863,
-      "overLow": 0.04789
-    },
-    "startTime": 1760192397943
+      "overHigh": 0.04833,
+      "overLow": 0.04675
+    }
   },
   "INIT": {
     "cap": 654,
     "price": 0.196,
     "extremums": {
-      "triggerVolume": 93460,
-      "max": 0.1957,
-      "min": 0.1856,
-      "overHigh": 0.1878,
-      "overLow": 0.1826
+      "triggerVolume": 87605,
+      "max": 0.1944,
+      "min": 0.1846,
+      "overHigh": 0.185,
+      "overLow": 0.1783
     }
   },
   "MAGIC": {
     "cap": 659,
     "price": 0.102,
     "extremums": {
-      "triggerVolume": 91880,
-      "max": 0.1209,
+      "triggerVolume": 73007,
+      "max": 0.1201,
       "min": 0.1179,
-      "overHigh": 0.1196,
-      "overLow": 0.1175
+      "overHigh": 0.1187,
+      "overLow": 0.1146
     }
   },
   "PARTI": {
     "cap": 660,
     "price": 0.077,
     "extremums": {
-      "triggerVolume": 56954,
-      "max": 0.0885,
+      "triggerVolume": 48827,
+      "max": 0.0882,
       "min": 0.0851,
-      "overHigh": 0.087,
-      "overLow": 0.0854
+      "overHigh": 0.0861,
+      "overLow": 0.0828
     }
   },
   "AUCTION": {
     "cap": 663,
     "price": 5.214,
     "extremums": {
-      "triggerVolume": 67313,
+      "triggerVolume": 50673,
       "max": 5.946,
-      "min": 5.842,
-      "overHigh": 5.903,
-      "overLow": 5.829
+      "min": 5.849,
+      "overHigh": 5.872,
+      "overLow": 5.716
     }
   },
   "HYPER": {
     "cap": 669,
     "price": 0.157,
     "extremums": {
-      "triggerVolume": 99695,
+      "triggerVolume": 82564,
       "max": 0.2037,
-      "min": 0.1987,
-      "overHigh": 0.1998,
-      "overLow": 0.1961
+      "min": 0.1977,
+      "overHigh": 0.198,
+      "overLow": 0.1919
     }
   },
   "SCR": {
     "cap": 671,
     "price": 0.167,
     "extremums": {
-      "triggerVolume": 44588,
-      "max": 0.1807,
+      "triggerVolume": 38853,
+      "max": 0.1789,
       "min": 0.1754,
-      "overHigh": 0.1775,
-      "overLow": 0.1736
+      "overHigh": 0.1758,
+      "overLow": 0.1701
     }
   },
   "ALICE": {
     "cap": 673,
     "price": 0.311,
     "extremums": {
-      "triggerVolume": 328568,
-      "max": 0.305,
+      "triggerVolume": 241558,
+      "max": 0.294,
       "min": 0.283,
-      "overHigh": 0.29,
-      "overLow": 0.283
+      "overHigh": 0.289,
+      "overLow": 0.275
     }
   },
   "VANRY": {
     "cap": 676,
     "price": 0.015,
     "extremums": {
-      "triggerVolume": 53163,
-      "max": 0.01878,
+      "triggerVolume": 45551,
+      "max": 0.0187,
       "min": 0.0183,
-      "overHigh": 0.01861,
-      "overLow": 0.01816
+      "overHigh": 0.01841,
+      "overLow": 0.0178
     }
   },
   "NTRN": {
     "cap": 679,
     "price": 0.049,
     "extremums": {
-      "triggerVolume": 22777,
-      "max": 0.05198,
+      "triggerVolume": 20841,
+      "max": 0.05149,
       "min": 0.05011,
-      "overHigh": 0.05087,
-      "overLow": 0.04985
+      "overHigh": 0.0504,
+      "overLow": 0.04832
     }
   },
   "TUT": {
     "cap": 682,
     "price": 0.035,
     "extremums": {
-      "triggerVolume": 1093474,
+      "triggerVolume": 1055556,
       "max": 0.04279,
-      "min": 0.03915,
-      "overHigh": 0.0422,
-      "overLow": 0.04073
+      "min": 0.03931,
+      "overHigh": 0.04165,
+      "overLow": 0.03734
     }
   },
   "C98": {
     "cap": 689,
     "price": 0.029,
     "extremums": {
-      "triggerVolume": 82392,
-      "max": 0.0378,
+      "triggerVolume": 66090,
+      "max": 0.0374,
       "min": 0.0363,
-      "overHigh": 0.0373,
-      "overLow": 0.0366
+      "overHigh": 0.037,
+      "overLow": 0.0355
     }
   },
   "AI": {
     "cap": 691,
     "price": 0.069,
     "extremums": {
-      "triggerVolume": 79121,
-      "max": 0.08259,
-      "min": 0.0795,
-      "overHigh": 0.08255,
-      "overLow": 0.07845
+      "triggerVolume": 80906,
+      "max": 0.08255,
+      "min": 0.07874,
+      "overHigh": 0.07941,
+      "overLow": 0.07679
     }
   },
   "DOLO": {
     "cap": 692,
     "price": 0.065,
     "extremums": {
-      "triggerVolume": 42035,
-      "max": 0.077759,
-      "min": 0.07611,
-      "overHigh": 0.07655,
-      "overLow": 0.0751
+      "triggerVolume": 31303,
+      "max": 0.0776,
+      "min": 0.07568,
+      "overHigh": 0.07595,
+      "overLow": 0.07371
     }
   },
   "TNSR": {
     "cap": 700,
     "price": 0.068,
     "extremums": {
-      "triggerVolume": 20882,
-      "max": 0.0709,
+      "triggerVolume": 16470,
+      "max": 0.0703,
       "min": 0.0688,
-      "overHigh": 0.0696,
-      "overLow": 0.0683
+      "overHigh": 0.069,
+      "overLow": 0.0666
     }
   },
   "NEWT": {
     "cap": 703,
     "price": 0.13,
     "extremums": {
-      "triggerVolume": 52536,
+      "triggerVolume": 41472,
       "max": 0.1436,
       "min": 0.1399,
-      "overHigh": 0.1417,
-      "overLow": 0.1393
+      "overHigh": 0.1405,
+      "overLow": 0.1362
     }
   },
   "EPIC": {
     "cap": 707,
     "price": "0.99700000",
     "extremums": {
-      "triggerVolume": 60433,
-      "max": 1.0433,
-      "min": 0.985,
-      "overHigh": 1.04,
-      "overLow": 0.9979
-    },
-    "startTime": 1760191500150
+      "triggerVolume": 50859,
+      "max": 1.04,
+      "min": 0.9879,
+      "overHigh": 1.0141,
+      "overLow": 0.9748
+    }
   },
   "SOLV": {
     "cap": 711,
     "price": 0.018,
     "extremums": {
-      "triggerVolume": 386734,
-      "max": 0.02182,
+      "triggerVolume": 384051,
+      "max": 0.02126,
       "min": 0.02019,
-      "overHigh": 0.02123,
-      "overLow": 0.02042
+      "overHigh": 0.0212,
+      "overLow": 0.01966
     }
   },
   "WCT": {
     "cap": 712,
     "price": 0.145,
     "extremums": {
-      "triggerVolume": 78623,
-      "max": 0.1623,
+      "triggerVolume": 58295,
+      "max": 0.1616,
       "min": 0.158,
-      "overHigh": 0.1604,
-      "overLow": 0.1578
+      "overHigh": 0.1589,
+      "overLow": 0.154
     }
   },
   "ATA": {
     "cap": 714,
     "price": 0.03,
     "extremums": {
-      "triggerVolume": 12769,
-      "max": 0.0303,
+      "triggerVolume": 10808,
+      "max": 0.0302,
       "min": 0.0296,
-      "overHigh": 0.0301,
-      "overLow": 0.0297
+      "overHigh": 0.0299,
+      "overLow": 0.0291
     }
   },
   "THE": {
     "cap": 722,
     "price": 0.234,
     "extremums": {
-      "triggerVolume": 122378,
-      "max": 0.285,
+      "triggerVolume": 82810,
+      "max": 0.2837,
       "min": 0.2739,
-      "overHigh": 0.2811,
-      "overLow": 0.2747
+      "overHigh": 0.2775,
+      "overLow": 0.2675
     }
   },
   "HFT": {
     "cap": 723,
     "price": 0.043,
     "extremums": {
-      "triggerVolume": 42154,
-      "max": 0.0554,
+      "triggerVolume": 42988,
+      "max": 0.05543,
       "min": 0.05355,
-      "overHigh": 0.05543,
-      "overLow": 0.05403
+      "overHigh": 0.05458,
+      "overLow": 0.05268
     }
   },
   "EDEN": {
     "cap": 727,
     "price": 0.143,
     "extremums": {
-      "triggerVolume": 425182,
-      "max": 0.1535,
+      "triggerVolume": 380556,
+      "max": 0.1552,
       "min": 0.1464,
-      "overHigh": 0.1552,
-      "overLow": 0.1507
+      "overHigh": 0.1529,
+      "overLow": 0.1475
     }
   },
   "FORTH": {
     "cap": 730,
     "price": 1.811,
     "extremums": {
-      "triggerVolume": 9644,
-      "max": 2.107,
-      "min": 2.053,
-      "overHigh": 2.118,
-      "overLow": 2.069
+      "triggerVolume": 8820,
+      "max": 2.118,
+      "min": 2.062,
+      "overHigh": 2.098,
+      "overLow": 2.013
     }
   },
   "MAV": {
     "cap": 746,
     "price": 0.032,
     "extremums": {
-      "triggerVolume": 515300,
-      "max": 0.04171,
-      "min": 0.03625,
-      "overHigh": 0.04173,
-      "overLow": 0.03985
+      "triggerVolume": 525986,
+      "max": 0.04173,
+      "min": 0.03698,
+      "overHigh": 0.0423,
+      "overLow": 0.03871
     }
   },
   "TREE": {
     "cap": 747,
     "price": 0.157,
     "extremums": {
-      "triggerVolume": 165973,
+      "triggerVolume": 153371,
       "max": 0.1821,
       "min": 0.1701,
-      "overHigh": 0.1776,
-      "overLow": 0.1743
+      "overHigh": 0.1762,
+      "overLow": 0.1688
     }
   },
   "RAD": {
@@ -2672,265 +2665,264 @@
     "cap": 752,
     "price": 0.037,
     "extremums": {
-      "triggerVolume": 23424,
+      "triggerVolume": 21221,
       "max": 0.0465,
       "min": 0.0458,
-      "overHigh": 0.0465,
-      "overLow": 0.0458
+      "overHigh": 0.0462,
+      "overLow": 0.0448
     }
   },
   "TOWNS": {
     "cap": 761,
     "price": 0.011,
     "extremums": {
-      "triggerVolume": 40537,
-      "max": 0.01137,
+      "triggerVolume": 41988,
+      "max": 0.01135,
       "min": 0.01101,
-      "overHigh": 0.01131,
-      "overLow": 0.01094
+      "overHigh": 0.01109,
+      "overLow": 0.01068
     }
   },
   "ACT": {
     "cap": 764,
     "price": 0.019,
     "extremums": {
-      "triggerVolume": 118084,
-      "max": 0.02249,
+      "triggerVolume": 73988,
+      "max": 0.02203,
       "min": 0.02131,
-      "overHigh": 0.02176,
-      "overLow": 0.02143
+      "overHigh": 0.02163,
+      "overLow": 0.02076
     }
   },
   "SHELL": {
     "cap": 767,
     "price": 0.076,
     "extremums": {
-      "triggerVolume": 41046,
-      "max": 0.0837,
-      "min": 0.0812,
-      "overHigh": 0.0818,
-      "overLow": 0.0804
+      "triggerVolume": 37463,
+      "max": 0.0832,
+      "min": 0.0807,
+      "overHigh": 0.081,
+      "overLow": 0.0778
     }
   },
   "HIGH": {
     "cap": 768,
     "price": 0.297,
     "extremums": {
-      "triggerVolume": 26696,
-      "max": 0.3242,
+      "triggerVolume": 20250,
+      "max": 0.3217,
       "min": 0.3147,
-      "overHigh": 0.3215,
-      "overLow": 0.3163
+      "overHigh": 0.3187,
+      "overLow": 0.3084
     }
   },
   "CATI": {
     "cap": 777,
     "price": 0.065,
     "extremums": {
-      "triggerVolume": 1091472,
+      "triggerVolume": 1408833,
       "max": 0.095,
-      "min": 0.07037,
-      "overHigh": 0.09372,
-      "overLow": 0.08227
+      "min": 0.07086,
+      "overHigh": 0.0913,
+      "overLow": 0.08319
     }
   },
   "RARE": {
     "cap": 778,
     "price": 0.028,
     "extremums": {
-      "triggerVolume": 32484,
+      "triggerVolume": 26899,
       "max": 0.03591,
       "min": 0.03501,
-      "overHigh": 0.03581,
-      "overLow": 0.03523
+      "overHigh": 0.03552,
+      "overLow": 0.03444
     }
   },
   "TRU": {
     "cap": 781,
     "price": 0.017,
     "extremums": {
-      "triggerVolume": 29343,
-      "max": 0.01945,
+      "triggerVolume": 25142,
+      "max": 0.01947,
       "min": 0.01882,
-      "overHigh": 0.01947,
-      "overLow": 0.01919
+      "overHigh": 0.01941,
+      "overLow": 0.01878
     }
   },
   "MBOX": {
     "cap": 782,
     "price": 0.045,
     "extremums": {
-      "triggerVolume": 48559,
-      "max": 0.04781,
+      "triggerVolume": 35141,
+      "max": 0.04694,
       "min": 0.04514,
-      "overHigh": 0.0469,
-      "overLow": 0.04578
+      "overHigh": 0.04618,
+      "overLow": 0.04458
     }
   },
   "ARPA": {
     "cap": 783,
     "price": 0.015,
     "extremums": {
-      "triggerVolume": 168211,
-      "max": 0.01714,
-      "min": 0.01571,
-      "overHigh": 0.01657,
-      "overLow": 0.0162
+      "triggerVolume": 100014,
+      "max": 0.01697,
+      "min": 0.01586,
+      "overHigh": 0.01642,
+      "overLow": 0.01581
     }
   },
   "HAEDAL": {
     "cap": 785,
     "price": 0.094,
     "extremums": {
-      "triggerVolume": 27804,
+      "triggerVolume": 19569,
       "max": 0.10375,
-      "min": 0.10082,
-      "overHigh": 0.10168,
-      "overLow": 0.09979
+      "min": 0.10033,
+      "overHigh": 0.10064,
+      "overLow": 0.09744
     }
   },
   "AVA": {
     "cap": 787,
     "price": 0.32,
     "extremums": {
-      "triggerVolume": 24731,
+      "triggerVolume": 21184,
       "max": 0.345,
       "min": 0.3344,
-      "overHigh": 0.3444,
-      "overLow": 0.339
+      "overHigh": 0.342,
+      "overLow": 0.3324
     }
   },
   "ACE": {
     "cap": 793,
     "price": 0.285,
     "extremums": {
-      "triggerVolume": 69054,
-      "max": 0.3237,
+      "triggerVolume": 52684,
+      "max": 0.3186,
       "min": 0.3063,
-      "overHigh": 0.3133,
-      "overLow": 0.3071
+      "overHigh": 0.3106,
+      "overLow": 0.3017
     }
   },
   "LUMIA": {
     "cap": 799,
     "price": 0.164,
     "extremums": {
-      "triggerVolume": 50475,
-      "max": 0.1692,
+      "triggerVolume": 40371,
+      "max": 0.1685,
       "min": 0.1635,
-      "overHigh": 0.1682,
-      "overLow": 0.165
+      "overHigh": 0.1665,
+      "overLow": 0.1596
     }
   },
   "DUSK": {
     "cap": 812,
     "price": 0.043,
     "extremums": {
-      "triggerVolume": 35726,
+      "triggerVolume": 29608,
       "max": 0.04861,
       "min": 0.04715,
-      "overHigh": 0.04829,
-      "overLow": 0.04728
+      "overHigh": 0.04776,
+      "overLow": 0.0462
     }
   },
   "MUBARAK": {
     "cap": 814,
     "price": 0.021,
     "extremums": {
-      "triggerVolume": 201132,
-      "max": 0.02512,
+      "triggerVolume": 163801,
+      "max": 0.02529,
       "min": 0.02405,
-      "overHigh": 0.02529,
-      "overLow": 0.02451
+      "overHigh": 0.02497,
+      "overLow": 0.02364
     }
   },
   "SYS": {
     "cap": 819,
     "price": 0.025,
     "extremums": {
-      "triggerVolume": 12190,
-      "max": 0.02667,
+      "triggerVolume": 11604,
+      "max": 0.02676,
       "min": 0.0261,
-      "overHigh": 0.02676,
-      "overLow": 0.02627
+      "overHigh": 0.02654,
+      "overLow": 0.026
     }
   },
   "GUN": {
     "cap": 837,
     "price": 0.017,
     "extremums": {
-      "triggerVolume": 24495,
+      "triggerVolume": 20464,
       "max": 0.0197,
       "min": 0.01928,
-      "overHigh": 0.01949,
-      "overLow": 0.01923
+      "overHigh": 0.01945,
+      "overLow": 0.0188
     }
   },
   "PHB": {
     "cap": 841,
     "price": 0.333,
     "extremums": {
-      "triggerVolume": 61798,
-      "max": 0.3774,
+      "triggerVolume": 49689,
+      "max": 0.3773,
       "min": 0.3653,
-      "overHigh": 0.375,
-      "overLow": 0.3672
+      "overHigh": 0.3719,
+      "overLow": 0.3582
     }
   },
   "GTC": {
     "cap": 842,
     "price": 0.203,
     "extremums": {
-      "triggerVolume": 29026,
+      "triggerVolume": 24310,
       "max": 0.219,
       "min": 0.214,
       "overHigh": 0.218,
-      "overLow": 0.215
+      "overLow": 0.21
     }
   },
   "NFP": {
     "cap": 861,
     "price": "0.04460000",
     "extremums": {
-      "triggerVolume": 109128,
-      "max": 0.04869,
-      "min": 0.0442,
-      "overHigh": 0.04468,
-      "overLow": 0.04357
-    },
-    "startTime": 1760192871609
+      "triggerVolume": 73036,
+      "max": 0.047,
+      "min": 0.04363,
+      "overHigh": 0.04405,
+      "overLow": 0.04257
+    }
   },
   "C": {
     "cap": 862,
     "price": 0.103,
     "extremums": {
-      "triggerVolume": 77897,
-      "max": 0.1103,
-      "min": 0.10431,
-      "overHigh": 0.10511,
-      "overLow": 0.10305
+      "triggerVolume": 48928,
+      "max": 0.10787,
+      "min": 0.10401,
+      "overHigh": 0.10413,
+      "overLow": 0.1
     }
   },
   "RESOLV": {
     "cap": 890,
     "price": 0.057,
     "extremums": {
-      "triggerVolume": 121925,
+      "triggerVolume": 119641,
       "max": 0.07065,
-      "min": 0.0665,
-      "overHigh": 0.0695,
-      "overLow": 0.06761
+      "min": 0.06658,
+      "overHigh": 0.0683,
+      "overLow": 0.06585
     }
   },
   "VIC": {
     "cap": 894,
     "price": 0.142,
     "extremums": {
-      "triggerVolume": 14927,
+      "triggerVolume": 12436,
       "max": 0.1552,
-      "min": 0.1518,
-      "overHigh": 0.1542,
-      "overLow": 0.152
+      "min": 0.152,
+      "overHigh": 0.1533,
+      "overLow": 0.1496
     }
   },
   "OMG": {
@@ -2948,33 +2940,33 @@
     "cap": 896,
     "price": 1.297,
     "extremums": {
-      "triggerVolume": 25175,
-      "max": 1.48,
+      "triggerVolume": 22253,
+      "max": 1.478,
       "min": 1.448,
-      "overHigh": 1.471,
-      "overLow": 1.45
+      "overHigh": 1.462,
+      "overLow": 1.41
     }
   },
   "MITO": {
     "cap": 899,
     "price": 0.095,
     "extremums": {
-      "triggerVolume": 69071,
+      "triggerVolume": 52723,
       "max": 0.11775,
       "min": 0.11469,
-      "overHigh": 0.11754,
-      "overLow": 0.11564
+      "overHigh": 0.11801,
+      "overLow": 0.11455
     }
   },
   "RDNT": {
     "cap": 902,
     "price": 0.013,
     "extremums": {
-      "triggerVolume": 7808890,
-      "max": 0.04425,
+      "triggerVolume": 3227375,
+      "max": 0.02768,
       "min": 0.01791,
-      "overHigh": 0.02669,
-      "overLow": 0.0226
+      "overHigh": 0.02837,
+      "overLow": 0.02407
     }
   },
   "BADGER": {
@@ -3003,99 +2995,99 @@
     "cap": 910,
     "price": 0.018,
     "extremums": {
-      "triggerVolume": 255370,
+      "triggerVolume": 269425,
       "max": 0.02386,
-      "min": 0.02236,
-      "overHigh": 0.02344,
-      "overLow": 0.02256
+      "min": 0.02243,
+      "overHigh": 0.02286,
+      "overLow": 0.02198
     }
   },
   "BMT": {
     "cap": 912,
     "price": 0.037,
     "extremums": {
-      "triggerVolume": 37028,
+      "triggerVolume": 32741,
       "max": 0.04272,
       "min": 0.04172,
-      "overHigh": 0.04244,
-      "overLow": 0.04143
+      "overHigh": 0.04184,
+      "overLow": 0.04033
     }
   },
   "DF": {
     "cap": 928,
     "price": 0.016,
     "extremums": {
-      "triggerVolume": 35195,
+      "triggerVolume": 33156,
       "max": 0.02014,
       "min": 0.01874,
-      "overHigh": 0.0194,
-      "overLow": 0.01871
+      "overHigh": 0.01899,
+      "overLow": 0.01852
     }
   },
   "GHST": {
     "cap": 935,
     "price": 0.294,
     "extremums": {
-      "triggerVolume": 16563,
-      "max": 0.3062,
+      "triggerVolume": 12402,
+      "max": 0.3027,
       "min": 0.2949,
-      "overHigh": 0.3027,
-      "overLow": 0.3002
+      "overHigh": 0.3029,
+      "overLow": 0.2928
     }
   },
   "ALPINE": {
     "cap": 939,
     "price": 0.815,
     "extremums": {
-      "triggerVolume": 214536,
-      "max": 0.9856,
-      "min": 0.9409,
-      "overHigh": 0.9518,
-      "overLow": 0.926
+      "triggerVolume": 172074,
+      "max": 0.9677,
+      "min": 0.9402,
+      "overHigh": 0.9429,
+      "overLow": 0.9014
     }
   },
   "HOOK": {
     "cap": 963,
     "price": 0.054,
     "extremums": {
-      "triggerVolume": 125555,
-      "max": 0.06645,
+      "triggerVolume": 102523,
+      "max": 0.06592,
       "min": 0.06347,
-      "overHigh": 0.06482,
-      "overLow": 0.06356
+      "overHigh": 0.06437,
+      "overLow": 0.06233
     }
   },
   "MLN": {
     "cap": 973,
     "price": 4.684,
     "extremums": {
-      "triggerVolume": 18896,
-      "max": 5.751,
+      "triggerVolume": 18993,
+      "max": 5.716,
       "min": 5.588,
-      "overHigh": 5.714,
-      "overLow": 5.617
+      "overHigh": 5.682,
+      "overLow": 5.487
     }
   },
   "D": {
     "cap": 991,
     "price": 0.021,
     "extremums": {
-      "triggerVolume": 12872,
-      "max": 0.02262,
+      "triggerVolume": 11357,
+      "max": 0.02248,
       "min": 0.02192,
-      "overHigh": 0.02245,
-      "overLow": 0.02212
+      "overHigh": 0.0223,
+      "overLow": 0.02163
     }
   },
   "NKN": {
     "cap": 995,
     "price": 0.017,
     "extremums": {
-      "triggerVolume": 17579,
-      "max": 0.02045,
+      "triggerVolume": 16115,
+      "max": 0.02038,
       "min": 0.01975,
-      "overHigh": 0.02029,
-      "overLow": 0.02004
+      "overHigh": 0.02037,
+      "overLow": 0.0196
     }
   },
   "BLZ": {

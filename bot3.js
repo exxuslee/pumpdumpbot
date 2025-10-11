@@ -83,7 +83,7 @@ class ExtremumTradingBot {
                 max = Math.max(max, parseFloat(candles[i].high))
                 sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 17.0)
             }
-            let overLow= 1_000_000.0;
+            let overLow = 1_000_000.0;
             let overHigh = 0.0;
             for (let i = candles.length - 4; i < candles.length; i++) {
                 overLow = Math.min(overLow, parseFloat(candles[i].low))
@@ -150,40 +150,26 @@ class ExtremumTradingBot {
         await this.sendTelegramAlert(message, false);
         await this.writeTokensFile();
 
-        setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
     }
 
-    async exitTrade(ticker) {
-        const trade = this.tokens[ticker];
+    async exitTrade(candle) {
+        const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
+        const token = this.tokens[tokenSymbol];
         try {
-            const exitPrice = await this.getCurrentPrice(ticker);
-            if (!exitPrice) {
-                this.log(`⚠️ Cannot get current price for ${ticker}`);
-                return;
-            }
+            const isLong = token.side === '📈';
+            const pnlPercent = isLong ? (candle.close - token.price) / token.price * 100 : (token.price - candle.close) / token.price * 100;
 
-            const isLong = trade.side === '📈';
-            const pnlPercent = isLong ? (exitPrice - trade.price) / trade.price * 100 : (trade.price - exitPrice) / trade.price * 100;
-            const timePassed = Date.now() - trade.startTime;
-
-            const stopBuy = isLong && ((trade.extremums.overHigh - trade.extremums.max) * 2 / 3 > ticker.close);
-            const stopSell = !isLong && ((trade.extremums.min - trade.extremums.overLow) * 2 / 3 < ticker.close);
-
-            if (stopBuy || stopSell || pnlPercent < -2.0 || timePassed > 300_000) {
-                this.count = this.count + pnlPercent - 0.1;
-                const ico = pnlPercent > 0 ? "🚀" : "🔻";
-                const message = `${ticker} ${trade.side}${ico}: ${(+trade.price).toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
-                await this.sendTelegramAlert(message, true);
-
-                delete trade.side;
-                await this.writeTokensFile();
-                await this.writeStatFile();
-            } else {
-                setTimeout(() => this.exitTrade(ticker), this.retryExitTimeoutMs);
-            }
+            this.count = this.count + pnlPercent - 0.1;
+            const ico = pnlPercent > 0 ? "🚀" : "🔻";
+            const message = `${tokenSymbol} ${token.side}${ico}: ${(+token.price).toFixed(4)} → ${(+candle.close).toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
+            delete token.side;
+            delete token.startTime;
+            await this.sendTelegramAlert(message, true);
+            await this.writeTokensFile();
+            await this.writeStatFile();
         } catch (error) {
-            console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
-            await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`, true);
+            console.error(`❌ Error exiting trade for ${tokenSymbol}:`, error.message);
+            await this.sendTelegramAlert(`❌ Failed to exit trade for ${tokenSymbol}: ${error.message}`, true);
         }
     }
 
@@ -196,14 +182,38 @@ class ExtremumTradingBot {
         }
         const ext = token.extremums;
 
-        if (token.side || !ext.triggerVolume || (candle.quoteVolume < ext.triggerVolume)) return;
+        const start1 = !token.side
+        const start2 = ext.triggerVolume
+        const start3 = candle.quoteVolume > ext.triggerVolume
 
-        if ((candle.close > ext.max) && (ext.min > ext.overLow)) {
+        const startBuy1 = candle.close > ext.max
+        const startBuy2 = ext.min > ext.overLow
+
+        const startSell1 = candle.close < ext.min
+        const startSell2 = ext.max < ext.overHigh
+
+        if (start1 && start2 && start3 && startBuy1 && startBuy2) {
             this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
         }
 
-        if ((candle.close < ext.min) && (ext.max < ext.overHigh)) {
+        if (start1 && start2 && start3 && startSell1 && startSell2) {
             this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
+        }
+
+        const stopBuy1 = token.side === '📈'
+        const stopBuy2 = (ext.overHigh - ext.max) / 2 > candle.close
+
+        const stopSell1 = token.side === '📉'
+        const stopSell2 = (ext.min - ext.overLow) / 2 < candle.close
+
+        const stop = Date.now() - token.startTime > 300_000;
+
+        if ((stopBuy1 && stopBuy2) || stop) {
+            this.exitTrade(candle).then(r => true);
+        }
+
+        if ((stopSell1 && stopSell2) || stop) {
+            this.exitTrade(candle).then(r => true);
         }
     }
 
