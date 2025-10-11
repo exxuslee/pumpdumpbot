@@ -81,7 +81,7 @@ class ExtremumTradingBot {
             for (let i = 0; i < candles.length - 4; i++) {
                 min = Math.min(min, parseFloat(candles[i].low))
                 max = Math.max(max, parseFloat(candles[i].high))
-                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 20.0)
+                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 17.0)
             }
             let overHigh = false;
             let overLow = false;
@@ -101,13 +101,13 @@ class ExtremumTradingBot {
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
             let newExtremums = await this.getHourlyCandes(tokenSymbol);
-            token.extremums = newExtremums;
             if (
                 ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh)
                 || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow)
             ) {
                 this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`)
             }
+            token.extremums = newExtremums;
         });
 
         await Promise.all(updatePromises);

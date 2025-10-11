@@ -99,10 +99,21 @@ class PumpDumpBot {
 
     async sendTelegramAlert(message, isSilent) {
         try {
-            await telegram.sendMessage(message, this.tgToken, isSilent);
+            let messages_id = await telegram.sendMessage(message, this.tgToken, isSilent);
             this.log(`📱 Alert sent: ${message}`);
+            return messages_id;
         } catch (error) {
             console.error("❌ Failed to send Telegram message:", error.message);
+        }
+    }
+
+    async editTelegramAlert(message_id, message) {
+        try {
+            let messages_id = await telegram.editMessageAppend(message_id, message, this.tgToken);
+            this.log(`📱 Alert edit: ${message}`);
+            return messages_id;
+        } catch (error) {
+            console.error("❌ Failed to edit Telegram message:", error.message);
         }
     }
 
@@ -125,20 +136,21 @@ class PumpDumpBot {
                 this.log(`⚠️ Cannot get current price for ${ticker}`);
                 return;
             }
-            const pnlPercent = trade.side === '🟢'
+            const pnlPercent = trade.side === '📈'
                 ? (exitPrice - trade.price) / exitPrice * 100
                 : (trade.price - exitPrice) / trade.price * 100;
 
             if (pnlPercent > 0.2 || ((Date.now() - trade.startTime) > 1_800_000)) {
                 this.count = this.count + pnlPercent - 0.1;
-                let direction = trade.side === '🟢' ? '🟢' : '🔴';
+                let direction = trade.side === '📈' ? '📈' : '📉';
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
                 else ico = "🔻"
                 const massage = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
                 this.log(massage);
-                await this.sendTelegramAlert(massage, true);
+                await this.editTelegramAlert(trade.message_id, massage);
                 delete trade.side;
+                delete trade.message_id;
                 await this.writeTokensFile();
                 await this.writeStatFile();
             } else {
@@ -176,11 +188,11 @@ class PumpDumpBot {
         if (start1 && start2 && start3 && start4) {
             token.price = +candle.close;
             token.startTime = candle.eventTime
-            const direction = buyVolume > sellVolume ? '🟢' : '🔴';
+            const direction = buyVolume > sellVolume ? '📈' : '📉';
             token.side = direction;
 
-            const message = `${tokenSymbol} ${direction}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
-            this.sendTelegramAlert(message, false);
+            const message = `${tokenSymbol} ${token.cap} ${direction}: ${(+candle.close).toFixed(3)} (${volumeRatio.toFixed(2)}x ratio) `;
+            token.message_id = this.sendTelegramAlert(message, false);
             await this.writeTokensFile();
             setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
         }

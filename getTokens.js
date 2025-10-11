@@ -45,6 +45,13 @@ async function getPairs() {
                 cmcRanks[symbol] = {
                     cap: entries[0].cmc_rank,
                     price: Math.round(entries[0].quote.USD.price * 1000) / 1000,
+                    extremums: {
+                        "triggerVolume": 0,
+                        "min": 0.0,
+                        "max": 0.0,
+                        "overHigh": false,
+                        "overLow": false
+                    }
                 };
             }
         }
