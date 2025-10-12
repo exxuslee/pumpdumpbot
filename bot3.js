@@ -100,14 +100,7 @@ class ExtremumTradingBot {
     async updateAllHourly() {
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
-            let newExtremums = await this.getHourlyCandes(tokenSymbol);
-            if (
-                ((newExtremums.max !== token.extremums.max) && (newExtremums.overHigh > newExtremums.max))
-                || ((newExtremums.min !== token.extremums.min) && (newExtremums.overLow < newExtremums.min))
-            ) {
-                this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+(newExtremums.overHigh > newExtremums.max)}${+(newExtremums.overLow < newExtremums.min)}`)
-            }
-            token.extremums = newExtremums;
+            token.extremums = await this.getHourlyCandes(tokenSymbol);
         });
 
         await Promise.all(updatePromises);
@@ -122,8 +115,29 @@ class ExtremumTradingBot {
             {overHigh: 0, overLow: 0}
         );
 
+        tokensArray.forEach(r => {
+                const {key: tokenSymbol, cap, extremums} = r;
+                if (
+                    (((counts.overHigh > counts.overLow) && (extremums.overLow < extremums.min)) ||
+                    ((counts.overHigh < counts.overLow) && (extremums.overHigh > extremums.max))) &&
+                    !this.tokens[tokenSymbol].isSeen
+                ) {
+                    this.log(
+                        `${tokenSymbol.padEnd(8)} ${String(cap).padEnd(5)} ` +
+                        `min:${extremums.min.toFixed(6).padEnd(12)} ` +
+                        `max:${extremums.max.toFixed(6).padEnd(12)} ` +
+                        `overHL:${(+(extremums.overHigh > extremums.max)).toString()}${(+(extremums.overLow < extremums.min)).toString()}`
+                    );
+                    this.tokens[tokenSymbol].isSeen = true
+                }
+                if ((extremums.overLow > extremums.min) && (extremums.overHigh < extremums.max)) {
+                    delete this.tokens[tokenSymbol].isSeen
+                }
+
+            });
+
         await this.writeTokensFile();
-        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}`);
+        this.log(`✅ OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}`);
     }
 
     startHourlyUpdates() {
@@ -162,7 +176,6 @@ class ExtremumTradingBot {
             const ico = pnlPercent > 0 ? "🚀" : "🔻";
             const message = `${tokenSymbol} ${token.side}${ico}: ${(+token.price).toFixed(4)} → ${(+candle.close).toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
             delete token.side;
-            delete token.startTime;
             delete token.price;
             await this.sendTelegramAlert(message, true);
             await this.writeTokensFile();
@@ -185,6 +198,7 @@ class ExtremumTradingBot {
         const start1 = !token.side
         const start2 = ext.triggerVolume
         const start3 = candle.quoteVolume > ext.triggerVolume
+        const start4 = Date.now() - (token.startTime || 0) > 20 * 60_000;
 
         const startBuy1 = candle.close > ext.max
         const startBuy2 = ext.min > ext.overLow
@@ -192,28 +206,30 @@ class ExtremumTradingBot {
         const startSell1 = candle.close < ext.min
         const startSell2 = ext.max < ext.overHigh
 
-        if (start1 && start2 && start3 && startBuy1 && startBuy2) {
+        if (start1 && start2 && start3 && start4 && startBuy1 && startBuy2) {
             this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
         }
 
-        if (start1 && start2 && start3 && startSell1 && startSell2) {
+        if (start1 && start2 && start3 && start4 && startSell1 && startSell2) {
             this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
         }
 
         const stopBuy1 = token.side === '📈'
-        const stopBuy2 = candle.close < ((ext.max - ext.min) / 2 + ext.min)
+        const stopBuy2 = ext.max * 0.99 > candle.close
+        const stopBuy3 = 2 * ext.max - ext.min < candle.close
 
 
         const stopSell1 = token.side === '📉'
-        const stopSell2 = candle.close > ((ext.max - ext.min) / 2 + ext.min)
+        const stopSell2 = ext.min * 1.01 < candle.close
+        const stopSell3 = ext.max - 2 * ext.min > candle.close
 
-        const stop = Date.now() - token.startTime > 300_000;
+        const stop = Date.now() - token.startTime > 960_000;
 
-        if (stopBuy1 && (stopBuy2 || stop)) {
+        if (stopBuy1 && (stopBuy2 || stopBuy3 || stop)) {
             this.exitTrade(candle).then(r => true);
         }
 
-        if (stopSell1 && (stopSell2 || stop)) {
+        if (stopSell1 && (stopSell2 || stopSell3 || stop)) {
             this.exitTrade(candle).then(r => true);
         }
     }

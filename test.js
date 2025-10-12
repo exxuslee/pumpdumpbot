@@ -8,4 +8,8 @@ async function test() {
     console.log(candles[16].high);
 }
 
- test()
+// test()
+
+let a = undefined
+
+console.log(!a)
