@@ -144,12 +144,11 @@ class ExtremumTradingBot {
         token.price = candle.close;
         token.startTime = Date.now();
 
-        const message = `${tokenSymbol} ${token.cap} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
+        const message = `${tokenSymbol} ${token.cap} ${side}: ${(+candle.close).toFixed(3)}`;
 
         this.log(`🎯 ${message}`);
         await this.sendTelegramAlert(message, false);
         await this.writeTokensFile();
-
     }
 
     async exitTrade(candle) {
@@ -202,21 +201,19 @@ class ExtremumTradingBot {
         }
 
         const stopBuy1 = token.side === '📈'
-        const stopBuy2 = ((ext.overHigh - ext.max) / 2 > candle.close) && (Date.now() - token.startTime > 30_000)
-        const stopBuy3 = (candle.close - token.price) / token.price < -0.02
+        const stopBuy2 = candle.close < ((ext.max - ext.min) / 2 + ext.min)
 
 
         const stopSell1 = token.side === '📉'
-        const stopSell2 = ((ext.min - ext.overLow) / 2 < candle.close) && (Date.now() - token.startTime > 30_000)
-        const stopSell3 = (token.price - candle.close) / token.price < -0.02
+        const stopSell2 = candle.close > ((ext.max - ext.min) / 2 + ext.min)
 
-        const stop = Date.now() - token.startTime > 660_000;
+        const stop = Date.now() - token.startTime > 300_000;
 
-        if (stopBuy1 && (stopBuy2 || stopBuy3 || stop)) {
+        if (stopBuy1 && (stopBuy2 || stop)) {
             this.exitTrade(candle).then(r => true);
         }
 
-        if (stopSell1 && (stopSell2 || stopSell3 || stop)) {
+        if (stopSell1 && (stopSell2 || stop)) {
             this.exitTrade(candle).then(r => true);
         }
     }
