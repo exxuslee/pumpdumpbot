@@ -102,8 +102,8 @@ class ExtremumTradingBot {
             const token = this.tokens[tokenSymbol];
             let newExtremums = await this.getHourlyCandes(tokenSymbol);
             if (
-                ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh > newExtremums.max)
-                || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow < newExtremums.min)
+                ((newExtremums.max !== token.extremums.max) && (newExtremums.overHigh > newExtremums.max))
+                || ((newExtremums.min !== token.extremums.min) && (newExtremums.overLow < newExtremums.min))
             ) {
                 this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+(newExtremums.overHigh > newExtremums.max)}${+(newExtremums.overLow < newExtremums.min)}`)
             }
@@ -245,7 +245,6 @@ class ExtremumTradingBot {
             }
             await this.startHourlyUpdates();
             this.startWebSocketMonitoring();
-            this.log("🚀 Bot is now running with extremum tracking and hourly volume API updates!");
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
             process.exit(1);
