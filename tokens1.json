@@ -1,3115 +1,1748 @@
 {
   "ALGO": {
-    "cap": 54,
-    "price": 0.153,
-    "extremums": {
-      "triggerVolume": 354903,
-      "min": 0.1787,
-      "max": 0.1884,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 51,
+    "price": 0.204,
+    "spot": 0.2037,
+    "futures": 0.2034
   },
   "ATOM": {
-    "cap": 55,
-    "price": 2.842,
-    "extremums": {
-      "triggerVolume": 521131,
-      "min": 3.028,
-      "max": 3.174,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 53,
+    "price": 3.513,
+    "spot": 3.496,
+    "futures": 3.492
+  },
+  "VET": {
+    "cap": 54,
+    "price": 0.019,
+    "spot": 0.01917,
+    "futures": 0.019165
   },
   "PENGU": {
     "cap": 56,
-    "price": 0.021,
-    "extremums": {
-      "triggerVolume": 2032789,
-      "min": 0.021126,
-      "max": 0.022558,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "VET": {
-    "cap": 57,
-    "price": 0.015,
-    "extremums": {
-      "triggerVolume": 241205,
-      "min": 0.016519,
-      "max": 0.017483,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.026,
+    "spot": 0.02604,
+    "futures": 0.025993
   },
   "SKY": {
-    "cap": 58,
-    "price": "0.05807000",
-    "extremums": {
-      "triggerVolume": 32348,
-      "min": 0.0577,
-      "max": 0.05931,
-      "overHigh": true,
-      "overLow": false
-    },
-    "startTime": 1760210452717
+    "cap": 59,
+    "price": 0.062,
+    "spot": 0.06159,
+    "futures": 0.06145
   },
   "SEI": {
-    "cap": 62,
-    "price": 0.193,
-    "extremums": {
-      "triggerVolume": 567914,
-      "min": 0.1988,
-      "max": 0.2084,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 60,
+    "price": 0.232,
+    "spot": 0.2325,
+    "futures": 0.2321
   },
   "RENDER": {
-    "cap": 65,
-    "price": 2.091,
-    "extremums": {
-      "triggerVolume": 313551,
-      "min": 2.305,
-      "max": 2.392,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 61,
+    "price": 2.69,
+    "spot": 2.69,
+    "futures": 2.688
   },
   "TRUMP": {
-    "cap": 67,
-    "price": 5.363,
-    "extremums": {
-      "triggerVolume": 1649231,
-      "min": 5.748,
-      "max": 5.931,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "QNT": {
-    "cap": 68,
-    "price": 86.653,
-    "extremums": {
-      "triggerVolume": 57590,
-      "min": 85.05,
-      "max": 88.24,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "FIL": {
-    "cap": 69,
-    "price": 1.471,
-    "extremums": {
-      "triggerVolume": 2701718,
-      "min": 1.492,
-      "max": 1.566,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 64,
+    "price": 6.179,
+    "spot": 6.15,
+    "futures": 6.146
   },
   "JUP": {
-    "cap": 70,
-    "price": 0.311,
-    "extremums": {
-      "triggerVolume": 285472,
-      "min": 0.3271,
-      "max": 0.3437,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 67,
+    "price": 0.374,
+    "spot": 0.3726,
+    "futures": 0.3721
+  },
+  "FIL": {
+    "cap": 68,
+    "price": 1.674,
+    "spot": 1.67,
+    "futures": 1.669
   },
   "CAKE": {
-    "cap": 73,
-    "price": 2.615,
-    "extremums": {
-      "triggerVolume": 690413,
-      "min": 2.567,
-      "max": 2.7283,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 69,
+    "price": 3.322,
+    "spot": 3.392,
+    "futures": 3.3921
+  },
+  "QNT": {
+    "cap": 70,
+    "price": 92.487,
+    "spot": 91.84,
+    "futures": 91.75
   },
   "IMX": {
-    "cap": 74,
-    "price": 0.431,
-    "extremums": {
-      "triggerVolume": 169181,
-      "min": 0.4664,
-      "max": 0.4872,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 73,
+    "price": 0.543,
+    "spot": 0.542,
+    "futures": 0.5414
   },
-  "XPL": {
+  "INJ": {
     "cap": 75,
-    "price": 0.468,
-    "extremums": {
-      "triggerVolume": 9217828,
-      "min": 0.3648,
-      "max": 0.4183,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 9.728,
+    "spot": 9.64,
+    "futures": 9.625
+  },
+  "FET": {
+    "cap": 76,
+    "price": 0.398,
+    "spot": 0.393,
+    "futures": 0.3926
   },
   "2Z": {
-    "cap": 76,
-    "price": 0.228,
-    "extremums": {
-      "triggerVolume": 573854,
-      "min": 0.24487,
-      "max": 0.2565,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 77,
+    "price": 0.265,
+    "spot": 0.26284,
+    "futures": 0.26252
   },
   "OP": {
     "cap": 78,
-    "price": 0.442,
-    "extremums": {
-      "triggerVolume": 895928,
-      "min": 0.4446,
-      "max": 0.4637,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.491,
+    "spot": 0.4909,
+    "futures": 0.4908
   },
-  "INJ": {
-    "cap": 80,
-    "price": 7.723,
-    "extremums": {
-      "triggerVolume": 477708,
-      "min": 8.247,
-      "max": 8.583,
-      "overHigh": true,
-      "overLow": false
-    }
+  "TIA": {
+    "cap": 79,
+    "price": 1.069,
+    "spot": 1.068,
+    "futures": 1.0673
   },
-  "FET": {
+  "XPL": {
     "cap": 82,
-    "price": 0.304,
-    "extremums": {
-      "triggerVolume": 811233,
-      "min": 0.3553,
-      "max": 0.3724,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.463,
+    "spot": 0.4636,
+    "futures": 0.4634
   },
   "STX": {
     "cap": 83,
-    "price": 0.397,
-    "extremums": {
-      "triggerVolume": 159750,
-      "min": 0.4078,
-      "max": 0.4262,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "TIA": {
-    "cap": 84,
-    "price": 0.842,
-    "extremums": {
-      "triggerVolume": 952190,
-      "min": 0.904,
-      "max": 0.9443,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.462,
+    "spot": 0.46,
+    "futures": 0.4597
   },
   "LDO": {
-    "cap": 85,
-    "price": 0.747,
-    "extremums": {
-      "triggerVolume": 677486,
-      "min": 0.7889,
-      "max": 0.8322,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "KAIA": {
-    "cap": 87,
-    "price": 0.099,
-    "extremums": {
-      "triggerVolume": 77127,
-      "min": 0.1026,
-      "max": 0.1054,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 84,
+    "price": 0.927,
+    "spot": 0.9316,
+    "futures": 0.932
   },
   "CRV": {
-    "cap": 88,
-    "price": 0.425,
-    "extremums": {
-      "triggerVolume": 1226220,
-      "min": 0.473,
-      "max": 0.499,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "XTZ": {
-    "cap": 89,
-    "price": 0.546,
-    "extremums": {
-      "triggerVolume": 103501,
-      "min": 0.57,
-      "max": 0.587,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 85,
+    "price": 0.579,
+    "spot": 0.5739,
+    "futures": 0.573
   },
   "GRT": {
-    "cap": 90,
-    "price": 0.055,
-    "extremums": {
-      "triggerVolume": 108794,
-      "min": 0.06105,
-      "max": 0.06364,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 88,
+    "price": 0.069,
+    "spot": 0.069,
+    "futures": 0.06881
   },
   "PYTH": {
-    "cap": 91,
-    "price": 0.098,
-    "extremums": {
-      "triggerVolume": 258727,
-      "min": 0.10559,
-      "max": 0.11101,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 90,
+    "price": 0.121,
+    "spot": 0.12,
+    "futures": 0.11989
   },
-  "IOTA": {
+  "KAIA": {
+    "cap": 91,
+    "price": 0.111,
+    "spot": 0.1108,
+    "futures": 0.1106
+  },
+  "MORPHO": {
     "cap": 92,
-    "price": 0.139,
-    "extremums": {
-      "triggerVolume": 73842,
-      "min": 0.1353,
-      "max": 0.1417,
-      "overHigh": true,
-      "overLow": false
-    }
+    "price": 2.001,
+    "spot": 1.963,
+    "futures": 1.9597
+  },
+  "XTZ": {
+    "cap": 93,
+    "price": 0.634,
+    "spot": 0.6324,
+    "futures": 0.631
   },
   "ETHFI": {
-    "cap": 93,
-    "price": 1.061,
-    "extremums": {
-      "triggerVolume": 640833,
-      "min": 1.0857,
-      "max": 1.1327,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 94,
+    "price": 1.282,
+    "spot": 1.298,
+    "futures": 1.2973
   },
-  "PENDLE": {
-    "cap": 93,
-    "price": 3.239,
-    "extremums": {
-      "triggerVolume": 402580,
-      "min": 3.2685,
-      "max": 3.4358,
-      "overHigh": false,
-      "overLow": false
-    }
+  "DASH": {
+    "cap": 95,
+    "price": 52.449,
+    "spot": 51.84,
+    "futures": 51.84
   },
   "TWT": {
     "cap": 96,
-    "price": 1.232,
-    "extremums": {
-      "triggerVolume": 164723,
-      "min": 1.2619,
-      "max": 1.3085,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 1.512,
+    "spot": 1.4778,
+    "futures": 1.4774
   },
   "ENS": {
-    "cap": 102,
-    "price": 12.929,
-    "extremums": {
-      "triggerVolume": 294445,
-      "min": 14.592,
-      "max": 15.213,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 98,
+    "price": 17.021,
+    "spot": 16.99,
+    "futures": 16.974
   },
-  "SUN": {
-    "cap": 103,
-    "price": 0.025,
-    "extremums": {
-      "triggerVolume": 72133,
-      "min": 0.023628,
-      "max": 0.023798,
-      "overHigh": false,
-      "overLow": false
-    }
+  "PENDLE": {
+    "cap": 99,
+    "price": 3.729,
+    "spot": 3.737,
+    "futures": 3.7327
   },
-  "0G": {
-    "cap": 105,
-    "price": 2.235,
-    "extremums": {
-      "triggerVolume": 569400,
-      "min": 2.1127,
-      "max": 2.212,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ZRO": {
-    "cap": 105,
-    "price": 1.611,
-    "extremums": {
-      "triggerVolume": 269905,
-      "min": 1.6928,
-      "max": 1.7609,
-      "overHigh": true,
-      "overLow": false
-    }
+  "IOTA": {
+    "cap": 101,
+    "price": 0.155,
+    "spot": 0.1549,
+    "futures": 0.1545
   },
   "CFX": {
-    "cap": 106,
-    "price": 0.092,
-    "extremums": {
-      "triggerVolume": 226602,
-      "min": 0.09685,
-      "max": 0.10107,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 102,
+    "price": 0.114,
+    "spot": 0.1137,
+    "futures": 0.11364
+  },
+  "ZRO": {
+    "cap": 103,
+    "price": 1.979,
+    "spot": 1.974,
+    "futures": 1.9731
   },
   "S": {
-    "cap": 108,
-    "price": 0.163,
-    "extremums": {
-      "triggerVolume": 317615,
-      "min": 0.1722,
-      "max": 0.1796,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "DASH": {
-    "cap": 109,
-    "price": 36.579,
-    "extremums": {
-      "triggerVolume": 609044,
-      "min": 37.12,
-      "max": 40.34,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 104,
+    "price": 0.198,
+    "spot": 0.1968,
+    "futures": 0.1966
   },
   "SAND": {
-    "cap": 110,
-    "price": 0.171,
-    "extremums": {
-      "triggerVolume": 192962,
-      "min": 0.19076,
-      "max": 0.19879,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "EIGEN": {
-    "cap": 111,
-    "price": 1.144,
-    "extremums": {
-      "triggerVolume": 701579,
-      "min": 1.1011,
-      "max": 1.1741,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 105,
+    "price": 0.218,
+    "spot": 0.2184,
+    "futures": 0.21812
   },
   "STRK": {
-    "cap": 112,
-    "price": 0.102,
-    "extremums": {
-      "triggerVolume": 393441,
-      "min": 0.113,
-      "max": 0.1166,
-      "overHigh": false,
-      "overLow": true
-    }
+    "cap": 106,
+    "price": 0.131,
+    "spot": 0.1346,
+    "futures": 0.1345
+  },
+  "EIGEN": {
+    "cap": 107,
+    "price": 1.456,
+    "spot": 1.436,
+    "futures": 1.4368
+  },
+  "WIF": {
+    "cap": 109,
+    "price": 0.56,
+    "spot": 0.557,
+    "futures": 0.5576
   },
   "THETA": {
-    "cap": 113,
-    "price": "0.51800000",
-    "extremums": {
-      "triggerVolume": 146236,
-      "min": 0.4761,
-      "max": 0.5021,
-      "overHigh": true,
-      "overLow": false
-    },
-    "startTime": 1760191477633
+    "cap": 110,
+    "price": 0.556,
+    "spot": 0.556,
+    "futures": 0.5557
+  },
+  "GALA": {
+    "cap": 111,
+    "price": 0.012,
+    "spot": 0.01204,
+    "futures": 0.01204
+  },
+  "JASMY": {
+    "cap": 112,
+    "price": 0.011,
+    "spot": 0.01085,
+    "futures": 0.010842
   },
   "VIRTUAL": {
-    "cap": 114,
-    "price": 0.657,
-    "extremums": {
-      "triggerVolume": 532244,
-      "min": 0.6746,
-      "max": 0.7141,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 113,
+    "price": 0.795,
+    "spot": 0.7924,
+    "futures": 0.7918
+  },
+  "MANA": {
+    "cap": 115,
+    "price": 0.261,
+    "spot": 0.2621,
+    "futures": 0.2617
   },
   "DEXE": {
     "cap": 116,
-    "price": 5.108,
-    "extremums": {
-      "triggerVolume": 89289,
-      "min": 5.43,
-      "max": 5.6,
-      "overHigh": false,
-      "overLow": true
-    }
-  },
-  "MORPHO": {
-    "cap": 117,
-    "price": 1.23,
-    "extremums": {
-      "triggerVolume": 173612,
-      "min": 1.5808,
-      "max": 1.6646,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "MANA": {
-    "cap": 118,
-    "price": 0.209,
-    "extremums": {
-      "triggerVolume": 215388,
-      "min": 0.2297,
-      "max": 0.2403,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "SYRUP": {
-    "cap": 119,
-    "price": 0.336,
-    "extremums": {
-      "triggerVolume": 114859,
-      "min": 0.32596,
-      "max": 0.33971,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "FLOW": {
-    "cap": 122,
-    "price": 0.248,
-    "extremums": {
-      "triggerVolume": 301197,
-      "min": 0.266,
-      "max": 0.276,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 5.938,
+    "spot": 5.99,
+    "futures": 5.98
   },
   "A": {
-    "cap": 125,
-    "price": 0.242,
-    "extremums": {
-      "triggerVolume": 113220,
-      "min": 0.2714,
-      "max": 0.2836,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 118,
+    "price": 0.307,
+    "spot": 0.3065,
+    "futures": 0.3062
   },
-  "WIF": {
-    "cap": 126,
-    "price": 0.378,
-    "extremums": {
-      "triggerVolume": 1411482,
-      "min": 0.4619,
-      "max": 0.4855,
-      "overHigh": true,
-      "overLow": false
-    }
+  "0G": {
+    "cap": 119,
+    "price": 2.291,
+    "spot": 2.269,
+    "futures": 2.2662
+  },
+  "SUN": {
+    "cap": 120,
+    "price": 0.025,
+    "spot": 0.02494,
+    "futures": 0.024941
+  },
+  "FLOW": {
+    "cap": 121,
+    "price": 0.294,
+    "spot": 0.294,
+    "futures": 0.294
   },
   "JTO": {
-    "cap": 131,
-    "price": 0.927,
-    "extremums": {
-      "triggerVolume": 244169,
-      "min": 1.0115,
-      "max": 1.0527,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "WAL": {
-    "cap": 134,
-    "price": 0.228,
-    "extremums": {
-      "triggerVolume": 328455,
-      "min": 0.2114,
-      "max": 0.2221,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "W": {
-    "cap": 135,
-    "price": 0.068,
-    "extremums": {
-      "triggerVolume": 434539,
-      "min": 0.06883,
-      "max": 0.07316,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "JST": {
-    "cap": 139,
-    "price": "0.03059000",
-    "extremums": {
-      "triggerVolume": 15331,
-      "min": 0.030145,
-      "max": 0.030396,
-      "overHigh": true,
-      "overLow": false
-    },
-    "startTime": 1760193240103
-  },
-  "COMP": {
-    "cap": 140,
-    "price": "33.11000000",
-    "extremums": {
-      "triggerVolume": 135107,
-      "min": 31.22,
-      "max": 32.43,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760190623954
+    "cap": 124,
+    "price": 1.189,
+    "spot": 1.177,
+    "futures": 1.1762
   },
   "SNX": {
-    "cap": 141,
-    "price": 0.843,
-    "extremums": {
-      "triggerVolume": 179521,
-      "min": 0.926,
-      "max": 0.985,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 125,
+    "price": 1.33,
+    "spot": 1.539,
+    "futures": 1.532
   },
-  "NEO": {
-    "cap": 142,
-    "price": 4.088,
-    "extremums": {
-      "triggerVolume": 114486,
-      "min": 4.379,
-      "max": 4.559,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "RUNE": {
-    "cap": 143,
-    "price": 0.8,
-    "extremums": {
-      "triggerVolume": 148902,
-      "min": 0.829,
-      "max": 0.86,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "CHZ": {
-    "cap": 145,
-    "price": 0.028,
-    "extremums": {
-      "triggerVolume": 86830,
-      "min": 0.03104,
-      "max": 0.03221,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "ZK": {
-    "cap": 148,
-    "price": 0.033,
-    "extremums": {
-      "triggerVolume": 117368,
-      "min": 0.03909,
-      "max": 0.04026,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "KAITO": {
-    "cap": 150,
-    "price": 1.097,
-    "extremums": {
-      "triggerVolume": 229691,
-      "min": 1.0398,
-      "max": 1.0917,
-      "overHigh": false,
-      "overLow": false
-    }
+  "SYRUP": {
+    "cap": 128,
+    "price": 0.375,
+    "spot": 0.3763,
+    "futures": 0.3756
   },
   "FORM": {
-    "cap": 153,
-    "price": 0.666,
-    "extremums": {
-      "triggerVolume": 449900,
-      "min": 0.713,
-      "max": 0.7495,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 132,
+    "price": 1.033,
+    "spot": 1.0514,
+    "futures": 1.0509
   },
-  "LINEA": {
-    "cap": 154,
-    "price": 0.016,
-    "extremums": {
-      "triggerVolume": 801563,
-      "min": 0.01663,
-      "max": 0.01738,
-      "overHigh": false,
-      "overLow": false
-    }
+  "W": {
+    "cap": 133,
+    "price": 0.082,
+    "spot": 0.0811,
+    "futures": 0.08093
   },
-  "1INCH": {
-    "cap": 156,
-    "price": 0.176,
-    "extremums": {
-      "triggerVolume": 75167,
-      "min": 0.1761,
-      "max": 0.1831,
-      "overHigh": false,
-      "overLow": false
-    }
+  "WAL": {
+    "cap": 136,
+    "price": 0.244,
+    "spot": 0.2446,
+    "futures": 0.2442
   },
-  "AXS": {
-    "cap": 158,
-    "price": 1.472,
-    "extremums": {
-      "triggerVolume": 126293,
-      "min": 1.494,
-      "max": 1.561,
-      "overHigh": false,
-      "overLow": false
-    }
+  "NEO": {
+    "cap": 138,
+    "price": 5.109,
+    "spot": 5.104,
+    "futures": 5.099
   },
-  "EGLD": {
-    "cap": 158,
-    "price": 8.511,
-    "extremums": {
-      "triggerVolume": 101201,
-      "min": 9.41,
-      "max": 9.917,
-      "overHigh": false,
-      "overLow": false
-    }
+  "CHZ": {
+    "cap": 140,
+    "price": 0.035,
+    "spot": 0.03516,
+    "futures": 0.03513
   },
-  "BERA": {
-    "cap": 160,
-    "price": 1.83,
-    "extremums": {
-      "triggerVolume": 285260,
-      "min": 1.752,
-      "max": 1.836,
-      "overHigh": false,
-      "overLow": false
-    }
+  "ZK": {
+    "cap": 144,
+    "price": 0.042,
+    "spot": 0.0417,
+    "futures": 0.04168
   },
-  "SUPER": {
-    "cap": 161,
-    "price": 0.371,
-    "extremums": {
-      "triggerVolume": 105595,
-      "min": 0.3939,
-      "max": 0.4095,
-      "overHigh": false,
-      "overLow": false
-    }
+  "COMP": {
+    "cap": 145,
+    "price": 34.781,
+    "spot": 34.8,
+    "futures": 34.78
   },
-  "AR": {
-    "cap": 162,
-    "price": 3.529,
-    "extremums": {
-      "triggerVolume": 347981,
-      "min": 3.927,
-      "max": 4.28,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "DYDX": {
-    "cap": 164,
-    "price": 0.293,
-    "extremums": {
-      "triggerVolume": 420667,
-      "min": 0.333,
-      "max": 0.349,
-      "overHigh": false,
-      "overLow": false
-    }
+  "RUNE": {
+    "cap": 148,
+    "price": 0.922,
+    "spot": 0.925,
+    "futures": 0.923
   },
   "APE": {
-    "cap": 172,
-    "price": 0.274,
-    "extremums": {
-      "triggerVolume": 268267,
-      "min": 0.3636,
-      "max": 0.3836,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 151,
+    "price": 0.422,
+    "spot": 0.4241,
+    "futures": 0.4241
+  },
+  "JST": {
+    "cap": 153,
+    "price": 0.031,
+    "spot": 0.03138,
+    "futures": 0.031391
   },
   "FF": {
-    "cap": 174,
-    "price": 0.087,
-    "extremums": {
-      "triggerVolume": 1185139,
-      "min": 0.10954,
-      "max": 0.1185,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 154,
+    "price": 0.131,
+    "spot": 0.135,
+    "futures": 0.13488
   },
-  "SFP": {
-    "cap": 175,
-    "price": 0.4,
-    "extremums": {
-      "triggerVolume": 38514,
-      "min": 0.3724,
-      "max": 0.3834,
-      "overHigh": true,
-      "overLow": false
-    }
+  "EGLD": {
+    "cap": 155,
+    "price": 10.652,
+    "spot": 10.7,
+    "futures": 10.687
   },
-  "BAT": {
-    "cap": 176,
-    "price": 0.133,
-    "extremums": {
-      "triggerVolume": 105637,
-      "min": 0.1349,
-      "max": 0.1458,
-      "overHigh": false,
-      "overLow": false
-    }
+  "LINEA": {
+    "cap": 157,
+    "price": 0.02,
+    "spot": 0.01923,
+    "futures": 0.01922
   },
-  "MOVE": {
-    "cap": 178,
-    "price": 0.068,
-    "extremums": {
-      "triggerVolume": 73258,
-      "min": 0.0776,
-      "max": 0.0809,
-      "overHigh": false,
-      "overLow": false
-    }
+  "AR": {
+    "cap": 158,
+    "price": 4.599,
+    "spot": 4.55,
+    "futures": 4.557
   },
-  "LPT": {
-    "cap": 179,
-    "price": 4.052,
-    "extremums": {
-      "triggerVolume": 266780,
-      "min": 4.5,
-      "max": 4.737,
-      "overHigh": true,
-      "overLow": false
-    }
+  "DYDX": {
+    "cap": 159,
+    "price": 0.378,
+    "spot": 0.3756,
+    "futures": 0.375
   },
-  "CVX": {
-    "cap": 181,
-    "price": 1.903,
-    "extremums": {
-      "triggerVolume": 32391,
-      "min": 2.14,
-      "max": 2.233,
-      "overHigh": false,
-      "overLow": false
-    }
+  "KAITO": {
+    "cap": 160,
+    "price": 1.18,
+    "spot": 1.1642,
+    "futures": 1.1625
   },
-  "AXL": {
-    "cap": 183,
-    "price": 0.172,
-    "extremums": {
-      "triggerVolume": 58740,
-      "min": 0.1908,
-      "max": 0.2017,
-      "overHigh": false,
-      "overLow": false
-    }
+  "AXS": {
+    "cap": 161,
+    "price": 1.711,
+    "spot": 1.71,
+    "futures": 1.708
   },
-  "QTUM": {
-    "cap": 184,
-    "price": 1.689,
-    "extremums": {
-      "triggerVolume": 95087,
-      "min": 1.822,
-      "max": 1.913,
-      "overHigh": true,
-      "overLow": false
-    }
+  "SUPER": {
+    "cap": 162,
+    "price": 0.449,
+    "spot": 0.4528,
+    "futures": 0.4521
+  },
+  "1INCH": {
+    "cap": 164,
+    "price": 0.198,
+    "spot": 0.1977,
+    "futures": 0.1975
+  },
+  "BERA": {
+    "cap": 167,
+    "price": 2.091,
+    "spot": 2.131,
+    "futures": 2.129
   },
   "PLUME": {
-    "cap": 187,
-    "price": 0.059,
-    "extremums": {
-      "triggerVolume": 242752,
-      "min": 0.07948,
-      "max": 0.08195,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 169,
+    "price": 0.086,
+    "spot": 0.08552,
+    "futures": 0.08545
+  },
+  "BAT": {
+    "cap": 170,
+    "price": 0.174,
+    "spot": 0.1755,
+    "futures": 0.1755
   },
   "ZEN": {
-    "cap": 188,
-    "price": 10.14,
-    "extremums": {
-      "triggerVolume": 1222785,
-      "min": 11.748,
-      "max": 12.421,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 173,
+    "price": 14.467,
+    "spot": 14.654,
+    "futures": 14.646
   },
-  "SAHARA": {
-    "cap": 190,
-    "price": 0.075,
-    "extremums": {
-      "triggerVolume": 165003,
-      "min": 0.07249,
-      "max": 0.07451,
-      "overHigh": false,
-      "overLow": false
-    }
+  "CVX": {
+    "cap": 174,
+    "price": 2.562,
+    "spot": 2.581,
+    "futures": 2.578
   },
-  "GLM": {
-    "cap": 192,
-    "price": 0.169,
-    "extremums": {
-      "triggerVolume": 70819,
-      "min": 0.16778,
-      "max": 0.17479,
-      "overHigh": false,
-      "overLow": false
-    }
+  "AXL": {
+    "cap": 176,
+    "price": 0.227,
+    "spot": 0.2245,
+    "futures": 0.2244
   },
-  "PROM": {
-    "cap": 193,
-    "price": 9.225,
-    "extremums": {
-      "triggerVolume": 37926,
-      "min": 9.968,
-      "max": 10.109,
-      "overHigh": true,
-      "overLow": false
-    }
+  "LPT": {
+    "cap": 177,
+    "price": 5.262,
+    "spot": 5.238,
+    "futures": 5.234
   },
-  "KSM": {
-    "cap": 194,
-    "price": 9.807,
-    "extremums": {
-      "triggerVolume": 48505,
-      "min": 10.204,
-      "max": 10.657,
-      "overHigh": false,
-      "overLow": false
-    }
+  "MOVE": {
+    "cap": 180,
+    "price": 0.086,
+    "spot": 0.0861,
+    "futures": 0.0861
+  },
+  "QTUM": {
+    "cap": 185,
+    "price": 2.058,
+    "spot": 2.055,
+    "futures": 2.052
   },
   "KAVA": {
-    "cap": 195,
-    "price": 0.154,
-    "extremums": {
-      "triggerVolume": 198542,
-      "min": 0.1724,
-      "max": 0.1814,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 189,
+    "price": 0.192,
+    "spot": 0.1919,
+    "futures": 0.1899
+  },
+  "SFP": {
+    "cap": 190,
+    "price": 0.411,
+    "spot": 0.4122,
+    "futures": 0.4122
+  },
+  "KSM": {
+    "cap": 191,
+    "price": 11.671,
+    "spot": 11.65,
+    "futures": 11.636
+  },
+  "PROM": {
+    "cap": 194,
+    "price": 10.461,
+    "spot": 10.443,
+    "futures": 10.432
+  },
+  "GLM": {
+    "cap": 199,
+    "price": 0.187,
+    "spot": 0.1868,
+    "futures": 0.18655
   },
   "KMNO": {
-    "cap": 199,
-    "price": 0.053,
-    "extremums": {
-      "triggerVolume": 125940,
-      "min": 0.05442,
-      "max": 0.05703,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 200,
+    "price": 0.061,
+    "spot": 0.06117,
+    "futures": 0.06105
+  },
+  "AVNT": {
+    "cap": 237,
+    "price": 0.7,
+    "spot": 0.6872,
+    "futures": 0.6867
+  },
+  "ZRX": {
+    "cap": 238,
+    "price": 0.213,
+    "spot": 0.2128,
+    "futures": 0.2123
+  },
+  "SAHARA": {
+    "cap": 239,
+    "price": 0.078,
+    "spot": 0.07845,
+    "futures": 0.07858
   },
   "AWE": {
     "cap": 240,
-    "price": 0.08,
-    "extremums": {
-      "triggerVolume": 56230,
-      "min": 0.08622,
-      "max": 0.08943,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "YFI": {
-    "cap": 241,
-    "price": 4564.339,
-    "extremums": {
-      "triggerVolume": 50976,
-      "min": 4608,
-      "max": 4754,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ZRX": {
-    "cap": 245,
-    "price": 0.173,
-    "extremums": {
-      "triggerVolume": 33270,
-      "min": 0.1885,
-      "max": 0.1958,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.09,
+    "spot": 0.09022,
+    "futures": 0.09019
   },
   "GAS": {
-    "cap": 253,
-    "price": 2.142,
-    "extremums": {
-      "triggerVolume": 28831,
-      "min": 2.404,
-      "max": 2.497,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 241,
+    "price": 2.695,
+    "spot": 2.689,
+    "futures": 2.685
   },
   "CELO": {
-    "cap": 255,
-    "price": 0.235,
-    "extremums": {
-      "triggerVolume": 285918,
-      "min": 0.272,
-      "max": 0.284,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 243,
+    "price": 0.293,
+    "spot": 0.2936,
+    "futures": 0.293
   },
-  "ROSE": {
-    "cap": 257,
-    "price": 0.018,
-    "extremums": {
-      "triggerVolume": 79184,
-      "min": 0.01791,
-      "max": 0.01872,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "AVNT": {
-    "cap": 264,
-    "price": 0.5,
-    "extremums": {
-      "triggerVolume": 1613959,
-      "min": 0.6085,
-      "max": 0.6862,
-      "overHigh": false,
-      "overLow": false
-    }
+  "YFI": {
+    "cap": 247,
+    "price": 4923.768,
+    "spot": 4896,
+    "futures": 4889
   },
   "ASTR": {
-    "cap": 265,
-    "price": 0.016,
-    "extremums": {
-      "triggerVolume": 67971,
-      "min": 0.018113,
-      "max": 0.018888,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "PNUT": {
-    "cap": 271,
-    "price": 0.126,
-    "extremums": {
-      "triggerVolume": 307182,
-      "min": 0.13266,
-      "max": 0.13785,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BIO": {
-    "cap": 272,
-    "price": 0.072,
-    "extremums": {
-      "triggerVolume": 451495,
-      "min": 0.08139,
-      "max": 0.08493,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BARD": {
-    "cap": 276,
-    "price": 0.535,
-    "extremums": {
-      "triggerVolume": 250417,
-      "min": 0.6432,
-      "max": 0.6727,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "MINA": {
-    "cap": 279,
-    "price": 0.094,
-    "extremums": {
-      "triggerVolume": 58981,
-      "min": 0.1093,
-      "max": 0.1139,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 249,
+    "price": 0.02,
+    "spot": 0.02024,
+    "futures": 0.020201
   },
   "SUSHI": {
-    "cap": 281,
-    "price": 0.411,
-    "extremums": {
-      "triggerVolume": 153423,
-      "min": 0.4888,
-      "max": 0.5183,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 254,
+    "price": 0.57,
+    "spot": 0.569,
+    "futures": 0.5682
   },
-  "T": {
-    "cap": 282,
-    "price": 0.012,
-    "extremums": {
-      "triggerVolume": 31461,
-      "min": 0.01179,
-      "max": 0.01217,
-      "overHigh": true,
-      "overLow": false
-    }
+  "BIO": {
+    "cap": 256,
+    "price": 0.092,
+    "spot": 0.0916,
+    "futures": 0.09147
   },
-  "BLUR": {
-    "cap": 284,
-    "price": 0.045,
-    "extremums": {
-      "triggerVolume": 56610,
-      "min": 0.04804,
-      "max": 0.05004,
-      "overHigh": false,
-      "overLow": false
-    }
+  "BARD": {
+    "cap": 260,
+    "price": 0.703,
+    "spot": 0.6959,
+    "futures": 0.6972
   },
-  "OM": {
-    "cap": 285,
-    "price": 0.106,
-    "extremums": {
-      "triggerVolume": 577545,
-      "min": 0.09756,
-      "max": 0.10208,
-      "overHigh": false,
-      "overLow": false
-    }
+  "MINA": {
+    "cap": 261,
+    "price": 0.125,
+    "spot": 0.1252,
+    "futures": 0.1251
   },
-  "ACH": {
-    "cap": 289,
-    "price": 0.012,
-    "extremums": {
-      "triggerVolume": 115147,
-      "min": 0.012252,
-      "max": 0.012805,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "IOTX": {
-    "cap": 294,
-    "price": 0.012,
-    "extremums": {
-      "triggerVolume": 63299,
-      "min": 0.01277,
-      "max": 0.01314,
-      "overHigh": true,
-      "overLow": false
-    }
+  "ROSE": {
+    "cap": 264,
+    "price": 0.021,
+    "spot": 0.02074,
+    "futures": 0.02073
   },
   "PROVE": {
-    "cap": 295,
-    "price": 0.564,
-    "extremums": {
-      "triggerVolume": 777013,
-      "min": 0.7377,
-      "max": 0.7859,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 265,
+    "price": 0.788,
+    "spot": 0.789,
+    "futures": 0.7847
+  },
+  "PNUT": {
+    "cap": 266,
+    "price": 0.154,
+    "spot": 0.1523,
+    "futures": 0.15221
+  },
+  "BLUR": {
+    "cap": 274,
+    "price": 0.055,
+    "spot": 0.05537,
+    "futures": 0.05532
   },
   "ID": {
-    "cap": 300,
-    "price": 0.09,
-    "extremums": {
-      "triggerVolume": 57487,
-      "min": 0.10511,
-      "max": 0.10976,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "RED": {
-    "cap": 312,
-    "price": 0.353,
-    "extremums": {
-      "triggerVolume": 50024,
-      "min": 0.3491,
-      "max": 0.3639,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "STG": {
-    "cap": 320,
-    "price": 0.147,
-    "extremums": {
-      "triggerVolume": 36571,
-      "min": 0.1531,
-      "max": 0.158,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 275,
+    "price": 0.118,
+    "spot": 0.1181,
+    "futures": 0.11802
   },
   "COW": {
-    "cap": 321,
-    "price": 0.186,
-    "extremums": {
-      "triggerVolume": 76003,
-      "min": 0.2344,
-      "max": 0.2461,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 276,
+    "price": 0.267,
+    "spot": 0.2655,
+    "futures": 0.2651
   },
-  "GMX": {
-    "cap": 322,
-    "price": 9.166,
-    "extremums": {
-      "triggerVolume": 126992,
-      "min": 10.188,
-      "max": 11.138,
-      "overHigh": false,
-      "overLow": false
-    }
+  "T": {
+    "cap": 281,
+    "price": 0.013,
+    "spot": 0.01336,
+    "futures": 0.01333
   },
-  "LRC": {
-    "cap": 328,
-    "price": 0.065,
-    "extremums": {
-      "triggerVolume": 33732,
-      "min": 0.06556,
-      "max": 0.06834,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "SNT": {
-    "cap": 329,
-    "price": 0.019,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.03666,
-      "max": 0.03666,
-      "overHigh": false,
-      "overLow": false
-    }
+  "ACH": {
+    "cap": 282,
+    "price": 0.014,
+    "spot": 0.01402,
+    "futures": 0.014009
   },
   "SKL": {
-    "cap": 330,
-    "price": "0.01923000",
-    "extremums": {
-      "triggerVolume": 307787,
-      "min": 0.01785,
-      "max": 0.01931,
-      "overHigh": true,
-      "overLow": false
-    },
-    "startTime": 1760220038786
+    "cap": 286,
+    "price": 0.022,
+    "spot": 0.02156,
+    "futures": 0.02153
   },
-  "WAVES": {
-    "cap": 331,
-    "price": 0.744,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 1.3355,
-      "max": 1.3355,
-      "overHigh": false,
-      "overLow": false
-    }
+  "IOTX": {
+    "cap": 287,
+    "price": 0.014,
+    "spot": 0.01366,
+    "futures": 0.01364
   },
-  "ICX": {
-    "cap": 332,
-    "price": 0.082,
-    "extremums": {
-      "triggerVolume": 30736,
-      "min": 0.0805,
-      "max": 0.0836,
-      "overHigh": false,
-      "overLow": false
-    }
+  "OM": {
+    "cap": 292,
+    "price": 0.115,
+    "spot": 0.1148,
+    "futures": 0.11452
+  },
+  "GMX": {
+    "cap": 305,
+    "price": 11.47,
+    "spot": 11.53,
+    "futures": 11.518
   },
   "ORDI": {
-    "cap": 333,
-    "price": 4.206,
-    "extremums": {
-      "triggerVolume": 307589,
-      "min": 4.839,
-      "max": 5.065,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 308,
+    "price": 5.563,
+    "spot": 5.559,
+    "futures": 5.558
   },
-  "ORCA": {
-    "cap": 337,
-    "price": 1.426,
-    "extremums": {
-      "triggerVolume": 39351,
-      "min": 1.483,
-      "max": 1.528,
-      "overHigh": false,
-      "overLow": false
-    }
+  "STG": {
+    "cap": 312,
+    "price": 0.173,
+    "spot": 0.1733,
+    "futures": 0.1731
   },
-  "NMR": {
-    "cap": 340,
-    "price": 11.081,
-    "extremums": {
-      "triggerVolume": 172611,
-      "min": 12.041,
-      "max": 12.595,
-      "overHigh": true,
-      "overLow": false
-    }
+  "RED": {
+    "cap": 314,
+    "price": 0.392,
+    "spot": 0.3911,
+    "futures": 0.3908
+  },
+  "ANKR": {
+    "cap": 317,
+    "price": 0.011,
+    "spot": 0.01111,
+    "futures": 0.01109
   },
   "BB": {
-    "cap": 342,
-    "price": 0.105,
-    "extremums": {
-      "triggerVolume": 95765,
-      "min": 0.10636,
-      "max": 0.11101,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 325,
+    "price": 0.132,
+    "spot": 0.1303,
+    "futures": 0.13003
   },
-  "COTI": {
-    "cap": 345,
-    "price": 0.034,
-    "extremums": {
-      "triggerVolume": 53943,
-      "min": 0.03416,
-      "max": 0.03594,
-      "overHigh": false,
-      "overLow": false
-    }
+  "NMR": {
+    "cap": 328,
+    "price": 13.699,
+    "spot": 13.58,
+    "futures": 13.531
   },
   "LISTA": {
-    "cap": 346,
-    "price": 0.331,
-    "extremums": {
-      "triggerVolume": 189657,
-      "min": 0.3445,
-      "max": 0.3581,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 329,
+    "price": 0.415,
+    "spot": 0.4161,
+    "futures": 0.4158
   },
-  "ALT": {
-    "cap": 348,
-    "price": 0.018,
-    "extremums": {
-      "triggerVolume": 126092,
-      "min": 0.01865,
-      "max": 0.01978,
-      "overHigh": true,
-      "overLow": false
-    }
+  "LRC": {
+    "cap": 330,
+    "price": 0.074,
+    "spot": 0.0737,
+    "futures": 0.07353
   },
   "BABY": {
+    "cap": 334,
+    "price": 0.035,
+    "spot": 0.03568,
+    "futures": 0.03563
+  },
+  "WAVES": {
+    "cap": 335,
+    "price": 0.834,
+    "spot": 1.076,
+    "futures": 1.3355
+  },
+  "ALT": {
+    "cap": 337,
+    "price": 0.022,
+    "spot": 0.02191,
+    "futures": 0.02187
+  },
+  "OPEN": {
+    "cap": 339,
+    "price": 0.453,
+    "spot": 0.4461,
+    "futures": 0.4451
+  },
+  "ICX": {
+    "cap": 340,
+    "price": 0.091,
+    "spot": 0.0902,
+    "futures": 0.0902
+  },
+  "ORCA": {
+    "cap": 344,
+    "price": 1.6,
+    "spot": 1.584,
+    "futures": 1.585
+  },
+  "SOMI": {
+    "cap": 345,
+    "price": 0.599,
+    "spot": 0.5963,
+    "futures": 0.5946
+  },
+  "ENJ": {
+    "cap": 348,
+    "price": 0.05,
+    "spot": 0.05,
+    "futures": 0.04991
+  },
+  "SNT": {
+    "cap": 349,
+    "price": 0.02,
+    "spot": 0.0272,
+    "futures": 0.03666
+  },
+  "ONT": {
     "cap": 350,
-    "price": 0.029,
-    "extremums": {
-      "triggerVolume": 81940,
-      "min": 0.03071,
-      "max": 0.03207,
-      "overHigh": true,
-      "overLow": false
-    }
+    "price": 0.102,
+    "spot": 0.1021,
+    "futures": 0.102
+  },
+  "XVS": {
+    "cap": 352,
+    "price": 5.743,
+    "spot": 5.72,
+    "futures": 5.716
   },
   "MASK": {
     "cap": 353,
-    "price": 0.805,
-    "extremums": {
-      "triggerVolume": 97724,
-      "min": 0.8479,
-      "max": 0.8777,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "SOMI": {
-    "cap": 354,
-    "price": 0.5,
-    "extremums": {
-      "triggerVolume": 398244,
-      "min": 0.521,
-      "max": 0.5499,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "WOO": {
-    "cap": 356,
-    "price": 0.042,
-    "extremums": {
-      "triggerVolume": 29877,
-      "min": 0.04083,
-      "max": 0.04282,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "POLYX": {
-    "cap": 358,
-    "price": 0.079,
-    "extremums": {
-      "triggerVolume": 18539,
-      "min": 0.08185,
-      "max": 0.08444,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "XVS": {
-    "cap": 360,
-    "price": 4.757,
-    "extremums": {
-      "triggerVolume": 16725,
-      "min": 4.913,
-      "max": 5.087,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "BAND": {
-    "cap": 361,
-    "price": 0.467,
-    "extremums": {
-      "triggerVolume": 33705,
-      "min": 0.4718,
-      "max": 0.4946,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ONT": {
-    "cap": 365,
-    "price": 0.083,
-    "extremums": {
-      "triggerVolume": 53253,
-      "min": 0.0913,
-      "max": 0.0956,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "LAYER": {
-    "cap": 366,
-    "price": 0.267,
-    "extremums": {
-      "triggerVolume": 70984,
-      "min": 0.2745,
-      "max": 0.2831,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "HOME": {
-    "cap": 369,
-    "price": 0.027,
-    "extremums": {
-      "triggerVolume": 19639,
-      "min": 0.026876,
-      "max": 0.027635,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "SXP": {
-    "cap": 370,
-    "price": 0.112,
-    "extremums": {
-      "triggerVolume": 33959,
-      "min": 0.1163,
-      "max": 0.1202,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "RLC": {
-    "cap": 374,
-    "price": 0.839,
-    "extremums": {
-      "triggerVolume": 31549,
-      "min": 0.7874,
-      "max": 0.8153,
-      "overHigh": true,
-      "overLow": false
-    }
+    "price": 0.935,
+    "spot": 0.938,
+    "futures": 0.9378
   },
   "GMT": {
-    "cap": 376,
-    "price": 0.023,
-    "extremums": {
-      "triggerVolume": 122379,
-      "min": 0.02568,
-      "max": 0.02712,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 354,
+    "price": 0.03,
+    "spot": 0.03,
+    "futures": 0.02994
   },
-  "RPL": {
-    "cap": 380,
-    "price": 3.321,
-    "extremums": {
-      "triggerVolume": 27096,
-      "min": 3.431,
-      "max": 3.564,
-      "overHigh": false,
-      "overLow": false
-    }
+  "POLYX": {
+    "cap": 355,
+    "price": 0.092,
+    "spot": 0.0925,
+    "futures": 0.09245
   },
-  "OPEN": {
-    "cap": 382,
-    "price": "0.39900000",
-    "extremums": {
-      "triggerVolume": 1149071,
-      "min": 0.415,
-      "max": 0.4438,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760228283771
-  },
-  "VANA": {
-    "cap": 383,
-    "price": 2.364,
-    "extremums": {
-      "triggerVolume": 35342,
-      "min": 2.588,
-      "max": 2.7,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ILV": {
-    "cap": 385,
-    "price": 10.644,
-    "extremums": {
-      "triggerVolume": 20737,
-      "min": 10.815,
-      "max": 11.34,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "OG": {
-    "cap": 385,
-    "price": 16.337,
-    "extremums": {
-      "triggerVolume": 117903,
-      "min": 15.974,
-      "max": 16.302,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "KDA": {
-    "cap": 389,
-    "price": 0.21,
-    "extremums": {
-      "triggerVolume": 27018,
-      "min": 0.2178,
-      "max": 0.2246,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ENJ": {
-    "cap": 396,
-    "price": 0.037,
-    "extremums": {
-      "triggerVolume": 60217,
-      "min": 0.04281,
-      "max": 0.04478,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "NXPC": {
-    "cap": 397,
-    "price": 0.323,
-    "extremums": {
-      "triggerVolume": 70661,
-      "min": 0.3364,
-      "max": 0.3517,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "NIL": {
-    "cap": 399,
-    "price": 0.263,
-    "extremums": {
-      "triggerVolume": 36771,
-      "min": 0.2356,
-      "max": 0.2481,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "UMA": {
-    "cap": 400,
-    "price": 0.776,
-    "extremums": {
-      "triggerVolume": 54521,
-      "min": 0.898,
-      "max": 0.929,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "STRAX": {
-    "cap": 401,
-    "price": 0.034,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 1.4174,
-      "max": 1.4174,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "HEMI": {
-    "cap": 402,
-    "price": 0.07,
-    "extremums": {
-      "triggerVolume": 152164,
-      "min": 0.06615,
-      "max": 0.06871,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "YGG": {
-    "cap": 408,
-    "price": 0.111,
-    "extremums": {
-      "triggerVolume": 122178,
-      "min": 0.1097,
-      "max": 0.1162,
-      "overHigh": false,
-      "overLow": false
-    }
+  "COTI": {
+    "cap": 356,
+    "price": 0.038,
+    "spot": 0.03793,
+    "futures": 0.0379
   },
   "SXT": {
-    "cap": 409,
-    "price": 0.047,
-    "extremums": {
-      "triggerVolume": 55365,
-      "min": 0.05892,
-      "max": 0.06237,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 357,
+    "price": 0.066,
+    "spot": 0.066,
+    "futures": 0.06585
   },
-  "ARK": {
-    "cap": 412,
-    "price": 0.344,
-    "extremums": {
-      "triggerVolume": 19428,
-      "min": 0.3465,
-      "max": 0.3586,
-      "overHigh": false,
-      "overLow": false
-    }
+  "BAND": {
+    "cap": 359,
+    "price": 0.548,
+    "spot": 0.546,
+    "futures": 0.5458
+  },
+  "WOO": {
+    "cap": 361,
+    "price": 0.048,
+    "spot": 0.0476,
+    "futures": 0.0476
+  },
+  "UMA": {
+    "cap": 364,
+    "price": 1.017,
+    "spot": 1.017,
+    "futures": 1.015
+  },
+  "VANA": {
+    "cap": 366,
+    "price": 2.956,
+    "spot": 2.959,
+    "futures": 2.954
+  },
+  "LAYER": {
+    "cap": 369,
+    "price": 0.306,
+    "spot": 0.3052,
+    "futures": 0.305
   },
   "ARKM": {
-    "cap": 415,
-    "price": 0.292,
-    "extremums": {
-      "triggerVolume": 223345,
-      "min": 0.3218,
-      "max": 0.3381,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 371,
+    "price": 0.378,
+    "spot": 0.378,
+    "futures": 0.377
   },
-  "HIVE": {
-    "cap": 417,
-    "price": 0.133,
-    "extremums": {
-      "triggerVolume": 41372,
-      "min": 0.13491,
-      "max": 0.13962,
-      "overHigh": false,
-      "overLow": false
-    }
+  "SXP": {
+    "cap": 372,
+    "price": 0.129,
+    "spot": 0.1288,
+    "futures": 0.1287
   },
-  "BNT": {
-    "cap": 418,
-    "price": 0.569,
-    "extremums": {
-      "triggerVolume": 17066,
-      "min": 0.5638,
-      "max": 0.587,
-      "overHigh": false,
-      "overLow": false
-    }
+  "RPL": {
+    "cap": 374,
+    "price": 3.87,
+    "spot": 3.87,
+    "futures": 3.863
   },
-  "IO": {
-    "cap": 420,
-    "price": 0.299,
-    "extremums": {
-      "triggerVolume": 110051,
-      "min": 0.3105,
-      "max": 0.3261,
-      "overHigh": false,
-      "overLow": false
-    }
+  "ILV": {
+    "cap": 377,
+    "price": 12.64,
+    "spot": 12.61,
+    "futures": 12.596
+  },
+  "KDA": {
+    "cap": 380,
+    "price": 0.247,
+    "spot": 0.2454,
+    "futures": 0.2451
   },
   "SSV": {
-    "cap": 423,
-    "price": 4.556,
-    "extremums": {
-      "triggerVolume": 108883,
-      "min": 4.763,
-      "max": 4.992,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 381,
+    "price": 5.875,
+    "spot": 5.951,
+    "futures": 5.948
   },
-  "SPK": {
-    "cap": 427,
-    "price": 0.035,
-    "extremums": {
-      "triggerVolume": 109807,
-      "min": 0.0365,
-      "max": 0.03793,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BAL": {
-    "cap": 430,
-    "price": 0.923,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.829,
-      "max": 0.829,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BIGTIME": {
-    "cap": 434,
-    "price": 0.03,
-    "extremums": {
-      "triggerVolume": 58407,
-      "min": 0.03183,
-      "max": 0.03318,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "POWR": {
-    "cap": 438,
-    "price": 0.107,
-    "extremums": {
-      "triggerVolume": 17170,
-      "min": 0.11,
-      "max": 0.1136,
-      "overHigh": true,
-      "overLow": false
-    }
+  "NXPC": {
+    "cap": 386,
+    "price": 0.383,
+    "spot": 0.3808,
+    "futures": 0.3804
   },
   "PUNDIX": {
-    "cap": 438,
-    "price": 0.237,
-    "extremums": {
-      "triggerVolume": 48987,
-      "min": 0.2839,
-      "max": 0.2948,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 388,
+    "price": 0.313,
+    "spot": 0.3136,
+    "futures": 0.3131
+  },
+  "YGG": {
+    "cap": 391,
+    "price": 0.132,
+    "spot": 0.1326,
+    "futures": 0.1325
+  },
+  "HOME": {
+    "cap": 392,
+    "price": 0.029,
+    "spot": 0.029,
+    "futures": 0.028977
+  },
+  "IO": {
+    "cap": 393,
+    "price": 0.358,
+    "spot": 0.36,
+    "futures": 0.3597
   },
   "ME": {
-    "cap": 442,
-    "price": 0.362,
-    "extremums": {
-      "triggerVolume": 62527,
-      "min": 0.4118,
-      "max": 0.4276,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 396,
+    "price": 0.465,
+    "spot": 0.468,
+    "futures": 0.4667
   },
-  "MIRA": {
-    "cap": 443,
-    "price": 0.316,
-    "extremums": {
-      "triggerVolume": 512051,
-      "min": 0.3174,
-      "max": 0.3428,
-      "overHigh": false,
-      "overLow": false
-    }
+  "RLC": {
+    "cap": 399,
+    "price": 0.881,
+    "spot": 0.883,
+    "futures": 0.88
+  },
+  "SPK": {
+    "cap": 401,
+    "price": 0.042,
+    "spot": 0.041976,
+    "futures": 0.04192
   },
   "STORJ": {
-    "cap": 444,
-    "price": 0.143,
-    "extremums": {
-      "triggerVolume": 23957,
-      "min": 0.1583,
-      "max": 0.1651,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 403,
+    "price": 0.181,
+    "spot": 0.1805,
+    "futures": 0.1802
   },
-  "HUMA": {
-    "cap": 448,
-    "price": 0.026,
-    "extremums": {
-      "triggerVolume": 65630,
-      "min": 0.025502,
-      "max": 0.026206,
-      "overHigh": false,
-      "overLow": false
-    }
+  "ARK": {
+    "cap": 407,
+    "price": 0.392,
+    "spot": 0.3862,
+    "futures": 0.3861
   },
   "TRB": {
-    "cap": 449,
-    "price": 21.866,
-    "extremums": {
-      "triggerVolume": 174118,
-      "min": 22.207,
-      "max": 23.209,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 410,
+    "price": 26.749,
+    "spot": 26.43,
+    "futures": 26.405
   },
-  "CVC": {
-    "cap": 450,
-    "price": 0.059,
-    "extremums": {
-      "triggerVolume": 23228,
-      "min": 0.06106,
-      "max": 0.0634,
-      "overHigh": false,
-      "overLow": false
-    }
+  "BIGTIME": {
+    "cap": 411,
+    "price": 0.036,
+    "spot": 0.0356,
+    "futures": 0.03559
   },
-  "LA": {
-    "cap": 451,
-    "price": 0.305,
-    "extremums": {
-      "triggerVolume": 103164,
-      "min": 0.2751,
-      "max": 0.289,
-      "overHigh": false,
-      "overLow": false
-    }
+  "BNT": {
+    "cap": 412,
+    "price": 0.628,
+    "spot": 0.6294,
+    "futures": 0.6288
   },
-  "SIGN": {
-    "cap": 453,
-    "price": 0.043,
-    "extremums": {
-      "triggerVolume": 65495,
-      "min": 0.0391,
-      "max": 0.0409,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BICO": {
-    "cap": 465,
-    "price": 0.057,
-    "extremums": {
-      "triggerVolume": 23841,
-      "min": 0.06136,
-      "max": 0.06376,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "WAXP": {
-    "cap": 471,
-    "price": 0.012,
-    "extremums": {
-      "triggerVolume": 12802,
-      "min": 0.01281,
-      "max": 0.01325,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "AEVO": {
-    "cap": 474,
-    "price": 0.06,
-    "extremums": {
-      "triggerVolume": 82595,
-      "min": 0.06065,
-      "max": 0.06373,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "API3": {
-    "cap": 476,
-    "price": 0.631,
-    "extremums": {
-      "triggerVolume": 197825,
-      "min": 0.562,
-      "max": 0.5841,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "FIDA": {
-    "cap": 478,
-    "price": 0.054,
-    "extremums": {
-      "triggerVolume": 35402,
-      "min": 0.05592,
-      "max": 0.05846,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "SCRT": {
-    "cap": 481,
-    "price": 0.164,
-    "extremums": {
-      "triggerVolume": 16243,
-      "min": 0.1629,
-      "max": 0.1708,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ERA": {
-    "cap": 483,
-    "price": 0.353,
-    "extremums": {
-      "triggerVolume": 114071,
-      "min": 0.3686,
-      "max": 0.3904,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "AIXBT": {
-    "cap": 484,
-    "price": 0.053,
-    "extremums": {
-      "triggerVolume": 164677,
-      "min": 0.05456,
-      "max": 0.05834,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "METIS": {
-    "cap": 487,
-    "price": 7.82,
-    "extremums": {
-      "triggerVolume": 38637,
-      "min": 9.04,
-      "max": 9.42,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "FLUX": {
-    "cap": 493,
-    "price": 0.13,
-    "extremums": {
-      "triggerVolume": 19181,
-      "min": 0.119,
-      "max": 0.1232,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "PHA": {
-    "cap": 503,
-    "price": 0.06,
-    "extremums": {
-      "triggerVolume": 76899,
-      "min": 0.06394,
-      "max": 0.06636,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "KNC": {
-    "cap": 507,
-    "price": 0.253,
-    "extremums": {
-      "triggerVolume": 30322,
-      "min": 0.2569,
-      "max": 0.2654,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "STEEM": {
-    "cap": 511,
-    "price": 0.09,
-    "extremums": {
-      "triggerVolume": 17139,
-      "min": 0.08943,
-      "max": 0.09276,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "NOM": {
-    "cap": 512,
-    "price": 0.016,
-    "extremums": {
-      "triggerVolume": 96673,
-      "min": 0.01824,
-      "max": 0.0188,
-      "overHigh": false,
-      "overLow": false
-    }
+  "HIVE": {
+    "cap": 413,
+    "price": 0.147,
+    "spot": 0.1472,
+    "futures": 0.14702
   },
   "EDU": {
-    "cap": 513,
-    "price": 0.08,
-    "extremums": {
-      "triggerVolume": 51863,
-      "min": 0.0927,
-      "max": 0.1014,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 414,
+    "price": 0.122,
+    "spot": 0.1191,
+    "futures": 0.1189
   },
-  "COOKIE": {
-    "cap": 514,
-    "price": 0.077,
-    "extremums": {
-      "triggerVolume": 58644,
-      "min": 0.0803,
-      "max": 0.0838,
-      "overHigh": false,
-      "overLow": false
-    }
+  "OG": {
+    "cap": 421,
+    "price": 16.342,
+    "spot": 16.329,
+    "futures": 16.338
   },
-  "RIF": {
-    "cap": 517,
-    "price": 0.047,
-    "extremums": {
-      "triggerVolume": 15208,
-      "min": 0.04383,
-      "max": 0.04515,
-      "overHigh": false,
-      "overLow": false
-    }
+  "POWR": {
+    "cap": 422,
+    "price": 0.124,
+    "spot": 0.124,
+    "futures": 0.1237
   },
-  "ONG": {
-    "cap": 519,
-    "price": 0.109,
-    "extremums": {
-      "triggerVolume": 22138,
-      "min": 0.11445,
-      "max": 0.11856,
-      "overHigh": false,
-      "overLow": false
-    }
+  "STRAX": {
+    "cap": 427,
+    "price": 0.035,
+    "spot": 0.03393,
+    "futures": 1.4174
   },
-  "CTK": {
-    "cap": 521,
-    "price": 0.308,
-    "extremums": {
-      "triggerVolume": 9611,
-      "min": 0.2909,
-      "max": 0.303,
-      "overHigh": true,
-      "overLow": false
-    }
+  "BAL": {
+    "cap": 428,
+    "price": 1.037,
+    "spot": 0.967,
+    "futures": 0.829
   },
-  "XAI": {
-    "cap": 522,
-    "price": 0.023,
-    "extremums": {
-      "triggerVolume": 98509,
-      "min": 0.02522,
-      "max": 0.0265,
-      "overHigh": false,
-      "overLow": false
-    }
+  "METIS": {
+    "cap": 430,
+    "price": 10.608,
+    "spot": 10.72,
+    "futures": 10.71
   },
-  "PIXEL": {
-    "cap": 523,
-    "price": 0.015,
-    "extremums": {
-      "triggerVolume": 44327,
-      "min": 0.01651,
-      "max": 0.01745,
-      "overHigh": false,
-      "overLow": false
-    }
+  "NIL": {
+    "cap": 432,
+    "price": 0.268,
+    "spot": 0.269,
+    "futures": 0.2687
   },
-  "CYBER": {
-    "cap": 527,
-    "price": 0.878,
-    "extremums": {
-      "triggerVolume": 54882,
-      "min": 0.939,
-      "max": 0.982,
-      "overHigh": true,
-      "overLow": false
-    }
+  "BICO": {
+    "cap": 434,
+    "price": 0.07,
+    "spot": 0.0694,
+    "futures": 0.06943
   },
-  "STO": {
-    "cap": 528,
-    "price": 0.202,
-    "extremums": {
-      "triggerVolume": 210210,
-      "min": 0.17291,
-      "max": 0.18312,
-      "overHigh": true,
-      "overLow": false
-    }
+  "HEMI": {
+    "cap": 435,
+    "price": 0.07,
+    "spot": 0.0699,
+    "futures": 0.06987
+  },
+  "CVC": {
+    "cap": 437,
+    "price": 0.068,
+    "spot": 0.0683,
+    "futures": 0.06818
+  },
+  "MIRA": {
+    "cap": 438,
+    "price": 0.355,
+    "spot": 0.351,
+    "futures": 0.351
+  },
+  "PEOPLE": {
+    "cap": 442,
+    "price": 0.013,
+    "spot": 0.01324,
+    "futures": 0.01322
+  },
+  "AIXBT": {
+    "cap": 448,
+    "price": 0.066,
+    "spot": 0.0655,
+    "futures": 0.06534
+  },
+  "HUMA": {
+    "cap": 449,
+    "price": 0.028,
+    "spot": 0.02863,
+    "futures": 0.028566
+  },
+  "ERA": {
+    "cap": 452,
+    "price": 0.431,
+    "spot": 0.4329,
+    "futures": 0.432
+  },
+  "AEVO": {
+    "cap": 453,
+    "price": 0.07,
+    "spot": 0.07,
+    "futures": 0.07008
+  },
+  "FIDA": {
+    "cap": 454,
+    "price": 0.064,
+    "spot": 0.0639,
+    "futures": 0.06397
+  },
+  "WAXP": {
+    "cap": 455,
+    "price": 0.014,
+    "spot": 0.01416,
+    "futures": 0.01418
+  },
+  "SCRT": {
+    "cap": 465,
+    "price": 0.191,
+    "spot": 0.191,
+    "futures": 0.1905
   },
   "CHR": {
-    "cap": 530,
-    "price": 0.053,
-    "extremums": {
-      "triggerVolume": 33666,
-      "min": 0.0619,
-      "max": 0.0647,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "LSK": {
-    "cap": 533,
-    "price": 0.222,
-    "extremums": {
-      "triggerVolume": 17489,
-      "min": 0.2164,
-      "max": 0.2236,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "REZ": {
-    "cap": 534,
-    "price": 0.011,
-    "extremums": {
-      "triggerVolume": 62320,
-      "min": 0.00948,
-      "max": 0.01002,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ACX": {
-    "cap": 542,
+    "cap": 470,
     "price": 0.071,
-    "extremums": {
-      "triggerVolume": 31242,
-      "min": 0.0753,
-      "max": 0.0789,
-      "overHigh": false,
-      "overLow": false
-    }
+    "spot": 0.0715,
+    "futures": 0.0714
   },
-  "LQTY": {
-    "cap": 544,
-    "price": 0.459,
-    "extremums": {
-      "triggerVolume": 38115,
-      "min": 0.4885,
-      "max": 0.5197,
-      "overHigh": false,
-      "overLow": false
-    }
+  "SIGN": {
+    "cap": 475,
+    "price": 0.044,
+    "spot": 0.04445,
+    "futures": 0.04435
   },
   "MANTA": {
-    "cap": 547,
+    "cap": 477,
+    "price": 0.133,
+    "spot": 0.1328,
+    "futures": 0.1327
+  },
+  "PHA": {
+    "cap": 478,
+    "price": 0.073,
+    "spot": 0.0727,
+    "futures": 0.07261
+  },
+  "XAI": {
+    "cap": 482,
+    "price": 0.029,
+    "spot": 0.029,
+    "futures": 0.029
+  },
+  "PIXEL": {
+    "cap": 484,
+    "price": 0.019,
+    "spot": 0.01946,
+    "futures": 0.01945
+  },
+  "COOKIE": {
+    "cap": 486,
     "price": 0.095,
-    "extremums": {
-      "triggerVolume": 55117,
-      "min": 0.114,
-      "max": 0.1189,
-      "overHigh": false,
-      "overLow": false
-    }
+    "spot": 0.0946,
+    "futures": 0.0945
+  },
+  "LA": {
+    "cap": 487,
+    "price": 0.3,
+    "spot": 0.2994,
+    "futures": 0.2994
+  },
+  "CYBER": {
+    "cap": 488,
+    "price": 1.115,
+    "spot": 1.114,
+    "futures": 1.112
+  },
+  "NOM": {
+    "cap": 491,
+    "price": 0.02,
+    "spot": 0.01941,
+    "futures": 0.01941
   },
   "BANANA": {
-    "cap": 550,
-    "price": 10.696,
-    "extremums": {
-      "triggerVolume": 30390,
-      "min": 12.328,
-      "max": 12.887,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 492,
+    "price": 14.37,
+    "spot": 14.36,
+    "futures": 14.346
   },
-  "CGPT": {
-    "cap": 554,
-    "price": 0.049,
-    "extremums": {
-      "triggerVolume": 25320,
-      "min": 0.05265,
-      "max": 0.05491,
-      "overHigh": false,
-      "overLow": false
-    }
+  "API3": {
+    "cap": 502,
+    "price": 0.642,
+    "spot": 0.6484,
+    "futures": 0.645
   },
-  "CTSI": {
-    "cap": 561,
-    "price": 0.048,
-    "extremums": {
-      "triggerVolume": 17442,
-      "min": 0.0505,
-      "max": 0.0528,
-      "overHigh": false,
-      "overLow": false
-    }
+  "LQTY": {
+    "cap": 507,
+    "price": 0.574,
+    "spot": 0.576,
+    "futures": 0.5744
   },
-  "JOE": {
-    "cap": 571,
-    "price": 0.103,
-    "extremums": {
-      "triggerVolume": 19678,
-      "min": 0.10655,
-      "max": 0.11174,
-      "overHigh": false,
-      "overLow": false
-    }
+  "ONG": {
+    "cap": 508,
+    "price": 0.128,
+    "spot": 0.1275,
+    "futures": 0.12744
   },
   "DIA": {
-    "cap": 573,
-    "price": 0.343,
-    "extremums": {
-      "triggerVolume": 33384,
-      "min": 0.3976,
-      "max": 0.4169,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 513,
+    "price": 0.453,
+    "spot": 0.4492,
+    "futures": 0.4493
   },
-  "SOPH": {
-    "cap": 580,
-    "price": 0.02,
-    "extremums": {
-      "triggerVolume": 118209,
-      "min": 0.021066,
-      "max": 0.022191,
-      "overHigh": false,
-      "overLow": false
-    }
+  "KNC": {
+    "cap": 514,
+    "price": 0.285,
+    "spot": 0.2841,
+    "futures": 0.2839
   },
-  "HOLO": {
-    "cap": 586,
-    "price": 0.114,
-    "extremums": {
-      "triggerVolume": 239703,
-      "min": 0.1306,
-      "max": 0.138,
-      "overHigh": true,
-      "overLow": false
-    }
+  "FLUX": {
+    "cap": 516,
+    "price": 0.137,
+    "spot": 0.138,
+    "futures": 0.1379
   },
-  "MTL": {
-    "cap": 596,
-    "price": 0.435,
-    "extremums": {
-      "triggerVolume": 14661,
-      "min": 0.4663,
-      "max": 0.484,
-      "overHigh": false,
-      "overLow": false
-    }
+  "CGPT": {
+    "cap": 520,
+    "price": 0.061,
+    "spot": 0.061,
+    "futures": 0.06091
   },
-  "OXT": {
-    "cap": 596,
-    "price": 0.038,
-    "extremums": {
-      "triggerVolume": 15394,
-      "min": 0.03878,
-      "max": 0.04017,
-      "overHigh": false,
-      "overLow": false
-    }
+  "STEEM": {
+    "cap": 521,
+    "price": 0.099,
+    "spot": 0.099,
+    "futures": 0.09894
   },
-  "MOVR": {
-    "cap": 599,
-    "price": "4.06800000",
-    "extremums": {
-      "triggerVolume": 24184,
-      "min": 4.063,
-      "max": 4.231,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760198341056
+  "CTSI": {
+    "cap": 525,
+    "price": 0.058,
+    "spot": 0.0583,
+    "futures": 0.0581
   },
-  "GLMR": {
-    "cap": 603,
-    "price": 0.037,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.2592,
-      "max": 0.2592,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "DYM": {
-    "cap": 605,
-    "price": 0.098,
-    "extremums": {
-      "triggerVolume": 42948,
-      "min": 0.1074,
-      "max": 0.1118,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "USUAL": {
-    "cap": 613,
-    "price": 0.029,
-    "extremums": {
-      "triggerVolume": 118269,
-      "min": 0.02965,
-      "max": 0.03229,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "AGLD": {
-    "cap": 619,
-    "price": 0.416,
-    "extremums": {
-      "triggerVolume": 36519,
-      "min": 0.3865,
-      "max": 0.3994,
-      "overHigh": false,
-      "overLow": false
-    }
+  "CTK": {
+    "cap": 527,
+    "price": 0.334,
+    "spot": 0.3367,
+    "futures": 0.3354
   },
   "ZKC": {
-    "cap": 620,
-    "price": 0.179,
-    "extremums": {
-      "triggerVolume": 229927,
-      "min": 0.1685,
-      "max": 0.1747,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 530,
+    "price": 0.251,
+    "spot": 0.2313,
+    "futures": 0.2312
   },
-  "AERGO": {
-    "cap": 637,
-    "price": 0.071,
-    "extremums": {
-      "triggerVolume": 20115,
-      "min": 0.07114,
-      "max": 0.07325,
-      "overHigh": false,
-      "overLow": false
-    }
+  "REZ": {
+    "cap": 531,
+    "price": 0.012,
+    "spot": 0.01194,
+    "futures": 0.01191
   },
-  "KERNEL": {
-    "cap": 641,
-    "price": 0.143,
-    "extremums": {
-      "triggerVolume": 97216,
-      "min": 0.1336,
-      "max": 0.1409,
-      "overHigh": true,
-      "overLow": false
-    }
+  "ACX": {
+    "cap": 532,
+    "price": 0.082,
+    "spot": 0.0847,
+    "futures": 0.0846
   },
-  "SAGA": {
-    "cap": 644,
-    "price": 0.11,
-    "extremums": {
-      "triggerVolume": 85930,
-      "min": 0.1189,
-      "max": 0.1255,
-      "overHigh": false,
-      "overLow": false
-    }
+  "HOLO": {
+    "cap": 534,
+    "price": 0.144,
+    "spot": 0.143,
+    "futures": 0.143
+  },
+  "JOE": {
+    "cap": 541,
+    "price": 0.122,
+    "spot": 0.123,
+    "futures": 0.12304
+  },
+  "LSK": {
+    "cap": 543,
+    "price": 0.242,
+    "spot": 0.241,
+    "futures": 0.2416
+  },
+  "RIF": {
+    "cap": 545,
+    "price": 0.048,
+    "spot": 0.0487,
+    "futures": 0.04874
+  },
+  "SOPH": {
+    "cap": 550,
+    "price": 0.024,
+    "spot": 0.024,
+    "futures": 0.023997
+  },
+  "DYM": {
+    "cap": 553,
+    "price": 0.124,
+    "spot": 0.124,
+    "futures": 0.124
   },
   "CETUS": {
-    "cap": 647,
-    "price": "0.04800000",
-    "extremums": {
-      "triggerVolume": 57296,
-      "min": 0.04485,
-      "max": 0.04801,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760192397944
+    "cap": 562,
+    "price": 0.054,
+    "spot": 0.0534,
+    "futures": 0.05334
   },
-  "INIT": {
-    "cap": 654,
-    "price": 0.196,
-    "extremums": {
-      "triggerVolume": 94503,
-      "min": 0.1669,
-      "max": 0.1732,
-      "overHigh": false,
-      "overLow": false
-    }
+  "MTL": {
+    "cap": 563,
+    "price": 0.526,
+    "spot": 0.522,
+    "futures": 0.5214
   },
-  "MAGIC": {
-    "cap": 659,
-    "price": 0.102,
-    "extremums": {
-      "triggerVolume": 104106,
-      "min": 0.1114,
-      "max": 0.1161,
-      "overHigh": false,
-      "overLow": false
-    }
+  "MOVR": {
+    "cap": 572,
+    "price": 4.411,
+    "spot": 4.429,
+    "futures": 4.428
   },
-  "PARTI": {
-    "cap": 660,
-    "price": 0.077,
-    "extremums": {
-      "triggerVolume": 39236,
-      "min": 0.0812,
-      "max": 0.0852,
-      "overHigh": true,
-      "overLow": false
-    }
+  "OXT": {
+    "cap": 574,
+    "price": 0.044,
+    "spot": 0.0441,
+    "futures": 0.04408
   },
-  "AUCTION": {
-    "cap": 663,
-    "price": 5.214,
-    "extremums": {
-      "triggerVolume": 78773,
-      "min": 5.543,
-      "max": 5.777,
-      "overHigh": true,
-      "overLow": false
-    }
+  "GLMR": {
+    "cap": 582,
+    "price": 0.042,
+    "spot": 0.0425,
+    "futures": 0.2592
+  },
+  "USUAL": {
+    "cap": 583,
+    "price": 0.034,
+    "spot": 0.034,
+    "futures": 0.03404
+  },
+  "VANRY": {
+    "cap": 602,
+    "price": 0.02,
+    "spot": 0.0199,
+    "futures": 0.01993
   },
   "HYPER": {
-    "cap": 669,
-    "price": 0.157,
-    "extremums": {
-      "triggerVolume": 109000,
-      "min": 0.1831,
-      "max": 0.1911,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 606,
+    "price": 0.204,
+    "spot": 0.2049,
+    "futures": 0.2046
+  },
+  "SAGA": {
+    "cap": 609,
+    "price": 0.132,
+    "spot": 0.1327,
+    "futures": 0.1324
+  },
+  "MAGIC": {
+    "cap": 610,
+    "price": 0.127,
+    "spot": 0.1274,
+    "futures": 0.1272
+  },
+  "STO": {
+    "cap": 612,
+    "price": 0.177,
+    "spot": 0.1778,
+    "futures": 0.17763
+  },
+  "C98": {
+    "cap": 615,
+    "price": 0.04,
+    "spot": 0.0398,
+    "futures": 0.0398
+  },
+  "AUCTION": {
+    "cap": 624,
+    "price": 6.387,
+    "spot": 6.38,
+    "futures": 6.378
+  },
+  "PARTI": {
+    "cap": 628,
+    "price": 0.093,
+    "spot": 0.0926,
+    "futures": 0.0923
+  },
+  "KERNEL": {
+    "cap": 629,
+    "price": 0.162,
+    "spot": 0.1601,
+    "futures": 0.1599
+  },
+  "AERGO": {
+    "cap": 632,
+    "price": 0.079,
+    "spot": 0.0635,
+    "futures": 0.07875
+  },
+  "AGLD": {
+    "cap": 636,
+    "price": 0.432,
+    "spot": 0.433,
+    "futures": 0.4323
+  },
+  "DOLO": {
+    "cap": 648,
+    "price": 0.082,
+    "spot": 0.0807,
+    "futures": 0.08075
+  },
+  "AI": {
+    "cap": 657,
+    "price": 0.085,
+    "spot": 0.0848,
+    "futures": 0.08483
+  },
+  "THE": {
+    "cap": 661,
+    "price": 0.309,
+    "spot": 0.3119,
+    "futures": 0.3116
   },
   "SCR": {
     "cap": 671,
-    "price": 0.167,
-    "extremums": {
-      "triggerVolume": 42277,
-      "min": 0.1619,
-      "max": 0.1685,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ALICE": {
-    "cap": 673,
-    "price": 0.311,
-    "extremums": {
-      "triggerVolume": 229940,
-      "min": 0.267,
-      "max": 0.281,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "VANRY": {
-    "cap": 676,
-    "price": 0.015,
-    "extremums": {
-      "triggerVolume": 61140,
-      "min": 0.0176,
-      "max": 0.01879,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "NTRN": {
-    "cap": 679,
-    "price": 0.049,
-    "extremums": {
-      "triggerVolume": 19774,
-      "min": 0.04573,
-      "max": 0.04768,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "TUT": {
-    "cap": 682,
-    "price": 0.035,
-    "extremums": {
-      "triggerVolume": 1256329,
-      "min": 0.02465,
-      "max": 0.03216,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "C98": {
-    "cap": 689,
-    "price": 0.029,
-    "extremums": {
-      "triggerVolume": 74924,
-      "min": 0.0336,
-      "max": 0.0352,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "AI": {
-    "cap": 691,
-    "price": 0.069,
-    "extremums": {
-      "triggerVolume": 43489,
-      "min": 0.07319,
-      "max": 0.0774,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "DOLO": {
-    "cap": 692,
-    "price": 0.065,
-    "extremums": {
-      "triggerVolume": 105177,
-      "min": 0.07199,
-      "max": 0.07544,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "TNSR": {
-    "cap": 700,
-    "price": 0.068,
-    "extremums": {
-      "triggerVolume": 23172,
-      "min": 0.0632,
-      "max": 0.0658,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "NEWT": {
-    "cap": 703,
-    "price": 0.13,
-    "extremums": {
-      "triggerVolume": 58166,
-      "min": 0.137,
-      "max": 0.1422,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "EPIC": {
-    "cap": 707,
-    "price": "1.01300000",
-    "extremums": {
-      "triggerVolume": 31532,
-      "min": 0.9433,
-      "max": 0.9813,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760192748198
-  },
-  "SOLV": {
-    "cap": 711,
-    "price": 0.018,
-    "extremums": {
-      "triggerVolume": 141052,
-      "min": 0.01815,
-      "max": 0.01885,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "WCT": {
-    "cap": 712,
-    "price": 0.145,
-    "extremums": {
-      "triggerVolume": 82925,
-      "min": 0.1499,
-      "max": 0.1571,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ATA": {
-    "cap": 714,
-    "price": 0.03,
-    "extremums": {
-      "triggerVolume": 18276,
-      "min": 0.0272,
-      "max": 0.0284,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "THE": {
-    "cap": 722,
-    "price": 0.234,
-    "extremums": {
-      "triggerVolume": 105011,
-      "min": 0.2561,
-      "max": 0.2669,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.179,
+    "spot": 0.18,
+    "futures": 0.1804
   },
   "HFT": {
-    "cap": 723,
-    "price": 0.043,
-    "extremums": {
-      "triggerVolume": 31675,
-      "min": 0.04977,
-      "max": 0.05232,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 675,
+    "price": 0.055,
+    "spot": 0.0549,
+    "futures": 0.05485
   },
-  "EDEN": {
-    "cap": 727,
-    "price": 0.143,
-    "extremums": {
-      "triggerVolume": 1037511,
-      "min": 0.1601,
-      "max": 0.1811,
-      "overHigh": true,
-      "overLow": false
-    }
+  "EPIC": {
+    "cap": 680,
+    "price": 1.111,
+    "spot": 1.122,
+    "futures": 1.1199
   },
-  "FORTH": {
-    "cap": 730,
-    "price": 1.811,
-    "extremums": {
-      "triggerVolume": 12757,
-      "min": 2.026,
-      "max": 2.108,
-      "overHigh": false,
-      "overLow": false
-    }
+  "NEWT": {
+    "cap": 688,
+    "price": 0.151,
+    "spot": 0.151,
+    "futures": 0.1509
   },
-  "MAV": {
-    "cap": 746,
-    "price": 0.032,
-    "extremums": {
-      "triggerVolume": 299931,
-      "min": 0.03719,
-      "max": 0.0437,
-      "overHigh": false,
-      "overLow": false
-    }
+  "RDNT": {
+    "cap": 689,
+    "price": 0.025,
+    "spot": 0.02405,
+    "futures": 0.02401
   },
-  "TREE": {
-    "cap": 747,
-    "price": 0.157,
-    "extremums": {
-      "triggerVolume": 107361,
-      "min": 0.1631,
-      "max": 0.1714,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "RAD": {
-    "cap": 751,
-    "price": 0.467,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 1.6874,
-      "max": 1.6874,
-      "overHigh": false,
-      "overLow": false
-    }
+  "WCT": {
+    "cap": 690,
+    "price": 0.173,
+    "spot": 0.1724,
+    "futures": 0.1723
   },
   "OGN": {
+    "cap": 692,
+    "price": 0.049,
+    "spot": 0.0493,
+    "futures": 0.0494
+  },
+  "NTRN": {
+    "cap": 693,
+    "price": 0.053,
+    "spot": 0.0527,
+    "futures": 0.05269
+  },
+  "FORTH": {
+    "cap": 694,
+    "price": 2.238,
+    "spot": 2.238,
+    "futures": 2.236
+  },
+  "INIT": {
+    "cap": 696,
+    "price": 0.192,
+    "spot": 0.1928,
+    "futures": 0.1926
+  },
+  "MAV": {
+    "cap": 700,
+    "price": 0.042,
+    "spot": 0.04184,
+    "futures": 0.04174
+  },
+  "RARE": {
+    "cap": 703,
+    "price": 0.038,
+    "spot": 0.0377,
+    "futures": 0.03758
+  },
+  "EDEN": {
+    "cap": 710,
+    "price": 0.167,
+    "spot": 0.1687,
+    "futures": 0.1685
+  },
+  "ALICE": {
+    "cap": 716,
+    "price": 0.304,
+    "spot": 0.3029,
+    "futures": 0.302
+  },
+  "TNSR": {
+    "cap": 719,
+    "price": 0.073,
+    "spot": 0.0727,
+    "futures": 0.0728
+  },
+  "SOLV": {
+    "cap": 722,
+    "price": 0.02,
+    "spot": 0.01996,
+    "futures": 0.01996
+  },
+  "MUBARAK": {
+    "cap": 727,
+    "price": 0.029,
+    "spot": 0.02858,
+    "futures": 0.0286
+  },
+  "CATI": {
+    "cap": 733,
+    "price": 0.081,
+    "spot": 0.0814,
+    "futures": 0.08132
+  },
+  "TREE": {
+    "cap": 735,
+    "price": 0.18,
+    "spot": 0.1794,
+    "futures": 0.1794
+  },
+  "TUT": {
+    "cap": 739,
+    "price": 0.033,
+    "spot": 0.03205,
+    "futures": 0.03207
+  },
+  "ATA": {
+    "cap": 749,
+    "price": 0.03,
+    "spot": 0.0306,
+    "futures": 0.0306
+  },
+  "TRU": {
+    "cap": 750,
+    "price": 0.02,
+    "spot": 0.0206,
+    "futures": 0.02055
+  },
+  "AVA": {
     "cap": 752,
-    "price": 0.037,
-    "extremums": {
-      "triggerVolume": 28440,
-      "min": 0.0443,
-      "max": 0.0459,
-      "overHigh": false,
-      "overLow": false
-    }
+    "price": 0.388,
+    "spot": 0.3887,
+    "futures": 0.388
   },
-  "TOWNS": {
-    "cap": 761,
-    "price": 0.011,
-    "extremums": {
-      "triggerVolume": 49134,
-      "min": 0.01031,
-      "max": 0.01078,
-      "overHigh": false,
-      "overLow": false
-    }
+  "GUN": {
+    "cap": 758,
+    "price": 0.022,
+    "spot": 0.02246,
+    "futures": 0.02242
   },
-  "ACT": {
-    "cap": 764,
-    "price": 0.019,
-    "extremums": {
-      "triggerVolume": 66476,
-      "min": 0.02012,
-      "max": 0.02106,
-      "overHigh": true,
-      "overLow": false
-    }
+  "HIGH": {
+    "cap": 763,
+    "price": 0.341,
+    "spot": 0.34,
+    "futures": 0.341
+  },
+  "ARPA": {
+    "cap": 765,
+    "price": 0.017,
+    "spot": 0.01735,
+    "futures": 0.01733
   },
   "SHELL": {
     "cap": 767,
-    "price": 0.076,
-    "extremums": {
-      "triggerVolume": 37362,
-      "min": 0.0734,
-      "max": 0.0776,
-      "overHigh": true,
-      "overLow": false
-    }
+    "price": 0.087,
+    "spot": 0.0868,
+    "futures": 0.0867
   },
-  "HIGH": {
-    "cap": 768,
-    "price": 0.297,
-    "extremums": {
-      "triggerVolume": 18155,
-      "min": 0.2983,
-      "max": 0.3147,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "CATI": {
-    "cap": 777,
-    "price": 0.065,
-    "extremums": {
-      "triggerVolume": 174629,
-      "min": 0.0785,
-      "max": 0.08553,
-      "overHigh": false,
-      "overLow": true
-    }
-  },
-  "RARE": {
-    "cap": 778,
-    "price": 0.028,
-    "extremums": {
-      "triggerVolume": 56718,
-      "min": 0.03395,
-      "max": 0.0354,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "TRU": {
-    "cap": 781,
-    "price": 0.017,
-    "extremums": {
-      "triggerVolume": 24083,
-      "min": 0.01814,
-      "max": 0.01876,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "MBOX": {
-    "cap": 782,
-    "price": 0.045,
-    "extremums": {
-      "triggerVolume": 24048,
-      "min": 0.04278,
-      "max": 0.04476,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "ARPA": {
-    "cap": 783,
-    "price": 0.015,
-    "extremums": {
-      "triggerVolume": 19896,
-      "min": 0.01539,
-      "max": 0.01603,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "HAEDAL": {
-    "cap": 785,
-    "price": 0.094,
-    "extremums": {
-      "triggerVolume": 50620,
-      "min": 0.09233,
-      "max": 0.09637,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "AVA": {
-    "cap": 787,
-    "price": 0.32,
-    "extremums": {
-      "triggerVolume": 24459,
-      "min": 0.332,
-      "max": 0.3475,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "ACE": {
-    "cap": 793,
-    "price": 0.285,
-    "extremums": {
-      "triggerVolume": 54260,
-      "min": 0.2892,
-      "max": 0.3018,
-      "overHigh": true,
-      "overLow": false
-    }
-  },
-  "LUMIA": {
-    "cap": 799,
-    "price": 0.164,
-    "extremums": {
-      "triggerVolume": 26778,
-      "min": 0.1521,
-      "max": 0.159,
-      "overHigh": false,
-      "overLow": false
-    }
+  "RAD": {
+    "cap": 771,
+    "price": 0.503,
+    "spot": 0.501,
+    "futures": 1.6874
   },
   "DUSK": {
-    "cap": 812,
-    "price": 0.043,
-    "extremums": {
-      "triggerVolume": 18103,
-      "min": 0.04408,
-      "max": 0.04606,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 779,
+    "price": 0.052,
+    "spot": 0.0523,
+    "futures": 0.05233
   },
-  "MUBARAK": {
-    "cap": 814,
-    "price": 0.021,
-    "extremums": {
-      "triggerVolume": 119249,
-      "min": 0.02257,
-      "max": 0.02353,
-      "overHigh": true,
-      "overLow": false
-    }
+  "ACE": {
+    "cap": 780,
+    "price": 0.325,
+    "spot": 0.328,
+    "futures": 0.3271
   },
-  "SYS": {
-    "cap": 819,
-    "price": 0.025,
-    "extremums": {
-      "triggerVolume": 12429,
-      "min": 0.02488,
-      "max": 0.02578,
-      "overHigh": false,
-      "overLow": false
-    }
+  "TOWNS": {
+    "cap": 784,
+    "price": 0.012,
+    "spot": 0.01183,
+    "futures": 0.01183
   },
-  "GUN": {
-    "cap": 837,
-    "price": 0.017,
-    "extremums": {
-      "triggerVolume": 30369,
-      "min": 0.01902,
-      "max": 0.02012,
-      "overHigh": true,
-      "overLow": false
-    }
+  "MBOX": {
+    "cap": 790,
+    "price": 0.049,
+    "spot": 0.0493,
+    "futures": 0.04941
+  },
+  "ACT": {
+    "cap": 792,
+    "price": 0.02,
+    "spot": 0.0231,
+    "futures": 0.02318
+  },
+  "HAEDAL": {
+    "cap": 797,
+    "price": 0.103,
+    "spot": 0.102,
+    "futures": 0.10181
   },
   "PHB": {
-    "cap": 841,
-    "price": 0.333,
-    "extremums": {
-      "triggerVolume": 33698,
-      "min": 0.3468,
-      "max": 0.3651,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 806,
+    "price": 0.401,
+    "spot": 0.403,
+    "futures": 0.4033
   },
-  "GTC": {
-    "cap": 842,
-    "price": 0.203,
-    "extremums": {
-      "triggerVolume": 28056,
-      "min": 0.207,
-      "max": 0.216,
-      "overHigh": true,
-      "overLow": false
-    }
+  "LUMIA": {
+    "cap": 808,
+    "price": 0.172,
+    "spot": 0.17,
+    "futures": 0.1704
+  },
+  "SYS": {
+    "cap": 811,
+    "price": 0.028,
+    "spot": 0.02789,
+    "futures": 0.02788
   },
   "NFP": {
-    "cap": 861,
-    "price": "0.04460000",
-    "extremums": {
-      "triggerVolume": 24728,
-      "min": 0.04175,
-      "max": 0.04356,
-      "overHigh": false,
-      "overLow": false
-    },
-    "startTime": 1760192871625
-  },
-  "C": {
-    "cap": 862,
-    "price": 0.103,
-    "extremums": {
-      "triggerVolume": 60985,
-      "min": 0.09974,
-      "max": 0.10512,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "RESOLV": {
-    "cap": 890,
-    "price": 0.057,
-    "extremums": {
-      "triggerVolume": 56656,
-      "min": 0.06292,
-      "max": 0.06654,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "VIC": {
-    "cap": 894,
-    "price": 0.142,
-    "extremums": {
-      "triggerVolume": 17708,
-      "min": 0.1432,
-      "max": 0.1483,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "OMG": {
-    "cap": 895,
-    "price": 0.124,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.291,
-      "max": 0.291,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "SANTOS": {
-    "cap": 896,
-    "price": 1.297,
-    "extremums": {
-      "triggerVolume": 26872,
-      "min": 1.347,
-      "max": 1.406,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "MITO": {
-    "cap": 899,
-    "price": "0.12010000",
-    "extremums": {
-      "triggerVolume": 75750,
-      "min": 0.11785,
-      "max": 0.12195,
-      "overHigh": false,
-      "overLow": true
-    },
-    "startTime": 1760218492785
-  },
-  "RDNT": {
-    "cap": 902,
-    "price": 0.013,
-    "extremums": {
-      "triggerVolume": 1911477,
-      "min": 0.02331,
-      "max": 0.02779,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "BADGER": {
-    "cap": 904,
-    "price": 0.849,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.8358,
-      "max": 0.8358,
-      "overHigh": false,
-      "overLow": false
-    }
-  },
-  "IDEX": {
-    "cap": 905,
-    "price": 0.018,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.0561,
-      "max": 0.0561,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 812,
+    "price": 0.047,
+    "spot": 0.0473,
+    "futures": 0.04737
   },
   "TST": {
-    "cap": 910,
-    "price": 0.018,
-    "extremums": {
-      "triggerVolume": 163785,
-      "min": 0.02016,
-      "max": 0.02157,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 825,
+    "price": 0.024,
+    "spot": 0.02378,
+    "futures": 0.02376
   },
-  "BMT": {
-    "cap": 912,
-    "price": 0.037,
-    "extremums": {
-      "triggerVolume": 37110,
-      "min": 0.03956,
-      "max": 0.04075,
-      "overHigh": false,
-      "overLow": false
-    }
+  "MITO": {
+    "cap": 826,
+    "price": 0.125,
+    "spot": 0.1238,
+    "futures": 0.12363
+  },
+  "RESOLV": {
+    "cap": 830,
+    "price": 0.073,
+    "spot": 0.0726,
+    "futures": 0.0724
+  },
+  "GTC": {
+    "cap": 839,
+    "price": 0.227,
+    "spot": 0.229,
+    "futures": 0.23
+  },
+  "C": {
+    "cap": 852,
+    "price": 0.116,
+    "spot": 0.1146,
+    "futures": 0.11456
   },
   "DF": {
-    "cap": 928,
-    "price": 0.016,
-    "extremums": {
-      "triggerVolume": 19804,
-      "min": 0.0182,
-      "max": 0.01888,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 861,
+    "price": 0.02,
+    "spot": 0.02057,
+    "futures": 0.02058
   },
-  "GHST": {
-    "cap": 935,
-    "price": 0.294,
-    "extremums": {
-      "triggerVolume": 11559,
-      "min": 0.2818,
-      "max": 0.291,
-      "overHigh": false,
-      "overLow": false
-    }
+  "BMT": {
+    "cap": 862,
+    "price": 0.044,
+    "spot": 0.0439,
+    "futures": 0.04399
+  },
+  "IDEX": {
+    "cap": 871,
+    "price": 0.02,
+    "spot": 0.02052,
+    "futures": 0.0561
+  },
+  "SANTOS": {
+    "cap": 877,
+    "price": 1.476,
+    "spot": 1.478,
+    "futures": 1.476
+  },
+  "VIC": {
+    "cap": 883,
+    "price": 0.159,
+    "spot": 0.1598,
+    "futures": 0.1595
   },
   "ALPINE": {
-    "cap": 939,
-    "price": 0.815,
-    "extremums": {
-      "triggerVolume": 143431,
-      "min": 0.8715,
-      "max": 0.902,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 906,
+    "price": 0.987,
+    "spot": 0.978,
+    "futures": 0.9786
   },
   "HOOK": {
-    "cap": 963,
-    "price": 0.054,
-    "extremums": {
-      "triggerVolume": 85611,
-      "min": 0.05964,
-      "max": 0.06323,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 907,
+    "price": 0.07,
+    "spot": 0.0694,
+    "futures": 0.06935
+  },
+  "OMG": {
+    "cap": 915,
+    "price": 0.129,
+    "spot": 0.383,
+    "futures": 0.291
+  },
+  "BEL": {
+    "cap": 926,
+    "price": 0.221,
+    "spot": 0.2246,
+    "futures": 0.2247
+  },
+  "PORTAL": {
+    "cap": 927,
+    "price": 0.03,
+    "spot": 0.03,
+    "futures": 0.02996
+  },
+  "BADGER": {
+    "cap": 929,
+    "price": 0.872,
+    "spot": 0.762,
+    "futures": 0.8358
   },
   "MLN": {
-    "cap": 973,
-    "price": 4.684,
-    "extremums": {
-      "triggerVolume": 20052,
-      "min": 5.3,
-      "max": 5.457,
-      "overHigh": true,
-      "overLow": false
-    }
+    "cap": 932,
+    "price": 5.82,
+    "spot": 5.87,
+    "futures": 5.862
   },
-  "D": {
-    "cap": 991,
-    "price": 0.021,
-    "extremums": {
-      "triggerVolume": 9363,
-      "min": 0.02082,
-      "max": 0.02159,
-      "overHigh": false,
-      "overLow": false
-    }
+  "HEI": {
+    "cap": 933,
+    "price": 0.222,
+    "spot": 0.2112,
+    "futures": 0.2114
   },
   "NKN": {
-    "cap": 995,
-    "price": 0.017,
-    "extremums": {
-      "triggerVolume": 17569,
-      "min": 0.01884,
-      "max": 0.01964,
-      "overHigh": false,
-      "overLow": false
-    }
+    "cap": 940,
+    "price": 0.021,
+    "spot": 0.0213,
+    "futures": 0.0213
   },
-  "BLZ": {
-    "cap": 996,
-    "price": 0.028,
-    "extremums": {
-      "triggerVolume": 0,
-      "min": 0.06836,
-      "max": 0.06836,
-      "overHigh": false,
-      "overLow": false
-    }
+  "GHST": {
+    "cap": 947,
+    "price": 0.315,
+    "spot": 0.316,
+    "futures": 0.3159
+  },
+  "DEGO": {
+    "cap": 963,
+    "price": 0.759,
+    "spot": 0.762,
+    "futures": 0.7634
+  },
+  "D": {
+    "cap": 979,
+    "price": 0.023,
+    "spot": 0.0233,
+    "futures": 0.02329
+  },
+  "SYN": {
+    "cap": 981,
+    "price": 0.081,
+    "spot": 0.0816,
+    "futures": 0.0815
+  },
+  "PERP": {
+    "cap": 985,
+    "price": 0.226,
+    "spot": 0.2263,
+    "futures": 0.2264
   }
 }

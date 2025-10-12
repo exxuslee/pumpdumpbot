@@ -81,7 +81,7 @@ class ExtremumTradingBot {
             for (let i = 0; i < candles.length - 4; i++) {
                 min = Math.min(min, parseFloat(candles[i].low))
                 max = Math.max(max, parseFloat(candles[i].high))
-                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 17.0)
+                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 34.0)
             }
             let overLow = 1_000_000.0;
             let overHigh = 0.0;
@@ -236,9 +236,9 @@ class ExtremumTradingBot {
 
     startWebSocketMonitoring() {
         const pairs = Object.keys(this.tokens).map(key => `${key}USDT`);
-        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs on 1-minute candles`);
+        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs on 5-minute candles`);
         try {
-            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
+            this.wsConnection = this.client.ws.candles(pairs, '5m', candle => {
                 this.processCandle(candle).catch(error => {
                     console.error("❌ Error processing candle:", error);
                 });

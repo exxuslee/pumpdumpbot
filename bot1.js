@@ -16,9 +16,6 @@ class ExtremumTradingBot {
             apiKey: process.env.BINANCE_PUBLIC_KEY, apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
         this.tgToken = process.env.TELEGRAM_TOKEN3;
-        this.wsConnection = null;
-        this.exitTimeoutMs = 30_000;
-        this.retryExitTimeoutMs = 30_000;
         this.hourlyUpdateInterval = null;
     }
 
@@ -52,80 +49,47 @@ class ExtremumTradingBot {
         }
     }
 
-    async getCurrentPrice(ticker) {
-        try {
-            const pair = `${ticker}USDT`;
-            const prices = await this.client.prices({symbol: pair});
-            return parseFloat(prices[pair]);
-        } catch (error) {
-            console.error("❌ Error getting current price:", error.message);
-            return null;
-        }
-    }
+    async logTop10Diff() {
+        const diffs = Object.entries(this.tokens)
+            .map(([symbol, token]) => {
+                const { spot, futures, price } = token;
+                if (!spot || !futures) return null;
+                const diff = futures - spot;
+                const diffPct = (diff / spot) * 100;
+                return { symbol, price, spot, futures, diffPct };
+            })
+            .filter(Boolean)
+            .sort((a, b) => Math.abs(b.diffPct) - Math.abs(a.diffPct)) // сортируем по абсолютной разнице (%)
+            .slice(0, 25);
 
-    async getHourlyCandes(tokenSymbol) {
-        try {
-            const pair = `${tokenSymbol}USDT`;
-            const candles = await this.client.futuresCandles({
-                symbol: pair, interval: "15m", limit: 17
-            });
+        this.log(`\n🔥 TOP-10 по разнице между spot и futures:\n`);
 
-            if (!candles || candles.length === 0) {
-                this.log(`⚠️ No hourly candles received for ${tokenSymbol}`);
-                return {};
-            }
-
-            let sumVolume = 0.0;
-            let min = 1_000_000.0;
-            let max = 0.0;
-            for (let i = 0; i < candles.length - 4; i++) {
-                min = Math.min(min, parseFloat(candles[i].low))
-                max = Math.max(max, parseFloat(candles[i].high))
-                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 17.0)
-            }
-            let overHigh = false;
-            let overLow = false;
-            for (let i = candles.length - 4; i < candles.length; i++) {
-                overHigh = overHigh || (parseFloat(candles[i].high) > max)
-                overLow = overLow || (parseFloat(candles[i].low) < min)
-            }
-
-            return {triggerVolume: +sumVolume.toFixed(0), min: min, max: max, overHigh: overHigh, overLow: overLow};
-        } catch (error) {
-            console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
-            return {};
-        }
+        diffs.forEach(({ symbol, price, spot, futures, diffPct }, i) => {
+            this.log(
+                `${symbol.padEnd(8)} ` +
+                `cmc:${+price.toFixed(6).padEnd(12)} ` +
+                `spot:${spot.toFixed(6).padEnd(12)} ` +
+                `futures:${futures.toFixed(6).padEnd(12)} ` +
+                `diff: ${diffPct.toFixed(2)}%`
+            );
+        });
     }
 
     async updateAllHourly() {
+        let spot = await this.client.prices()
+        let futures = await this.client.futuresPrices()
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
             const token = this.tokens[tokenSymbol];
-            let newExtremums = await this.getHourlyCandes(tokenSymbol);
-            if (
-                ((newExtremums.overHigh !== token.extremums.overHigh) && newExtremums.overHigh)
-                || ((newExtremums.overLow !== token.extremums.overLow) && newExtremums.overLow)
-            ) {
-                this.log(`📊 ${tokenSymbol}:   \tvol:${newExtremums.triggerVolume} \tmin:${newExtremums.min} \tmax:${newExtremums.max} \toverHL:${+newExtremums.overHigh}${+newExtremums.overLow}`)
-            }
-            token.extremums = newExtremums;
+            token.spot = parseFloat(spot[`${tokenSymbol}USDT`])
+            token.futures = parseFloat(futures[`${tokenSymbol}USDT`])
         });
 
         await Promise.all(updatePromises);
-
-        const tokensArray = Object.entries(this.tokens).map(([key, value]) => ({key, ...value,}));
-        const counts = tokensArray.reduce(
-            (acc, token) => {
-                if (token.extremums.overHigh) acc.overHigh += 1;
-                if (token.extremums.overLow) acc.overLow += 1;
-                if (!token.extremums.overHigh && !token.extremums.overLow) acc.inMiddle += 1;
-                return acc;
-            },
-            {overHigh: 0, overLow: 0, inMiddle: 0}
-        );
-
+        await this.logTop10Diff()
         await this.writeTokensFile();
-        this.log(`✅ Updated. OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}. InMiddle: ${counts.inMiddle}`);
     }
+
+
 
     startHourlyUpdates() {
         this.updateAllHourly().catch(error => {
@@ -135,90 +99,7 @@ class ExtremumTradingBot {
             this.updateAllHourly().catch(error => {
                 console.error("❌ Error in periodic hourly volume update:", error);
             });
-        }, 120_000);
-    }
-
-    async enterTrade(tokenSymbol, side, candle) {
-        const token = this.tokens[tokenSymbol];
-
-        token.side = side
-        token.price = candle.close;
-        token.startTime = Date.now();
-
-        const message = `${tokenSymbol} ${token.cap} ${side}: ${(+candle.close).toFixed(3)} ${(+candle.quoteVolume).toFixed(0)}`;
-
-        this.log(`🎯 ${message}`);
-        await this.sendTelegramAlert(message, false);
-        await this.writeTokensFile();
-
-        setTimeout(() => this.exitTrade(tokenSymbol), this.exitTimeoutMs);
-    }
-
-    async exitTrade(ticker) {
-        const trade = this.tokens[ticker];
-        try {
-            const exitPrice = await this.getCurrentPrice(ticker);
-            if (!exitPrice) {
-                this.log(`⚠️ Cannot get current price for ${ticker}`);
-                return;
-            }
-
-            const isLong = trade.side === '📈';
-            const pnlPercent = isLong ? (exitPrice - trade.price) / trade.price * 100 : (trade.price - exitPrice) / trade.price * 100;
-            const timePassed = Date.now() - trade.startTime;
-
-            if (pnlPercent > 0.3 || pnlPercent < -2.0 || timePassed > 300_000) { // 0.3% profit, -2% stop loss, or 5 min timeout
-                this.count = this.count + pnlPercent - 0.1;
-                const ico = pnlPercent > 0 ? "🚀" : "🔻";
-                const message = `${ticker} ${trade.side}${ico}: ${(+trade.price).toFixed(4)} → ${exitPrice.toFixed(4)} = ${pnlPercent.toFixed(2)}% | Total: ${(+this.count).toFixed(2)}%`;
-                await this.sendTelegramAlert(message, true);
-
-                delete trade.side;
-                await this.writeTokensFile();
-                await this.writeStatFile();
-            } else {
-                setTimeout(() => this.exitTrade(ticker), this.retryExitTimeoutMs);
-            }
-        } catch (error) {
-            console.error(`❌ Error exiting trade for ${ticker}:`, error.message);
-            await this.sendTelegramAlert(`❌ Failed to exit trade for ${ticker}: ${error.message}`, true);
-        }
-    }
-
-    async processCandle(candle) {
-        const tokenSymbol = candle.symbol.slice(0, -4); // Remove 'USDT'
-        const token = this.tokens[tokenSymbol];
-        if (!token) {
-            console.warn(`⚠️ Unknown token: ${tokenSymbol}`);
-            return;
-        }
-        const ext = token.extremums;
-
-        if (token.side || !ext.triggerVolume || (candle.quoteVolume < ext.triggerVolume)) return;
-
-        if ((candle.close > ext.max) && ext.overLow) {
-            this.enterTrade(tokenSymbol, '📈', candle).then(r => true);
-        }
-
-        if ((candle.close < ext.min) && ext.overHigh) {
-            this.enterTrade(tokenSymbol, '📉', candle).then(r => true);
-        }
-    }
-
-    startWebSocketMonitoring() {
-        const pairs = Object.keys(this.tokens).map(key => `${key}USDT`);
-        this.log(`👁️ Starting WebSocket monitoring for ${pairs.length} pairs on 1-minute candles`);
-        try {
-            this.wsConnection = this.client.ws.candles(pairs, '1m', candle => {
-                this.processCandle(candle).catch(error => {
-                    console.error("❌ Error processing candle:", error);
-                });
-            });
-            this.log("✅ WebSocket connection established");
-        } catch (error) {
-            console.error("❌ WebSocket connection failed:", error);
-            setTimeout(() => this.startWebSocketMonitoring(), 5000);
-        }
+        }, 600_000);
     }
 
     async start() {
@@ -231,7 +112,6 @@ class ExtremumTradingBot {
                 throw new Error("Missing Telegram token");
             }
             await this.startHourlyUpdates();
-            this.startWebSocketMonitoring();
             this.log("🚀 Bot is now running with extremum tracking and hourly volume API updates!");
         } catch (error) {
             console.error("❌ Bot startup failed:", error);
@@ -241,17 +121,10 @@ class ExtremumTradingBot {
 
     stop() {
         this.log("🛑 Shutting down bot...");
-
-        if (this.wsConnection) {
-            this.wsConnection();
-            this.log("✅ WebSocket connection closed");
-        }
-
         if (this.hourlyUpdateInterval) {
             clearInterval(this.hourlyUpdateInterval);
             this.log("✅ Hourly update interval cleared");
         }
-
         this.log("👋 Bot stopped");
     }
 }
