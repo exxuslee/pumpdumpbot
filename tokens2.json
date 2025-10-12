@@ -2,711 +2,711 @@
   "ATOM": {
     "cap": 52,
     "price": 3.49,
-    "avgQuoteVolume4h": 620906,
+    "avgQuoteVolume4h": 603606,
     "log": 1760130814564,
     "startTime": 1760130812582
   },
   "VET": {
     "cap": 53,
     "price": 0.01905,
-    "avgQuoteVolume4h": 533562,
+    "avgQuoteVolume4h": 524587,
     "log": 1760132686390,
     "startTime": 1760130816437
   },
   "ALGO": {
     "cap": 55,
     "price": 0.1906,
-    "avgQuoteVolume4h": 579898,
+    "avgQuoteVolume4h": 569631,
     "log": 1760136056557,
     "startTime": 1760129988592
   },
   "PENGU": {
     "cap": 58,
     "price": 0.029,
-    "avgQuoteVolume4h": 3624129
+    "avgQuoteVolume4h": 3346676
   },
   "RENDER": {
     "cap": 59,
     "price": 2.749,
-    "avgQuoteVolume4h": 637924,
+    "avgQuoteVolume4h": 654486,
     "log": 1760133204725,
     "startTime": 1760129982759
   },
   "SEI": {
     "cap": 60,
     "price": 0.2677,
-    "avgQuoteVolume4h": 1533729,
+    "avgQuoteVolume4h": 1471937,
     "startTime": 1758889718312,
     "log": 1760130780029
   },
   "SKY": {
     "cap": 62,
-    "price": 0.0487,
-    "avgQuoteVolume4h": 185473,
-    "log": 1760163913305,
-    "startTime": 1760132987306
+    "price": 0.05794,
+    "avgQuoteVolume4h": 185883,
+    "log": 1760216481305,
+    "startTime": 1760216483306
   },
   "FIL": {
     "cap": 63,
     "price": 1.947,
-    "avgQuoteVolume4h": 1752797,
+    "avgQuoteVolume4h": 1764067,
     "log": 1760132873124,
     "startTime": 1760130811234
   },
   "TRUMP": {
     "cap": 64,
     "price": 6.67,
-    "avgQuoteVolume4h": 2295290,
+    "avgQuoteVolume4h": 2368182,
     "log": 1760133960104,
     "startTime": 1760129788996
   },
   "JUP": {
     "cap": 65,
     "price": 0.3455,
-    "avgQuoteVolume4h": 318328,
+    "avgQuoteVolume4h": 313188,
     "log": 1760133828487,
     "startTime": 1760130804600
   },
   "IMX": {
     "cap": 66,
     "price": 0.583,
-    "avgQuoteVolume4h": 231409,
+    "avgQuoteVolume4h": 219379,
     "log": 1760134337907,
     "startTime": 1760129985929
   },
   "FET": {
     "cap": 67,
     "price": 0.357,
-    "avgQuoteVolume4h": 1345443,
+    "avgQuoteVolume4h": 1355130,
     "startTime": 1760130996547,
     "log": 1760130818502
   },
   "INJ": {
     "cap": 70,
     "price": 10.25,
-    "avgQuoteVolume4h": 744586,
+    "avgQuoteVolume4h": 730315,
     "log": 1760131123132,
     "startTime": 1760129987166
   },
   "OP": {
     "cap": 71,
     "price": 0.6146,
-    "avgQuoteVolume4h": 1117987,
+    "avgQuoteVolume4h": 1128931,
     "log": 1760132580105,
     "startTime": 1760129982160
   },
   "QNT": {
     "cap": 72,
     "price": 92.07,
-    "avgQuoteVolume4h": 150195,
+    "avgQuoteVolume4h": 146002,
     "log": 1760161937581,
     "startTime": 1760161935579
   },
   "TIA": {
     "cap": 74,
     "price": 1.193,
-    "avgQuoteVolume4h": 785859,
+    "avgQuoteVolume4h": 757133,
     "log": 1760130806390,
     "startTime": 1760129980457
   },
   "STX": {
     "cap": 76,
     "price": 0.5,
-    "avgQuoteVolume4h": 286976,
+    "avgQuoteVolume4h": 282413,
     "log": 1760130882655,
     "startTime": 1760129986690
   },
   "LDO": {
     "cap": 77,
     "price": 0.9573,
-    "avgQuoteVolume4h": 1157728,
+    "avgQuoteVolume4h": 1117090,
     "log": 1760174372069,
     "startTime": 1760130816103
   },
   "KAIA": {
     "cap": 78,
     "price": 0.1068,
-    "avgQuoteVolume4h": 198182,
+    "avgQuoteVolume4h": 201763,
     "log": 1760133096801,
     "startTime": 1760130816836
   },
   "ZEC": {
     "cap": 79,
     "price": 133.89,
-    "avgQuoteVolume4h": 8733180,
+    "avgQuoteVolume4h": 8939464,
     "log": 1759417254498,
     "startTime": 1759417252492
   },
   "CRV": {
     "cap": 81,
     "price": 0.6305,
-    "avgQuoteVolume4h": 1242796,
+    "avgQuoteVolume4h": 1204799,
     "log": 1760129791045,
     "startTime": 1760129789009
   },
   "CAKE": {
     "cap": 83,
     "price": 3.675,
-    "avgQuoteVolume4h": 5444829,
+    "avgQuoteVolume4h": 5374107,
     "log": 1759734997312,
     "startTime": 1759734995308
   },
   "GRT": {
     "cap": 86,
     "price": 0.0653,
-    "avgQuoteVolume4h": 264001,
+    "avgQuoteVolume4h": 261066,
     "log": 1760130809248,
     "startTime": 1760130869243
   },
   "PYTH": {
     "cap": 87,
     "price": 0.1255,
-    "avgQuoteVolume4h": 431337,
+    "avgQuoteVolume4h": 394339,
     "log": 1760135686494,
     "startTime": 1760130820527
   },
   "ETHFI": {
     "cap": 88,
     "price": 1.367,
-    "avgQuoteVolume4h": 1238162,
+    "avgQuoteVolume4h": 1179709,
     "log": 1760130814620,
     "startTime": 1760129990619
   },
   "DEXE": {
     "cap": 89,
     "price": 4.367,
-    "avgQuoteVolume4h": 215621,
+    "avgQuoteVolume4h": 216160,
     "log": 1760170439563,
     "startTime": 1760131259561
   },
   "PENDLE": {
     "cap": 91,
     "price": 3.253,
-    "avgQuoteVolume4h": 728519,
+    "avgQuoteVolume4h": 736592,
     "startTime": 1760132750268,
     "log": 1760136296270
   },
   "WIF": {
     "cap": 93,
     "price": 0.302,
-    "avgQuoteVolume4h": 1747799,
+    "avgQuoteVolume4h": 1663621,
     "log": 1760130778542,
     "startTime": 1760131132542
   },
   "ENS": {
     "cap": 95,
     "price": 17.99,
-    "avgQuoteVolume4h": 503024,
+    "avgQuoteVolume4h": 486088,
     "log": 1760136287771,
     "startTime": 1760129981800
   },
   "CFX": {
     "cap": 97,
     "price": 0.0955,
-    "avgQuoteVolume4h": 343902,
+    "avgQuoteVolume4h": 336168,
     "log": 1760130889381,
     "startTime": 1760131007397
   },
   "THETA": {
     "cap": 99,
     "price": 0.622,
-    "avgQuoteVolume4h": 244914,
+    "avgQuoteVolume4h": 234823,
     "log": 1760191478511,
     "startTime": 1760129784752
   },
   "XTZ": {
     "cap": 100,
     "price": 0.669,
-    "avgQuoteVolume4h": 132220,
+    "avgQuoteVolume4h": 107171,
     "log": 1760130804751
   },
   "S": {
     "cap": 101,
     "price": 0.199,
-    "avgQuoteVolume4h": 1446280,
+    "avgQuoteVolume4h": 1411199,
     "log": 1760183208944,
     "startTime": 1760183206936
   },
   "VIRTUAL": {
     "cap": 102,
     "price": 0.894,
-    "avgQuoteVolume4h": 609061,
+    "avgQuoteVolume4h": 607389,
     "log": 1760129789161,
     "startTime": 1760129787224
   },
   "SAND": {
     "cap": 103,
     "price": 0.232,
-    "avgQuoteVolume4h": 378255,
+    "avgQuoteVolume4h": 363691,
     "log": 1760138136960,
     "startTime": 1760129981030
   },
   "GALA": {
     "cap": 104,
     "price": 0.01299,
-    "avgQuoteVolume4h": 596555,
+    "avgQuoteVolume4h": 583108,
     "log": 1760130805718,
     "startTime": 1760129987661
   },
   "IOTA": {
     "cap": 105,
     "price": 0.1492,
-    "avgQuoteVolume4h": 210028,
+    "avgQuoteVolume4h": 202176,
     "log": 1760136438345,
     "startTime": 1760130812399
   },
   "JTO": {
     "cap": 108,
     "price": 1.125,
-    "avgQuoteVolume4h": 239672,
+    "avgQuoteVolume4h": 236550,
     "log": 1760194882415,
     "startTime": 1760130870438
   },
   "JASMY": {
     "cap": 109,
-    "price": 0.00958,
-    "avgQuoteVolume4h": 194207,
-    "log": 1760154471798,
-    "startTime": 1760154469799
+    "price": 0.01001,
+    "avgQuoteVolume4h": 203568,
+    "log": 1760220959803,
+    "startTime": 1760220957798
   },
   "EIGEN": {
     "cap": 111,
     "price": 1.71,
-    "avgQuoteVolume4h": 1333993
+    "avgQuoteVolume4h": 1251124
   },
   "MANA": {
     "cap": 114,
     "price": 0.266,
-    "avgQuoteVolume4h": 251144,
+    "avgQuoteVolume4h": 237459,
     "log": 1760135862922,
     "startTime": 1760130808934
   },
   "FLOW": {
     "cap": 115,
     "price": 0.311,
-    "avgQuoteVolume4h": 92626,
+    "avgQuoteVolume4h": 93487,
     "log": 1760173049583,
     "startTime": 1760129983624
   },
   "SUN": {
     "cap": 118,
     "price": 0.02436,
-    "avgQuoteVolume4h": 398641,
+    "avgQuoteVolume4h": 402754,
     "log": 1760129999067,
     "startTime": 1760129997068
   },
   "ZRO": {
     "cap": 119,
     "price": 1.94,
-    "avgQuoteVolume4h": 629175,
+    "avgQuoteVolume4h": 625018,
     "log": 1760130816749,
     "startTime": 1760130814745
   },
   "TWT": {
     "cap": 121,
     "price": 1.6261,
-    "avgQuoteVolume4h": 957472,
+    "avgQuoteVolume4h": 927897,
     "log": 1760008641280,
     "startTime": 1760008639279
   },
   "STRK": {
     "cap": 123,
     "price": 0.118,
-    "avgQuoteVolume4h": 1022335,
+    "avgQuoteVolume4h": 1014632,
     "log": 1759310922513
   },
   "SYRUP": {
     "cap": 125,
     "price": 0.3512,
-    "avgQuoteVolume4h": 322439,
+    "avgQuoteVolume4h": 300525,
     "log": 1760130837122,
     "startTime": 1760130835122
   },
   "W": {
     "cap": 126,
     "price": 0.099,
-    "avgQuoteVolume4h": 745384,
+    "avgQuoteVolume4h": 680400,
     "log": 1759510898600
   },
   "DYDX": {
     "cap": 127,
     "price": 0.4482,
-    "avgQuoteVolume4h": 413555,
+    "avgQuoteVolume4h": 419848,
     "log": 1760132697639,
     "startTime": 1760130839639
   },
   "FORM": {
     "cap": 129,
     "price": 1.5692,
-    "avgQuoteVolume4h": 5911053,
+    "avgQuoteVolume4h": 5903625,
     "log": 1759990901034,
     "startTime": 1759990899034
   },
   "LINEA": {
     "cap": 131,
     "price": 0.027,
-    "avgQuoteVolume4h": 1383795,
+    "avgQuoteVolume4h": 1260491,
     "log": 1759940037288
   },
   "NEO": {
     "cap": 132,
     "price": 5.156,
-    "avgQuoteVolume4h": 318722,
+    "avgQuoteVolume4h": 309877,
     "log": 1760136502149,
     "startTime": 1760130884150
   },
   "RUNE": {
     "cap": 133,
     "price": 0.953,
-    "avgQuoteVolume4h": 373044,
+    "avgQuoteVolume4h": 371255,
     "log": 1760130799186,
     "startTime": 1760130797283
   },
   "ZK": {
     "cap": 136,
     "price": 0.04658,
-    "avgQuoteVolume4h": 371465,
+    "avgQuoteVolume4h": 376042,
     "log": 1760130796970,
     "startTime": 1760130802743
   },
   "APE": {
     "cap": 137,
     "price": 0.4725,
-    "avgQuoteVolume4h": 242069,
+    "avgQuoteVolume4h": 245235,
     "log": 1760135847998,
     "startTime": 1760130798187
   },
   "CHZ": {
     "cap": 138,
     "price": 0.03631,
-    "avgQuoteVolume4h": 191090,
+    "avgQuoteVolume4h": 186463,
     "log": 1760130806649,
     "startTime": 1760129984702
   },
   "COMP": {
     "cap": 139,
     "price": 36.54,
-    "avgQuoteVolume4h": 133564,
+    "avgQuoteVolume4h": 131512,
     "log": 1760190624853,
     "startTime": 1760130806874
   },
   "AR": {
     "cap": 141,
     "price": 4.76,
-    "avgQuoteVolume4h": 389648,
+    "avgQuoteVolume4h": 393411,
     "log": 1760132551468,
     "startTime": 1760129973644
   },
   "EGLD": {
     "cap": 143,
     "price": 7,
-    "avgQuoteVolume4h": 170027,
+    "avgQuoteVolume4h": 152412,
     "log": 1760178375021,
     "startTime": 1760131847021
   },
   "AXS": {
     "cap": 145,
     "price": 2.113,
-    "avgQuoteVolume4h": 187579,
+    "avgQuoteVolume4h": 186236,
     "log": 1760133215158,
     "startTime": 1758816957158
   },
   "KAVA": {
     "cap": 150,
     "price": 0.22,
-    "avgQuoteVolume4h": 298023,
+    "avgQuoteVolume4h": 306059,
     "log": 1760196820658,
     "startTime": 1760196818661
   },
   "SUPER": {
     "cap": 151,
     "price": 0.4492,
-    "avgQuoteVolume4h": 141252,
+    "avgQuoteVolume4h": 130495,
     "log": 1760130939415,
     "startTime": 1760130937397
   },
   "1INCH": {
     "cap": 155,
     "price": 0.2061,
-    "avgQuoteVolume4h": 102085,
+    "avgQuoteVolume4h": 101831,
     "log": 1760195605244,
     "startTime": 1760130815284
   },
   "BERA": {
     "cap": 156,
     "price": 2.241,
-    "avgQuoteVolume4h": 402723,
+    "avgQuoteVolume4h": 395084,
     "log": 1760140436955,
     "startTime": 1760130808965
   },
   "JST": {
     "cap": 159,
     "price": 0.03141,
-    "avgQuoteVolume4h": 90097,
+    "avgQuoteVolume4h": 94207,
     "log": 1760190538947,
     "startTime": 1760190540046
   },
   "CVX": {
     "cap": 160,
     "price": 2.33,
-    "avgQuoteVolume4h": 135208,
+    "avgQuoteVolume4h": 130197,
     "log": 1760133599865,
     "startTime": 1760130959865
   },
   "MOVE": {
     "cap": 161,
     "price": 0.0872,
-    "avgQuoteVolume4h": 112714,
+    "avgQuoteVolume4h": 113339,
     "log": 1760137126864,
     "startTime": 1760130860929
   },
   "AXL": {
     "cap": 162,
     "price": 0.2566,
-    "avgQuoteVolume4h": 133445,
+    "avgQuoteVolume4h": 126847,
     "log": 1760180858536,
     "startTime": 1760129772745
   },
   "PLUME": {
     "cap": 163,
     "price": 0.1,
-    "avgQuoteVolume4h": 950765,
+    "avgQuoteVolume4h": 946877,
     "log": 1759239069242
   },
   "SNX": {
     "cap": 168,
     "price": 1.102,
-    "avgQuoteVolume4h": 510076,
+    "avgQuoteVolume4h": 499352,
     "startTime": 1758902262868,
     "log": 1760052392869
   },
   "LPT": {
     "cap": 173,
-    "price": 5.198,
-    "avgQuoteVolume4h": 191796,
-    "log": 1760143493474,
-    "startTime": 1760130813534
+    "price": 4.677,
+    "avgQuoteVolume4h": 206037,
+    "log": 1760227227473,
+    "startTime": 1760227229472
   },
   "DASH": {
     "cap": 177,
     "price": 43.12,
-    "avgQuoteVolume4h": 1253187,
+    "avgQuoteVolume4h": 1224208,
     "log": 1760075808507,
     "startTime": 1760061766507
   },
   "SFP": {
     "cap": 180,
     "price": 0.4157,
-    "avgQuoteVolume4h": 73934,
+    "avgQuoteVolume4h": 75802,
     "startTime": 1760130983445,
     "log": 1760130985384
   },
   "KAITO": {
     "cap": 181,
     "price": 1.3561,
-    "avgQuoteVolume4h": 300052,
+    "avgQuoteVolume4h": 284470,
     "log": 1758998927000,
     "startTime": 1758974752986
   },
   "KSM": {
     "cap": 186,
     "price": 12.94,
-    "avgQuoteVolume4h": 119998,
+    "avgQuoteVolume4h": 118381,
     "log": 1760133693017,
     "startTime": 1760129987056
   },
   "AWE": {
     "cap": 188,
     "price": 0.117,
-    "avgQuoteVolume4h": 75706
+    "avgQuoteVolume4h": 70050
   },
   "QTUM": {
     "cap": 188,
     "price": 2.423,
-    "avgQuoteVolume4h": 218362,
+    "avgQuoteVolume4h": 217877,
     "log": 1760130834290,
     "startTime": 1759968054297
   },
   "IOTX": {
     "cap": 191,
     "price": 0.02251,
-    "avgQuoteVolume4h": 201792,
+    "avgQuoteVolume4h": 206251,
     "log": 1760136058667,
     "startTime": 1760130810766
   },
   "GLM": {
     "cap": 192,
     "price": 0.1924,
-    "avgQuoteVolume4h": 30189,
-    "log": 1760143546193,
+    "avgQuoteVolume4h": 29440,
+    "log": 1760238090195,
     "startTime": 1760129990222
   },
   "BAT": {
     "cap": 195,
     "price": 0.144,
-    "avgQuoteVolume4h": 181693,
+    "avgQuoteVolume4h": 184605,
     "log": 1760075850488
   },
   "PNUT": {
     "cap": 200,
     "price": 0.1691,
-    "avgQuoteVolume4h": 494862,
+    "avgQuoteVolume4h": 477833,
     "log": 1760133594804,
     "startTime": 1760129788868
   },
   "ZIL": {
     "cap": 226,
     "price": 0.00935,
-    "avgQuoteVolume4h": 79616,
+    "avgQuoteVolume4h": 75129,
     "log": 1760131614482,
     "startTime": 1760129982541
   },
   "ZRX": {
     "cap": 230,
     "price": 0.235,
-    "avgQuoteVolume4h": 82203,
+    "avgQuoteVolume4h": 77363,
     "log": 1760137120489
   },
   "MINA": {
     "cap": 232,
     "price": 0.1337,
-    "avgQuoteVolume4h": 160751,
+    "avgQuoteVolume4h": 156299,
     "log": 1760138359591,
     "startTime": 1760130803649
   },
   "GAS": {
     "cap": 235,
     "price": 2.531,
-    "avgQuoteVolume4h": 59229,
+    "avgQuoteVolume4h": 57952,
     "log": 1760130810252,
     "startTime": 1760130870217
   },
   "KMNO": {
     "cap": 236,
     "price": 0.067,
-    "avgQuoteVolume4h": 213923,
+    "avgQuoteVolume4h": 153488,
     "log": 1759296937128
   },
   "ROSE": {
     "cap": 239,
     "price": 0.02404,
-    "avgQuoteVolume4h": 236907,
+    "avgQuoteVolume4h": 231947,
     "log": 1760130891189,
     "startTime": 1760129989236
   },
   "BLUR": {
     "cap": 240,
     "price": 0.06264,
-    "avgQuoteVolume4h": 87746,
+    "avgQuoteVolume4h": 84268,
     "log": 1760135678398,
     "startTime": 1760129986451
   },
   "SUSHI": {
     "cap": 241,
     "price": 0.4462,
-    "avgQuoteVolume4h": 263054,
+    "avgQuoteVolume4h": 262840,
     "log": 1760173671009,
     "startTime": 1760132747009
   },
   "ASTR": {
     "cap": 246,
     "price": 0.02907,
-    "avgQuoteVolume4h": 425673,
+    "avgQuoteVolume4h": 398923,
     "log": 1759795421980,
     "startTime": 1759795427992
   },
   "RVN": {
     "cap": 247,
     "price": 0.00988,
-    "avgQuoteVolume4h": 115432,
+    "avgQuoteVolume4h": 118543,
     "log": 1760130808662,
     "startTime": 1760130806663
   },
   "OM": {
     "cap": 248,
     "price": 0.1299,
-    "avgQuoteVolume4h": 339304,
-    "log": 1760132819343,
+    "avgQuoteVolume4h": 346516,
+    "log": 1760228699354,
     "startTime": 1760132817344
   },
   "PROM": {
     "cap": 249,
     "price": 9.637,
-    "avgQuoteVolume4h": 124954,
+    "avgQuoteVolume4h": 115251,
     "log": 1759251750201
   },
   "ID": {
     "cap": 250,
     "price": 0.1263,
-    "avgQuoteVolume4h": 95185,
+    "avgQuoteVolume4h": 89962,
     "log": 1760140816200,
     "startTime": 1760129986258
   },
   "GMX": {
     "cap": 252,
     "price": 12,
-    "avgQuoteVolume4h": 109939,
+    "avgQuoteVolume4h": 105625,
     "log": 1760130810186,
     "startTime": 1760129986189
   },
   "YFI": {
     "cap": 253,
     "price": 4596,
-    "avgQuoteVolume4h": 82824,
+    "avgQuoteVolume4h": 82341,
     "log": 1760135436930,
     "startTime": 1760130858990
   },
   "SAHARA": {
     "cap": 254,
     "price": 0.07379,
-    "avgQuoteVolume4h": 176959,
-    "log": 1760133597189,
+    "avgQuoteVolume4h": 188000,
+    "log": 1760223959197,
     "startTime": 1760132739189
   },
   "ORDI": {
     "cap": 255,
     "price": 5.985,
-    "avgQuoteVolume4h": 399944,
+    "avgQuoteVolume4h": 397322,
     "log": 1760130826368,
     "startTime": 1760130814422
   },
   "ACH": {
     "cap": 256,
     "price": 0.01597,
-    "avgQuoteVolume4h": 174496,
+    "avgQuoteVolume4h": 172514,
     "log": 1760135753904,
     "startTime": 1760129983962
   },
   "T": {
     "cap": 265,
     "price": 0.01358,
-    "avgQuoteVolume4h": 41337,
-    "log": 1760199221976,
+    "avgQuoteVolume4h": 44549,
+    "log": 1760202627974,
     "startTime": 1760129993978
   },
   "HEMI": {
     "cap": 270,
     "price": 0.154,
-    "avgQuoteVolume4h": 5788484
+    "avgQuoteVolume4h": 5694663
   },
   "CELO": {
     "cap": 271,
     "price": 0.3686,
-    "avgQuoteVolume4h": 654937,
+    "avgQuoteVolume4h": 468411,
     "log": 1759660557256,
     "startTime": 1759508985256
   },
   "PROVE": {
     "cap": 275,
     "price": 0.7896,
-    "avgQuoteVolume4h": 322109,
+    "avgQuoteVolume4h": 422533,
     "log": 1760025779232,
     "startTime": 1759376697238
   },
   "COW": {
     "cap": 281,
     "price": 0.1436,
-    "avgQuoteVolume4h": 145659,
+    "avgQuoteVolume4h": 133826,
     "log": 1760133914802,
     "startTime": 1760131608802
   },
@@ -720,94 +720,94 @@
   "OPEN": {
     "cap": 283,
     "price": 0.657,
-    "avgQuoteVolume4h": 936700
+    "avgQuoteVolume4h": 771442
   },
   "SKL": {
     "cap": 284,
-    "price": 0.01779,
-    "avgQuoteVolume4h": 95254,
-    "startTime": 1760130941244,
-    "log": 1760132811205
+    "price": 0.01882,
+    "avgQuoteVolume4h": 134108,
+    "startTime": 1760219921206,
+    "log": 1760221429214
   },
   "RED": {
     "cap": 286,
     "price": 0.374,
-    "avgQuoteVolume4h": 96154,
+    "avgQuoteVolume4h": 85722,
     "log": 1760143493001,
     "startTime": 1760143491002
   },
   "SOMI": {
     "cap": 287,
     "price": 0.927,
-    "avgQuoteVolume4h": 958368,
+    "avgQuoteVolume4h": 691038,
     "startTime": 1759292783268,
     "log": 1759300705267
   },
   "VANA": {
     "cap": 288,
     "price": 3.242,
-    "avgQuoteVolume4h": 129727,
+    "avgQuoteVolume4h": 129464,
     "log": 1760130808901,
     "startTime": 1760129988929
   },
   "ANKR": {
     "cap": 289,
     "price": 0.01198,
-    "avgQuoteVolume4h": 54809,
+    "avgQuoteVolume4h": 54385,
     "log": 1760134888585,
     "startTime": 1760129980674
   },
   "ME": {
     "cap": 304,
     "price": 0.517,
-    "avgQuoteVolume4h": 47590,
+    "avgQuoteVolume4h": 45648,
     "log": 1760135626869,
     "startTime": 1760129816869
   },
   "ICX": {
     "cap": 308,
     "price": 0.0967,
-    "avgQuoteVolume4h": 39284,
+    "avgQuoteVolume4h": 39487,
     "log": 1760197644398,
     "startTime": 1760130806396
   },
   "ZKC": {
     "cap": 310,
     "price": 0.612,
-    "avgQuoteVolume4h": 373218
+    "avgQuoteVolume4h": 348200
   },
   "NXPC": {
     "cap": 311,
     "price": 0.3977,
-    "avgQuoteVolume4h": 86422,
+    "avgQuoteVolume4h": 84074,
     "log": 1760131525133,
     "startTime": 1760130817160
   },
   "LAYER": {
     "cap": 315,
     "price": 0.3118,
-    "avgQuoteVolume4h": 66193,
+    "avgQuoteVolume4h": 64845,
     "log": 1760134618963,
     "startTime": 1760130806983
   },
   "POLYX": {
     "cap": 316,
     "price": 0.0963,
-    "avgQuoteVolume4h": 50477,
+    "avgQuoteVolume4h": 49426,
     "log": 1760131564140,
     "startTime": 1760130808170
   },
   "WOO": {
     "cap": 318,
     "price": 0.0555,
-    "avgQuoteVolume4h": 91742,
+    "avgQuoteVolume4h": 85225,
     "log": 1760129999958,
     "startTime": 1760129997958
   },
   "MASK": {
     "cap": 321,
     "price": 1.008,
-    "avgQuoteVolume4h": 103519,
+    "avgQuoteVolume4h": 102901,
     "log": 1760177841478,
     "startTime": 1760130857578
   },
@@ -819,34 +819,34 @@
   "ORCA": {
     "cap": 323,
     "price": 1.712,
-    "avgQuoteVolume4h": 69458,
+    "avgQuoteVolume4h": 72174,
     "log": 1760158684864,
     "startTime": 1760129988905
   },
   "SIGN": {
     "cap": 324,
     "price": 0.03524,
-    "avgQuoteVolume4h": 121793,
+    "avgQuoteVolume4h": 119584,
     "log": 1760138757110,
     "startTime": 1760132027110
   },
   "GMT": {
     "cap": 325,
     "price": 0.0296,
-    "avgQuoteVolume4h": 157072,
+    "avgQuoteVolume4h": 156223,
     "log": 1760141939990,
     "startTime": 1760130864022
   },
   "NMR": {
     "cap": 326,
     "price": 15.455,
-    "avgQuoteVolume4h": 158291,
+    "avgQuoteVolume4h": 148035,
     "log": 1760130813007
   },
   "STG": {
     "cap": 327,
     "price": 0.1661,
-    "avgQuoteVolume4h": 153513,
+    "avgQuoteVolume4h": 153578,
     "log": 1759916566121,
     "startTime": 1760137248120,
     "side": "🔴"
@@ -854,35 +854,35 @@
   "RPL": {
     "cap": 329,
     "price": 4.24,
-    "avgQuoteVolume4h": 58020,
+    "avgQuoteVolume4h": 56684,
     "log": 1760130820209,
     "startTime": 1760129990202
   },
   "ENJ": {
     "cap": 331,
     "price": 0.0532,
-    "avgQuoteVolume4h": 79945,
+    "avgQuoteVolume4h": 74386,
     "log": 1760131598511,
     "startTime": 1760129980608
   },
   "ZEN": {
     "cap": 332,
     "price": 9.542,
-    "avgQuoteVolume4h": 2114165,
+    "avgQuoteVolume4h": 2174759,
     "log": 1759414484861,
     "startTime": 1759347440862
   },
   "KDA": {
     "cap": 333,
     "price": 0.3012,
-    "avgQuoteVolume4h": 152235,
+    "avgQuoteVolume4h": 150199,
     "log": 1760143314001,
     "startTime": 1760129988018
   },
   "LRC": {
     "cap": 334,
     "price": 0.0764,
-    "avgQuoteVolume4h": 74663,
+    "avgQuoteVolume4h": 72258,
     "log": 1760178744834,
     "startTime": 1760129996833
   },
@@ -894,162 +894,162 @@
   "IO": {
     "cap": 341,
     "price": 0.54,
-    "avgQuoteVolume4h": 325144,
+    "avgQuoteVolume4h": 301473,
     "log": 1759511878692
   },
   "ONT": {
     "cap": 343,
     "price": 0.1033,
-    "avgQuoteVolume4h": 58526,
+    "avgQuoteVolume4h": 58379,
     "log": 1760137792360,
     "startTime": 1760130804469
   },
   "BAND": {
     "cap": 345,
     "price": 0.58,
-    "avgQuoteVolume4h": 61807,
+    "avgQuoteVolume4h": 57828,
     "log": 1760130816678,
     "startTime": 1760129994645
   },
   "UMA": {
     "cap": 346,
     "price": 0.556,
-    "avgQuoteVolume4h": 91334,
+    "avgQuoteVolume4h": 93873,
     "log": 1760130827030,
     "startTime": 1760131139029
   },
   "COTI": {
     "cap": 350,
     "price": 0.045,
-    "avgQuoteVolume4h": 161417,
+    "avgQuoteVolume4h": 163826,
     "log": 1760007712772
   },
   "SSV": {
     "cap": 352,
     "price": 6.641,
-    "avgQuoteVolume4h": 190595,
+    "avgQuoteVolume4h": 192301,
     "log": 1760135142184,
     "startTime": 1760130054184
   },
   "SXP": {
     "cap": 354,
     "price": 0.1324,
-    "avgQuoteVolume4h": 45570,
+    "avgQuoteVolume4h": 44878,
     "log": 1760130820899,
     "startTime": 1760130818891
   },
   "HOLO": {
     "cap": 358,
     "price": 0.294,
-    "avgQuoteVolume4h": 353854,
+    "avgQuoteVolume4h": 330801,
     "log": 1759787357288
   },
   "XVS": {
     "cap": 363,
     "price": 6.112,
-    "avgQuoteVolume4h": 208469,
+    "avgQuoteVolume4h": 207214,
     "log": 1759936857099
   },
   "SXT": {
     "cap": 374,
     "price": 0.0776,
-    "avgQuoteVolume4h": 133148,
+    "avgQuoteVolume4h": 132123,
     "log": 1760134260038,
     "startTime": 1760016921134
   },
   "STORJ": {
     "cap": 375,
     "price": 0.1974,
-    "avgQuoteVolume4h": 44139,
+    "avgQuoteVolume4h": 43641,
     "log": 1760137002901,
     "startTime": 1760129984944
   },
   "YGG": {
     "cap": 380,
     "price": 0.1551,
-    "avgQuoteVolume4h": 241967,
+    "avgQuoteVolume4h": 233041,
     "log": 1760134173669,
     "startTime": 1760129993676
   },
   "BICO": {
     "cap": 385,
     "price": 0.0663,
-    "avgQuoteVolume4h": 42972,
+    "avgQuoteVolume4h": 41966,
     "log": 1760140895837,
     "startTime": 1760140897838
   },
   "HIVE": {
     "cap": 386,
     "price": 0.1528,
-    "avgQuoteVolume4h": 35451,
+    "avgQuoteVolume4h": 35427,
     "log": 1760133390807,
     "startTime": 1760130810911
   },
   "RLC": {
     "cap": 387,
-    "price": 1.152,
-    "avgQuoteVolume4h": 75176,
-    "log": 1760129990713,
-    "startTime": 1759038450669
+    "price": 0.811,
+    "avgQuoteVolume4h": 71907,
+    "log": 1760213360675,
+    "startTime": 1760213358668
   },
   "HOME": {
     "cap": 388,
     "price": 0.0302,
-    "avgQuoteVolume4h": 104962,
+    "avgQuoteVolume4h": 102816,
     "log": 1759998425170,
     "startTime": 1758885043170
   },
   "ERA": {
     "cap": 391,
-    "price": 0.4378,
-    "avgQuoteVolume4h": 106870,
-    "log": 1760132973205,
-    "startTime": 1760129983235
+    "price": 0.3881,
+    "avgQuoteVolume4h": 124955,
+    "log": 1760228631206,
+    "startTime": 1760228215211
   },
   "METIS": {
     "cap": 391,
     "price": 10.94,
-    "avgQuoteVolume4h": 109284,
+    "avgQuoteVolume4h": 107455,
     "log": 1760130796857,
     "startTime": 1760129982606
   },
   "TRB": {
     "cap": 395,
     "price": 26.1,
-    "avgQuoteVolume4h": 257691,
+    "avgQuoteVolume4h": 251356,
     "log": 1760156936996,
     "startTime": 1760130861062
   },
   "ILV": {
     "cap": 399,
     "price": 12.767,
-    "avgQuoteVolume4h": 118543,
+    "avgQuoteVolume4h": 113250,
     "log": 1759390815682
   },
   "PEOPLE": {
     "cap": 400,
     "price": 0.01391,
-    "avgQuoteVolume4h": 231479,
+    "avgQuoteVolume4h": 227651,
     "log": 1760136537868,
     "startTime": 1760129789950
   },
   "PIXEL": {
     "cap": 401,
     "price": 0.028,
-    "avgQuoteVolume4h": 135360,
+    "avgQuoteVolume4h": 128294,
     "log": 1760130942586
   },
   "SPK": {
     "cap": 404,
     "price": 0.048447,
-    "avgQuoteVolume4h": 275400,
+    "avgQuoteVolume4h": 264299,
     "startTime": 1758808825179,
     "log": 1759971791188
   },
   "POWR": {
     "cap": 405,
     "price": 0.1161,
-    "avgQuoteVolume4h": 28661,
+    "avgQuoteVolume4h": 29051,
     "log": 1760199243795,
     "startTime": 1760199251788,
     "side": "📈"
@@ -1057,89 +1057,89 @@
   "CVC": {
     "cap": 406,
     "price": 0.0692,
-    "avgQuoteVolume4h": 30611,
+    "avgQuoteVolume4h": 31150,
     "log": 1760133992620,
     "startTime": 1760130800710
   },
   "MANTA": {
     "cap": 410,
     "price": 0.1269,
-    "avgQuoteVolume4h": 141462,
+    "avgQuoteVolume4h": 138893,
     "log": 1760193468472,
     "startTime": 1760193466473
   },
   "ARK": {
     "cap": 411,
     "price": 0.3742,
-    "avgQuoteVolume4h": 32803,
+    "avgQuoteVolume4h": 32556,
     "log": 1760131004370,
     "startTime": 1760129992346
   },
   "CYBER": {
     "cap": 413,
     "price": 1.538,
-    "avgQuoteVolume4h": 120430,
+    "avgQuoteVolume4h": 114470,
     "log": 1759590938317
   },
   "STRAX": {
     "cap": 416,
     "price": 0.03359,
-    "avgQuoteVolume4h": 41226,
+    "avgQuoteVolume4h": 40725,
     "log": 1760132879177,
     "startTime": 1760132991177
   },
   "WAXP": {
     "cap": 419,
     "price": 0.01531,
-    "avgQuoteVolume4h": 30770,
+    "avgQuoteVolume4h": 29992,
     "log": 1760132637619,
     "startTime": 1760129985656
   },
   "NIL": {
     "cap": 420,
     "price": 0.248,
-    "avgQuoteVolume4h": 124180,
+    "avgQuoteVolume4h": 128934,
     "log": 1760133749041,
     "startTime": 1760131033110
   },
   "PUNDIX": {
     "cap": 423,
-    "price": 0.2928,
-    "avgQuoteVolume4h": 58214,
-    "startTime": 1760194969405,
-    "log": 1760194971403
+    "price": 0.2848,
+    "avgQuoteVolume4h": 66318,
+    "startTime": 1760227217401,
+    "log": 1760227205401
   },
   "FIDA": {
     "cap": 425,
     "price": 0.0673,
-    "avgQuoteVolume4h": 88102,
+    "avgQuoteVolume4h": 81530,
     "log": 1760130981904,
     "startTime": 1760129981716
   },
   "EDU": {
     "cap": 428,
     "price": 0.131,
-    "avgQuoteVolume4h": 151883,
+    "avgQuoteVolume4h": 145531,
     "log": 1760129810230
   },
   "PHA": {
     "cap": 429,
     "price": 0.0862,
-    "avgQuoteVolume4h": 84386,
+    "avgQuoteVolume4h": 85234,
     "log": 1760130807571,
     "startTime": 1760129981581
   },
   "BNT": {
     "cap": 434,
     "price": 0.5923,
-    "avgQuoteVolume4h": 17017,
+    "avgQuoteVolume4h": 16546,
     "log": 1760133420066,
     "startTime": 1760130828735
   },
   "OG": {
     "cap": 439,
     "price": 14.949,
-    "avgQuoteVolume4h": 613208,
+    "avgQuoteVolume4h": 462875,
     "log": 1759761163248,
     "startTime": 1759756663252
   },
@@ -1151,291 +1151,291 @@
   "TUT": {
     "cap": 442,
     "price": 0.12083,
-    "avgQuoteVolume4h": 1370118,
+    "avgQuoteVolume4h": 1024067,
     "startTime": 1759643179060,
     "log": 1759649039063
   },
   "LA": {
     "cap": 444,
     "price": 0.2577,
-    "avgQuoteVolume4h": 161807,
+    "avgQuoteVolume4h": 161652,
     "log": 1760131007202,
     "startTime": 1760131057208
   },
   "XAI": {
     "cap": 446,
     "price": 0.029,
-    "avgQuoteVolume4h": 162595,
+    "avgQuoteVolume4h": 164181,
     "log": 1760130820494,
     "startTime": 1760130870485
   },
   "LISTA": {
     "cap": 447,
     "price": 0.3091,
-    "avgQuoteVolume4h": 984276,
+    "avgQuoteVolume4h": 979421,
     "log": 1759999794701,
     "startTime": 1759422878715
   },
   "CHR": {
     "cap": 448,
     "price": 0.0775,
-    "avgQuoteVolume4h": 87718,
+    "avgQuoteVolume4h": 90951,
     "log": 1760135006811,
     "startTime": 1760129974973
   },
   "FLUX": {
     "cap": 449,
     "price": 0.1598,
-    "avgQuoteVolume4h": 45140,
+    "avgQuoteVolume4h": 45158,
     "log": 1760133407840,
     "startTime": 1760129987853
   },
   "HUMA": {
     "cap": 450,
     "price": 0.03435,
-    "avgQuoteVolume4h": 183199,
+    "avgQuoteVolume4h": 170399,
     "startTime": 1759416197163,
     "log": 1759416199147
   },
   "CGPT": {
     "cap": 454,
     "price": 0.0605,
-    "avgQuoteVolume4h": 76516,
+    "avgQuoteVolume4h": 75400,
     "log": 1760130878934,
     "startTime": 1760130874935
   },
   "LQTY": {
     "cap": 456,
     "price": 0.599,
-    "avgQuoteVolume4h": 64707,
+    "avgQuoteVolume4h": 61288,
     "log": 1760134004185,
     "startTime": 1760129980279
   },
   "ACX": {
     "cap": 460,
     "price": 0.0845,
-    "avgQuoteVolume4h": 45281,
-    "log": 1760195460061,
+    "avgQuoteVolume4h": 46938,
+    "log": 1760215598861,
     "startTime": 1760130810966
   },
   "API3": {
     "cap": 461,
     "price": 0.778,
-    "avgQuoteVolume4h": 505637,
+    "avgQuoteVolume4h": 506841,
     "log": 1759812209938
   },
   "DYM": {
     "cap": 462,
     "price": 0.142,
-    "avgQuoteVolume4h": 86794,
-    "log": 1760136266502,
+    "avgQuoteVolume4h": 86030,
+    "log": 1760225534508,
     "startTime": 1760129986541
   },
   "DIA": {
     "cap": 464,
     "price": 0.4541,
-    "avgQuoteVolume4h": 48879,
-    "log": 1760189549060,
+    "avgQuoteVolume4h": 46870,
+    "log": 1760216777025,
     "startTime": 1760129983051
   },
   "JOE": {
     "cap": 468,
     "price": 0.1371,
-    "avgQuoteVolume4h": 47288,
+    "avgQuoteVolume4h": 44003,
     "log": 1760130837887,
     "startTime": 1760129799885
   },
   "USUAL": {
     "cap": 475,
     "price": 0.0329,
-    "avgQuoteVolume4h": 209988,
+    "avgQuoteVolume4h": 206872,
     "log": 1760134300817,
     "startTime": 1760130878826
   },
   "COOKIE": {
     "cap": 477,
     "price": 0.107,
-    "avgQuoteVolume4h": 108077,
+    "avgQuoteVolume4h": 102535,
     "log": 1760129998927
   },
   "ONG": {
     "cap": 479,
     "price": 0.152,
-    "avgQuoteVolume4h": 56665
+    "avgQuoteVolume4h": 52173
   },
   "CTSI": {
     "cap": 485,
     "price": 0.062,
-    "avgQuoteVolume4h": 48022,
+    "avgQuoteVolume4h": 47109,
     "log": 1760133298802,
     "startTime": 1760129986822
   },
   "LSK": {
     "cap": 487,
     "price": 0.226,
-    "avgQuoteVolume4h": 31034,
+    "avgQuoteVolume4h": 31271,
     "log": 1760131414734,
     "startTime": 1760130880753
   },
   "STEEM": {
     "cap": 488,
     "price": 0.1018,
-    "avgQuoteVolume4h": 33434,
-    "log": 1760130806095,
+    "avgQuoteVolume4h": 33385,
+    "log": 1760214484043,
     "startTime": 1760130810083
   },
   "KNC": {
     "cap": 491,
     "price": 0.2884,
-    "avgQuoteVolume4h": 36813,
+    "avgQuoteVolume4h": 37317,
     "log": 1760133760829,
     "startTime": 1760129986851
   },
   "USTC": {
     "cap": 495,
-    "price": 0.00977,
-    "avgQuoteVolume4h": 85186,
-    "log": 1760130812248,
-    "startTime": 1760129784442
+    "price": 0.00828,
+    "avgQuoteVolume4h": 93164,
+    "log": 1760224062194,
+    "startTime": 1760224066201
   },
   "SAGA": {
     "cap": 497,
     "price": 0.209,
-    "avgQuoteVolume4h": 168851,
+    "avgQuoteVolume4h": 169665,
     "log": 1760130814655
   },
   "SOLV": {
     "cap": 505,
     "price": 0.03914,
-    "avgQuoteVolume4h": 263312,
+    "avgQuoteVolume4h": 289638,
     "log": 1760140194941,
     "startTime": 1760130988997
   },
   "GLMR": {
     "cap": 516,
     "price": 0.0476,
-    "avgQuoteVolume4h": 59106,
+    "avgQuoteVolume4h": 57780,
     "log": 1760135313910,
     "startTime": 1760129987925
   },
   "SOPH": {
     "cap": 517,
     "price": 0.029,
-    "avgQuoteVolume4h": 103357,
+    "avgQuoteVolume4h": 109620,
     "log": 1760173731157
   },
   "RIF": {
     "cap": 519,
     "price": 0.0465,
-    "avgQuoteVolume4h": 21202,
+    "avgQuoteVolume4h": 20911,
     "log": 1760133577256,
     "startTime": 1760131015256
   },
   "MTL": {
     "cap": 525,
     "price": 0.542,
-    "avgQuoteVolume4h": 25692,
+    "avgQuoteVolume4h": 24886,
     "log": 1760133758604,
     "startTime": 1760130798770
   },
   "EPIC": {
     "cap": 532,
     "price": 0.984,
-    "avgQuoteVolume4h": 186452,
+    "avgQuoteVolume4h": 182347,
     "log": 1760191499024,
     "startTime": 1760191525021
   },
   "MOVR": {
     "cap": 533,
     "price": 4.711,
-    "avgQuoteVolume4h": 64290,
+    "avgQuoteVolume4h": 61155,
     "log": 1760133199763,
     "startTime": 1760129989775
   },
   "MAGIC": {
     "cap": 535,
     "price": 0.1451,
-    "avgQuoteVolume4h": 99603,
+    "avgQuoteVolume4h": 100187,
     "log": 1760135936166,
     "startTime": 1760129978263
   },
   "AUCTION": {
     "cap": 538,
     "price": 7.16,
-    "avgQuoteVolume4h": 97190,
+    "avgQuoteVolume4h": 96519,
     "log": 1760137935733,
     "startTime": 1760129981764
   },
   "SCR": {
     "cap": 539,
     "price": 0.209,
-    "avgQuoteVolume4h": 73693,
+    "avgQuoteVolume4h": 76569,
     "log": 1760133534793,
     "startTime": 1760130808812
   },
   "INIT": {
     "cap": 544,
     "price": 0.219,
-    "avgQuoteVolume4h": 211317,
+    "avgQuoteVolume4h": 206859,
     "log": 1760130815144,
     "startTime": 1760130957105
   },
   "CTK": {
     "cap": 548,
     "price": 0.3,
-    "avgQuoteVolume4h": 33464,
+    "avgQuoteVolume4h": 30452,
     "log": 1760132991144,
     "startTime": 1760130807174
   },
   "WCT": {
     "cap": 550,
     "price": 0.27,
-    "avgQuoteVolume4h": 303360,
+    "avgQuoteVolume4h": 282403,
     "log": 1760129809094
   },
   "NTRN": {
     "cap": 553,
     "price": 0.083,
-    "avgQuoteVolume4h": 50531,
+    "avgQuoteVolume4h": 52729,
     "log": 1759787760058
   },
   "KERNEL": {
     "cap": 563,
     "price": 0.207,
-    "avgQuoteVolume4h": 396435,
+    "avgQuoteVolume4h": 393709,
     "log": 1759749379090
   },
   "SCRT": {
     "cap": 564,
     "price": 0.1907,
-    "avgQuoteVolume4h": 187604,
+    "avgQuoteVolume4h": 146853,
     "log": 1760014781935,
     "startTime": 1760014779933
   },
   "HYPER": {
     "cap": 570,
     "price": 0.198,
-    "avgQuoteVolume4h": 231249,
+    "avgQuoteVolume4h": 231789,
     "log": 1760141797100,
     "startTime": 1760141795101
   },
   "AGLD": {
     "cap": 573,
     "price": 0.452,
-    "avgQuoteVolume4h": 47416,
+    "avgQuoteVolume4h": 47137,
     "log": 1760133747694,
     "startTime": 1760130801747
   },
   "DOLO": {
     "cap": 579,
     "price": 0.108,
-    "avgQuoteVolume4h": 232392,
+    "avgQuoteVolume4h": 207232,
     "log": 1760130817286
   },
   "OXT": {
     "cap": 580,
     "price": 0.0416,
-    "avgQuoteVolume4h": 32827,
+    "avgQuoteVolume4h": 31247,
     "log": 1760134115066,
     "startTime": 1760130881080
   },
@@ -1447,7 +1447,7 @@
   "VANRY": {
     "cap": 585,
     "price": 0.0175,
-    "avgQuoteVolume4h": 125613,
+    "avgQuoteVolume4h": 125482,
     "log": 1760164434405,
     "startTime": 1760164484407,
     "side": "🔴"
@@ -1455,308 +1455,308 @@
   "C98": {
     "cap": 593,
     "price": 0.045,
-    "avgQuoteVolume4h": 197082,
+    "avgQuoteVolume4h": 171544,
     "log": 1760130827567,
     "startTime": 1760130825572
   },
   "NEWT": {
     "cap": 596,
     "price": 0.1548,
-    "avgQuoteVolume4h": 65579,
+    "avgQuoteVolume4h": 65036,
     "log": 1760157437190,
     "startTime": 1760130815223
   },
   "THE": {
     "cap": 599,
     "price": 0.407,
-    "avgQuoteVolume4h": 528390
+    "avgQuoteVolume4h": 496058
   },
   "REZ": {
     "cap": 601,
     "price": 0.01278,
-    "avgQuoteVolume4h": 429593,
+    "avgQuoteVolume4h": 392200,
     "log": 1759759326649,
     "startTime": 1759151118656
   },
   "HFT": {
     "cap": 602,
     "price": 0.0573,
-    "avgQuoteVolume4h": 98346,
+    "avgQuoteVolume4h": 95612,
     "log": 1760130834165,
     "startTime": 1760130832159
   },
   "TOWNS": {
     "cap": 611,
     "price": 0.01403,
-    "avgQuoteVolume4h": 77592,
+    "avgQuoteVolume4h": 72993,
     "log": 1760130835226,
     "startTime": 1760130833230
   },
   "TREE": {
     "cap": 612,
     "price": 0.276,
-    "avgQuoteVolume4h": 178039,
+    "avgQuoteVolume4h": 167662,
     "log": 1760130821237
   },
   "MAV": {
     "cap": 614,
     "price": 0.02996,
-    "avgQuoteVolume4h": 155092,
+    "avgQuoteVolume4h": 171415,
     "startTime": 1760131074264,
     "log": 1760197944276
   },
   "RARE": {
     "cap": 623,
-    "price": 0.0438,
-    "avgQuoteVolume4h": 78865,
-    "log": 1760136005710,
-    "startTime": 1760129995710
+    "price": 0.0369,
+    "avgQuoteVolume4h": 97234,
+    "log": 1760224553710,
+    "startTime": 1760223205713
   },
   "TNSR": {
     "cap": 631,
     "price": 0.0773,
-    "avgQuoteVolume4h": 45797,
+    "avgQuoteVolume4h": 45649,
     "log": 1760130776612,
     "startTime": 1760130806631
   },
   "SHELL": {
     "cap": 644,
     "price": 0.1279,
-    "avgQuoteVolume4h": 164550,
+    "avgQuoteVolume4h": 164175,
     "log": 1759988717001,
     "startTime": 1759988726997
   },
   "ALPINE": {
     "cap": 645,
     "price": 3.662,
-    "avgQuoteVolume4h": 1116317,
+    "avgQuoteVolume4h": 1063683,
     "log": 1759290565975,
     "startTime": 1759290563971
   },
   "LUMIA": {
     "cap": 654,
     "price": 0.231,
-    "avgQuoteVolume4h": 57523,
+    "avgQuoteVolume4h": 57645,
     "log": 1760133540109,
     "startTime": 1760129806797
   },
   "TRU": {
     "cap": 655,
     "price": 0.0244,
-    "avgQuoteVolume4h": 56198,
+    "avgQuoteVolume4h": 57025,
     "log": 1760136419266,
     "startTime": 1760129789346
   },
   "OGN": {
     "cap": 665,
-    "price": 0.0447,
-    "avgQuoteVolume4h": 50668,
-    "log": 1760155122714,
-    "startTime": 1760155120714
+    "price": 0.0456,
+    "avgQuoteVolume4h": 51162,
+    "log": 1760221424722,
+    "startTime": 1760221422718
   },
   "HIGH": {
     "cap": 667,
     "price": 0.401,
-    "avgQuoteVolume4h": 56714,
+    "avgQuoteVolume4h": 55311,
     "log": 1760141453863,
     "startTime": 1760129983922
   },
   "AVA": {
     "cap": 676,
     "price": 0.4134,
-    "avgQuoteVolume4h": 52855,
+    "avgQuoteVolume4h": 51772,
     "log": 1760133959192,
     "startTime": 1760130821207
   },
   "PARTI": {
     "cap": 682,
     "price": 0.1374,
-    "avgQuoteVolume4h": 139047,
+    "avgQuoteVolume4h": 137637,
     "startTime": 1759940307050,
     "log": 1760128665055
   },
   "RESOLV": {
     "cap": 683,
     "price": 0.112,
-    "avgQuoteVolume4h": 163067,
+    "avgQuoteVolume4h": 158456,
     "log": 1760197701166
   },
   "FORTH": {
     "cap": 684,
     "price": 2.3,
-    "avgQuoteVolume4h": 23369,
+    "avgQuoteVolume4h": 23590,
     "log": 1760144235426,
     "startTime": 1760130815476
   },
   "ATA": {
     "cap": 687,
-    "price": 0.0361,
-    "avgQuoteVolume4h": 25322,
-    "startTime": 1760129665555,
-    "log": 1760132633501
+    "price": 0.0276,
+    "avgQuoteVolume4h": 25852,
+    "startTime": 1760226041514,
+    "log": 1760226029506
   },
   "MITO": {
     "cap": 702,
     "price": 0.184,
-    "avgQuoteVolume4h": 207152,
+    "avgQuoteVolume4h": 193766,
     "log": 1759132475257
   },
   "ARPA": {
     "cap": 712,
     "price": 0.01675,
-    "avgQuoteVolume4h": 46506,
+    "avgQuoteVolume4h": 49184,
     "log": 1760197868665,
     "startTime": 1760197138669
   },
   "HAEDAL": {
     "cap": 718,
     "price": 0.1173,
-    "avgQuoteVolume4h": 67869,
+    "avgQuoteVolume4h": 66819,
     "log": 1760133097140,
     "startTime": 1760129993150
   },
   "RAD": {
     "cap": 721,
     "price": 0.537,
-    "avgQuoteVolume4h": 33402,
+    "avgQuoteVolume4h": 32820,
     "log": 1760131019698,
     "startTime": 1760131017698
   },
   "TST": {
     "cap": 729,
     "price": 0.0292,
-    "avgQuoteVolume4h": 564232,
+    "avgQuoteVolume4h": 552688,
     "log": 1759457206961,
     "startTime": 1759250512961
   },
   "ALICE": {
     "cap": 733,
     "price": 0.4023,
-    "avgQuoteVolume4h": 886822,
+    "avgQuoteVolume4h": 864243,
     "log": 1760037449357,
     "startTime": 1760023549357
   },
   "NFP": {
     "cap": 734,
     "price": 0.062,
-    "avgQuoteVolume4h": 112659,
+    "avgQuoteVolume4h": 115792,
     "log": 1759935330444
   },
   "MUBARAK": {
     "cap": 740,
     "price": 0.031,
-    "avgQuoteVolume4h": 629289,
+    "avgQuoteVolume4h": 621317,
     "log": 1759452000054
   },
   "PHB": {
     "cap": 755,
     "price": 0.435,
-    "avgQuoteVolume4h": 210645,
+    "avgQuoteVolume4h": 175775,
     "log": 1760130818189,
     "startTime": 1760130816199
   },
   "SYS": {
     "cap": 756,
     "price": 0.02653,
-    "avgQuoteVolume4h": 34727,
+    "avgQuoteVolume4h": 34942,
     "log": 1760131613674,
     "startTime": 1760131009674
   },
   "HEI": {
     "cap": 770,
     "price": 0.0342,
-    "avgQuoteVolume4h": 81053,
-    "log": 1760140134972,
+    "avgQuoteVolume4h": 87219,
+    "log": 1760233920080,
     "startTime": 1760131176972
   },
   "GPS": {
     "cap": 771,
     "price": 0.01511,
-    "avgQuoteVolume4h": 202426,
+    "avgQuoteVolume4h": 198125,
     "log": 1759990907003,
     "startTime": 1759977017005
   },
   "GTC": {
     "cap": 776,
     "price": 0.261,
-    "avgQuoteVolume4h": 38217,
+    "avgQuoteVolume4h": 37901,
     "log": 1760178101516,
     "startTime": 1760129781686
   },
   "MBOX": {
     "cap": 783,
     "price": 0.0694,
-    "avgQuoteVolume4h": 217072,
+    "avgQuoteVolume4h": 217327,
     "log": 1760062277610,
     "startTime": 1760062275630
   },
   "DUSK": {
     "cap": 794,
     "price": 0.0677,
-    "avgQuoteVolume4h": 133411,
+    "avgQuoteVolume4h": 87048,
     "log": 1759678558579,
     "startTime": 1759646570579
   },
   "GUN": {
     "cap": 796,
     "price": 0.02228,
-    "avgQuoteVolume4h": 71695,
+    "avgQuoteVolume4h": 71486,
     "log": 1760151349062,
     "startTime": 1760130887061
   },
   "HOOK": {
     "cap": 798,
     "price": 0.1256,
-    "avgQuoteVolume4h": 210603,
+    "avgQuoteVolume4h": 159819,
     "log": 1759497446162,
     "startTime": 1759492066161
   },
   "DEGO": {
     "cap": 802,
-    "price": 0.957,
-    "avgQuoteVolume4h": 114787,
-    "log": 1760141215351,
-    "startTime": 1760130807386
+    "price": 0.714,
+    "avgQuoteVolume4h": 132585,
+    "log": 1760217335349,
+    "startTime": 1760217321354
   },
   "ACT": {
     "cap": 808,
     "price": 0.0259,
-    "avgQuoteVolume4h": 229747,
+    "avgQuoteVolume4h": 232372,
     "log": 1760129785028,
     "startTime": 1760129790898
   },
   "VIC": {
     "cap": 813,
     "price": 0.1829,
-    "avgQuoteVolume4h": 31225,
-    "log": 1760179790398,
+    "avgQuoteVolume4h": 31694,
+    "log": 1760229664396,
     "startTime": 1760129992414
   },
   "DF": {
     "cap": 815,
     "price": 0.02226,
-    "avgQuoteVolume4h": 26526,
+    "avgQuoteVolume4h": 27964,
     "log": 1760133951676,
     "startTime": 1760129979704
   },
   "RDNT": {
     "cap": 827,
     "price": 0.02379,
-    "avgQuoteVolume4h": 474397,
+    "avgQuoteVolume4h": 683750,
     "log": 1760198242217,
     "startTime": 1760191238218
   },
   "IDEX": {
     "cap": 834,
     "price": 0.019,
-    "avgQuoteVolume4h": 23492,
+    "avgQuoteVolume4h": 22182,
     "log": 1760134999645,
     "startTime": 1760132799645
   },
   "SANTOS": {
     "cap": 841,
     "price": 2.226,
-    "avgQuoteVolume4h": 156034,
+    "avgQuoteVolume4h": 123222,
     "log": 1759260293824,
     "startTime": 1759260291822
   },
@@ -1768,42 +1768,42 @@
   "PORTAL": {
     "cap": 858,
     "price": 0.0327,
-    "avgQuoteVolume4h": 84953,
+    "avgQuoteVolume4h": 84947,
     "log": 1760136494525,
     "startTime": 1760129788610
   },
   "MLN": {
     "cap": 869,
     "price": 6.96,
-    "avgQuoteVolume4h": 42513,
+    "avgQuoteVolume4h": 44827,
     "log": 1760134475555,
     "startTime": 1760129987564
   },
   "GHST": {
     "cap": 873,
     "price": 0.351,
-    "avgQuoteVolume4h": 33347,
+    "avgQuoteVolume4h": 34181,
     "log": 1760130817648,
     "startTime": 1760129799613
   },
   "SYN": {
     "cap": 887,
     "price": 0.0943,
-    "avgQuoteVolume4h": 27877,
+    "avgQuoteVolume4h": 30319,
     "log": 1760197984183,
     "startTime": 1760129984258
   },
   "STO": {
     "cap": 896,
     "price": 0.1915,
-    "avgQuoteVolume4h": 1511891,
+    "avgQuoteVolume4h": 1474715,
     "startTime": 1760010223117,
     "log": 1760010225123
   },
   "D": {
     "cap": 903,
     "price": 0.03097,
-    "avgQuoteVolume4h": 53139,
+    "avgQuoteVolume4h": 51779,
     "log": 1760124668913,
     "startTime": 1759399514914
   },
@@ -1815,28 +1815,28 @@
   "NKN": {
     "cap": 922,
     "price": 0.0215,
-    "avgQuoteVolume4h": 28657,
+    "avgQuoteVolume4h": 25867,
     "log": 1760172762646,
     "startTime": 1760129990692
   },
   "BEL": {
     "cap": 930,
     "price": 0.2077,
-    "avgQuoteVolume4h": 118791,
-    "log": 1760198903048,
+    "avgQuoteVolume4h": 208297,
+    "log": 1760231519051,
     "startTime": 1760195323047
   },
   "PERP": {
     "cap": 932,
     "price": 0.2303,
-    "avgQuoteVolume4h": 47966,
+    "avgQuoteVolume4h": 45763,
     "log": 1760141395373,
     "startTime": 1760130809385
   },
   "ASR": {
     "cap": 961,
     "price": 1.897,
-    "avgQuoteVolume4h": 84805,
+    "avgQuoteVolume4h": 81829,
     "log": 1760130839252,
     "startTime": 1760130837252
   },
@@ -1848,7 +1848,7 @@
   "QUICK": {
     "cap": 985,
     "price": 0.01784,
-    "avgQuoteVolume4h": 34695,
+    "avgQuoteVolume4h": 34588,
     "log": 1760195117605,
     "startTime": 1760154547604
   }
