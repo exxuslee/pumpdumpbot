@@ -146,9 +146,8 @@ class PumpDumpBot {
                 let ico
                 if (pnlPercent > 0) ico = "🚀"
                 else ico = "🔻"
-                const massage = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
-                this.log(massage);
-                await this.editTelegramAlert(trade.message_id, massage);
+                const message = `${ticker} ${direction}${ico}: ${(+trade.price).toFixed(3)} → ${exitPrice.toFixed(3)} = ${pnlPercent.toFixed(2)}% | ${this.count.toFixed(2)}%`
+                await this.sendTelegramAlert(message, false);
                 delete trade.side;
                 delete trade.message_id;
                 await this.writeTokensFile();

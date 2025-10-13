@@ -59,10 +59,8 @@ class ExtremumTradingBot {
                 return { symbol, price, spot, futures, diffPct };
             })
             .filter(Boolean)
-            .sort((a, b) => Math.abs(b.diffPct) - Math.abs(a.diffPct)) // сортируем по абсолютной разнице (%)
-            .slice(0, 25);
-
-        this.log(`\n🔥 TOP-10 по разнице между spot и futures:\n`);
+            .filter(r => Math.abs(r.diffPct) > 0.5) // 🔥 фильтруем > 0.5%
+            .sort((a, b) => Math.abs(b.diffPct) - Math.abs(a.diffPct));
 
         diffs.forEach(({ symbol, price, spot, futures, diffPct }, i) => {
             this.log(
