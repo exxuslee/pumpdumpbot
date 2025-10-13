@@ -67,7 +67,7 @@ class ExtremumTradingBot {
         try {
             const pair = `${tokenSymbol}USDT`;
             const candles = await this.client.futuresCandles({
-                symbol: pair, interval: "15m", limit: 17
+                symbol: pair, interval: "15m", limit: 26
             });
 
             if (!candles || candles.length === 0) {
@@ -78,19 +78,20 @@ class ExtremumTradingBot {
             let sumVolume = 0.0;
             let min = 1_000_000.0;
             let max = 0.0;
-            for (let i = 0; i < candles.length - 4; i++) {
+            for (let i = 0; i < candles.length - 6; i++) {
                 min = Math.min(min, parseFloat(candles[i].low))
                 max = Math.max(max, parseFloat(candles[i].high))
-                sumVolume = sumVolume + (parseFloat(candles[i].quoteVolume) / 34.0)
+                sumVolume = sumVolume + parseFloat(candles[i].quoteVolume)
             }
             let overLow = 1_000_000.0;
             let overHigh = 0.0;
-            for (let i = candles.length - 4; i < candles.length; i++) {
+            for (let i = candles.length - 6; i < candles.length; i++) {
                 overLow = Math.min(overLow, parseFloat(candles[i].low))
                 overHigh = Math.max(overHigh, parseFloat(candles[i].high))
             }
+            let triggerVolume = (sumVolume / 15).toFixed(0);
 
-            return {triggerVolume: +sumVolume.toFixed(0), max: max, min: min, overHigh: overHigh, overLow: overLow};
+            return {triggerVolume: triggerVolume, max: max, min: min, overHigh: overHigh, overLow: overLow};
         } catch (error) {
             console.error(`❌ Error getting hourly volume for ${tokenSymbol}:`, error.message);
             return {};
@@ -116,25 +117,25 @@ class ExtremumTradingBot {
         );
 
         tokensArray.forEach(r => {
-                const {key: tokenSymbol, cap, extremums} = r;
-                if (
-                    (((counts.overHigh > counts.overLow) && (extremums.overLow < extremums.min)) ||
+            const {key: tokenSymbol, cap, extremums} = r;
+            if (
+                (((counts.overHigh > counts.overLow) && (extremums.overLow < extremums.min)) ||
                     ((counts.overHigh < counts.overLow) && (extremums.overHigh > extremums.max))) &&
-                    !this.tokens[tokenSymbol].isSeen
-                ) {
-                    this.log(
-                        `${tokenSymbol.padEnd(8)} ${String(cap).padEnd(5)} ` +
-                        `min:${extremums.min.toFixed(6).padEnd(12)} ` +
-                        `max:${extremums.max.toFixed(6).padEnd(12)} ` +
-                        `overHL:${(+(extremums.overHigh > extremums.max)).toString()}${(+(extremums.overLow < extremums.min)).toString()}`
-                    );
-                    this.tokens[tokenSymbol].isSeen = true
-                }
-                if ((extremums.overLow > extremums.min) && (extremums.overHigh < extremums.max)) {
-                    delete this.tokens[tokenSymbol].isSeen
-                }
+                !this.tokens[tokenSymbol].isSeen
+            ) {
+                this.log(
+                    `${tokenSymbol.padEnd(8)} ${String(cap).padEnd(5)} ` +
+                    `min:${extremums.min.toFixed(6).padEnd(12)} ` +
+                    `max:${extremums.max.toFixed(6).padEnd(12)} ` +
+                    `overHL:${(+(extremums.overHigh > extremums.max)).toString()}${(+(extremums.overLow < extremums.min)).toString()}`
+                );
+                this.tokens[tokenSymbol].isSeen = true
+            }
+            if ((extremums.overLow > extremums.min) && (extremums.overHigh < extremums.max)) {
+                delete this.tokens[tokenSymbol].isSeen
+            }
 
-            });
+        });
 
         await this.writeTokensFile();
         this.log(`✅ OverHigh: ${counts.overHigh} OverLow: ${counts.overLow}`);
