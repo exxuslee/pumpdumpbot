@@ -67,7 +67,7 @@ class ExtremumTradingBot {
         try {
             const pair = `${tokenSymbol}USDT`;
             const candles = await this.client.futuresCandles({
-                symbol: pair, interval: "15m", limit: 26
+                symbol: pair, interval: "15m", limit: 36
             });
 
             if (!candles || candles.length === 0) {
@@ -89,7 +89,7 @@ class ExtremumTradingBot {
                 overLow = Math.min(overLow, parseFloat(candles[i].low))
                 overHigh = Math.max(overHigh, parseFloat(candles[i].high))
             }
-            let triggerVolume = (sumVolume / 2).toFixed(0);
+            let triggerVolume = (sumVolume / 30).toFixed(0);
 
             return {triggerVolume: triggerVolume, max: max, min: min, overHigh: overHigh, overLow: overLow};
         } catch (error) {
@@ -199,7 +199,7 @@ class ExtremumTradingBot {
         const start1 = !token.side
         const start2 = ext.triggerVolume
         const start3 = candle.quoteVolume > ext.triggerVolume
-        const start4 = Date.now() - (token.startTime || 0) > 20 * 60_000;
+        const start4 = Date.now() - (token.startTime || 0) > 5_400_000;
 
         const startBuy1 = candle.close > ext.max
         const startBuy2 = ext.min > ext.overLow

@@ -59,6 +59,7 @@ class ExtremumTradingBot {
                 return { symbol, price, spot, futures, diffPct };
             })
             .filter(Boolean)
+            .filter(r =>  !['STRAX', 'GLMR', 'RAD', 'IDEX', 'SNT', 'AERGO', 'WAVES', 'OMG', 'BAL', 'BADGER'].includes(r.symbol))
             .filter(r => Math.abs(r.diffPct) > 0.5) // 🔥 фильтруем > 0.5%
             .sort((a, b) => Math.abs(b.diffPct) - Math.abs(a.diffPct));
 
@@ -71,6 +72,7 @@ class ExtremumTradingBot {
                 `diff: ${diffPct.toFixed(2)}%`
             );
         });
+        this.log('----------------------------------------');
     }
 
     async updateAllHourly() {
