@@ -1,22 +1,14 @@
 require("dotenv").config();
 const Binance = require('binance-api-node');
 const dayjs = require("dayjs");
-const telegram = require('./telegram');
-const {writeFile} = require("node:fs/promises");
-
-// Constants
-const TOKENS_FILE = './tokens1.json';
-const STAT_FILE = './stat1.json';
+const {getPairs} = require("./getTokens");
 
 class ExtremumTradingBot {
     constructor() {
-        this.tokens = require(TOKENS_FILE);
-        this.count = require(STAT_FILE).count;
+        this.tokens = {};
         this.client = Binance.default({
             apiKey: process.env.BINANCE_PUBLIC_KEY, apiSecret: process.env.BINANCE_PRIVATE_KEY,
         });
-        this.tgToken = process.env.TELEGRAM_TOKEN3;
-        this.hourlyUpdateInterval = null;
     }
 
     log(message) {
@@ -24,58 +16,36 @@ class ExtremumTradingBot {
         console.log(`${timeLog} ${message}`);
     }
 
-    async writeTokensFile() {
-        try {
-            await writeFile(TOKENS_FILE, JSON.stringify(this.tokens, null, 2));
-        } catch (error) {
-            console.error("❌ Error writing tokens file:", error);
-        }
-    }
-
-    async writeStatFile() {
-        try {
-            await writeFile(STAT_FILE, JSON.stringify({count: this.count}, null, 2));
-        } catch (error) {
-            console.error("❌ Error writing stats file:", error);
-        }
-    }
-
-    async sendTelegramAlert(message, isSilent) {
-        try {
-            await telegram.sendMessage(message, this.tgToken, isSilent);
-            this.log(`📱 Alert sent: ${message}`);
-        } catch (error) {
-            console.error("❌ Failed to send Telegram message:", error.message);
-        }
-    }
-
     async logTop10Diff() {
         const diffs = Object.entries(this.tokens)
             .map(([symbol, token]) => {
-                const { spot, futures, price } = token;
+                const {spot, futures, price, cap} = token;
                 if (!spot || !futures) return null;
-                const diff = futures - spot;
-                const diffPct = (diff / spot) * 100;
-                return { symbol, price, spot, futures, diffPct };
+                const diffPS = ((futures - price) / price) * 100;
+                const diffSF = ((futures - spot) / spot) * 100;
+                return {symbol, cap, price, spot, futures, diffPS, diffSF};
             })
             .filter(Boolean)
             .filter(r =>  !['STRAX', 'GLMR', 'RAD', 'IDEX', 'SNT', 'AERGO', 'WAVES', 'OMG', 'BAL', 'BADGER'].includes(r.symbol))
-            .filter(r => Math.abs(r.diffPct) > 0.5) // 🔥 фильтруем > 0.5%
-            .sort((a, b) => Math.abs(b.diffPct) - Math.abs(a.diffPct));
+            .sort((a, b) => Math.abs(b.diffPS) - Math.abs(a.diffPS))
+            .slice(0, 10);
 
-        diffs.forEach(({ symbol, price, spot, futures, diffPct }, i) => {
+        diffs.forEach(({symbol, cap, price, spot, futures, diffPS, diffSF}, i) => {
             this.log(
                 `${symbol.padEnd(8)} ` +
-                `cmc:${+price.toFixed(6).padEnd(12)} ` +
-                `spot:${spot.toFixed(6).padEnd(12)} ` +
-                `futures:${futures.toFixed(6).padEnd(12)} ` +
-                `diff: ${diffPct.toFixed(2)}%`
+                `${cap}\t` +
+                `cmc: ${+price.toFixed(6)}\t` +
+                `  f: ${futures.toFixed(6)}\t` +
+                `  s: ${spot.toFixed(6)}\t` +
+                `p/f: ${diffPS.toFixed(2)}%\t` +
+                `s/f: ${diffSF.toFixed(2)}% `
             );
         });
         this.log('----------------------------------------');
     }
 
     async updateAllHourly() {
+        this.tokens = await getPairs()
         let spot = await this.client.prices()
         let futures = await this.client.futuresPrices()
         const updatePromises = Object.keys(this.tokens).map(async (tokenSymbol) => {
@@ -86,9 +56,7 @@ class ExtremumTradingBot {
 
         await Promise.all(updatePromises);
         await this.logTop10Diff()
-        await this.writeTokensFile();
     }
-
 
 
     startHourlyUpdates() {
@@ -99,7 +67,7 @@ class ExtremumTradingBot {
             this.updateAllHourly().catch(error => {
                 console.error("❌ Error in periodic hourly volume update:", error);
             });
-        }, 600_000);
+        }, 300_000);
     }
 
     async start() {

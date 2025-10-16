@@ -221,13 +221,13 @@ class ExtremumTradingBot {
         const firstMinute = (now - token.startTime) < 60_000
         const stopBuy1 = token.side === '📈'
         const stopBuy2 = firstMinute && (ext.max * 0.995 > candle.close)
-        const stopBuy3 = !firstMinute && ((((candle.high - ext.max) / 2) + ext.max) > candle.close)
+        const stopBuy3 = !firstMinute && ((((ext.overHigh - ext.max) / 2) + ext.max) > candle.close)
         const stopBuy4 = 2 * ext.max - ext.min < candle.close
 
 
         const stopSell1 = token.side === '📉'
         const stopSell2 = firstMinute && (ext.min * 1.005 < candle.close)
-        const stopSell3 = !firstMinute && ((ext.min - ((ext.min - candle.low) / 2)) < candle.close)
+        const stopSell3 = !firstMinute && ((ext.min - ((ext.min - ext.overLow ) / 2)) < candle.close)
         const stopSell4 = ext.max - 2 * ext.min > candle.close
 
         const stop = Date.now() - token.startTime > 960_000;
